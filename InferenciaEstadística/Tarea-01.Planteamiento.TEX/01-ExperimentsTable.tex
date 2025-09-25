@@ -1,0 +1,201 @@
+% Add this to your main file or a new include file
+
+\begin{frame}{Experimental Framework}
+\blurbackground % Activates your custom blur effect
+\scriptsize
+\centering
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{p{1.2cm}p{2.2cm}p{2.2cm}p{1.8cm}p{2cm}p{2cm}}
+\toprule
+\textbf{Exp ID} & \textbf{Research Question} & \textbf{Methodology} & \textbf{Input Parameters} & \textbf{Success Metrics} & \textbf{Expected Outcome} \\
+\midrule
+\textbf{EXP-1} & Can we reproduce the 2020 paper's null result? & Implement exact 2020 model. Use GA + ANN. & 14 flux integers, 6 moduli fields & \% critical points, Stability ratio & Confirm absence of stable dS vacua \\
+\midrule
+\textbf{EXP-2} & Does torsion geometry enable stable dS states? & Implement 2022 model. Use Hybrid SA+CG. & 5 flux coefficients, 2 moduli & Number of stable dS, Flatness measure & Verify claim of ~170 stable dS vacua \\
+\midrule
+\textbf{EXP-3} & Which ML strategy finds viable vacua fastest? & Compare: GA, SA, NN, PSO on both models & Identical parameter spaces & Convergence speed, Solution quality & Identify optimal algorithm \\
+\midrule
+\textbf{EXP-4} & How sensitive are "stable" dS vacua? & Apply perturbations: quantum corrections, flux variations & Perturbation strength parameters & Lifetime estimation, Decay channels & Classify stability vs metastability \\
+\midrule
+\textbf{EXP-5} & Where are Swampland boundaries? & Systematic scan near conjectured boundaries & c' parameter, moduli mass ratios & Distribution in (m²/V) space & Precisely map Swampland boundary \\
+\midrule
+\textbf{EXP-6} & How do results scale with complexity? & Gradually increase: moduli, fluxes, geometries & Dimensionality parameters & Computational scaling laws & Understand realistic model limitations \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{frame}
+
+% Additional supporting frames for your thesis proposal:
+
+\begin{frame}{Research Hypothesis \& Novel Contributions}
+\blurbackground
+\begin{tcolorbox}[
+    enhanced,
+    colback=black!85,
+    colframe=Magenta,  % Using your magenta color for emphasis
+    arc=3mm,
+    boxrule=1.5pt,
+    title={\color{Yellow!80!white}Hypothesis}
+]
+The claimed stable de Sitter vacua in torsional compactifications are actually \textbf{metastable} when subjected to robust stability analysis, and advanced ML algorithms can precisely quantify their lifetime and decay channels.
+\end{tcolorbox}
+
+\vspace{0.5cm}
+
+\begin{tcolorbox}[
+    enhanced,
+    colback=black!85,
+    colframe=LimeGreen,  % Using your lime green color
+    arc=3mm,
+    boxrule=1.5pt,
+    title={\color{Yellow!80!white}Novel Contributions}
+]
+\begin{itemize}
+    \item First systematic comparison of ML methods for string landscape exploration
+    \item Quantitative stability analysis of claimed dS vacua
+    \item Empirical mapping of Swampland conjecture boundaries
+    \item Scalability analysis for computational string theory
+\end{itemize}
+\end{tcolorbox}
+\end{frame}
+
+\begin{frame}{Methodology Overview}
+\blurbackground
+\begin{columns}
+\begin{column}{0.48\textwidth}
+\begin{tcolorbox}[
+    enhanced,
+    colback=black!85,
+    colframe=mypurple,
+    arc=3mm,
+    boxrule=1pt,
+    title={\color{Yellow!80!white}Algorithms to Compare}
+]
+\begin{itemize}
+    \item Genetic Algorithm (GA)
+    \item Simulated Annealing (SA)
+    \item Neural Networks (NN)
+    \item Particle Swarm (PSO)
+    \item Hybrid SA+CG
+\end{itemize}
+\end{tcolorbox}
+\end{column}
+
+\begin{column}{0.48\textwidth}
+\begin{tcolorbox}[
+    enhanced,
+    colback=black!85,
+    colframe=mypurple,
+    arc=3mm,
+    boxrule=1pt,
+    title={\color{Yellow!80!white}Evaluation Metrics}
+]
+\begin{itemize}
+    \item Convergence speed
+    \item Solution quality (V\textsubscript{min})
+    \item Computational cost
+    \item Stability classification
+    \item Boundary precision
+\end{itemize}
+\end{tcolorbox}
+\end{column}
+\end{columns}
+
+\vspace{0.5cm}
+
+\begin{center}
+\begin{tcolorbox}[
+    enhanced,
+    colback=black!85,
+    colframe=Yellow!80!white,
+    arc=3mm,
+    boxrule=1pt,
+    width=0.8\textwidth,
+    title={\color{mypurple}Technical Implementation}
+]
+\begin{itemize}
+    \item \texttt{Python} (TensorFlow/PyTorch for ML)
+    \item High-performance computing cluster
+    \item Parallel evaluation of flux configurations
+    \item Automated stability analysis pipeline
+\end{itemize}
+\end{tcolorbox}
+\end{center}
+\end{frame}
+
+\begin{frame}{Timeline \& Deliverables}
+\blurbackground
+\begin{columns}
+\begin{column}{0.58\textwidth}
+\begin{tcolorbox}[
+    enhanced,
+    colback=black!85,
+    colframe=AntiqueWhite,
+    arc=3mm,
+    boxrule=1pt,
+    title={\color{mypurple}6-Month Timeline}
+]
+\textbf{Months 1-2:}
+\begin{itemize}
+    \item EXP-1, EXP-2 (reproduction studies)
+    \item Baseline implementation
+\end{itemize}
+
+\textbf{Months 3-4:}
+\begin{itemize}
+    \item EXP-3, EXP-4 (algorithm comparison)
+    \item Stability testing
+\end{itemize}
+
+\textbf{Month 5:}
+\begin{itemize}
+    \item EXP-5, EXP-6 (boundary mapping)
+    \item Scalability analysis
+\end{itemize}
+
+\textbf{Month 6:}
+\begin{itemize}
+    \item Thesis writing
+    \item Results synthesis
+\end{itemize}
+\end{tcolorbox}
+\end{column}
+
+\begin{column}{0.38\textwidth}
+\begin{tcolorbox}[
+    enhanced,
+    colback=black!85,
+    colframe=AntiqueWhite,
+    arc=3mm,
+    boxrule=1pt,
+    title={\color{mypurple}Expected Deliverables}
+]
+\begin{itemize}
+    \item Comparative analysis framework
+    \item Stability classification system
+    \item Boundary mapping methodology
+    \item Open-source code repository
+    \item Thesis document
+\end{itemize}
+\end{tcolorbox}
+
+\vspace{0.5cm}
+
+\begin{tcolorbox}[
+    enhanced,
+    colback=black!85,
+    colframe=Red!80!white,
+    arc=3mm,
+    boxrule=1pt,
+    title={\color{Yellow!80!white}Success Criteria}
+]
+\begin{itemize}
+    \item Reproduce published results
+    \item Identify optimal algorithms
+    \item Quantify stability bounds
+    \item Provide scalable methodology
+\end{itemize}
+\end{tcolorbox}
+\end{column}
+\end{columns}
+\end{frame}

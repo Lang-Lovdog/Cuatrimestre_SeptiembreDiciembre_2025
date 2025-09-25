@@ -1,0 +1,42 @@
+%! TeX program = xelatex
+%! TeX TS-program = xelatex
+\documentclass[10pt,dvipsnames]{beamer}
+\usepackage{fontspec}
+\setmainfont{QTBookmann}
+\setsansfont{QTFrizQuad}
+\setmonofont[
+]{BigBlueTermPlus Nerd Font}
+\usepackage{polyglossia}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{dirtytalk}
+\usepackage{graphicx}
+\setdefaultlanguage{english}
+\usepackage{multirow}
+\usepackage{listings}
+\usepackage{ragged2e}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage[most]{tcolorbox}
+\usepackage[backend=biber]{biblatex}
+\usetheme{Copenhagen}
+\tcbuselibrary{breakable,skins}
+\input{Macros}
+
+\author{%
+Brandon Marquez Salazar
+}
+\title{%
+  Evolutionary computing
+}
+\begin{document}
+\maketitle
+\include{00.-Introduction}
+\include{01.-EvolutionaryComputing}
+
+% Beamer bibliography
+
+\begin{frame}[allowframebreaks]{References}
+  \printbibliography[heading=none]
+\end{frame}
+
+\end{document}
