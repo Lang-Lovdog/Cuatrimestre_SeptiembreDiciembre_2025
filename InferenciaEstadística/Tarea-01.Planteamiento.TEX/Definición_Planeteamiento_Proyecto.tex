@@ -3,8 +3,11 @@
 \documentclass[10pt,dvipsnames]{beamer}
 \usepackage{fontspec}
 \setmainfont{QTBookmann}
-\setsansfont{QTFrizQuad}
+\setsansfont[
+Scale=0.75
+]{QTBookmann}
 \setmonofont[
+Scale=0.75
 ]{BigBlueTermPlus Nerd Font}
 \usepackage{polyglossia}
 \usepackage[dvipsnames]{xcolor}
@@ -16,6 +19,9 @@
 \usepackage{ragged2e}
 \usepackage{listings}
 \usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{adjustbox}
 \usepackage[most]{tcolorbox}
 \usepackage[backend=biber]{biblatex}
 \usetheme{Copenhagen}
@@ -30,8 +36,7 @@ Brandon Marquez Salazar
 }
 \begin{document}
 \maketitle
-\include{00.-Introduction}
-\include{01.-EvolutionaryComputing}
+\include{01-ExperimentsTable}
 
 % Beamer bibliography
 

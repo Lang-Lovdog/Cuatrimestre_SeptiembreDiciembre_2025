@@ -1,0 +1,30 @@
+\frametitle{Research Hypothesis \& Novel Contributions}
+\blurbackground
+\begin{tcolorbox}[
+    enhanced,
+    colback=black!85,
+    colframe=Magenta,  % Using your magenta color for emphasis
+    arc=3mm,
+    boxrule=1.5pt,
+    title={\color{Yellow!80!white}Hypothesis}
+]
+The claimed stable de Sitter vacua in torsional compactifications are actually \textbf{metastable} when subjected to robust stability analysis, and advanced ML algorithms can precisely quantify their lifetime and decay channels.
+\end{tcolorbox}
+
+\vspace{0.5cm}
+
+\begin{tcolorbox}[
+    enhanced,
+    colback=black!85,
+    colframe=LimeGreen,  % Using your lime green color
+    arc=3mm,
+    boxrule=1.5pt,
+    title={\color{Yellow!80!white}Novel Contributions}
+]
+\begin{itemize}
+    \item First systematic comparison of ML methods for string landscape exploration
+    \item Quantitative stability analysis of claimed dS vacua
+    \item Empirical mapping of Swampland conjecture boundaries
+    \item Scalability analysis for computational string theory
+\end{itemize}
+\end{tcolorbox}

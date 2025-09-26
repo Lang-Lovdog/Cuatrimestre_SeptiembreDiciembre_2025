@@ -1,0 +1,15 @@
+[0] Config.pm:328> INFO - This is Biber 2.21
+[0] Config.pm:331> INFO - Logfile is 'Definición_Planeteamiento_Proyecto.blg'
+[122] biber:342> INFO - === vie sep 26, 2025, 00:43:50
+[140] Biber.pm:421> INFO - Reading 'Definición_Planeteamiento_Proyecto.bcf'
+[272] Biber.pm:999> INFO - Using all citekeys in bib section 0
+[296] Biber.pm:4487> INFO - Processing section 0
+[310] Biber.pm:4678> INFO - Looking for bibtex file 'bibliografia.bib' for section 0
+[311] bibtex.pm:1713> INFO - LaTeX decoding ...
+[321] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliografia.bib'
+[406] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[407] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[407] Biber.pm:4307> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[407] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[418] bbl.pm:676> INFO - Writing 'Definición_Planeteamiento_Proyecto.bbl' with encoding 'UTF-8'
+[421] bbl.pm:779> INFO - Output to Definición_Planeteamiento_Proyecto.bbl

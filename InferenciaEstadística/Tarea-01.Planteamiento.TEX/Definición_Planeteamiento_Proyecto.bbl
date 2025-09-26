@@ -1,0 +1,183 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{Bizet2020}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=873d59bf514e5243a9ce42463d2b7fe0}{%
+           family={Bizet},
+           familyi={B\bibinitperiod},
+           given={Nana\bibnamedelima Cabo},
+           giveni={N\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=5bcc50dbe015eb3962ca10513f9502b0}{%
+           family={Damian},
+           familyi={D\bibinitperiod},
+           given={Cesar},
+           giveni={C\bibinitperiod}}}%
+        {{hash=0b668ceafd82e54e4897c8a9369694e8}{%
+           family={Loaiza-Brito},
+           familyi={L\bibinithyphendelim B\bibinitperiod},
+           given={Oscar},
+           giveni={O\bibinitperiod}}}%
+        {{hash=089dcb218213f8045f6f34a83d6f8513}{%
+           family={Mayorga\bibnamedelima Peña},
+           familyi={M\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={Damián\bibnamedelima Kaloni},
+           giveni={D\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=1c60e200300e0638bf79e81d0e25e0b9}{%
+           family={Montañez-Barrera},
+           familyi={M\bibinithyphendelim B\bibinitperiod},
+           given={J.\bibnamedelimi A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{b8d3cc263a499a4fac2345f4b20ed23b}
+      \strng{fullhash}{b46669d213598cf316867a7b249174e7}
+      \strng{fullhashraw}{b46669d213598cf316867a7b249174e7}
+      \strng{bibnamehash}{b8d3cc263a499a4fac2345f4b20ed23b}
+      \strng{authorbibnamehash}{b8d3cc263a499a4fac2345f4b20ed23b}
+      \strng{authornamehash}{b8d3cc263a499a4fac2345f4b20ed23b}
+      \strng{authorfullhash}{b46669d213598cf316867a7b249174e7}
+      \strng{authorfullhashraw}{b46669d213598cf316867a7b249174e7}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1434-6052}
+      \field{journaltitle}{The European Physical Journal C}
+      \field{month}{8}
+      \field{number}{8}
+      \field{title}{Testing swampland conjectures with machine learning}
+      \field{volume}{80}
+      \field{year}{2020}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.1140/epjc/s10052-020-8332-9
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1140/epjc/s10052-020-8332-9
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1140/epjc/s10052-020-8332-9
+      \endverb
+    \endentry
+    \entry{Damian2024}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=5bcc50dbe015eb3962ca10513f9502b0}{%
+           family={Damian},
+           familyi={D\bibinitperiod},
+           given={Cesar},
+           giveni={C\bibinitperiod}}}%
+        {{hash=0b668ceafd82e54e4897c8a9369694e8}{%
+           family={Loaiza-Brito},
+           familyi={L\bibinithyphendelim B\bibinitperiod},
+           given={Oscar},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{e7ae1a28f538843915d17a89da94bb18}
+      \strng{fullhash}{e7ae1a28f538843915d17a89da94bb18}
+      \strng{fullhashraw}{e7ae1a28f538843915d17a89da94bb18}
+      \strng{bibnamehash}{e7ae1a28f538843915d17a89da94bb18}
+      \strng{authorbibnamehash}{e7ae1a28f538843915d17a89da94bb18}
+      \strng{authornamehash}{e7ae1a28f538843915d17a89da94bb18}
+      \strng{authorfullhash}{e7ae1a28f538843915d17a89da94bb18}
+      \strng{authorfullhashraw}{e7ae1a28f538843915d17a89da94bb18}
+      \field{extraname}{1}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0003-4916}
+      \field{journaltitle}{Annals of Physics}
+      \field{month}{8}
+      \field{title}{Galois groups of uplifted de Sitter vacua}
+      \field{volume}{467}
+      \field{year}{2024}
+      \true{nocite}
+      \field{pages}{169697}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.aop.2024.169697
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1016/j.aop.2024.169697
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1016/j.aop.2024.169697
+      \endverb
+    \endentry
+    \entry{Damian2022}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=5bcc50dbe015eb3962ca10513f9502b0}{%
+           family={Damian},
+           familyi={D\bibinitperiod},
+           given={Cesar},
+           giveni={C\bibinitperiod}}}%
+        {{hash=0b668ceafd82e54e4897c8a9369694e8}{%
+           family={Loaiza-Brito},
+           familyi={L\bibinithyphendelim B\bibinitperiod},
+           given={Oscar},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{e7ae1a28f538843915d17a89da94bb18}
+      \strng{fullhash}{e7ae1a28f538843915d17a89da94bb18}
+      \strng{fullhashraw}{e7ae1a28f538843915d17a89da94bb18}
+      \strng{bibnamehash}{e7ae1a28f538843915d17a89da94bb18}
+      \strng{authorbibnamehash}{e7ae1a28f538843915d17a89da94bb18}
+      \strng{authornamehash}{e7ae1a28f538843915d17a89da94bb18}
+      \strng{authorfullhash}{e7ae1a28f538843915d17a89da94bb18}
+      \strng{authorfullhashraw}{e7ae1a28f538843915d17a89da94bb18}
+      \field{extraname}{2}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1434-6052}
+      \field{journaltitle}{The European Physical Journal C}
+      \field{month}{12}
+      \field{number}{12}
+      \field{title}{Metastable vacua from torsion and machine learning}
+      \field{volume}{82}
+      \field{year}{2022}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.1140/epjc/s10052-022-11118-x
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1140/epjc/s10052-022-11118-x
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1140/epjc/s10052-022-11118-x
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
