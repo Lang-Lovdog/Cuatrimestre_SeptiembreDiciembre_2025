@@ -1,0 +1,41 @@
+* Apuntes de Procesamiento Digital de Señales en Tiempo Real
+
+** Definiciones
+
+   ~ Señal
+     La señal es un fenómeno físico que transporta información. Dicho fenómeno físico se describe
+     mediante funciones matemáticas y, por lo general, la señal y la función que la describe se
+     utilizan de manera homóloga.
+   ~ Señales Digitales
+     Se obtienen de señales de tiempo continuo mediante una operación de muestreo.
+     Se representan como secuencias matemáticas. Los elementos de estas secuencias son valores de
+     amplitud tomados de las señales de tiempo continuo e cada múltiplo del período de muestreo.
+   ~ DSP (Procesamiento Digital de Señales)
+     Transformación de la información codificada de forma discreta de forma discreta mediante
+     operadores implementados en computadoras, procesadores o dispositivos digitales para
+     resaltar algunas características relevantes en la información.
+   ~ Sistema en tiempo real
+     Sistema de procesamiento de información que debe responder a entradas generadas generadas de
+     manera externa a este, dentro de un período finito y especificado.
+   ~~ (!) La exactitud depende del resultado lógico y del momento en que se entregó
+   ~~ (!) No responder es tan malo como una respuesta incorrecta
+
+
+** Clasificación
+   Una fecha límite es un tiempo determinado después de un evento desencadenante, antes del cual
+   se debe cumplir una respuesta.
+
+*** Sistemas duros de tiempo real
+    - Un exceso en el tiempo de respuesta conduce a una posible pérdida de vidas o un gran daño
+      financiero.
+    - Muchos de estos sistemas se consideran críticos para la seguridad.
+    - A veces son "solo" de misión crítica, y la misión es muy cara.
+    - En general, existe una función de costos asociada con el sistema.
+
+*** Sistemas suaves de tiempo real
+
+
+*** Sistemas firmes de tiempo real
+
+*** Sistemas en tiempo real débilmente duros
+

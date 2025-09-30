@@ -1,0 +1,38 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="01_SistemaDuro"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  viewBox="0 0 500 300"
+  width="500"
+  height="300"
+>
+<g id="axes">
+  <!-- Axes lines -->
+  <line 
+    x1="490"
+    y1="290"
+    x2="10"
+    y2="290"
+    stroke="black"
+    id="xAxis"
+  />
+  <line
+    x1="10"
+    y1="10"
+    x2="10"
+    y2="290"
+    stroke="black"
+    id="yAxis"
+  />
+  <!-- Axes arrow heads -->
+  <polyline
+    points="405,5 410,10 405,5"
+    stroke="black"
+    />
+  <polyline
+    points="10,10 0,0 0,10"
+    stroke="black"
+  />
+  <!-- Labels -->
+</g>
+</svg>

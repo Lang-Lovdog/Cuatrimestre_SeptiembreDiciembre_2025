@@ -1,0 +1,85 @@
+* Índice
+**  [Notas]{:../Notes.norg:}
+** [Introducción]{:Notes.neorg/Clase01:}
+** [Estadística Inferencial]{:Notes.neorg/Clase02:}
+   ~ {* Cómo construir el modelado}
+   ~~ {** Modelo en estadística}
+   ~~ {** Recopilación de datos}
+   ~~ {** Aprendizaje supervisado}
+   ~~ {** Aprendizaje no supervisado}
+   ~~ {** Otras clasificaciones}
+   ~~ {** Visualizar datos}
+   ~ {* Regresión lineal}
+
+* Cómo construir el modelado
+  Lo principal es tener observación sobre el fenómeno
+  Tras la observación, se realiza una hipótesis y se genera un modelo
+
+** Modelo en estadística
+   Una ecuación matemática que describe el comportamiento de un fenómeno observado
+   de la forma más exacta posible.
+   Hay cosas que no pueden modelarse fácilmente.
+   La aplicación de modelos estadísticos puede proveer un panorama suficiente del
+   fenómeno permitiendo realizar aproximaciones estratégicas.
+   Estos modelos tienen poder explicativo.
+
+** Recopilación de datos
+   Es necesario conocer los pormenores y previas aproximaciones al estudio del
+   fenómeno.
+   Póstumo a esto, se deben recopilar los datos a consciencia.
+   Un punto importante es la caracterización de la muestra, a fin de evitar ruido
+   o datos innecesarios.
+   Los datos no necesariamente se obtienen del campo, sino también es posible
+   obtenerlos de estudios previos, sistemas de almacenamiento, archivos, etc.
+
+   - (!) Datos multimodales
+   - (!) Contexto del fenómeno
+   - (!) Características de la muestra
+   - (!) Diferencia entre base de datos y conjunto de datos
+   - (!) Decidir si es necesario un experto
+   - (!) Validez de constructo: ¿Cómo sé que medí correctamente los datos?
+
+** Aprendizaje supervisado
+   - Regresión: Tipo de modelo predictivo que analiza las relaciones entre variables
+     dependientes e independientes
+   - Clasificación: Tipo de modelo predictivo que clasifica los datos en grupos
+     dependiendo de las características de los mismos
+
+** Aprendizaje no supervisado
+   - Clustering: Separa conjuntos de datos de manera independiente deacuerdo a las
+     similitudes entre los datos.
+   - Aprendizaje por refuerzo: Área enfocada en modelos que iteran sobre múltiples
+     intentos, recompensando los movimientos que producen salidas favorables y
+     penalizando los pasos que producen salidas favorables y penalizando los
+     pasos que producen salidas indeseadas.
+
+** Otras clasificaciones
+   - Paramétricos: Familia de distribuciones de probabilidad que tienen un número
+     finito de parámetros. Ej. La distribución normal.
+   - No paramétricos: Modelos en los cuales el número y naturaleza de los parámetros
+     es flexible y no están fijos de antemano.
+   - Semiparamétricos: Estos combinan características de ambos.
+
+** Visualizar datos
+   Para construir correctamente el modelo, es importante considerar ula visualización
+   de los datos de manera contextualizada.
+   Comenzar con la idea de que puede o no ser trivialmente separable, y encontrar
+   el ejemplo que permita definir esta característica.
+<<<
+
+* Regresión lineal
+  Nos permite observar el comportamiento de los datos de una variable dependiente
+  respecto a una variables independiente. Dicho de otro modo, la correlación.
+  se define de la forma
+  $|\hat{y_i} = \beta_0 + \beta_1 x_i + \epsilon_i|$
+
+  Este modelos es sensible a los outliers y es necesario considerar los siguientes
+  putos.
+
+  - Independencia
+  - Normalidad
+  - Linealidad
+  - Homocedasticidad
+  - Homogeneidad
+
+[Notas]{:../Notes.norg:}
