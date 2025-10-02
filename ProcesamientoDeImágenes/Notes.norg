@@ -1,0 +1,20 @@
+@document.meta
+title: Notes
+description: 
+authors: 
+categories: 
+created: 2025-10-01T12:21:24-0600
+updated: 2025-10-01T12:23:59-0600
+version: 1.1.1
+@end
+
+
+Este archivo es únicamente para documentación de actividades y programa.
+
+* Negativo
+  Fecha: 2025-10-01T12:21:24-0600
+
+  La definición de un negativo de imagen, es el complemento del nivel.
+  Para esto, se define al negativo en una imagen en escala de grises.
+
+  $|I(x,y)=I_{\text{max}} - I(x,y)|$
