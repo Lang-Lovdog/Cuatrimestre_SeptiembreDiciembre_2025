@@ -1,0 +1,49 @@
+{
+  "airport": {
+    "original_values": [
+      "YES",
+      "NO"
+    ],
+    "value_counts": {
+      "YES": 279,
+      "NO": 227
+    },
+    "mapping_to_numeric": {
+      "YES": 0,
+      "NO": 1
+    },
+    "total_unique": 2
+  },
+  "waterbody": {
+    "original_values": [
+      "River",
+      "Lake",
+      NaN,
+      "Lake and River"
+    ],
+    "value_counts": {
+      "River": 183,
+      "Lake": 97,
+      "Lake and River": 71
+    },
+    "mapping_to_numeric": {
+      "River": 0,
+      "Lake": 1,
+      "NaN": 2,
+      "Lake and River": 3
+    },
+    "total_unique": 4
+  },
+  "bus_ter": {
+    "original_values": [
+      "YES"
+    ],
+    "value_counts": {
+      "YES": 506
+    },
+    "mapping_to_numeric": {
+      "YES": 0
+    },
+    "total_unique": 1
+  }
+}

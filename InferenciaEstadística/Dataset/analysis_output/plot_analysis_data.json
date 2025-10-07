@@ -1,0 +1,8250 @@
+{
+  "price_vs_crime_rate": {
+    "price_stats": {
+      "type": "numeric",
+      "min": 5.0,
+      "max": 50.0,
+      "mean": 22.528853754940716,
+      "std": 9.18217588216678
+    },
+    "crime_rate_stats": {
+      "type": "numeric",
+      "min": 0.00632,
+      "max": 88.9762,
+      "mean": 3.613523557312254,
+      "std": 8.60154510533249
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.38958244066444814
+    }
+  },
+  "price_vs_resid_area": {
+    "price_stats": {
+      "type": "numeric",
+      "min": 5.0,
+      "max": 50.0,
+      "mean": 22.528853754940716,
+      "std": 9.18217588216678
+    },
+    "resid_area_stats": {
+      "type": "numeric",
+      "min": 30.46,
+      "max": 57.74,
+      "mean": 41.13677865612648,
+      "std": 6.860352940897585
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.4847543792527053
+    }
+  },
+  "price_vs_air_qual": {
+    "price_stats": {
+      "type": "numeric",
+      "min": 5.0,
+      "max": 50.0,
+      "mean": 22.528853754940716,
+      "std": 9.18217588216678
+    },
+    "air_qual_stats": {
+      "type": "numeric",
+      "min": 0.385,
+      "max": 0.871,
+      "mean": 0.5546950592885376,
+      "std": 0.11587767566755595
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.4293002188598612
+    }
+  },
+  "price_vs_room_num": {
+    "price_stats": {
+      "type": "numeric",
+      "min": 5.0,
+      "max": 50.0,
+      "mean": 22.528853754940716,
+      "std": 9.18217588216678
+    },
+    "room_num_stats": {
+      "type": "numeric",
+      "min": 3.561,
+      "max": 8.78,
+      "mean": 6.284634387351779,
+      "std": 0.7026171434153233
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.6963037940825012
+    }
+  },
+  "price_vs_age": {
+    "price_stats": {
+      "type": "numeric",
+      "min": 5.0,
+      "max": 50.0,
+      "mean": 22.528853754940716,
+      "std": 9.18217588216678
+    },
+    "age_stats": {
+      "type": "numeric",
+      "min": 2.9,
+      "max": 100.0,
+      "mean": 68.57490118577076,
+      "std": 28.148861406903617
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.3779988961423205
+    }
+  },
+  "price_vs_dist1": {
+    "price_stats": {
+      "type": "numeric",
+      "min": 5.0,
+      "max": 50.0,
+      "mean": 22.528853754940716,
+      "std": 9.18217588216678
+    },
+    "dist1_stats": {
+      "type": "numeric",
+      "min": 1.13,
+      "max": 12.32,
+      "mean": 3.97199604743083,
+      "std": 2.1085321645858897
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.25135493646439205
+    }
+  },
+  "price_vs_dist2": {
+    "price_stats": {
+      "type": "numeric",
+      "min": 5.0,
+      "max": 50.0,
+      "mean": 22.528853754940716,
+      "std": 9.18217588216678
+    },
+    "dist2_stats": {
+      "type": "numeric",
+      "min": 0.92,
+      "max": 11.93,
+      "mean": 3.628774703557312,
+      "std": 2.108580321193191
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.24945944928218902
+    }
+  },
+  "price_vs_dist3": {
+    "price_stats": {
+      "type": "numeric",
+      "min": 5.0,
+      "max": 50.0,
+      "mean": 22.528853754940716,
+      "std": 9.18217588216678
+    },
+    "dist3_stats": {
+      "type": "numeric",
+      "min": 1.15,
+      "max": 12.32,
+      "mean": 3.9606719367588936,
+      "std": 2.119797473766103
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.24665004200925092
+    }
+  },
+  "price_vs_dist4": {
+    "price_stats": {
+      "type": "numeric",
+      "min": 5.0,
+      "max": 50.0,
+      "mean": 22.528853754940716,
+      "std": 9.18217588216678
+    },
+    "dist4_stats": {
+      "type": "numeric",
+      "min": 0.73,
+      "max": 11.94,
+      "mean": 3.61897233201581,
+      "std": 2.0992029914310257
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.24820018064236488
+    }
+  },
+  "price_vs_teachers": {
+    "price_stats": {
+      "type": "numeric",
+      "min": 5.0,
+      "max": 50.0,
+      "mean": 22.528853754940716,
+      "std": 9.18217588216678
+    },
+    "teachers_stats": {
+      "type": "numeric",
+      "min": 18.0,
+      "max": 27.4,
+      "mean": 21.54446640316206,
+      "std": 2.1649455237144406
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.5056546189523787
+    }
+  },
+  "price_vs_poor_prop": {
+    "price_stats": {
+      "type": "numeric",
+      "min": 5.0,
+      "max": 50.0,
+      "mean": 22.528853754940716,
+      "std": 9.18217588216678
+    },
+    "poor_prop_stats": {
+      "type": "numeric",
+      "min": 1.73,
+      "max": 37.97,
+      "mean": 12.653063241106722,
+      "std": 7.141061511348571
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.7408359927838508
+    }
+  },
+  "price_vs_airport": {
+    "price_stats": {
+      "type": "numeric",
+      "min": 5.0,
+      "max": 50.0,
+      "mean": 22.528853754940716,
+      "std": 9.18217588216678
+    },
+    "airport_stats": {
+      "type": "categorical",
+      "unique_values": 2,
+      "value_distribution": {
+        "YES": 279,
+        "NO": 227
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "NO": 20.66916299559471,
+          "YES": 24.04193548387097
+        },
+        "std": {
+          "NO": 7.771767643539866,
+          "YES": 9.94651874222071
+        },
+        "count": {
+          "NO": 227,
+          "YES": 279
+        }
+      }
+    }
+  },
+  "price_vs_n_hos_beds": {
+    "price_stats": {
+      "type": "numeric",
+      "min": 5.0,
+      "max": 50.0,
+      "mean": 22.528853754940716,
+      "std": 9.18217588216678
+    },
+    "n_hos_beds_stats": {
+      "type": "numeric",
+      "min": 5.268,
+      "max": 10.876,
+      "mean": 7.899767068273092,
+      "std": 1.476682516142425
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.10964570273321576
+    }
+  },
+  "price_vs_n_hot_rooms": {
+    "price_stats": {
+      "type": "numeric",
+      "min": 5.0,
+      "max": 50.0,
+      "mean": 22.528853754940716,
+      "std": 9.18217588216678
+    },
+    "n_hot_rooms_stats": {
+      "type": "numeric",
+      "min": 10.0576,
+      "max": 101.12,
+      "mean": 13.041604743083003,
+      "std": 5.2389566328769686
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.023122126730354534
+    }
+  },
+  "price_vs_waterbody": {
+    "price_stats": {
+      "type": "numeric",
+      "min": 5.0,
+      "max": 50.0,
+      "mean": 22.528853754940716,
+      "std": 9.18217588216678
+    },
+    "waterbody_stats": {
+      "type": "categorical",
+      "unique_values": 4,
+      "value_distribution": {
+        "River": 183,
+        "Lake": 97,
+        "Lake and River": 71
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "Lake": 23.211340206185568,
+          "Lake and River": 21.677464788732394,
+          "River": 23.40327868852459
+        },
+        "std": {
+          "Lake": 9.6030906080701,
+          "Lake and River": 7.975340515490745,
+          "River": 9.383735646619753
+        },
+        "count": {
+          "Lake": 97,
+          "Lake and River": 71,
+          "River": 183
+        }
+      }
+    }
+  },
+  "price_vs_rainfall": {
+    "price_stats": {
+      "type": "numeric",
+      "min": 5.0,
+      "max": 50.0,
+      "mean": 22.528853754940716,
+      "std": 9.18217588216678
+    },
+    "rainfall_stats": {
+      "type": "numeric",
+      "min": 3.0,
+      "max": 60.0,
+      "mean": 39.18181818181818,
+      "std": 12.51369726587335
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.04742623256774055
+    }
+  },
+  "price_vs_bus_ter": {
+    "price_stats": {
+      "type": "numeric",
+      "min": 5.0,
+      "max": 50.0,
+      "mean": 22.528853754940716,
+      "std": 9.18217588216678
+    },
+    "bus_ter_stats": {
+      "type": "categorical",
+      "unique_values": 1,
+      "value_distribution": {
+        "YES": 506
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "YES": 22.528853754940712
+        },
+        "std": {
+          "YES": 9.182175882166778
+        },
+        "count": {
+          "YES": 506
+        }
+      }
+    }
+  },
+  "price_vs_parks": {
+    "price_stats": {
+      "type": "numeric",
+      "min": 5.0,
+      "max": 50.0,
+      "mean": 22.528853754940716,
+      "std": 9.18217588216678
+    },
+    "parks_stats": {
+      "type": "numeric",
+      "min": 0.033291762,
+      "max": 0.086711473,
+      "mean": 0.05445395839920949,
+      "std": 0.010632484889836286
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.3915740653514396
+    }
+  },
+  "crime_rate_vs_price": {
+    "crime_rate_stats": {
+      "type": "numeric",
+      "min": 0.00632,
+      "max": 88.9762,
+      "mean": 3.613523557312254,
+      "std": 8.60154510533249
+    },
+    "price_stats": {
+      "type": "numeric",
+      "min": 5.0,
+      "max": 50.0,
+      "mean": 22.528853754940716,
+      "std": 9.18217588216678
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.38958244066444814
+    }
+  },
+  "crime_rate_vs_resid_area": {
+    "crime_rate_stats": {
+      "type": "numeric",
+      "min": 0.00632,
+      "max": 88.9762,
+      "mean": 3.613523557312254,
+      "std": 8.60154510533249
+    },
+    "resid_area_stats": {
+      "type": "numeric",
+      "min": 30.46,
+      "max": 57.74,
+      "mean": 41.13677865612648,
+      "std": 6.860352940897585
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.40658341140625953
+    }
+  },
+  "crime_rate_vs_air_qual": {
+    "crime_rate_stats": {
+      "type": "numeric",
+      "min": 0.00632,
+      "max": 88.9762,
+      "mean": 3.613523557312254,
+      "std": 8.60154510533249
+    },
+    "air_qual_stats": {
+      "type": "numeric",
+      "min": 0.385,
+      "max": 0.871,
+      "mean": 0.5546950592885376,
+      "std": 0.11587767566755595
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.4209717113924563
+    }
+  },
+  "crime_rate_vs_room_num": {
+    "crime_rate_stats": {
+      "type": "numeric",
+      "min": 0.00632,
+      "max": 88.9762,
+      "mean": 3.613523557312254,
+      "std": 8.60154510533249
+    },
+    "room_num_stats": {
+      "type": "numeric",
+      "min": 3.561,
+      "max": 8.78,
+      "mean": 6.284634387351779,
+      "std": 0.7026171434153233
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.21924670286251405
+    }
+  },
+  "crime_rate_vs_age": {
+    "crime_rate_stats": {
+      "type": "numeric",
+      "min": 0.00632,
+      "max": 88.9762,
+      "mean": 3.613523557312254,
+      "std": 8.60154510533249
+    },
+    "age_stats": {
+      "type": "numeric",
+      "min": 2.9,
+      "max": 100.0,
+      "mean": 68.57490118577076,
+      "std": 28.148861406903617
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.35273425090136373
+    }
+  },
+  "crime_rate_vs_dist1": {
+    "crime_rate_stats": {
+      "type": "numeric",
+      "min": 0.00632,
+      "max": 88.9762,
+      "mean": 3.613523557312254,
+      "std": 8.60154510533249
+    },
+    "dist1_stats": {
+      "type": "numeric",
+      "min": 1.13,
+      "max": 12.32,
+      "mean": 3.97199604743083,
+      "std": 2.1085321645858897
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.3800502431963089
+    }
+  },
+  "crime_rate_vs_dist2": {
+    "crime_rate_stats": {
+      "type": "numeric",
+      "min": 0.00632,
+      "max": 88.9762,
+      "mean": 3.613523557312254,
+      "std": 8.60154510533249
+    },
+    "dist2_stats": {
+      "type": "numeric",
+      "min": 0.92,
+      "max": 11.93,
+      "mean": 3.628774703557312,
+      "std": 2.108580321193191
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.37981328789625557
+    }
+  },
+  "crime_rate_vs_dist3": {
+    "crime_rate_stats": {
+      "type": "numeric",
+      "min": 0.00632,
+      "max": 88.9762,
+      "mean": 3.613523557312254,
+      "std": 8.60154510533249
+    },
+    "dist3_stats": {
+      "type": "numeric",
+      "min": 1.15,
+      "max": 12.32,
+      "mean": 3.9606719367588936,
+      "std": 2.119797473766103
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.3800689044752707
+    }
+  },
+  "crime_rate_vs_dist4": {
+    "crime_rate_stats": {
+      "type": "numeric",
+      "min": 0.00632,
+      "max": 88.9762,
+      "mean": 3.613523557312254,
+      "std": 8.60154510533249
+    },
+    "dist4_stats": {
+      "type": "numeric",
+      "min": 0.73,
+      "max": 11.94,
+      "mean": 3.61897233201581,
+      "std": 2.0992029914310257
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.3764616735682768
+    }
+  },
+  "crime_rate_vs_teachers": {
+    "crime_rate_stats": {
+      "type": "numeric",
+      "min": 0.00632,
+      "max": 88.9762,
+      "mean": 3.613523557312254,
+      "std": 8.60154510533249
+    },
+    "teachers_stats": {
+      "type": "numeric",
+      "min": 18.0,
+      "max": 27.4,
+      "mean": 21.54446640316206,
+      "std": 2.1649455237144406
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.28994557927951997
+    }
+  },
+  "crime_rate_vs_poor_prop": {
+    "crime_rate_stats": {
+      "type": "numeric",
+      "min": 0.00632,
+      "max": 88.9762,
+      "mean": 3.613523557312254,
+      "std": 8.60154510533249
+    },
+    "poor_prop_stats": {
+      "type": "numeric",
+      "min": 1.73,
+      "max": 37.97,
+      "mean": 12.653063241106722,
+      "std": 7.141061511348571
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.45562147944794607
+    }
+  },
+  "crime_rate_vs_airport": {
+    "crime_rate_stats": {
+      "type": "numeric",
+      "min": 0.00632,
+      "max": 88.9762,
+      "mean": 3.613523557312254,
+      "std": 8.60154510533249
+    },
+    "airport_stats": {
+      "type": "categorical",
+      "unique_values": 2,
+      "value_distribution": {
+        "YES": 279,
+        "NO": 227
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "NO": 4.440472466960353,
+          "YES": 2.940701326164875
+        },
+        "std": {
+          "NO": 8.80822661615331,
+          "YES": 8.385391408861912
+        },
+        "count": {
+          "NO": 227,
+          "YES": 279
+        }
+      }
+    }
+  },
+  "crime_rate_vs_n_hos_beds": {
+    "crime_rate_stats": {
+      "type": "numeric",
+      "min": 0.00632,
+      "max": 88.9762,
+      "mean": 3.613523557312254,
+      "std": 8.60154510533249
+    },
+    "n_hos_beds_stats": {
+      "type": "numeric",
+      "min": 5.268,
+      "max": 10.876,
+      "mean": 7.899767068273092,
+      "std": 1.476682516142425
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.017502086878097026
+    }
+  },
+  "crime_rate_vs_n_hot_rooms": {
+    "crime_rate_stats": {
+      "type": "numeric",
+      "min": 0.00632,
+      "max": 88.9762,
+      "mean": 3.613523557312254,
+      "std": 8.60154510533249
+    },
+    "n_hot_rooms_stats": {
+      "type": "numeric",
+      "min": 10.0576,
+      "max": 101.12,
+      "mean": 13.041604743083003,
+      "std": 5.2389566328769686
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.013517871472597469
+    }
+  },
+  "crime_rate_vs_waterbody": {
+    "crime_rate_stats": {
+      "type": "numeric",
+      "min": 0.00632,
+      "max": 88.9762,
+      "mean": 3.613523557312254,
+      "std": 8.60154510533249
+    },
+    "waterbody_stats": {
+      "type": "categorical",
+      "unique_values": 4,
+      "value_distribution": {
+        "River": 183,
+        "Lake": 97,
+        "Lake and River": 71
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "Lake": 3.315422164948454,
+          "Lake and River": 3.227478732394366,
+          "River": 3.1897225683060113
+        },
+        "std": {
+          "Lake": 7.221329869416544,
+          "Lake and River": 5.674620459835412,
+          "River": 8.283918161391062
+        },
+        "count": {
+          "Lake": 97,
+          "Lake and River": 71,
+          "River": 183
+        }
+      }
+    }
+  },
+  "crime_rate_vs_rainfall": {
+    "crime_rate_stats": {
+      "type": "numeric",
+      "min": 0.00632,
+      "max": 88.9762,
+      "mean": 3.613523557312254,
+      "std": 8.60154510533249
+    },
+    "rainfall_stats": {
+      "type": "numeric",
+      "min": 3.0,
+      "max": 60.0,
+      "mean": 39.18181818181818,
+      "std": 12.51369726587335
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.059203918747677435
+    }
+  },
+  "crime_rate_vs_bus_ter": {
+    "crime_rate_stats": {
+      "type": "numeric",
+      "min": 0.00632,
+      "max": 88.9762,
+      "mean": 3.613523557312254,
+      "std": 8.60154510533249
+    },
+    "bus_ter_stats": {
+      "type": "categorical",
+      "unique_values": 1,
+      "value_distribution": {
+        "YES": 506
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "YES": 3.613523557312253
+        },
+        "std": {
+          "YES": 8.601545105332491
+        },
+        "count": {
+          "YES": 506
+        }
+      }
+    }
+  },
+  "crime_rate_vs_parks": {
+    "crime_rate_stats": {
+      "type": "numeric",
+      "min": 0.00632,
+      "max": 88.9762,
+      "mean": 3.613523557312254,
+      "std": 8.60154510533249
+    },
+    "parks_stats": {
+      "type": "numeric",
+      "min": 0.033291762,
+      "max": 0.086711473,
+      "mean": 0.05445395839920949,
+      "std": 0.010632484889836286
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.3832347897462424
+    }
+  },
+  "resid_area_vs_price": {
+    "resid_area_stats": {
+      "type": "numeric",
+      "min": 30.46,
+      "max": 57.74,
+      "mean": 41.13677865612648,
+      "std": 6.860352940897585
+    },
+    "price_stats": {
+      "type": "numeric",
+      "min": 5.0,
+      "max": 50.0,
+      "mean": 22.528853754940716,
+      "std": 9.18217588216678
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.48475437925270526
+    }
+  },
+  "resid_area_vs_crime_rate": {
+    "resid_area_stats": {
+      "type": "numeric",
+      "min": 30.46,
+      "max": 57.74,
+      "mean": 41.13677865612648,
+      "std": 6.860352940897585
+    },
+    "crime_rate_stats": {
+      "type": "numeric",
+      "min": 0.00632,
+      "max": 88.9762,
+      "mean": 3.613523557312254,
+      "std": 8.60154510533249
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.40658341140625953
+    }
+  },
+  "resid_area_vs_air_qual": {
+    "resid_area_stats": {
+      "type": "numeric",
+      "min": 30.46,
+      "max": 57.74,
+      "mean": 41.13677865612648,
+      "std": 6.860352940897585
+    },
+    "air_qual_stats": {
+      "type": "numeric",
+      "min": 0.385,
+      "max": 0.871,
+      "mean": 0.5546950592885376,
+      "std": 0.11587767566755595
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.763651446920914
+    }
+  },
+  "resid_area_vs_room_num": {
+    "resid_area_stats": {
+      "type": "numeric",
+      "min": 30.46,
+      "max": 57.74,
+      "mean": 41.13677865612648,
+      "std": 6.860352940897585
+    },
+    "room_num_stats": {
+      "type": "numeric",
+      "min": 3.561,
+      "max": 8.78,
+      "mean": 6.284634387351779,
+      "std": 0.7026171434153233
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.3916758526568439
+    }
+  },
+  "resid_area_vs_age": {
+    "resid_area_stats": {
+      "type": "numeric",
+      "min": 30.46,
+      "max": 57.74,
+      "mean": 41.13677865612648,
+      "std": 6.860352940897585
+    },
+    "age_stats": {
+      "type": "numeric",
+      "min": 2.9,
+      "max": 100.0,
+      "mean": 68.57490118577076,
+      "std": 28.148861406903617
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.6447785113552567
+    }
+  },
+  "resid_area_vs_dist1": {
+    "resid_area_stats": {
+      "type": "numeric",
+      "min": 30.46,
+      "max": 57.74,
+      "mean": 41.13677865612648,
+      "std": 6.860352940897585
+    },
+    "dist1_stats": {
+      "type": "numeric",
+      "min": 1.13,
+      "max": 12.32,
+      "mean": 3.97199604743083,
+      "std": 2.1085321645858897
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.7064813314834633
+    }
+  },
+  "resid_area_vs_dist2": {
+    "resid_area_stats": {
+      "type": "numeric",
+      "min": 30.46,
+      "max": 57.74,
+      "mean": 41.13677865612648,
+      "std": 6.860352940897585
+    },
+    "dist2_stats": {
+      "type": "numeric",
+      "min": 0.92,
+      "max": 11.93,
+      "mean": 3.628774703557312,
+      "std": 2.108580321193191
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.7079564568090414
+    }
+  },
+  "resid_area_vs_dist3": {
+    "resid_area_stats": {
+      "type": "numeric",
+      "min": 30.46,
+      "max": 57.74,
+      "mean": 41.13677865612648,
+      "std": 6.860352940897585
+    },
+    "dist3_stats": {
+      "type": "numeric",
+      "min": 1.15,
+      "max": 12.32,
+      "mean": 3.9606719367588936,
+      "std": 2.119797473766103
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.7075663556811107
+    }
+  },
+  "resid_area_vs_dist4": {
+    "resid_area_stats": {
+      "type": "numeric",
+      "min": 30.46,
+      "max": 57.74,
+      "mean": 41.13677865612648,
+      "std": 6.860352940897585
+    },
+    "dist4_stats": {
+      "type": "numeric",
+      "min": 0.73,
+      "max": 11.94,
+      "mean": 3.61897233201581,
+      "std": 2.0992029914310257
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.7058188779753792
+    }
+  },
+  "resid_area_vs_teachers": {
+    "resid_area_stats": {
+      "type": "numeric",
+      "min": 30.46,
+      "max": 57.74,
+      "mean": 41.13677865612648,
+      "std": 6.860352940897585
+    },
+    "teachers_stats": {
+      "type": "numeric",
+      "min": 18.0,
+      "max": 27.4,
+      "mean": 21.54446640316206,
+      "std": 2.1649455237144406
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.38324755642888675
+    }
+  },
+  "resid_area_vs_poor_prop": {
+    "resid_area_stats": {
+      "type": "numeric",
+      "min": 30.46,
+      "max": 57.74,
+      "mean": 41.13677865612648,
+      "std": 6.860352940897585
+    },
+    "poor_prop_stats": {
+      "type": "numeric",
+      "min": 1.73,
+      "max": 37.97,
+      "mean": 12.653063241106722,
+      "std": 7.141061511348571
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.6037997164766219
+    }
+  },
+  "resid_area_vs_airport": {
+    "resid_area_stats": {
+      "type": "numeric",
+      "min": 30.46,
+      "max": 57.74,
+      "mean": 41.13677865612648,
+      "std": 6.860352940897585
+    },
+    "airport_stats": {
+      "type": "categorical",
+      "unique_values": 2,
+      "value_distribution": {
+        "YES": 279,
+        "NO": 227
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "NO": 42.01361233480176,
+          "YES": 40.42336917562724
+        },
+        "std": {
+          "NO": 6.739028460573044,
+          "YES": 6.887414607436517
+        },
+        "count": {
+          "NO": 227,
+          "YES": 279
+        }
+      }
+    }
+  },
+  "resid_area_vs_n_hos_beds": {
+    "resid_area_stats": {
+      "type": "numeric",
+      "min": 30.46,
+      "max": 57.74,
+      "mean": 41.13677865612648,
+      "std": 6.860352940897585
+    },
+    "n_hos_beds_stats": {
+      "type": "numeric",
+      "min": 5.268,
+      "max": 10.876,
+      "mean": 7.899767068273092,
+      "std": 1.476682516142425
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.005826893536014327
+    }
+  },
+  "resid_area_vs_n_hot_rooms": {
+    "resid_area_stats": {
+      "type": "numeric",
+      "min": 30.46,
+      "max": 57.74,
+      "mean": 41.13677865612648,
+      "std": 6.860352940897585
+    },
+    "n_hot_rooms_stats": {
+      "type": "numeric",
+      "min": 10.0576,
+      "max": 101.12,
+      "mean": 13.041604743083003,
+      "std": 5.2389566328769686
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.0008386303900863963
+    }
+  },
+  "resid_area_vs_waterbody": {
+    "resid_area_stats": {
+      "type": "numeric",
+      "min": 30.46,
+      "max": 57.74,
+      "mean": 41.13677865612648,
+      "std": 6.860352940897585
+    },
+    "waterbody_stats": {
+      "type": "categorical",
+      "unique_values": 4,
+      "value_distribution": {
+        "River": 183,
+        "Lake": 97,
+        "Lake and River": 71
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "Lake": 40.76257731958763,
+          "Lake and River": 42.012957746478875,
+          "River": 40.235573770491804
+        },
+        "std": {
+          "Lake": 7.238929518920386,
+          "Lake and River": 6.815774433383229,
+          "River": 6.649724903321768
+        },
+        "count": {
+          "Lake": 97,
+          "Lake and River": 71,
+          "River": 183
+        }
+      }
+    }
+  },
+  "resid_area_vs_rainfall": {
+    "resid_area_stats": {
+      "type": "numeric",
+      "min": 30.46,
+      "max": 57.74,
+      "mean": 41.13677865612648,
+      "std": 6.860352940897585
+    },
+    "rainfall_stats": {
+      "type": "numeric",
+      "min": 3.0,
+      "max": 60.0,
+      "mean": 39.18181818181818,
+      "std": 12.51369726587335
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.05580980010400707
+    }
+  },
+  "resid_area_vs_bus_ter": {
+    "resid_area_stats": {
+      "type": "numeric",
+      "min": 30.46,
+      "max": 57.74,
+      "mean": 41.13677865612648,
+      "std": 6.860352940897585
+    },
+    "bus_ter_stats": {
+      "type": "categorical",
+      "unique_values": 1,
+      "value_distribution": {
+        "YES": 506
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "YES": 41.13677865612648
+        },
+        "std": {
+          "YES": 6.860352940897582
+        },
+        "count": {
+          "YES": 506
+        }
+      }
+    }
+  },
+  "resid_area_vs_parks": {
+    "resid_area_stats": {
+      "type": "numeric",
+      "min": 30.46,
+      "max": 57.74,
+      "mean": 41.13677865612648,
+      "std": 6.860352940897585
+    },
+    "parks_stats": {
+      "type": "numeric",
+      "min": 0.033291762,
+      "max": 0.086711473,
+      "mean": 0.05445395839920949,
+      "std": 0.010632484889836286
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.7076348233031614
+    }
+  },
+  "air_qual_vs_price": {
+    "air_qual_stats": {
+      "type": "numeric",
+      "min": 0.385,
+      "max": 0.871,
+      "mean": 0.5546950592885376,
+      "std": 0.11587767566755595
+    },
+    "price_stats": {
+      "type": "numeric",
+      "min": 5.0,
+      "max": 50.0,
+      "mean": 22.528853754940716,
+      "std": 9.18217588216678
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.42930021885986125
+    }
+  },
+  "air_qual_vs_crime_rate": {
+    "air_qual_stats": {
+      "type": "numeric",
+      "min": 0.385,
+      "max": 0.871,
+      "mean": 0.5546950592885376,
+      "std": 0.11587767566755595
+    },
+    "crime_rate_stats": {
+      "type": "numeric",
+      "min": 0.00632,
+      "max": 88.9762,
+      "mean": 3.613523557312254,
+      "std": 8.60154510533249
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.42097171139245626
+    }
+  },
+  "air_qual_vs_resid_area": {
+    "air_qual_stats": {
+      "type": "numeric",
+      "min": 0.385,
+      "max": 0.871,
+      "mean": 0.5546950592885376,
+      "std": 0.11587767566755595
+    },
+    "resid_area_stats": {
+      "type": "numeric",
+      "min": 30.46,
+      "max": 57.74,
+      "mean": 41.13677865612648,
+      "std": 6.860352940897585
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.763651446920914
+    }
+  },
+  "air_qual_vs_room_num": {
+    "air_qual_stats": {
+      "type": "numeric",
+      "min": 0.385,
+      "max": 0.871,
+      "mean": 0.5546950592885376,
+      "std": 0.11587767566755595
+    },
+    "room_num_stats": {
+      "type": "numeric",
+      "min": 3.561,
+      "max": 8.78,
+      "mean": 6.284634387351779,
+      "std": 0.7026171434153233
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.30218818784959367
+    }
+  },
+  "air_qual_vs_age": {
+    "air_qual_stats": {
+      "type": "numeric",
+      "min": 0.385,
+      "max": 0.871,
+      "mean": 0.5546950592885376,
+      "std": 0.11587767566755595
+    },
+    "age_stats": {
+      "type": "numeric",
+      "min": 2.9,
+      "max": 100.0,
+      "mean": 68.57490118577076,
+      "std": 28.148861406903617
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.731470103785959
+    }
+  },
+  "air_qual_vs_dist1": {
+    "air_qual_stats": {
+      "type": "numeric",
+      "min": 0.385,
+      "max": 0.871,
+      "mean": 0.5546950592885376,
+      "std": 0.11587767566755595
+    },
+    "dist1_stats": {
+      "type": "numeric",
+      "min": 1.13,
+      "max": 12.32,
+      "mean": 3.97199604743083,
+      "std": 2.1085321645858897
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.7685890160421095
+    }
+  },
+  "air_qual_vs_dist2": {
+    "air_qual_stats": {
+      "type": "numeric",
+      "min": 0.385,
+      "max": 0.871,
+      "mean": 0.5546950592885376,
+      "std": 0.11587767566755595
+    },
+    "dist2_stats": {
+      "type": "numeric",
+      "min": 0.92,
+      "max": 11.93,
+      "mean": 3.628774703557312,
+      "std": 2.108580321193191
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.7697240003018329
+    }
+  },
+  "air_qual_vs_dist3": {
+    "air_qual_stats": {
+      "type": "numeric",
+      "min": 0.385,
+      "max": 0.871,
+      "mean": 0.5546950592885376,
+      "std": 0.11587767566755595
+    },
+    "dist3_stats": {
+      "type": "numeric",
+      "min": 1.15,
+      "max": 12.32,
+      "mean": 3.9606719367588936,
+      "std": 2.119797473766103
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.7691569994385954
+    }
+  },
+  "air_qual_vs_dist4": {
+    "air_qual_stats": {
+      "type": "numeric",
+      "min": 0.385,
+      "max": 0.871,
+      "mean": 0.5546950592885376,
+      "std": 0.11587767566755595
+    },
+    "dist4_stats": {
+      "type": "numeric",
+      "min": 0.73,
+      "max": 11.94,
+      "mean": 3.61897233201581,
+      "std": 2.0992029914310257
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.7648733442304533
+    }
+  },
+  "air_qual_vs_teachers": {
+    "air_qual_stats": {
+      "type": "numeric",
+      "min": 0.385,
+      "max": 0.871,
+      "mean": 0.5546950592885376,
+      "std": 0.11587767566755595
+    },
+    "teachers_stats": {
+      "type": "numeric",
+      "min": 18.0,
+      "max": 27.4,
+      "mean": 21.54446640316206,
+      "std": 2.1649455237144406
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.18893267711276696
+    }
+  },
+  "air_qual_vs_poor_prop": {
+    "air_qual_stats": {
+      "type": "numeric",
+      "min": 0.385,
+      "max": 0.871,
+      "mean": 0.5546950592885376,
+      "std": 0.11587767566755595
+    },
+    "poor_prop_stats": {
+      "type": "numeric",
+      "min": 1.73,
+      "max": 37.97,
+      "mean": 12.653063241106722,
+      "std": 7.141061511348571
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.5908789208808464
+    }
+  },
+  "air_qual_vs_airport": {
+    "air_qual_stats": {
+      "type": "numeric",
+      "min": 0.385,
+      "max": 0.871,
+      "mean": 0.5546950592885376,
+      "std": 0.11587767566755595
+    },
+    "airport_stats": {
+      "type": "categorical",
+      "unique_values": 2,
+      "value_distribution": {
+        "YES": 279,
+        "NO": 227
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "NO": 0.5641797356828194,
+          "YES": 0.5469781362007168
+        },
+        "std": {
+          "NO": 0.12362521341882575,
+          "YES": 0.10878529637457952
+        },
+        "count": {
+          "NO": 227,
+          "YES": 279
+        }
+      }
+    }
+  },
+  "air_qual_vs_n_hos_beds": {
+    "air_qual_stats": {
+      "type": "numeric",
+      "min": 0.385,
+      "max": 0.871,
+      "mean": 0.5546950592885376,
+      "std": 0.11587767566755595
+    },
+    "n_hos_beds_stats": {
+      "type": "numeric",
+      "min": 5.268,
+      "max": 10.876,
+      "mean": 7.899767068273092,
+      "std": 1.476682516142425
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.04995383856654867
+    }
+  },
+  "air_qual_vs_n_hot_rooms": {
+    "air_qual_stats": {
+      "type": "numeric",
+      "min": 0.385,
+      "max": 0.871,
+      "mean": 0.5546950592885376,
+      "std": 0.11587767566755595
+    },
+    "n_hot_rooms_stats": {
+      "type": "numeric",
+      "min": 10.0576,
+      "max": 101.12,
+      "mean": 13.041604743083003,
+      "std": 5.2389566328769686
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.004881587201006154
+    }
+  },
+  "air_qual_vs_waterbody": {
+    "air_qual_stats": {
+      "type": "numeric",
+      "min": 0.385,
+      "max": 0.871,
+      "mean": 0.5546950592885376,
+      "std": 0.11587767566755595
+    },
+    "waterbody_stats": {
+      "type": "categorical",
+      "unique_values": 4,
+      "value_distribution": {
+        "River": 183,
+        "Lake": 97,
+        "Lake and River": 71
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "Lake": 0.5436670103092783,
+          "Lake and River": 0.5586633802816902,
+          "River": 0.5488857923497268
+        },
+        "std": {
+          "Lake": 0.11008031511284683,
+          "Lake and River": 0.11019277684317826,
+          "River": 0.12187694260069418
+        },
+        "count": {
+          "Lake": 97,
+          "Lake and River": 71,
+          "River": 183
+        }
+      }
+    }
+  },
+  "air_qual_vs_rainfall": {
+    "air_qual_stats": {
+      "type": "numeric",
+      "min": 0.385,
+      "max": 0.871,
+      "mean": 0.5546950592885376,
+      "std": 0.11587767566755595
+    },
+    "rainfall_stats": {
+      "type": "numeric",
+      "min": 3.0,
+      "max": 60.0,
+      "mean": 39.18181818181818,
+      "std": 12.51369726587335
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.09210399412062241
+    }
+  },
+  "air_qual_vs_bus_ter": {
+    "air_qual_stats": {
+      "type": "numeric",
+      "min": 0.385,
+      "max": 0.871,
+      "mean": 0.5546950592885376,
+      "std": 0.11587767566755595
+    },
+    "bus_ter_stats": {
+      "type": "categorical",
+      "unique_values": 1,
+      "value_distribution": {
+        "YES": 506
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "YES": 0.5546950592885376
+        },
+        "std": {
+          "YES": 0.11587767566755584
+        },
+        "count": {
+          "YES": 506
+        }
+      }
+    }
+  },
+  "air_qual_vs_parks": {
+    "air_qual_stats": {
+      "type": "numeric",
+      "min": 0.385,
+      "max": 0.871,
+      "mean": 0.5546950592885376,
+      "std": 0.11587767566755595
+    },
+    "parks_stats": {
+      "type": "numeric",
+      "min": 0.033291762,
+      "max": 0.086711473,
+      "mean": 0.05445395839920949,
+      "std": 0.010632484889836286
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.9155436002325548
+    }
+  },
+  "room_num_vs_price": {
+    "room_num_stats": {
+      "type": "numeric",
+      "min": 3.561,
+      "max": 8.78,
+      "mean": 6.284634387351779,
+      "std": 0.7026171434153233
+    },
+    "price_stats": {
+      "type": "numeric",
+      "min": 5.0,
+      "max": 50.0,
+      "mean": 22.528853754940716,
+      "std": 9.18217588216678
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.6963037940825012
+    }
+  },
+  "room_num_vs_crime_rate": {
+    "room_num_stats": {
+      "type": "numeric",
+      "min": 3.561,
+      "max": 8.78,
+      "mean": 6.284634387351779,
+      "std": 0.7026171434153233
+    },
+    "crime_rate_stats": {
+      "type": "numeric",
+      "min": 0.00632,
+      "max": 88.9762,
+      "mean": 3.613523557312254,
+      "std": 8.60154510533249
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.21924670286251405
+    }
+  },
+  "room_num_vs_resid_area": {
+    "room_num_stats": {
+      "type": "numeric",
+      "min": 3.561,
+      "max": 8.78,
+      "mean": 6.284634387351779,
+      "std": 0.7026171434153233
+    },
+    "resid_area_stats": {
+      "type": "numeric",
+      "min": 30.46,
+      "max": 57.74,
+      "mean": 41.13677865612648,
+      "std": 6.860352940897585
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.3916758526568439
+    }
+  },
+  "room_num_vs_air_qual": {
+    "room_num_stats": {
+      "type": "numeric",
+      "min": 3.561,
+      "max": 8.78,
+      "mean": 6.284634387351779,
+      "std": 0.7026171434153233
+    },
+    "air_qual_stats": {
+      "type": "numeric",
+      "min": 0.385,
+      "max": 0.871,
+      "mean": 0.5546950592885376,
+      "std": 0.11587767566755595
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.30218818784959367
+    }
+  },
+  "room_num_vs_age": {
+    "room_num_stats": {
+      "type": "numeric",
+      "min": 3.561,
+      "max": 8.78,
+      "mean": 6.284634387351779,
+      "std": 0.7026171434153233
+    },
+    "age_stats": {
+      "type": "numeric",
+      "min": 2.9,
+      "max": 100.0,
+      "mean": 68.57490118577076,
+      "std": 28.148861406903617
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.2402649310477515
+    }
+  },
+  "room_num_vs_dist1": {
+    "room_num_stats": {
+      "type": "numeric",
+      "min": 3.561,
+      "max": 8.78,
+      "mean": 6.284634387351779,
+      "std": 0.7026171434153233
+    },
+    "dist1_stats": {
+      "type": "numeric",
+      "min": 1.13,
+      "max": 12.32,
+      "mean": 3.97199604743083,
+      "std": 2.1085321645858897
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.20846434463591704
+    }
+  },
+  "room_num_vs_dist2": {
+    "room_num_stats": {
+      "type": "numeric",
+      "min": 3.561,
+      "max": 8.78,
+      "mean": 6.284634387351779,
+      "std": 0.7026171434153233
+    },
+    "dist2_stats": {
+      "type": "numeric",
+      "min": 0.92,
+      "max": 11.93,
+      "mean": 3.628774703557312,
+      "std": 2.108580321193191
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.20398068699114277
+    }
+  },
+  "room_num_vs_dist3": {
+    "room_num_stats": {
+      "type": "numeric",
+      "min": 3.561,
+      "max": 8.78,
+      "mean": 6.284634387351779,
+      "std": 0.7026171434153233
+    },
+    "dist3_stats": {
+      "type": "numeric",
+      "min": 1.15,
+      "max": 12.32,
+      "mean": 3.9606719367588936,
+      "std": 2.119797473766103
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.20190700471694226
+    }
+  },
+  "room_num_vs_dist4": {
+    "room_num_stats": {
+      "type": "numeric",
+      "min": 3.561,
+      "max": 8.78,
+      "mean": 6.284634387351779,
+      "std": 0.7026171434153233
+    },
+    "dist4_stats": {
+      "type": "numeric",
+      "min": 0.73,
+      "max": 11.94,
+      "mean": 3.61897233201581,
+      "std": 2.0992029914310257
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.20539683482960977
+    }
+  },
+  "room_num_vs_teachers": {
+    "room_num_stats": {
+      "type": "numeric",
+      "min": 3.561,
+      "max": 8.78,
+      "mean": 6.284634387351779,
+      "std": 0.7026171434153233
+    },
+    "teachers_stats": {
+      "type": "numeric",
+      "min": 18.0,
+      "max": 27.4,
+      "mean": 21.54446640316206,
+      "std": 2.1649455237144406
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.35550149455908503
+    }
+  },
+  "room_num_vs_poor_prop": {
+    "room_num_stats": {
+      "type": "numeric",
+      "min": 3.561,
+      "max": 8.78,
+      "mean": 6.284634387351779,
+      "std": 0.7026171434153233
+    },
+    "poor_prop_stats": {
+      "type": "numeric",
+      "min": 1.73,
+      "max": 37.97,
+      "mean": 12.653063241106722,
+      "std": 7.141061511348571
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.6138082718663954
+    }
+  },
+  "room_num_vs_airport": {
+    "room_num_stats": {
+      "type": "numeric",
+      "min": 3.561,
+      "max": 8.78,
+      "mean": 6.284634387351779,
+      "std": 0.7026171434153233
+    },
+    "airport_stats": {
+      "type": "categorical",
+      "unique_values": 2,
+      "value_distribution": {
+        "YES": 279,
+        "NO": 227
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "NO": 6.157189427312775,
+          "YES": 6.388326164874552
+        },
+        "std": {
+          "NO": 0.6495655486643497,
+          "YES": 0.7278123110667157
+        },
+        "count": {
+          "NO": 227,
+          "YES": 279
+        }
+      }
+    }
+  },
+  "room_num_vs_n_hos_beds": {
+    "room_num_stats": {
+      "type": "numeric",
+      "min": 3.561,
+      "max": 8.78,
+      "mean": 6.284634387351779,
+      "std": 0.7026171434153233
+    },
+    "n_hos_beds_stats": {
+      "type": "numeric",
+      "min": 5.268,
+      "max": 10.876,
+      "mean": 7.899767068273092,
+      "std": 1.476682516142425
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.032207073133191204
+    }
+  },
+  "room_num_vs_n_hot_rooms": {
+    "room_num_stats": {
+      "type": "numeric",
+      "min": 3.561,
+      "max": 8.78,
+      "mean": 6.284634387351779,
+      "std": 0.7026171434153233
+    },
+    "n_hot_rooms_stats": {
+      "type": "numeric",
+      "min": 10.0576,
+      "max": 101.12,
+      "mean": 13.041604743083003,
+      "std": 5.2389566328769686
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.030673508951394823
+    }
+  },
+  "room_num_vs_waterbody": {
+    "room_num_stats": {
+      "type": "numeric",
+      "min": 3.561,
+      "max": 8.78,
+      "mean": 6.284634387351779,
+      "std": 0.7026171434153233
+    },
+    "waterbody_stats": {
+      "type": "categorical",
+      "unique_values": 4,
+      "value_distribution": {
+        "River": 183,
+        "Lake": 97,
+        "Lake and River": 71
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "Lake": 6.27858762886598,
+          "Lake and River": 6.302971830985916,
+          "River": 6.327765027322404
+        },
+        "std": {
+          "Lake": 0.7276079924510821,
+          "Lake and River": 0.6373981705077285,
+          "River": 0.7893677637593896
+        },
+        "count": {
+          "Lake": 97,
+          "Lake and River": 71,
+          "River": 183
+        }
+      }
+    }
+  },
+  "room_num_vs_rainfall": {
+    "room_num_stats": {
+      "type": "numeric",
+      "min": 3.561,
+      "max": 8.78,
+      "mean": 6.284634387351779,
+      "std": 0.7026171434153233
+    },
+    "rainfall_stats": {
+      "type": "numeric",
+      "min": 3.0,
+      "max": 60.0,
+      "mean": 39.18181818181818,
+      "std": 12.51369726587335
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.06469389670963026
+    }
+  },
+  "room_num_vs_bus_ter": {
+    "room_num_stats": {
+      "type": "numeric",
+      "min": 3.561,
+      "max": 8.78,
+      "mean": 6.284634387351779,
+      "std": 0.7026171434153233
+    },
+    "bus_ter_stats": {
+      "type": "categorical",
+      "unique_values": 1,
+      "value_distribution": {
+        "YES": 506
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "YES": 6.284634387351779
+        },
+        "std": {
+          "YES": 0.7026171434153232
+        },
+        "count": {
+          "YES": 506
+        }
+      }
+    }
+  },
+  "room_num_vs_parks": {
+    "room_num_stats": {
+      "type": "numeric",
+      "min": 3.561,
+      "max": 8.78,
+      "mean": 6.284634387351779,
+      "std": 0.7026171434153233
+    },
+    "parks_stats": {
+      "type": "numeric",
+      "min": 0.033291762,
+      "max": 0.086711473,
+      "mean": 0.05445395839920949,
+      "std": 0.010632484889836286
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.28281667360856916
+    }
+  },
+  "age_vs_price": {
+    "age_stats": {
+      "type": "numeric",
+      "min": 2.9,
+      "max": 100.0,
+      "mean": 68.57490118577076,
+      "std": 28.148861406903617
+    },
+    "price_stats": {
+      "type": "numeric",
+      "min": 5.0,
+      "max": 50.0,
+      "mean": 22.528853754940716,
+      "std": 9.18217588216678
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.3779988961423205
+    }
+  },
+  "age_vs_crime_rate": {
+    "age_stats": {
+      "type": "numeric",
+      "min": 2.9,
+      "max": 100.0,
+      "mean": 68.57490118577076,
+      "std": 28.148861406903617
+    },
+    "crime_rate_stats": {
+      "type": "numeric",
+      "min": 0.00632,
+      "max": 88.9762,
+      "mean": 3.613523557312254,
+      "std": 8.60154510533249
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.35273425090136373
+    }
+  },
+  "age_vs_resid_area": {
+    "age_stats": {
+      "type": "numeric",
+      "min": 2.9,
+      "max": 100.0,
+      "mean": 68.57490118577076,
+      "std": 28.148861406903617
+    },
+    "resid_area_stats": {
+      "type": "numeric",
+      "min": 30.46,
+      "max": 57.74,
+      "mean": 41.13677865612648,
+      "std": 6.860352940897585
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.6447785113552567
+    }
+  },
+  "age_vs_air_qual": {
+    "age_stats": {
+      "type": "numeric",
+      "min": 2.9,
+      "max": 100.0,
+      "mean": 68.57490118577076,
+      "std": 28.148861406903617
+    },
+    "air_qual_stats": {
+      "type": "numeric",
+      "min": 0.385,
+      "max": 0.871,
+      "mean": 0.5546950592885376,
+      "std": 0.11587767566755595
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.7314701037859591
+    }
+  },
+  "age_vs_room_num": {
+    "age_stats": {
+      "type": "numeric",
+      "min": 2.9,
+      "max": 100.0,
+      "mean": 68.57490118577076,
+      "std": 28.148861406903617
+    },
+    "room_num_stats": {
+      "type": "numeric",
+      "min": 3.561,
+      "max": 8.78,
+      "mean": 6.284634387351779,
+      "std": 0.7026171434153233
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.2402649310477515
+    }
+  },
+  "age_vs_dist1": {
+    "age_stats": {
+      "type": "numeric",
+      "min": 2.9,
+      "max": 100.0,
+      "mean": 68.57490118577076,
+      "std": 28.148861406903617
+    },
+    "dist1_stats": {
+      "type": "numeric",
+      "min": 1.13,
+      "max": 12.32,
+      "mean": 3.97199604743083,
+      "std": 2.1085321645858897
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.7469043080436498
+    }
+  },
+  "age_vs_dist2": {
+    "age_stats": {
+      "type": "numeric",
+      "min": 2.9,
+      "max": 100.0,
+      "mean": 68.57490118577076,
+      "std": 28.148861406903617
+    },
+    "dist2_stats": {
+      "type": "numeric",
+      "min": 0.92,
+      "max": 11.93,
+      "mean": 3.628774703557312,
+      "std": 2.108580321193191
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.7464931032591927
+    }
+  },
+  "age_vs_dist3": {
+    "age_stats": {
+      "type": "numeric",
+      "min": 2.9,
+      "max": 100.0,
+      "mean": 68.57490118577076,
+      "std": 28.148861406903617
+    },
+    "dist3_stats": {
+      "type": "numeric",
+      "min": 1.15,
+      "max": 12.32,
+      "mean": 3.9606719367588936,
+      "std": 2.119797473766103
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.7470207506485426
+    }
+  },
+  "age_vs_dist4": {
+    "age_stats": {
+      "type": "numeric",
+      "min": 2.9,
+      "max": 100.0,
+      "mean": 68.57490118577076,
+      "std": 28.148861406903617
+    },
+    "dist4_stats": {
+      "type": "numeric",
+      "min": 0.73,
+      "max": 11.94,
+      "mean": 3.61897233201581,
+      "std": 2.0992029914310257
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.7467066150676163
+    }
+  },
+  "age_vs_teachers": {
+    "age_stats": {
+      "type": "numeric",
+      "min": 2.9,
+      "max": 100.0,
+      "mean": 68.57490118577076,
+      "std": 28.148861406903617
+    },
+    "teachers_stats": {
+      "type": "numeric",
+      "min": 18.0,
+      "max": 27.4,
+      "mean": 21.54446640316206,
+      "std": 2.1649455237144406
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.26151501167195756
+    }
+  },
+  "age_vs_poor_prop": {
+    "age_stats": {
+      "type": "numeric",
+      "min": 2.9,
+      "max": 100.0,
+      "mean": 68.57490118577076,
+      "std": 28.148861406903617
+    },
+    "poor_prop_stats": {
+      "type": "numeric",
+      "min": 1.73,
+      "max": 37.97,
+      "mean": 12.653063241106722,
+      "std": 7.141061511348571
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.6023385287262402
+    }
+  },
+  "age_vs_airport": {
+    "age_stats": {
+      "type": "numeric",
+      "min": 2.9,
+      "max": 100.0,
+      "mean": 68.57490118577076,
+      "std": 28.148861406903617
+    },
+    "airport_stats": {
+      "type": "categorical",
+      "unique_values": 2,
+      "value_distribution": {
+        "YES": 279,
+        "NO": 227
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "NO": 68.415859030837,
+          "YES": 68.70430107526882
+        },
+        "std": {
+          "NO": 28.94082786116828,
+          "YES": 27.539338432328456
+        },
+        "count": {
+          "NO": 227,
+          "YES": 279
+        }
+      }
+    }
+  },
+  "age_vs_n_hos_beds": {
+    "age_stats": {
+      "type": "numeric",
+      "min": 2.9,
+      "max": 100.0,
+      "mean": 68.57490118577076,
+      "std": 28.148861406903617
+    },
+    "n_hos_beds_stats": {
+      "type": "numeric",
+      "min": 5.268,
+      "max": 10.876,
+      "mean": 7.899767068273092,
+      "std": 1.476682516142425
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.02110168119693127
+    }
+  },
+  "age_vs_n_hot_rooms": {
+    "age_stats": {
+      "type": "numeric",
+      "min": 2.9,
+      "max": 100.0,
+      "mean": 68.57490118577076,
+      "std": 28.148861406903617
+    },
+    "n_hot_rooms_stats": {
+      "type": "numeric",
+      "min": 10.0576,
+      "max": 101.12,
+      "mean": 13.041604743083003,
+      "std": 5.2389566328769686
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.009379579323664438
+    }
+  },
+  "age_vs_waterbody": {
+    "age_stats": {
+      "type": "numeric",
+      "min": 2.9,
+      "max": 100.0,
+      "mean": 68.57490118577076,
+      "std": 28.148861406903617
+    },
+    "waterbody_stats": {
+      "type": "categorical",
+      "unique_values": 4,
+      "value_distribution": {
+        "River": 183,
+        "Lake": 97,
+        "Lake and River": 71
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "Lake": 68.77422680412371,
+          "Lake and River": 68.2718309859155,
+          "River": 65.26448087431694
+        },
+        "std": {
+          "Lake": 28.111886862850227,
+          "Lake and River": 28.361660152388787,
+          "River": 29.250299061651678
+        },
+        "count": {
+          "Lake": 97,
+          "Lake and River": 71,
+          "River": 183
+        }
+      }
+    }
+  },
+  "age_vs_rainfall": {
+    "age_stats": {
+      "type": "numeric",
+      "min": 2.9,
+      "max": 100.0,
+      "mean": 68.57490118577076,
+      "std": 28.148861406903617
+    },
+    "rainfall_stats": {
+      "type": "numeric",
+      "min": 3.0,
+      "max": 60.0,
+      "mean": 39.18181818181818,
+      "std": 12.51369726587335
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.07519776518835584
+    }
+  },
+  "age_vs_bus_ter": {
+    "age_stats": {
+      "type": "numeric",
+      "min": 2.9,
+      "max": 100.0,
+      "mean": 68.57490118577076,
+      "std": 28.148861406903617
+    },
+    "bus_ter_stats": {
+      "type": "categorical",
+      "unique_values": 1,
+      "value_distribution": {
+        "YES": 506
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "YES": 68.57490118577076
+        },
+        "std": {
+          "YES": 28.148861406903595
+        },
+        "count": {
+          "YES": 506
+        }
+      }
+    }
+  },
+  "age_vs_parks": {
+    "age_stats": {
+      "type": "numeric",
+      "min": 2.9,
+      "max": 100.0,
+      "mean": 68.57490118577076,
+      "std": 28.148861406903617
+    },
+    "parks_stats": {
+      "type": "numeric",
+      "min": 0.033291762,
+      "max": 0.086711473,
+      "mean": 0.05445395839920949,
+      "std": 0.010632484889836286
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.6738503598393933
+    }
+  },
+  "dist1_vs_price": {
+    "dist1_stats": {
+      "type": "numeric",
+      "min": 1.13,
+      "max": 12.32,
+      "mean": 3.97199604743083,
+      "std": 2.1085321645858897
+    },
+    "price_stats": {
+      "type": "numeric",
+      "min": 5.0,
+      "max": 50.0,
+      "mean": 22.528853754940716,
+      "std": 9.18217588216678
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.25135493646439205
+    }
+  },
+  "dist1_vs_crime_rate": {
+    "dist1_stats": {
+      "type": "numeric",
+      "min": 1.13,
+      "max": 12.32,
+      "mean": 3.97199604743083,
+      "std": 2.1085321645858897
+    },
+    "crime_rate_stats": {
+      "type": "numeric",
+      "min": 0.00632,
+      "max": 88.9762,
+      "mean": 3.613523557312254,
+      "std": 8.60154510533249
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.3800502431963089
+    }
+  },
+  "dist1_vs_resid_area": {
+    "dist1_stats": {
+      "type": "numeric",
+      "min": 1.13,
+      "max": 12.32,
+      "mean": 3.97199604743083,
+      "std": 2.1085321645858897
+    },
+    "resid_area_stats": {
+      "type": "numeric",
+      "min": 30.46,
+      "max": 57.74,
+      "mean": 41.13677865612648,
+      "std": 6.860352940897585
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.7064813314834633
+    }
+  },
+  "dist1_vs_air_qual": {
+    "dist1_stats": {
+      "type": "numeric",
+      "min": 1.13,
+      "max": 12.32,
+      "mean": 3.97199604743083,
+      "std": 2.1085321645858897
+    },
+    "air_qual_stats": {
+      "type": "numeric",
+      "min": 0.385,
+      "max": 0.871,
+      "mean": 0.5546950592885376,
+      "std": 0.11587767566755595
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.7685890160421096
+    }
+  },
+  "dist1_vs_room_num": {
+    "dist1_stats": {
+      "type": "numeric",
+      "min": 1.13,
+      "max": 12.32,
+      "mean": 3.97199604743083,
+      "std": 2.1085321645858897
+    },
+    "room_num_stats": {
+      "type": "numeric",
+      "min": 3.561,
+      "max": 8.78,
+      "mean": 6.284634387351779,
+      "std": 0.7026171434153233
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.20846434463591704
+    }
+  },
+  "dist1_vs_age": {
+    "dist1_stats": {
+      "type": "numeric",
+      "min": 1.13,
+      "max": 12.32,
+      "mean": 3.97199604743083,
+      "std": 2.1085321645858897
+    },
+    "age_stats": {
+      "type": "numeric",
+      "min": 2.9,
+      "max": 100.0,
+      "mean": 68.57490118577076,
+      "std": 28.148861406903617
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.7469043080436498
+    }
+  },
+  "dist1_vs_dist2": {
+    "dist1_stats": {
+      "type": "numeric",
+      "min": 1.13,
+      "max": 12.32,
+      "mean": 3.97199604743083,
+      "std": 2.1085321645858897
+    },
+    "dist2_stats": {
+      "type": "numeric",
+      "min": 0.92,
+      "max": 11.93,
+      "mean": 3.628774703557312,
+      "std": 2.108580321193191
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.9979045291389064
+    }
+  },
+  "dist1_vs_dist3": {
+    "dist1_stats": {
+      "type": "numeric",
+      "min": 1.13,
+      "max": 12.32,
+      "mean": 3.97199604743083,
+      "std": 2.1085321645858897
+    },
+    "dist3_stats": {
+      "type": "numeric",
+      "min": 1.15,
+      "max": 12.32,
+      "mean": 3.9606719367588936,
+      "std": 2.119797473766103
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.9977345338492483
+    }
+  },
+  "dist1_vs_dist4": {
+    "dist1_stats": {
+      "type": "numeric",
+      "min": 1.13,
+      "max": 12.32,
+      "mean": 3.97199604743083,
+      "std": 2.1085321645858897
+    },
+    "dist4_stats": {
+      "type": "numeric",
+      "min": 0.73,
+      "max": 11.94,
+      "mean": 3.61897233201581,
+      "std": 2.0992029914310257
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.9940732076094668
+    }
+  },
+  "dist1_vs_teachers": {
+    "dist1_stats": {
+      "type": "numeric",
+      "min": 1.13,
+      "max": 12.32,
+      "mean": 3.97199604743083,
+      "std": 2.1085321645858897
+    },
+    "teachers_stats": {
+      "type": "numeric",
+      "min": 18.0,
+      "max": 27.4,
+      "mean": 21.54446640316206,
+      "std": 2.1649455237144406
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.23283436008501596
+    }
+  },
+  "dist1_vs_poor_prop": {
+    "dist1_stats": {
+      "type": "numeric",
+      "min": 1.13,
+      "max": 12.32,
+      "mean": 3.97199604743083,
+      "std": 2.1085321645858897
+    },
+    "poor_prop_stats": {
+      "type": "numeric",
+      "min": 1.73,
+      "max": 37.97,
+      "mean": 12.653063241106722,
+      "std": 7.141061511348571
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.49882311526473566
+    }
+  },
+  "dist1_vs_airport": {
+    "dist1_stats": {
+      "type": "numeric",
+      "min": 1.13,
+      "max": 12.32,
+      "mean": 3.97199604743083,
+      "std": 2.1085321645858897
+    },
+    "airport_stats": {
+      "type": "categorical",
+      "unique_values": 2,
+      "value_distribution": {
+        "YES": 279,
+        "NO": 227
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "NO": 3.913127753303965,
+          "YES": 4.019892473118279
+        },
+        "std": {
+          "NO": 2.079402015062034,
+          "YES": 2.134465795697063
+        },
+        "count": {
+          "NO": 227,
+          "YES": 279
+        }
+      }
+    }
+  },
+  "dist1_vs_n_hos_beds": {
+    "dist1_stats": {
+      "type": "numeric",
+      "min": 1.13,
+      "max": 12.32,
+      "mean": 3.97199604743083,
+      "std": 2.1085321645858897
+    },
+    "n_hos_beds_stats": {
+      "type": "numeric",
+      "min": 5.268,
+      "max": 10.876,
+      "mean": 7.899767068273092,
+      "std": 1.476682516142425
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.03054987287815326
+    }
+  },
+  "dist1_vs_n_hot_rooms": {
+    "dist1_stats": {
+      "type": "numeric",
+      "min": 1.13,
+      "max": 12.32,
+      "mean": 3.97199604743083,
+      "std": 2.1085321645858897
+    },
+    "n_hot_rooms_stats": {
+      "type": "numeric",
+      "min": 10.0576,
+      "max": 101.12,
+      "mean": 13.041604743083003,
+      "std": 5.2389566328769686
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.014462834687158725
+    }
+  },
+  "dist1_vs_waterbody": {
+    "dist1_stats": {
+      "type": "numeric",
+      "min": 1.13,
+      "max": 12.32,
+      "mean": 3.97199604743083,
+      "std": 2.1085321645858897
+    },
+    "waterbody_stats": {
+      "type": "categorical",
+      "unique_values": 4,
+      "value_distribution": {
+        "River": 183,
+        "Lake": 97,
+        "Lake and River": 71
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "Lake": 4.124123711340206,
+          "Lake and River": 3.8508450704225354,
+          "River": 4.0580874316939894
+        },
+        "std": {
+          "Lake": 2.211011623941121,
+          "Lake and River": 1.9726760261698708,
+          "River": 2.1203400497042053
+        },
+        "count": {
+          "Lake": 97,
+          "Lake and River": 71,
+          "River": 183
+        }
+      }
+    }
+  },
+  "dist1_vs_rainfall": {
+    "dist1_stats": {
+      "type": "numeric",
+      "min": 1.13,
+      "max": 12.32,
+      "mean": 3.97199604743083,
+      "std": 2.1085321645858897
+    },
+    "rainfall_stats": {
+      "type": "numeric",
+      "min": 3.0,
+      "max": 60.0,
+      "mean": 39.18181818181818,
+      "std": 12.51369726587335
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.03679436292439464
+    }
+  },
+  "dist1_vs_bus_ter": {
+    "dist1_stats": {
+      "type": "numeric",
+      "min": 1.13,
+      "max": 12.32,
+      "mean": 3.97199604743083,
+      "std": 2.1085321645858897
+    },
+    "bus_ter_stats": {
+      "type": "categorical",
+      "unique_values": 1,
+      "value_distribution": {
+        "YES": 506
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "YES": 3.97199604743083
+        },
+        "std": {
+          "YES": 2.1085321645858897
+        },
+        "count": {
+          "YES": 506
+        }
+      }
+    }
+  },
+  "dist1_vs_parks": {
+    "dist1_stats": {
+      "type": "numeric",
+      "min": 1.13,
+      "max": 12.32,
+      "mean": 3.97199604743083,
+      "std": 2.1085321645858897
+    },
+    "parks_stats": {
+      "type": "numeric",
+      "min": 0.033291762,
+      "max": 0.086711473,
+      "mean": 0.05445395839920949,
+      "std": 0.010632484889836286
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.706319332169252
+    }
+  },
+  "dist2_vs_price": {
+    "dist2_stats": {
+      "type": "numeric",
+      "min": 0.92,
+      "max": 11.93,
+      "mean": 3.628774703557312,
+      "std": 2.108580321193191
+    },
+    "price_stats": {
+      "type": "numeric",
+      "min": 5.0,
+      "max": 50.0,
+      "mean": 22.528853754940716,
+      "std": 9.18217588216678
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.24945944928218902
+    }
+  },
+  "dist2_vs_crime_rate": {
+    "dist2_stats": {
+      "type": "numeric",
+      "min": 0.92,
+      "max": 11.93,
+      "mean": 3.628774703557312,
+      "std": 2.108580321193191
+    },
+    "crime_rate_stats": {
+      "type": "numeric",
+      "min": 0.00632,
+      "max": 88.9762,
+      "mean": 3.613523557312254,
+      "std": 8.60154510533249
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.3798132878962556
+    }
+  },
+  "dist2_vs_resid_area": {
+    "dist2_stats": {
+      "type": "numeric",
+      "min": 0.92,
+      "max": 11.93,
+      "mean": 3.628774703557312,
+      "std": 2.108580321193191
+    },
+    "resid_area_stats": {
+      "type": "numeric",
+      "min": 30.46,
+      "max": 57.74,
+      "mean": 41.13677865612648,
+      "std": 6.860352940897585
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.7079564568090415
+    }
+  },
+  "dist2_vs_air_qual": {
+    "dist2_stats": {
+      "type": "numeric",
+      "min": 0.92,
+      "max": 11.93,
+      "mean": 3.628774703557312,
+      "std": 2.108580321193191
+    },
+    "air_qual_stats": {
+      "type": "numeric",
+      "min": 0.385,
+      "max": 0.871,
+      "mean": 0.5546950592885376,
+      "std": 0.11587767566755595
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.7697240003018329
+    }
+  },
+  "dist2_vs_room_num": {
+    "dist2_stats": {
+      "type": "numeric",
+      "min": 0.92,
+      "max": 11.93,
+      "mean": 3.628774703557312,
+      "std": 2.108580321193191
+    },
+    "room_num_stats": {
+      "type": "numeric",
+      "min": 3.561,
+      "max": 8.78,
+      "mean": 6.284634387351779,
+      "std": 0.7026171434153233
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.2039806869911428
+    }
+  },
+  "dist2_vs_age": {
+    "dist2_stats": {
+      "type": "numeric",
+      "min": 0.92,
+      "max": 11.93,
+      "mean": 3.628774703557312,
+      "std": 2.108580321193191
+    },
+    "age_stats": {
+      "type": "numeric",
+      "min": 2.9,
+      "max": 100.0,
+      "mean": 68.57490118577076,
+      "std": 28.148861406903617
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.7464931032591927
+    }
+  },
+  "dist2_vs_dist1": {
+    "dist2_stats": {
+      "type": "numeric",
+      "min": 0.92,
+      "max": 11.93,
+      "mean": 3.628774703557312,
+      "std": 2.108580321193191
+    },
+    "dist1_stats": {
+      "type": "numeric",
+      "min": 1.13,
+      "max": 12.32,
+      "mean": 3.97199604743083,
+      "std": 2.1085321645858897
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.9979045291389066
+    }
+  },
+  "dist2_vs_dist3": {
+    "dist2_stats": {
+      "type": "numeric",
+      "min": 0.92,
+      "max": 11.93,
+      "mean": 3.628774703557312,
+      "std": 2.108580321193191
+    },
+    "dist3_stats": {
+      "type": "numeric",
+      "min": 1.15,
+      "max": 12.32,
+      "mean": 3.9606719367588936,
+      "std": 2.119797473766103
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.9980968187510867
+    }
+  },
+  "dist2_vs_dist4": {
+    "dist2_stats": {
+      "type": "numeric",
+      "min": 0.92,
+      "max": 11.93,
+      "mean": 3.628774703557312,
+      "std": 2.108580321193191
+    },
+    "dist4_stats": {
+      "type": "numeric",
+      "min": 0.73,
+      "max": 11.94,
+      "mean": 3.61897233201581,
+      "std": 2.0992029914310257
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.9940026026890899
+    }
+  },
+  "dist2_vs_teachers": {
+    "dist2_stats": {
+      "type": "numeric",
+      "min": 0.92,
+      "max": 11.93,
+      "mean": 3.628774703557312,
+      "std": 2.108580321193191
+    },
+    "teachers_stats": {
+      "type": "numeric",
+      "min": 18.0,
+      "max": 27.4,
+      "mean": 21.54446640316206,
+      "std": 2.1649455237144406
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.23370679177036752
+    }
+  },
+  "dist2_vs_poor_prop": {
+    "dist2_stats": {
+      "type": "numeric",
+      "min": 0.92,
+      "max": 11.93,
+      "mean": 3.628774703557312,
+      "std": 2.108580321193191
+    },
+    "poor_prop_stats": {
+      "type": "numeric",
+      "min": 1.73,
+      "max": 37.97,
+      "mean": 12.653063241106722,
+      "std": 7.141061511348571
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.4956926049350814
+    }
+  },
+  "dist2_vs_airport": {
+    "dist2_stats": {
+      "type": "numeric",
+      "min": 0.92,
+      "max": 11.93,
+      "mean": 3.628774703557312,
+      "std": 2.108580321193191
+    },
+    "airport_stats": {
+      "type": "categorical",
+      "unique_values": 2,
+      "value_distribution": {
+        "YES": 279,
+        "NO": 227
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "NO": 3.5819383259911897,
+          "YES": 3.666881720430107
+        },
+        "std": {
+          "NO": 2.0888815942421344,
+          "YES": 2.127457180369313
+        },
+        "count": {
+          "NO": 227,
+          "YES": 279
+        }
+      }
+    }
+  },
+  "dist2_vs_n_hos_beds": {
+    "dist2_stats": {
+      "type": "numeric",
+      "min": 0.92,
+      "max": 11.93,
+      "mean": 3.628774703557312,
+      "std": 2.108580321193191
+    },
+    "n_hos_beds_stats": {
+      "type": "numeric",
+      "min": 5.268,
+      "max": 10.876,
+      "mean": 7.899767068273092,
+      "std": 1.476682516142425
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.031248330349607452
+    }
+  },
+  "dist2_vs_n_hot_rooms": {
+    "dist2_stats": {
+      "type": "numeric",
+      "min": 0.92,
+      "max": 11.93,
+      "mean": 3.628774703557312,
+      "std": 2.108580321193191
+    },
+    "n_hot_rooms_stats": {
+      "type": "numeric",
+      "min": 10.0576,
+      "max": 101.12,
+      "mean": 13.041604743083003,
+      "std": 5.2389566328769686
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.010239197525040553
+    }
+  },
+  "dist2_vs_waterbody": {
+    "dist2_stats": {
+      "type": "numeric",
+      "min": 0.92,
+      "max": 11.93,
+      "mean": 3.628774703557312,
+      "std": 2.108580321193191
+    },
+    "waterbody_stats": {
+      "type": "categorical",
+      "unique_values": 4,
+      "value_distribution": {
+        "River": 183,
+        "Lake": 97,
+        "Lake and River": 71
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "Lake": 3.797319587628866,
+          "Lake and River": 3.503098591549296,
+          "River": 3.7143169398907103
+        },
+        "std": {
+          "Lake": 2.2215645366610057,
+          "Lake and River": 1.9666829155054064,
+          "River": 2.119762698746532
+        },
+        "count": {
+          "Lake": 97,
+          "Lake and River": 71,
+          "River": 183
+        }
+      }
+    }
+  },
+  "dist2_vs_rainfall": {
+    "dist2_stats": {
+      "type": "numeric",
+      "min": 0.92,
+      "max": 11.93,
+      "mean": 3.628774703557312,
+      "std": 2.108580321193191
+    },
+    "rainfall_stats": {
+      "type": "numeric",
+      "min": 3.0,
+      "max": 60.0,
+      "mean": 39.18181818181818,
+      "std": 12.51369726587335
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.038005052662575145
+    }
+  },
+  "dist2_vs_bus_ter": {
+    "dist2_stats": {
+      "type": "numeric",
+      "min": 0.92,
+      "max": 11.93,
+      "mean": 3.628774703557312,
+      "std": 2.108580321193191
+    },
+    "bus_ter_stats": {
+      "type": "categorical",
+      "unique_values": 1,
+      "value_distribution": {
+        "YES": 506
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "YES": 3.6287747035573124
+        },
+        "std": {
+          "YES": 2.1085803211931915
+        },
+        "count": {
+          "YES": 506
+        }
+      }
+    }
+  },
+  "dist2_vs_parks": {
+    "dist2_stats": {
+      "type": "numeric",
+      "min": 0.92,
+      "max": 11.93,
+      "mean": 3.628774703557312,
+      "std": 2.108580321193191
+    },
+    "parks_stats": {
+      "type": "numeric",
+      "min": 0.033291762,
+      "max": 0.086711473,
+      "mean": 0.05445395839920949,
+      "std": 0.010632484889836286
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.7082372836320058
+    }
+  },
+  "dist3_vs_price": {
+    "dist3_stats": {
+      "type": "numeric",
+      "min": 1.15,
+      "max": 12.32,
+      "mean": 3.9606719367588936,
+      "std": 2.119797473766103
+    },
+    "price_stats": {
+      "type": "numeric",
+      "min": 5.0,
+      "max": 50.0,
+      "mean": 22.528853754940716,
+      "std": 9.18217588216678
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.2466500420092509
+    }
+  },
+  "dist3_vs_crime_rate": {
+    "dist3_stats": {
+      "type": "numeric",
+      "min": 1.15,
+      "max": 12.32,
+      "mean": 3.9606719367588936,
+      "std": 2.119797473766103
+    },
+    "crime_rate_stats": {
+      "type": "numeric",
+      "min": 0.00632,
+      "max": 88.9762,
+      "mean": 3.613523557312254,
+      "std": 8.60154510533249
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.3800689044752707
+    }
+  },
+  "dist3_vs_resid_area": {
+    "dist3_stats": {
+      "type": "numeric",
+      "min": 1.15,
+      "max": 12.32,
+      "mean": 3.9606719367588936,
+      "std": 2.119797473766103
+    },
+    "resid_area_stats": {
+      "type": "numeric",
+      "min": 30.46,
+      "max": 57.74,
+      "mean": 41.13677865612648,
+      "std": 6.860352940897585
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.7075663556811107
+    }
+  },
+  "dist3_vs_air_qual": {
+    "dist3_stats": {
+      "type": "numeric",
+      "min": 1.15,
+      "max": 12.32,
+      "mean": 3.9606719367588936,
+      "std": 2.119797473766103
+    },
+    "air_qual_stats": {
+      "type": "numeric",
+      "min": 0.385,
+      "max": 0.871,
+      "mean": 0.5546950592885376,
+      "std": 0.11587767566755595
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.7691569994385953
+    }
+  },
+  "dist3_vs_room_num": {
+    "dist3_stats": {
+      "type": "numeric",
+      "min": 1.15,
+      "max": 12.32,
+      "mean": 3.9606719367588936,
+      "std": 2.119797473766103
+    },
+    "room_num_stats": {
+      "type": "numeric",
+      "min": 3.561,
+      "max": 8.78,
+      "mean": 6.284634387351779,
+      "std": 0.7026171434153233
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.20190700471694226
+    }
+  },
+  "dist3_vs_age": {
+    "dist3_stats": {
+      "type": "numeric",
+      "min": 1.15,
+      "max": 12.32,
+      "mean": 3.9606719367588936,
+      "std": 2.119797473766103
+    },
+    "age_stats": {
+      "type": "numeric",
+      "min": 2.9,
+      "max": 100.0,
+      "mean": 68.57490118577076,
+      "std": 28.148861406903617
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.7470207506485427
+    }
+  },
+  "dist3_vs_dist1": {
+    "dist3_stats": {
+      "type": "numeric",
+      "min": 1.15,
+      "max": 12.32,
+      "mean": 3.9606719367588936,
+      "std": 2.119797473766103
+    },
+    "dist1_stats": {
+      "type": "numeric",
+      "min": 1.13,
+      "max": 12.32,
+      "mean": 3.97199604743083,
+      "std": 2.1085321645858897
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.9977345338492484
+    }
+  },
+  "dist3_vs_dist2": {
+    "dist3_stats": {
+      "type": "numeric",
+      "min": 1.15,
+      "max": 12.32,
+      "mean": 3.9606719367588936,
+      "std": 2.119797473766103
+    },
+    "dist2_stats": {
+      "type": "numeric",
+      "min": 0.92,
+      "max": 11.93,
+      "mean": 3.628774703557312,
+      "std": 2.108580321193191
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.9980968187510867
+    }
+  },
+  "dist3_vs_dist4": {
+    "dist3_stats": {
+      "type": "numeric",
+      "min": 1.15,
+      "max": 12.32,
+      "mean": 3.9606719367588936,
+      "std": 2.119797473766103
+    },
+    "dist4_stats": {
+      "type": "numeric",
+      "min": 0.73,
+      "max": 11.94,
+      "mean": 3.61897233201581,
+      "std": 2.0992029914310257
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.9941255239804743
+    }
+  },
+  "dist3_vs_teachers": {
+    "dist3_stats": {
+      "type": "numeric",
+      "min": 1.15,
+      "max": 12.32,
+      "mean": 3.9606719367588936,
+      "std": 2.119797473766103
+    },
+    "teachers_stats": {
+      "type": "numeric",
+      "min": 18.0,
+      "max": 27.4,
+      "mean": 21.54446640316206,
+      "std": 2.1649455237144406
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.23358822177993263
+    }
+  },
+  "dist3_vs_poor_prop": {
+    "dist3_stats": {
+      "type": "numeric",
+      "min": 1.15,
+      "max": 12.32,
+      "mean": 3.9606719367588936,
+      "std": 2.119797473766103
+    },
+    "poor_prop_stats": {
+      "type": "numeric",
+      "min": 1.73,
+      "max": 37.97,
+      "mean": 12.653063241106722,
+      "std": 7.141061511348571
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.49429043582149806
+    }
+  },
+  "dist3_vs_airport": {
+    "dist3_stats": {
+      "type": "numeric",
+      "min": 1.15,
+      "max": 12.32,
+      "mean": 3.9606719367588936,
+      "std": 2.119797473766103
+    },
+    "airport_stats": {
+      "type": "categorical",
+      "unique_values": 2,
+      "value_distribution": {
+        "YES": 279,
+        "NO": 227
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "NO": 3.9132599118942735,
+          "YES": 3.999247311827957
+        },
+        "std": {
+          "NO": 2.1014508132817364,
+          "YES": 2.1376004683658394
+        },
+        "count": {
+          "NO": 227,
+          "YES": 279
+        }
+      }
+    }
+  },
+  "dist3_vs_n_hos_beds": {
+    "dist3_stats": {
+      "type": "numeric",
+      "min": 1.15,
+      "max": 12.32,
+      "mean": 3.9606719367588936,
+      "std": 2.119797473766103
+    },
+    "n_hos_beds_stats": {
+      "type": "numeric",
+      "min": 5.268,
+      "max": 10.876,
+      "mean": 7.899767068273092,
+      "std": 1.476682516142425
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.028471123327907976
+    }
+  },
+  "dist3_vs_n_hot_rooms": {
+    "dist3_stats": {
+      "type": "numeric",
+      "min": 1.15,
+      "max": 12.32,
+      "mean": 3.9606719367588936,
+      "std": 2.119797473766103
+    },
+    "n_hot_rooms_stats": {
+      "type": "numeric",
+      "min": 10.0576,
+      "max": 101.12,
+      "mean": 13.041604743083003,
+      "std": 5.2389566328769686
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.01007677955216913
+    }
+  },
+  "dist3_vs_waterbody": {
+    "dist3_stats": {
+      "type": "numeric",
+      "min": 1.15,
+      "max": 12.32,
+      "mean": 3.9606719367588936,
+      "std": 2.119797473766103
+    },
+    "waterbody_stats": {
+      "type": "categorical",
+      "unique_values": 4,
+      "value_distribution": {
+        "River": 183,
+        "Lake": 97,
+        "Lake and River": 71
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "Lake": 4.10639175257732,
+          "Lake and River": 3.8395774647887326,
+          "River": 4.055300546448088
+        },
+        "std": {
+          "Lake": 2.2205593259202216,
+          "Lake and River": 1.992319134375614,
+          "River": 2.1220397072311417
+        },
+        "count": {
+          "Lake": 97,
+          "Lake and River": 71,
+          "River": 183
+        }
+      }
+    }
+  },
+  "dist3_vs_rainfall": {
+    "dist3_stats": {
+      "type": "numeric",
+      "min": 1.15,
+      "max": 12.32,
+      "mean": 3.9606719367588936,
+      "std": 2.119797473766103
+    },
+    "rainfall_stats": {
+      "type": "numeric",
+      "min": 3.0,
+      "max": 60.0,
+      "mean": 39.18181818181818,
+      "std": 12.51369726587335
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.041469588697837005
+    }
+  },
+  "dist3_vs_bus_ter": {
+    "dist3_stats": {
+      "type": "numeric",
+      "min": 1.15,
+      "max": 12.32,
+      "mean": 3.9606719367588936,
+      "std": 2.119797473766103
+    },
+    "bus_ter_stats": {
+      "type": "categorical",
+      "unique_values": 1,
+      "value_distribution": {
+        "YES": 506
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "YES": 3.960671936758893
+        },
+        "std": {
+          "YES": 2.119797473766104
+        },
+        "count": {
+          "YES": 506
+        }
+      }
+    }
+  },
+  "dist3_vs_parks": {
+    "dist3_stats": {
+      "type": "numeric",
+      "min": 1.15,
+      "max": 12.32,
+      "mean": 3.9606719367588936,
+      "std": 2.119797473766103
+    },
+    "parks_stats": {
+      "type": "numeric",
+      "min": 0.033291762,
+      "max": 0.086711473,
+      "mean": 0.05445395839920949,
+      "std": 0.010632484889836286
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.709345664110098
+    }
+  },
+  "dist4_vs_price": {
+    "dist4_stats": {
+      "type": "numeric",
+      "min": 0.73,
+      "max": 11.94,
+      "mean": 3.61897233201581,
+      "std": 2.0992029914310257
+    },
+    "price_stats": {
+      "type": "numeric",
+      "min": 5.0,
+      "max": 50.0,
+      "mean": 22.528853754940716,
+      "std": 9.18217588216678
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.24820018064236485
+    }
+  },
+  "dist4_vs_crime_rate": {
+    "dist4_stats": {
+      "type": "numeric",
+      "min": 0.73,
+      "max": 11.94,
+      "mean": 3.61897233201581,
+      "std": 2.0992029914310257
+    },
+    "crime_rate_stats": {
+      "type": "numeric",
+      "min": 0.00632,
+      "max": 88.9762,
+      "mean": 3.613523557312254,
+      "std": 8.60154510533249
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.3764616735682768
+    }
+  },
+  "dist4_vs_resid_area": {
+    "dist4_stats": {
+      "type": "numeric",
+      "min": 0.73,
+      "max": 11.94,
+      "mean": 3.61897233201581,
+      "std": 2.0992029914310257
+    },
+    "resid_area_stats": {
+      "type": "numeric",
+      "min": 30.46,
+      "max": 57.74,
+      "mean": 41.13677865612648,
+      "std": 6.860352940897585
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.7058188779753793
+    }
+  },
+  "dist4_vs_air_qual": {
+    "dist4_stats": {
+      "type": "numeric",
+      "min": 0.73,
+      "max": 11.94,
+      "mean": 3.61897233201581,
+      "std": 2.0992029914310257
+    },
+    "air_qual_stats": {
+      "type": "numeric",
+      "min": 0.385,
+      "max": 0.871,
+      "mean": 0.5546950592885376,
+      "std": 0.11587767566755595
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.7648733442304533
+    }
+  },
+  "dist4_vs_room_num": {
+    "dist4_stats": {
+      "type": "numeric",
+      "min": 0.73,
+      "max": 11.94,
+      "mean": 3.61897233201581,
+      "std": 2.0992029914310257
+    },
+    "room_num_stats": {
+      "type": "numeric",
+      "min": 3.561,
+      "max": 8.78,
+      "mean": 6.284634387351779,
+      "std": 0.7026171434153233
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.20539683482960977
+    }
+  },
+  "dist4_vs_age": {
+    "dist4_stats": {
+      "type": "numeric",
+      "min": 0.73,
+      "max": 11.94,
+      "mean": 3.61897233201581,
+      "std": 2.0992029914310257
+    },
+    "age_stats": {
+      "type": "numeric",
+      "min": 2.9,
+      "max": 100.0,
+      "mean": 68.57490118577076,
+      "std": 28.148861406903617
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.7467066150676164
+    }
+  },
+  "dist4_vs_dist1": {
+    "dist4_stats": {
+      "type": "numeric",
+      "min": 0.73,
+      "max": 11.94,
+      "mean": 3.61897233201581,
+      "std": 2.0992029914310257
+    },
+    "dist1_stats": {
+      "type": "numeric",
+      "min": 1.13,
+      "max": 12.32,
+      "mean": 3.97199604743083,
+      "std": 2.1085321645858897
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.9940732076094669
+    }
+  },
+  "dist4_vs_dist2": {
+    "dist4_stats": {
+      "type": "numeric",
+      "min": 0.73,
+      "max": 11.94,
+      "mean": 3.61897233201581,
+      "std": 2.0992029914310257
+    },
+    "dist2_stats": {
+      "type": "numeric",
+      "min": 0.92,
+      "max": 11.93,
+      "mean": 3.628774703557312,
+      "std": 2.108580321193191
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.9940026026890899
+    }
+  },
+  "dist4_vs_dist3": {
+    "dist4_stats": {
+      "type": "numeric",
+      "min": 0.73,
+      "max": 11.94,
+      "mean": 3.61897233201581,
+      "std": 2.0992029914310257
+    },
+    "dist3_stats": {
+      "type": "numeric",
+      "min": 1.15,
+      "max": 12.32,
+      "mean": 3.9606719367588936,
+      "std": 2.119797473766103
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.9941255239804743
+    }
+  },
+  "dist4_vs_teachers": {
+    "dist4_stats": {
+      "type": "numeric",
+      "min": 0.73,
+      "max": 11.94,
+      "mean": 3.61897233201581,
+      "std": 2.0992029914310257
+    },
+    "teachers_stats": {
+      "type": "numeric",
+      "min": 18.0,
+      "max": 27.4,
+      "mean": 21.54446640316206,
+      "std": 2.1649455237144406
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.22825618417478766
+    }
+  },
+  "dist4_vs_poor_prop": {
+    "dist4_stats": {
+      "type": "numeric",
+      "min": 0.73,
+      "max": 11.94,
+      "mean": 3.61897233201581,
+      "std": 2.0992029914310257
+    },
+    "poor_prop_stats": {
+      "type": "numeric",
+      "min": 1.73,
+      "max": 37.97,
+      "mean": 12.653063241106722,
+      "std": 7.141061511348571
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.4960840830573333
+    }
+  },
+  "dist4_vs_airport": {
+    "dist4_stats": {
+      "type": "numeric",
+      "min": 0.73,
+      "max": 11.94,
+      "mean": 3.61897233201581,
+      "std": 2.0992029914310257
+    },
+    "airport_stats": {
+      "type": "categorical",
+      "unique_values": 2,
+      "value_distribution": {
+        "YES": 279,
+        "NO": 227
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "NO": 3.5724229074889866,
+          "YES": 3.6568458781362008
+        },
+        "std": {
+          "NO": 2.0878298503648947,
+          "YES": 2.1113995361704667
+        },
+        "count": {
+          "NO": 227,
+          "YES": 279
+        }
+      }
+    }
+  },
+  "dist4_vs_n_hos_beds": {
+    "dist4_stats": {
+      "type": "numeric",
+      "min": 0.73,
+      "max": 11.94,
+      "mean": 3.61897233201581,
+      "std": 2.0992029914310257
+    },
+    "n_hos_beds_stats": {
+      "type": "numeric",
+      "min": 5.268,
+      "max": 10.876,
+      "mean": 7.899767068273092,
+      "std": 1.476682516142425
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.021647848510671617
+    }
+  },
+  "dist4_vs_n_hot_rooms": {
+    "dist4_stats": {
+      "type": "numeric",
+      "min": 0.73,
+      "max": 11.94,
+      "mean": 3.61897233201581,
+      "std": 2.0992029914310257
+    },
+    "n_hot_rooms_stats": {
+      "type": "numeric",
+      "min": 10.0576,
+      "max": 101.12,
+      "mean": 13.041604743083003,
+      "std": 5.2389566328769686
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.005849934991620191
+    }
+  },
+  "dist4_vs_waterbody": {
+    "dist4_stats": {
+      "type": "numeric",
+      "min": 0.73,
+      "max": 11.94,
+      "mean": 3.61897233201581,
+      "std": 2.0992029914310257
+    },
+    "waterbody_stats": {
+      "type": "categorical",
+      "unique_values": 4,
+      "value_distribution": {
+        "River": 183,
+        "Lake": 97,
+        "Lake and River": 71
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "Lake": 3.755463917525773,
+          "Lake and River": 3.5428169014084507,
+          "River": 3.713224043715847
+        },
+        "std": {
+          "Lake": 2.1897655033409387,
+          "Lake and River": 1.93353058500217,
+          "River": 2.1261751731950573
+        },
+        "count": {
+          "Lake": 97,
+          "Lake and River": 71,
+          "River": 183
+        }
+      }
+    }
+  },
+  "dist4_vs_rainfall": {
+    "dist4_stats": {
+      "type": "numeric",
+      "min": 0.73,
+      "max": 11.94,
+      "mean": 3.61897233201581,
+      "std": 2.0992029914310257
+    },
+    "rainfall_stats": {
+      "type": "numeric",
+      "min": 3.0,
+      "max": 60.0,
+      "mean": 39.18181818181818,
+      "std": 12.51369726587335
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.03254213309216057
+    }
+  },
+  "dist4_vs_bus_ter": {
+    "dist4_stats": {
+      "type": "numeric",
+      "min": 0.73,
+      "max": 11.94,
+      "mean": 3.61897233201581,
+      "std": 2.0992029914310257
+    },
+    "bus_ter_stats": {
+      "type": "categorical",
+      "unique_values": 1,
+      "value_distribution": {
+        "YES": 506
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "YES": 3.6189723320158103
+        },
+        "std": {
+          "YES": 2.099202991431024
+        },
+        "count": {
+          "YES": 506
+        }
+      }
+    }
+  },
+  "dist4_vs_parks": {
+    "dist4_stats": {
+      "type": "numeric",
+      "min": 0.73,
+      "max": 11.94,
+      "mean": 3.61897233201581,
+      "std": 2.0992029914310257
+    },
+    "parks_stats": {
+      "type": "numeric",
+      "min": 0.033291762,
+      "max": 0.086711473,
+      "mean": 0.05445395839920949,
+      "std": 0.010632484889836286
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.7035084886173543
+    }
+  },
+  "teachers_vs_price": {
+    "teachers_stats": {
+      "type": "numeric",
+      "min": 18.0,
+      "max": 27.4,
+      "mean": 21.54446640316206,
+      "std": 2.1649455237144406
+    },
+    "price_stats": {
+      "type": "numeric",
+      "min": 5.0,
+      "max": 50.0,
+      "mean": 22.528853754940716,
+      "std": 9.18217588216678
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.5056546189523787
+    }
+  },
+  "teachers_vs_crime_rate": {
+    "teachers_stats": {
+      "type": "numeric",
+      "min": 18.0,
+      "max": 27.4,
+      "mean": 21.54446640316206,
+      "std": 2.1649455237144406
+    },
+    "crime_rate_stats": {
+      "type": "numeric",
+      "min": 0.00632,
+      "max": 88.9762,
+      "mean": 3.613523557312254,
+      "std": 8.60154510533249
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.2899455792795199
+    }
+  },
+  "teachers_vs_resid_area": {
+    "teachers_stats": {
+      "type": "numeric",
+      "min": 18.0,
+      "max": 27.4,
+      "mean": 21.54446640316206,
+      "std": 2.1649455237144406
+    },
+    "resid_area_stats": {
+      "type": "numeric",
+      "min": 30.46,
+      "max": 57.74,
+      "mean": 41.13677865612648,
+      "std": 6.860352940897585
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.3832475564288868
+    }
+  },
+  "teachers_vs_air_qual": {
+    "teachers_stats": {
+      "type": "numeric",
+      "min": 18.0,
+      "max": 27.4,
+      "mean": 21.54446640316206,
+      "std": 2.1649455237144406
+    },
+    "air_qual_stats": {
+      "type": "numeric",
+      "min": 0.385,
+      "max": 0.871,
+      "mean": 0.5546950592885376,
+      "std": 0.11587767566755595
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.18893267711276696
+    }
+  },
+  "teachers_vs_room_num": {
+    "teachers_stats": {
+      "type": "numeric",
+      "min": 18.0,
+      "max": 27.4,
+      "mean": 21.54446640316206,
+      "std": 2.1649455237144406
+    },
+    "room_num_stats": {
+      "type": "numeric",
+      "min": 3.561,
+      "max": 8.78,
+      "mean": 6.284634387351779,
+      "std": 0.7026171434153233
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.35550149455908503
+    }
+  },
+  "teachers_vs_age": {
+    "teachers_stats": {
+      "type": "numeric",
+      "min": 18.0,
+      "max": 27.4,
+      "mean": 21.54446640316206,
+      "std": 2.1649455237144406
+    },
+    "age_stats": {
+      "type": "numeric",
+      "min": 2.9,
+      "max": 100.0,
+      "mean": 68.57490118577076,
+      "std": 28.148861406903617
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.26151501167195756
+    }
+  },
+  "teachers_vs_dist1": {
+    "teachers_stats": {
+      "type": "numeric",
+      "min": 18.0,
+      "max": 27.4,
+      "mean": 21.54446640316206,
+      "std": 2.1649455237144406
+    },
+    "dist1_stats": {
+      "type": "numeric",
+      "min": 1.13,
+      "max": 12.32,
+      "mean": 3.97199604743083,
+      "std": 2.1085321645858897
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.23283436008501596
+    }
+  },
+  "teachers_vs_dist2": {
+    "teachers_stats": {
+      "type": "numeric",
+      "min": 18.0,
+      "max": 27.4,
+      "mean": 21.54446640316206,
+      "std": 2.1649455237144406
+    },
+    "dist2_stats": {
+      "type": "numeric",
+      "min": 0.92,
+      "max": 11.93,
+      "mean": 3.628774703557312,
+      "std": 2.108580321193191
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.23370679177036754
+    }
+  },
+  "teachers_vs_dist3": {
+    "teachers_stats": {
+      "type": "numeric",
+      "min": 18.0,
+      "max": 27.4,
+      "mean": 21.54446640316206,
+      "std": 2.1649455237144406
+    },
+    "dist3_stats": {
+      "type": "numeric",
+      "min": 1.15,
+      "max": 12.32,
+      "mean": 3.9606719367588936,
+      "std": 2.119797473766103
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.2335882217799326
+    }
+  },
+  "teachers_vs_dist4": {
+    "teachers_stats": {
+      "type": "numeric",
+      "min": 18.0,
+      "max": 27.4,
+      "mean": 21.54446640316206,
+      "std": 2.1649455237144406
+    },
+    "dist4_stats": {
+      "type": "numeric",
+      "min": 0.73,
+      "max": 11.94,
+      "mean": 3.61897233201581,
+      "std": 2.0992029914310257
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.22825618417478766
+    }
+  },
+  "teachers_vs_poor_prop": {
+    "teachers_stats": {
+      "type": "numeric",
+      "min": 18.0,
+      "max": 27.4,
+      "mean": 21.54446640316206,
+      "std": 2.1649455237144406
+    },
+    "poor_prop_stats": {
+      "type": "numeric",
+      "min": 1.73,
+      "max": 37.97,
+      "mean": 12.653063241106722,
+      "std": 7.141061511348571
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.3740443167146759
+    }
+  },
+  "teachers_vs_airport": {
+    "teachers_stats": {
+      "type": "numeric",
+      "min": 18.0,
+      "max": 27.4,
+      "mean": 21.54446640316206,
+      "std": 2.1649455237144406
+    },
+    "airport_stats": {
+      "type": "categorical",
+      "unique_values": 2,
+      "value_distribution": {
+        "YES": 279,
+        "NO": 227
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "NO": 21.377973568281938,
+          "YES": 21.679928315412187
+        },
+        "std": {
+          "NO": 2.0639015675933257,
+          "YES": 2.2383411754834035
+        },
+        "count": {
+          "NO": 227,
+          "YES": 279
+        }
+      }
+    }
+  },
+  "teachers_vs_n_hos_beds": {
+    "teachers_stats": {
+      "type": "numeric",
+      "min": 18.0,
+      "max": 27.4,
+      "mean": 21.54446640316206,
+      "std": 2.1649455237144406
+    },
+    "n_hos_beds_stats": {
+      "type": "numeric",
+      "min": 5.268,
+      "max": 10.876,
+      "mean": 7.899767068273092,
+      "std": 1.476682516142425
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.008129829045460592
+    }
+  },
+  "teachers_vs_n_hot_rooms": {
+    "teachers_stats": {
+      "type": "numeric",
+      "min": 18.0,
+      "max": 27.4,
+      "mean": 21.54446640316206,
+      "std": 2.1649455237144406
+    },
+    "n_hot_rooms_stats": {
+      "type": "numeric",
+      "min": 10.0576,
+      "max": 101.12,
+      "mean": 13.041604743083003,
+      "std": 5.2389566328769686
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.023343152844419155
+    }
+  },
+  "teachers_vs_waterbody": {
+    "teachers_stats": {
+      "type": "numeric",
+      "min": 18.0,
+      "max": 27.4,
+      "mean": 21.54446640316206,
+      "std": 2.1649455237144406
+    },
+    "waterbody_stats": {
+      "type": "categorical",
+      "unique_values": 4,
+      "value_distribution": {
+        "River": 183,
+        "Lake": 97,
+        "Lake and River": 71
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "Lake": 21.760824742268042,
+          "Lake and River": 21.292957746478873,
+          "River": 21.815300546448086
+        },
+        "std": {
+          "Lake": 2.2726433169435336,
+          "Lake and River": 2.2201238024464143,
+          "River": 2.101800848030069
+        },
+        "count": {
+          "Lake": 97,
+          "Lake and River": 71,
+          "River": 183
+        }
+      }
+    }
+  },
+  "teachers_vs_rainfall": {
+    "teachers_stats": {
+      "type": "numeric",
+      "min": 18.0,
+      "max": 27.4,
+      "mean": 21.54446640316206,
+      "std": 2.1649455237144406
+    },
+    "rainfall_stats": {
+      "type": "numeric",
+      "min": 3.0,
+      "max": 60.0,
+      "mean": 39.18181818181818,
+      "std": 12.51369726587335
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.04583597879222273
+    }
+  },
+  "teachers_vs_bus_ter": {
+    "teachers_stats": {
+      "type": "numeric",
+      "min": 18.0,
+      "max": 27.4,
+      "mean": 21.54446640316206,
+      "std": 2.1649455237144406
+    },
+    "bus_ter_stats": {
+      "type": "categorical",
+      "unique_values": 1,
+      "value_distribution": {
+        "YES": 506
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "YES": 21.544466403162055
+        },
+        "std": {
+          "YES": 2.1649455237144455
+        },
+        "count": {
+          "YES": 506
+        }
+      }
+    }
+  },
+  "teachers_vs_parks": {
+    "teachers_stats": {
+      "type": "numeric",
+      "min": 18.0,
+      "max": 27.4,
+      "mean": 21.54446640316206,
+      "std": 2.1649455237144406
+    },
+    "parks_stats": {
+      "type": "numeric",
+      "min": 0.033291762,
+      "max": 0.086711473,
+      "mean": 0.05445395839920949,
+      "std": 0.010632484889836286
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.1870042560114279
+    }
+  },
+  "poor_prop_vs_price": {
+    "poor_prop_stats": {
+      "type": "numeric",
+      "min": 1.73,
+      "max": 37.97,
+      "mean": 12.653063241106722,
+      "std": 7.141061511348571
+    },
+    "price_stats": {
+      "type": "numeric",
+      "min": 5.0,
+      "max": 50.0,
+      "mean": 22.528853754940716,
+      "std": 9.18217588216678
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.7408359927838508
+    }
+  },
+  "poor_prop_vs_crime_rate": {
+    "poor_prop_stats": {
+      "type": "numeric",
+      "min": 1.73,
+      "max": 37.97,
+      "mean": 12.653063241106722,
+      "std": 7.141061511348571
+    },
+    "crime_rate_stats": {
+      "type": "numeric",
+      "min": 0.00632,
+      "max": 88.9762,
+      "mean": 3.613523557312254,
+      "std": 8.60154510533249
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.45562147944794607
+    }
+  },
+  "poor_prop_vs_resid_area": {
+    "poor_prop_stats": {
+      "type": "numeric",
+      "min": 1.73,
+      "max": 37.97,
+      "mean": 12.653063241106722,
+      "std": 7.141061511348571
+    },
+    "resid_area_stats": {
+      "type": "numeric",
+      "min": 30.46,
+      "max": 57.74,
+      "mean": 41.13677865612648,
+      "std": 6.860352940897585
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.6037997164766219
+    }
+  },
+  "poor_prop_vs_air_qual": {
+    "poor_prop_stats": {
+      "type": "numeric",
+      "min": 1.73,
+      "max": 37.97,
+      "mean": 12.653063241106722,
+      "std": 7.141061511348571
+    },
+    "air_qual_stats": {
+      "type": "numeric",
+      "min": 0.385,
+      "max": 0.871,
+      "mean": 0.5546950592885376,
+      "std": 0.11587767566755595
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.5908789208808463
+    }
+  },
+  "poor_prop_vs_room_num": {
+    "poor_prop_stats": {
+      "type": "numeric",
+      "min": 1.73,
+      "max": 37.97,
+      "mean": 12.653063241106722,
+      "std": 7.141061511348571
+    },
+    "room_num_stats": {
+      "type": "numeric",
+      "min": 3.561,
+      "max": 8.78,
+      "mean": 6.284634387351779,
+      "std": 0.7026171434153233
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.6138082718663953
+    }
+  },
+  "poor_prop_vs_age": {
+    "poor_prop_stats": {
+      "type": "numeric",
+      "min": 1.73,
+      "max": 37.97,
+      "mean": 12.653063241106722,
+      "std": 7.141061511348571
+    },
+    "age_stats": {
+      "type": "numeric",
+      "min": 2.9,
+      "max": 100.0,
+      "mean": 68.57490118577076,
+      "std": 28.148861406903617
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.6023385287262402
+    }
+  },
+  "poor_prop_vs_dist1": {
+    "poor_prop_stats": {
+      "type": "numeric",
+      "min": 1.73,
+      "max": 37.97,
+      "mean": 12.653063241106722,
+      "std": 7.141061511348571
+    },
+    "dist1_stats": {
+      "type": "numeric",
+      "min": 1.13,
+      "max": 12.32,
+      "mean": 3.97199604743083,
+      "std": 2.1085321645858897
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.4988231152647356
+    }
+  },
+  "poor_prop_vs_dist2": {
+    "poor_prop_stats": {
+      "type": "numeric",
+      "min": 1.73,
+      "max": 37.97,
+      "mean": 12.653063241106722,
+      "std": 7.141061511348571
+    },
+    "dist2_stats": {
+      "type": "numeric",
+      "min": 0.92,
+      "max": 11.93,
+      "mean": 3.628774703557312,
+      "std": 2.108580321193191
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.49569260493508144
+    }
+  },
+  "poor_prop_vs_dist3": {
+    "poor_prop_stats": {
+      "type": "numeric",
+      "min": 1.73,
+      "max": 37.97,
+      "mean": 12.653063241106722,
+      "std": 7.141061511348571
+    },
+    "dist3_stats": {
+      "type": "numeric",
+      "min": 1.15,
+      "max": 12.32,
+      "mean": 3.9606719367588936,
+      "std": 2.119797473766103
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.494290435821498
+    }
+  },
+  "poor_prop_vs_dist4": {
+    "poor_prop_stats": {
+      "type": "numeric",
+      "min": 1.73,
+      "max": 37.97,
+      "mean": 12.653063241106722,
+      "std": 7.141061511348571
+    },
+    "dist4_stats": {
+      "type": "numeric",
+      "min": 0.73,
+      "max": 11.94,
+      "mean": 3.61897233201581,
+      "std": 2.0992029914310257
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.4960840830573333
+    }
+  },
+  "poor_prop_vs_teachers": {
+    "poor_prop_stats": {
+      "type": "numeric",
+      "min": 1.73,
+      "max": 37.97,
+      "mean": 12.653063241106722,
+      "std": 7.141061511348571
+    },
+    "teachers_stats": {
+      "type": "numeric",
+      "min": 18.0,
+      "max": 27.4,
+      "mean": 21.54446640316206,
+      "std": 2.1649455237144406
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.3740443167146759
+    }
+  },
+  "poor_prop_vs_airport": {
+    "poor_prop_stats": {
+      "type": "numeric",
+      "min": 1.73,
+      "max": 37.97,
+      "mean": 12.653063241106722,
+      "std": 7.141061511348571
+    },
+    "airport_stats": {
+      "type": "categorical",
+      "unique_values": 2,
+      "value_distribution": {
+        "YES": 279,
+        "NO": 227
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "NO": 13.404845814977975,
+          "YES": 12.041397849462367
+        },
+        "std": {
+          "NO": 7.316484076797631,
+          "YES": 6.948340352235125
+        },
+        "count": {
+          "NO": 227,
+          "YES": 279
+        }
+      }
+    }
+  },
+  "poor_prop_vs_n_hos_beds": {
+    "poor_prop_stats": {
+      "type": "numeric",
+      "min": 1.73,
+      "max": 37.97,
+      "mean": 12.653063241106722,
+      "std": 7.141061511348571
+    },
+    "n_hos_beds_stats": {
+      "type": "numeric",
+      "min": 5.268,
+      "max": 10.876,
+      "mean": 7.899767068273092,
+      "std": 1.476682516142425
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.06643389177211889
+    }
+  },
+  "poor_prop_vs_n_hot_rooms": {
+    "poor_prop_stats": {
+      "type": "numeric",
+      "min": 1.73,
+      "max": 37.97,
+      "mean": 12.653063241106722,
+      "std": 7.141061511348571
+    },
+    "n_hot_rooms_stats": {
+      "type": "numeric",
+      "min": 10.0576,
+      "max": 101.12,
+      "mean": 13.041604743083003,
+      "std": 5.2389566328769686
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.003337155904216876
+    }
+  },
+  "poor_prop_vs_waterbody": {
+    "poor_prop_stats": {
+      "type": "numeric",
+      "min": 1.73,
+      "max": 37.97,
+      "mean": 12.653063241106722,
+      "std": 7.141061511348571
+    },
+    "waterbody_stats": {
+      "type": "categorical",
+      "unique_values": 4,
+      "value_distribution": {
+        "River": 183,
+        "Lake": 97,
+        "Lake and River": 71
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "Lake": 12.699896907216496,
+          "Lake and River": 13.01718309859155,
+          "River": 11.619945355191255
+        },
+        "std": {
+          "Lake": 7.725465532742637,
+          "Lake and River": 6.456902880549863,
+          "River": 6.828915130906913
+        },
+        "count": {
+          "Lake": 97,
+          "Lake and River": 71,
+          "River": 183
+        }
+      }
+    }
+  },
+  "poor_prop_vs_rainfall": {
+    "poor_prop_stats": {
+      "type": "numeric",
+      "min": 1.73,
+      "max": 37.97,
+      "mean": 12.653063241106722,
+      "std": 7.141061511348571
+    },
+    "rainfall_stats": {
+      "type": "numeric",
+      "min": 3.0,
+      "max": 60.0,
+      "mean": 39.18181818181818,
+      "std": 12.51369726587335
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.06158102360748053
+    }
+  },
+  "poor_prop_vs_bus_ter": {
+    "poor_prop_stats": {
+      "type": "numeric",
+      "min": 1.73,
+      "max": 37.97,
+      "mean": 12.653063241106722,
+      "std": 7.141061511348571
+    },
+    "bus_ter_stats": {
+      "type": "categorical",
+      "unique_values": 1,
+      "value_distribution": {
+        "YES": 506
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "YES": 12.65306324110672
+        },
+        "std": {
+          "YES": 7.141061511348571
+        },
+        "count": {
+          "YES": 506
+        }
+      }
+    }
+  },
+  "poor_prop_vs_parks": {
+    "poor_prop_stats": {
+      "type": "numeric",
+      "min": 1.73,
+      "max": 37.97,
+      "mean": 12.653063241106722,
+      "std": 7.141061511348571
+    },
+    "parks_stats": {
+      "type": "numeric",
+      "min": 0.033291762,
+      "max": 0.086711473,
+      "mean": 0.05445395839920949,
+      "std": 0.010632484889836286
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.5523100418647519
+    }
+  },
+  "airport_vs_price": {
+    "airport_stats": {
+      "type": "categorical",
+      "unique_values": 2,
+      "value_distribution": {
+        "YES": 279,
+        "NO": 227
+      }
+    },
+    "price_stats": {
+      "type": "numeric",
+      "min": 5.0,
+      "max": 50.0,
+      "mean": 22.528853754940716,
+      "std": 9.18217588216678
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "NO": 20.66916299559471,
+          "YES": 24.04193548387097
+        },
+        "std": {
+          "NO": 7.771767643539866,
+          "YES": 9.94651874222071
+        },
+        "count": {
+          "NO": 227,
+          "YES": 279
+        }
+      }
+    }
+  },
+  "airport_vs_crime_rate": {
+    "airport_stats": {
+      "type": "categorical",
+      "unique_values": 2,
+      "value_distribution": {
+        "YES": 279,
+        "NO": 227
+      }
+    },
+    "crime_rate_stats": {
+      "type": "numeric",
+      "min": 0.00632,
+      "max": 88.9762,
+      "mean": 3.613523557312254,
+      "std": 8.60154510533249
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "NO": 4.440472466960353,
+          "YES": 2.940701326164875
+        },
+        "std": {
+          "NO": 8.80822661615331,
+          "YES": 8.385391408861912
+        },
+        "count": {
+          "NO": 227,
+          "YES": 279
+        }
+      }
+    }
+  },
+  "airport_vs_resid_area": {
+    "airport_stats": {
+      "type": "categorical",
+      "unique_values": 2,
+      "value_distribution": {
+        "YES": 279,
+        "NO": 227
+      }
+    },
+    "resid_area_stats": {
+      "type": "numeric",
+      "min": 30.46,
+      "max": 57.74,
+      "mean": 41.13677865612648,
+      "std": 6.860352940897585
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "NO": 42.01361233480176,
+          "YES": 40.42336917562724
+        },
+        "std": {
+          "NO": 6.739028460573044,
+          "YES": 6.887414607436517
+        },
+        "count": {
+          "NO": 227,
+          "YES": 279
+        }
+      }
+    }
+  },
+  "airport_vs_air_qual": {
+    "airport_stats": {
+      "type": "categorical",
+      "unique_values": 2,
+      "value_distribution": {
+        "YES": 279,
+        "NO": 227
+      }
+    },
+    "air_qual_stats": {
+      "type": "numeric",
+      "min": 0.385,
+      "max": 0.871,
+      "mean": 0.5546950592885376,
+      "std": 0.11587767566755595
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "NO": 0.5641797356828194,
+          "YES": 0.5469781362007168
+        },
+        "std": {
+          "NO": 0.12362521341882575,
+          "YES": 0.10878529637457952
+        },
+        "count": {
+          "NO": 227,
+          "YES": 279
+        }
+      }
+    }
+  },
+  "airport_vs_room_num": {
+    "airport_stats": {
+      "type": "categorical",
+      "unique_values": 2,
+      "value_distribution": {
+        "YES": 279,
+        "NO": 227
+      }
+    },
+    "room_num_stats": {
+      "type": "numeric",
+      "min": 3.561,
+      "max": 8.78,
+      "mean": 6.284634387351779,
+      "std": 0.7026171434153233
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "NO": 6.157189427312775,
+          "YES": 6.388326164874552
+        },
+        "std": {
+          "NO": 0.6495655486643497,
+          "YES": 0.7278123110667157
+        },
+        "count": {
+          "NO": 227,
+          "YES": 279
+        }
+      }
+    }
+  },
+  "airport_vs_age": {
+    "airport_stats": {
+      "type": "categorical",
+      "unique_values": 2,
+      "value_distribution": {
+        "YES": 279,
+        "NO": 227
+      }
+    },
+    "age_stats": {
+      "type": "numeric",
+      "min": 2.9,
+      "max": 100.0,
+      "mean": 68.57490118577076,
+      "std": 28.148861406903617
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "NO": 68.415859030837,
+          "YES": 68.70430107526882
+        },
+        "std": {
+          "NO": 28.94082786116828,
+          "YES": 27.539338432328456
+        },
+        "count": {
+          "NO": 227,
+          "YES": 279
+        }
+      }
+    }
+  },
+  "airport_vs_dist1": {
+    "airport_stats": {
+      "type": "categorical",
+      "unique_values": 2,
+      "value_distribution": {
+        "YES": 279,
+        "NO": 227
+      }
+    },
+    "dist1_stats": {
+      "type": "numeric",
+      "min": 1.13,
+      "max": 12.32,
+      "mean": 3.97199604743083,
+      "std": 2.1085321645858897
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "NO": 3.913127753303965,
+          "YES": 4.019892473118279
+        },
+        "std": {
+          "NO": 2.079402015062034,
+          "YES": 2.134465795697063
+        },
+        "count": {
+          "NO": 227,
+          "YES": 279
+        }
+      }
+    }
+  },
+  "airport_vs_dist2": {
+    "airport_stats": {
+      "type": "categorical",
+      "unique_values": 2,
+      "value_distribution": {
+        "YES": 279,
+        "NO": 227
+      }
+    },
+    "dist2_stats": {
+      "type": "numeric",
+      "min": 0.92,
+      "max": 11.93,
+      "mean": 3.628774703557312,
+      "std": 2.108580321193191
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "NO": 3.5819383259911897,
+          "YES": 3.666881720430107
+        },
+        "std": {
+          "NO": 2.0888815942421344,
+          "YES": 2.127457180369313
+        },
+        "count": {
+          "NO": 227,
+          "YES": 279
+        }
+      }
+    }
+  },
+  "airport_vs_dist3": {
+    "airport_stats": {
+      "type": "categorical",
+      "unique_values": 2,
+      "value_distribution": {
+        "YES": 279,
+        "NO": 227
+      }
+    },
+    "dist3_stats": {
+      "type": "numeric",
+      "min": 1.15,
+      "max": 12.32,
+      "mean": 3.9606719367588936,
+      "std": 2.119797473766103
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "NO": 3.9132599118942735,
+          "YES": 3.999247311827957
+        },
+        "std": {
+          "NO": 2.1014508132817364,
+          "YES": 2.1376004683658394
+        },
+        "count": {
+          "NO": 227,
+          "YES": 279
+        }
+      }
+    }
+  },
+  "airport_vs_dist4": {
+    "airport_stats": {
+      "type": "categorical",
+      "unique_values": 2,
+      "value_distribution": {
+        "YES": 279,
+        "NO": 227
+      }
+    },
+    "dist4_stats": {
+      "type": "numeric",
+      "min": 0.73,
+      "max": 11.94,
+      "mean": 3.61897233201581,
+      "std": 2.0992029914310257
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "NO": 3.5724229074889866,
+          "YES": 3.6568458781362008
+        },
+        "std": {
+          "NO": 2.0878298503648947,
+          "YES": 2.1113995361704667
+        },
+        "count": {
+          "NO": 227,
+          "YES": 279
+        }
+      }
+    }
+  },
+  "airport_vs_teachers": {
+    "airport_stats": {
+      "type": "categorical",
+      "unique_values": 2,
+      "value_distribution": {
+        "YES": 279,
+        "NO": 227
+      }
+    },
+    "teachers_stats": {
+      "type": "numeric",
+      "min": 18.0,
+      "max": 27.4,
+      "mean": 21.54446640316206,
+      "std": 2.1649455237144406
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "NO": 21.377973568281938,
+          "YES": 21.679928315412187
+        },
+        "std": {
+          "NO": 2.0639015675933257,
+          "YES": 2.2383411754834035
+        },
+        "count": {
+          "NO": 227,
+          "YES": 279
+        }
+      }
+    }
+  },
+  "airport_vs_poor_prop": {
+    "airport_stats": {
+      "type": "categorical",
+      "unique_values": 2,
+      "value_distribution": {
+        "YES": 279,
+        "NO": 227
+      }
+    },
+    "poor_prop_stats": {
+      "type": "numeric",
+      "min": 1.73,
+      "max": 37.97,
+      "mean": 12.653063241106722,
+      "std": 7.141061511348571
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "NO": 13.404845814977975,
+          "YES": 12.041397849462367
+        },
+        "std": {
+          "NO": 7.316484076797631,
+          "YES": 6.948340352235125
+        },
+        "count": {
+          "NO": 227,
+          "YES": 279
+        }
+      }
+    }
+  },
+  "airport_vs_n_hos_beds": {
+    "airport_stats": {
+      "type": "categorical",
+      "unique_values": 2,
+      "value_distribution": {
+        "YES": 279,
+        "NO": 227
+      }
+    },
+    "n_hos_beds_stats": {
+      "type": "numeric",
+      "min": 5.268,
+      "max": 10.876,
+      "mean": 7.899767068273092,
+      "std": 1.476682516142425
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "NO": 7.910186666666666,
+          "YES": 7.891179487179487
+        },
+        "std": {
+          "NO": 1.5232108417981496,
+          "YES": 1.4399639091233076
+        },
+        "count": {
+          "NO": 225,
+          "YES": 273
+        }
+      }
+    }
+  },
+  "airport_vs_n_hot_rooms": {
+    "airport_stats": {
+      "type": "categorical",
+      "unique_values": 2,
+      "value_distribution": {
+        "YES": 279,
+        "NO": 227
+      }
+    },
+    "n_hot_rooms_stats": {
+      "type": "numeric",
+      "min": 10.0576,
+      "max": 101.12,
+      "mean": 13.041604743083003,
+      "std": 5.2389566328769686
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "NO": 13.42462731277533,
+          "YES": 12.729969892473118
+        },
+        "std": {
+          "NO": 7.575895417211426,
+          "YES": 1.7269360042663082
+        },
+        "count": {
+          "NO": 227,
+          "YES": 279
+        }
+      }
+    }
+  },
+  "airport_vs_waterbody": {
+    "airport_stats": {
+      "type": "categorical",
+      "unique_values": 2,
+      "value_distribution": {
+        "YES": 279,
+        "NO": 227
+      }
+    },
+    "waterbody_stats": {
+      "type": "categorical",
+      "unique_values": 4,
+      "value_distribution": {
+        "River": 183,
+        "Lake": 97,
+        "Lake and River": 71
+      }
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_categorical",
+      "contingency_table": {
+        "Lake": {
+          "NO": 40,
+          "YES": 57
+        },
+        "Lake and River": {
+          "NO": 38,
+          "YES": 33
+        },
+        "River": {
+          "NO": 80,
+          "YES": 103
+        }
+      }
+    }
+  },
+  "airport_vs_rainfall": {
+    "airport_stats": {
+      "type": "categorical",
+      "unique_values": 2,
+      "value_distribution": {
+        "YES": 279,
+        "NO": 227
+      }
+    },
+    "rainfall_stats": {
+      "type": "numeric",
+      "min": 3.0,
+      "max": 60.0,
+      "mean": 39.18181818181818,
+      "std": 12.51369726587335
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "NO": 39.370044052863435,
+          "YES": 39.028673835125446
+        },
+        "std": {
+          "NO": 12.184226764815971,
+          "YES": 12.795256906920514
+        },
+        "count": {
+          "NO": 227,
+          "YES": 279
+        }
+      }
+    }
+  },
+  "airport_vs_bus_ter": {
+    "airport_stats": {
+      "type": "categorical",
+      "unique_values": 2,
+      "value_distribution": {
+        "YES": 279,
+        "NO": 227
+      }
+    },
+    "bus_ter_stats": {
+      "type": "categorical",
+      "unique_values": 1,
+      "value_distribution": {
+        "YES": 506
+      }
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_categorical",
+      "contingency_table": {
+        "YES": {
+          "NO": 227,
+          "YES": 279
+        }
+      }
+    }
+  },
+  "airport_vs_parks": {
+    "airport_stats": {
+      "type": "categorical",
+      "unique_values": 2,
+      "value_distribution": {
+        "YES": 279,
+        "NO": 227
+      }
+    },
+    "parks_stats": {
+      "type": "numeric",
+      "min": 0.033291762,
+      "max": 0.086711473,
+      "mean": 0.05445395839920949,
+      "std": 0.010632484889836286
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "NO": 0.055072229933920705,
+          "YES": 0.053950920268817204
+        },
+        "std": {
+          "NO": 0.011257044125181524,
+          "YES": 0.010088419778250762
+        },
+        "count": {
+          "NO": 227,
+          "YES": 279
+        }
+      }
+    }
+  },
+  "n_hos_beds_vs_price": {
+    "n_hos_beds_stats": {
+      "type": "numeric",
+      "min": 5.268,
+      "max": 10.876,
+      "mean": 7.899767068273092,
+      "std": 1.476682516142425
+    },
+    "price_stats": {
+      "type": "numeric",
+      "min": 5.0,
+      "max": 50.0,
+      "mean": 22.528853754940716,
+      "std": 9.18217588216678
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.10964570273321576
+    }
+  },
+  "n_hos_beds_vs_crime_rate": {
+    "n_hos_beds_stats": {
+      "type": "numeric",
+      "min": 5.268,
+      "max": 10.876,
+      "mean": 7.899767068273092,
+      "std": 1.476682516142425
+    },
+    "crime_rate_stats": {
+      "type": "numeric",
+      "min": 0.00632,
+      "max": 88.9762,
+      "mean": 3.613523557312254,
+      "std": 8.60154510533249
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.017502086878097026
+    }
+  },
+  "n_hos_beds_vs_resid_area": {
+    "n_hos_beds_stats": {
+      "type": "numeric",
+      "min": 5.268,
+      "max": 10.876,
+      "mean": 7.899767068273092,
+      "std": 1.476682516142425
+    },
+    "resid_area_stats": {
+      "type": "numeric",
+      "min": 30.46,
+      "max": 57.74,
+      "mean": 41.13677865612648,
+      "std": 6.860352940897585
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.005826893536014328
+    }
+  },
+  "n_hos_beds_vs_air_qual": {
+    "n_hos_beds_stats": {
+      "type": "numeric",
+      "min": 5.268,
+      "max": 10.876,
+      "mean": 7.899767068273092,
+      "std": 1.476682516142425
+    },
+    "air_qual_stats": {
+      "type": "numeric",
+      "min": 0.385,
+      "max": 0.871,
+      "mean": 0.5546950592885376,
+      "std": 0.11587767566755595
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.04995383856654866
+    }
+  },
+  "n_hos_beds_vs_room_num": {
+    "n_hos_beds_stats": {
+      "type": "numeric",
+      "min": 5.268,
+      "max": 10.876,
+      "mean": 7.899767068273092,
+      "std": 1.476682516142425
+    },
+    "room_num_stats": {
+      "type": "numeric",
+      "min": 3.561,
+      "max": 8.78,
+      "mean": 6.284634387351779,
+      "std": 0.7026171434153233
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.032207073133191204
+    }
+  },
+  "n_hos_beds_vs_age": {
+    "n_hos_beds_stats": {
+      "type": "numeric",
+      "min": 5.268,
+      "max": 10.876,
+      "mean": 7.899767068273092,
+      "std": 1.476682516142425
+    },
+    "age_stats": {
+      "type": "numeric",
+      "min": 2.9,
+      "max": 100.0,
+      "mean": 68.57490118577076,
+      "std": 28.148861406903617
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.02110168119693127
+    }
+  },
+  "n_hos_beds_vs_dist1": {
+    "n_hos_beds_stats": {
+      "type": "numeric",
+      "min": 5.268,
+      "max": 10.876,
+      "mean": 7.899767068273092,
+      "std": 1.476682516142425
+    },
+    "dist1_stats": {
+      "type": "numeric",
+      "min": 1.13,
+      "max": 12.32,
+      "mean": 3.97199604743083,
+      "std": 2.1085321645858897
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.03054987287815326
+    }
+  },
+  "n_hos_beds_vs_dist2": {
+    "n_hos_beds_stats": {
+      "type": "numeric",
+      "min": 5.268,
+      "max": 10.876,
+      "mean": 7.899767068273092,
+      "std": 1.476682516142425
+    },
+    "dist2_stats": {
+      "type": "numeric",
+      "min": 0.92,
+      "max": 11.93,
+      "mean": 3.628774703557312,
+      "std": 2.108580321193191
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.031248330349607452
+    }
+  },
+  "n_hos_beds_vs_dist3": {
+    "n_hos_beds_stats": {
+      "type": "numeric",
+      "min": 5.268,
+      "max": 10.876,
+      "mean": 7.899767068273092,
+      "std": 1.476682516142425
+    },
+    "dist3_stats": {
+      "type": "numeric",
+      "min": 1.15,
+      "max": 12.32,
+      "mean": 3.9606719367588936,
+      "std": 2.119797473766103
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.028471123327907976
+    }
+  },
+  "n_hos_beds_vs_dist4": {
+    "n_hos_beds_stats": {
+      "type": "numeric",
+      "min": 5.268,
+      "max": 10.876,
+      "mean": 7.899767068273092,
+      "std": 1.476682516142425
+    },
+    "dist4_stats": {
+      "type": "numeric",
+      "min": 0.73,
+      "max": 11.94,
+      "mean": 3.61897233201581,
+      "std": 2.0992029914310257
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.02164784851067162
+    }
+  },
+  "n_hos_beds_vs_teachers": {
+    "n_hos_beds_stats": {
+      "type": "numeric",
+      "min": 5.268,
+      "max": 10.876,
+      "mean": 7.899767068273092,
+      "std": 1.476682516142425
+    },
+    "teachers_stats": {
+      "type": "numeric",
+      "min": 18.0,
+      "max": 27.4,
+      "mean": 21.54446640316206,
+      "std": 2.1649455237144406
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.008129829045460592
+    }
+  },
+  "n_hos_beds_vs_poor_prop": {
+    "n_hos_beds_stats": {
+      "type": "numeric",
+      "min": 5.268,
+      "max": 10.876,
+      "mean": 7.899767068273092,
+      "std": 1.476682516142425
+    },
+    "poor_prop_stats": {
+      "type": "numeric",
+      "min": 1.73,
+      "max": 37.97,
+      "mean": 12.653063241106722,
+      "std": 7.141061511348571
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.06643389177211888
+    }
+  },
+  "n_hos_beds_vs_airport": {
+    "n_hos_beds_stats": {
+      "type": "numeric",
+      "min": 5.268,
+      "max": 10.876,
+      "mean": 7.899767068273092,
+      "std": 1.476682516142425
+    },
+    "airport_stats": {
+      "type": "categorical",
+      "unique_values": 2,
+      "value_distribution": {
+        "YES": 279,
+        "NO": 227
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "NO": 7.910186666666666,
+          "YES": 7.891179487179487
+        },
+        "std": {
+          "NO": 1.5232108417981496,
+          "YES": 1.4399639091233076
+        },
+        "count": {
+          "NO": 225,
+          "YES": 273
+        }
+      }
+    }
+  },
+  "n_hos_beds_vs_n_hot_rooms": {
+    "n_hos_beds_stats": {
+      "type": "numeric",
+      "min": 5.268,
+      "max": 10.876,
+      "mean": 7.899767068273092,
+      "std": 1.476682516142425
+    },
+    "n_hot_rooms_stats": {
+      "type": "numeric",
+      "min": 10.0576,
+      "max": 101.12,
+      "mean": 13.041604743083003,
+      "std": 5.2389566328769686
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.005460778878866368
+    }
+  },
+  "n_hos_beds_vs_waterbody": {
+    "n_hos_beds_stats": {
+      "type": "numeric",
+      "min": 5.268,
+      "max": 10.876,
+      "mean": 7.899767068273092,
+      "std": 1.476682516142425
+    },
+    "waterbody_stats": {
+      "type": "categorical",
+      "unique_values": 4,
+      "value_distribution": {
+        "River": 183,
+        "Lake": 97,
+        "Lake and River": 71
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "Lake": 8.030872340425532,
+          "Lake and River": 8.115239436619719,
+          "River": 7.751550561797753
+        },
+        "std": {
+          "Lake": 1.4889026213241288,
+          "Lake and River": 1.5697133265553276,
+          "River": 1.489688209225641
+        },
+        "count": {
+          "Lake": 94,
+          "Lake and River": 71,
+          "River": 178
+        }
+      }
+    }
+  },
+  "n_hos_beds_vs_rainfall": {
+    "n_hos_beds_stats": {
+      "type": "numeric",
+      "min": 5.268,
+      "max": 10.876,
+      "mean": 7.899767068273092,
+      "std": 1.476682516142425
+    },
+    "rainfall_stats": {
+      "type": "numeric",
+      "min": 3.0,
+      "max": 60.0,
+      "mean": 39.18181818181818,
+      "std": 12.51369726587335
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.05899694049539076
+    }
+  },
+  "n_hos_beds_vs_bus_ter": {
+    "n_hos_beds_stats": {
+      "type": "numeric",
+      "min": 5.268,
+      "max": 10.876,
+      "mean": 7.899767068273092,
+      "std": 1.476682516142425
+    },
+    "bus_ter_stats": {
+      "type": "categorical",
+      "unique_values": 1,
+      "value_distribution": {
+        "YES": 506
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "YES": 7.899767068273092
+        },
+        "std": {
+          "YES": 1.4766825161424244
+        },
+        "count": {
+          "YES": 498
+        }
+      }
+    }
+  },
+  "n_hos_beds_vs_parks": {
+    "n_hos_beds_stats": {
+      "type": "numeric",
+      "min": 5.268,
+      "max": 10.876,
+      "mean": 7.899767068273092,
+      "std": 1.476682516142425
+    },
+    "parks_stats": {
+      "type": "numeric",
+      "min": 0.033291762,
+      "max": 0.086711473,
+      "mean": 0.05445395839920949,
+      "std": 0.010632484889836286
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.07200230897866439
+    }
+  },
+  "n_hot_rooms_vs_price": {
+    "n_hot_rooms_stats": {
+      "type": "numeric",
+      "min": 10.0576,
+      "max": 101.12,
+      "mean": 13.041604743083003,
+      "std": 5.2389566328769686
+    },
+    "price_stats": {
+      "type": "numeric",
+      "min": 5.0,
+      "max": 50.0,
+      "mean": 22.528853754940716,
+      "std": 9.18217588216678
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.023122126730354537
+    }
+  },
+  "n_hot_rooms_vs_crime_rate": {
+    "n_hot_rooms_stats": {
+      "type": "numeric",
+      "min": 10.0576,
+      "max": 101.12,
+      "mean": 13.041604743083003,
+      "std": 5.2389566328769686
+    },
+    "crime_rate_stats": {
+      "type": "numeric",
+      "min": 0.00632,
+      "max": 88.9762,
+      "mean": 3.613523557312254,
+      "std": 8.60154510533249
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.013517871472597469
+    }
+  },
+  "n_hot_rooms_vs_resid_area": {
+    "n_hot_rooms_stats": {
+      "type": "numeric",
+      "min": 10.0576,
+      "max": 101.12,
+      "mean": 13.041604743083003,
+      "std": 5.2389566328769686
+    },
+    "resid_area_stats": {
+      "type": "numeric",
+      "min": 30.46,
+      "max": 57.74,
+      "mean": 41.13677865612648,
+      "std": 6.860352940897585
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.0008386303900863963
+    }
+  },
+  "n_hot_rooms_vs_air_qual": {
+    "n_hot_rooms_stats": {
+      "type": "numeric",
+      "min": 10.0576,
+      "max": 101.12,
+      "mean": 13.041604743083003,
+      "std": 5.2389566328769686
+    },
+    "air_qual_stats": {
+      "type": "numeric",
+      "min": 0.385,
+      "max": 0.871,
+      "mean": 0.5546950592885376,
+      "std": 0.11587767566755595
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.004881587201006154
+    }
+  },
+  "n_hot_rooms_vs_room_num": {
+    "n_hot_rooms_stats": {
+      "type": "numeric",
+      "min": 10.0576,
+      "max": 101.12,
+      "mean": 13.041604743083003,
+      "std": 5.2389566328769686
+    },
+    "room_num_stats": {
+      "type": "numeric",
+      "min": 3.561,
+      "max": 8.78,
+      "mean": 6.284634387351779,
+      "std": 0.7026171434153233
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.030673508951394823
+    }
+  },
+  "n_hot_rooms_vs_age": {
+    "n_hot_rooms_stats": {
+      "type": "numeric",
+      "min": 10.0576,
+      "max": 101.12,
+      "mean": 13.041604743083003,
+      "std": 5.2389566328769686
+    },
+    "age_stats": {
+      "type": "numeric",
+      "min": 2.9,
+      "max": 100.0,
+      "mean": 68.57490118577076,
+      "std": 28.148861406903617
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.009379579323664438
+    }
+  },
+  "n_hot_rooms_vs_dist1": {
+    "n_hot_rooms_stats": {
+      "type": "numeric",
+      "min": 10.0576,
+      "max": 101.12,
+      "mean": 13.041604743083003,
+      "std": 5.2389566328769686
+    },
+    "dist1_stats": {
+      "type": "numeric",
+      "min": 1.13,
+      "max": 12.32,
+      "mean": 3.97199604743083,
+      "std": 2.1085321645858897
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.014462834687158727
+    }
+  },
+  "n_hot_rooms_vs_dist2": {
+    "n_hot_rooms_stats": {
+      "type": "numeric",
+      "min": 10.0576,
+      "max": 101.12,
+      "mean": 13.041604743083003,
+      "std": 5.2389566328769686
+    },
+    "dist2_stats": {
+      "type": "numeric",
+      "min": 0.92,
+      "max": 11.93,
+      "mean": 3.628774703557312,
+      "std": 2.108580321193191
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.010239197525040553
+    }
+  },
+  "n_hot_rooms_vs_dist3": {
+    "n_hot_rooms_stats": {
+      "type": "numeric",
+      "min": 10.0576,
+      "max": 101.12,
+      "mean": 13.041604743083003,
+      "std": 5.2389566328769686
+    },
+    "dist3_stats": {
+      "type": "numeric",
+      "min": 1.15,
+      "max": 12.32,
+      "mean": 3.9606719367588936,
+      "std": 2.119797473766103
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.01007677955216913
+    }
+  },
+  "n_hot_rooms_vs_dist4": {
+    "n_hot_rooms_stats": {
+      "type": "numeric",
+      "min": 10.0576,
+      "max": 101.12,
+      "mean": 13.041604743083003,
+      "std": 5.2389566328769686
+    },
+    "dist4_stats": {
+      "type": "numeric",
+      "min": 0.73,
+      "max": 11.94,
+      "mean": 3.61897233201581,
+      "std": 2.0992029914310257
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.00584993499162019
+    }
+  },
+  "n_hot_rooms_vs_teachers": {
+    "n_hot_rooms_stats": {
+      "type": "numeric",
+      "min": 10.0576,
+      "max": 101.12,
+      "mean": 13.041604743083003,
+      "std": 5.2389566328769686
+    },
+    "teachers_stats": {
+      "type": "numeric",
+      "min": 18.0,
+      "max": 27.4,
+      "mean": 21.54446640316206,
+      "std": 2.1649455237144406
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.023343152844419155
+    }
+  },
+  "n_hot_rooms_vs_poor_prop": {
+    "n_hot_rooms_stats": {
+      "type": "numeric",
+      "min": 10.0576,
+      "max": 101.12,
+      "mean": 13.041604743083003,
+      "std": 5.2389566328769686
+    },
+    "poor_prop_stats": {
+      "type": "numeric",
+      "min": 1.73,
+      "max": 37.97,
+      "mean": 12.653063241106722,
+      "std": 7.141061511348571
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.0033371559042168755
+    }
+  },
+  "n_hot_rooms_vs_airport": {
+    "n_hot_rooms_stats": {
+      "type": "numeric",
+      "min": 10.0576,
+      "max": 101.12,
+      "mean": 13.041604743083003,
+      "std": 5.2389566328769686
+    },
+    "airport_stats": {
+      "type": "categorical",
+      "unique_values": 2,
+      "value_distribution": {
+        "YES": 279,
+        "NO": 227
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "NO": 13.42462731277533,
+          "YES": 12.729969892473118
+        },
+        "std": {
+          "NO": 7.575895417211426,
+          "YES": 1.7269360042663082
+        },
+        "count": {
+          "NO": 227,
+          "YES": 279
+        }
+      }
+    }
+  },
+  "n_hot_rooms_vs_n_hos_beds": {
+    "n_hot_rooms_stats": {
+      "type": "numeric",
+      "min": 10.0576,
+      "max": 101.12,
+      "mean": 13.041604743083003,
+      "std": 5.2389566328769686
+    },
+    "n_hos_beds_stats": {
+      "type": "numeric",
+      "min": 5.268,
+      "max": 10.876,
+      "mean": 7.899767068273092,
+      "std": 1.476682516142425
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.005460778878866369
+    }
+  },
+  "n_hot_rooms_vs_waterbody": {
+    "n_hot_rooms_stats": {
+      "type": "numeric",
+      "min": 10.0576,
+      "max": 101.12,
+      "mean": 13.041604743083003,
+      "std": 5.2389566328769686
+    },
+    "waterbody_stats": {
+      "type": "categorical",
+      "unique_values": 4,
+      "value_distribution": {
+        "River": 183,
+        "Lake": 97,
+        "Lake and River": 71
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "Lake": 13.433245360824742,
+          "Lake and River": 12.962152112676057,
+          "River": 12.635313661202186
+        },
+        "std": {
+          "Lake": 7.1278993483064585,
+          "Lake and River": 1.729885762525471,
+          "River": 1.6588063160125455
+        },
+        "count": {
+          "Lake": 97,
+          "Lake and River": 71,
+          "River": 183
+        }
+      }
+    }
+  },
+  "n_hot_rooms_vs_rainfall": {
+    "n_hot_rooms_stats": {
+      "type": "numeric",
+      "min": 10.0576,
+      "max": 101.12,
+      "mean": 13.041604743083003,
+      "std": 5.2389566328769686
+    },
+    "rainfall_stats": {
+      "type": "numeric",
+      "min": 3.0,
+      "max": 60.0,
+      "mean": 39.18181818181818,
+      "std": 12.51369726587335
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.004839813319988017
+    }
+  },
+  "n_hot_rooms_vs_bus_ter": {
+    "n_hot_rooms_stats": {
+      "type": "numeric",
+      "min": 10.0576,
+      "max": 101.12,
+      "mean": 13.041604743083003,
+      "std": 5.2389566328769686
+    },
+    "bus_ter_stats": {
+      "type": "categorical",
+      "unique_values": 1,
+      "value_distribution": {
+        "YES": 506
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "YES": 13.041604743083003
+        },
+        "std": {
+          "YES": 5.238956632876965
+        },
+        "count": {
+          "YES": 506
+        }
+      }
+    }
+  },
+  "n_hot_rooms_vs_parks": {
+    "n_hot_rooms_stats": {
+      "type": "numeric",
+      "min": 10.0576,
+      "max": 101.12,
+      "mean": 13.041604743083003,
+      "std": 5.2389566328769686
+    },
+    "parks_stats": {
+      "type": "numeric",
+      "min": 0.033291762,
+      "max": 0.086711473,
+      "mean": 0.05445395839920949,
+      "std": 0.010632484889836286
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.006262480965996294
+    }
+  },
+  "waterbody_vs_price": {
+    "waterbody_stats": {
+      "type": "categorical",
+      "unique_values": 4,
+      "value_distribution": {
+        "River": 183,
+        "Lake": 97,
+        "Lake and River": 71
+      }
+    },
+    "price_stats": {
+      "type": "numeric",
+      "min": 5.0,
+      "max": 50.0,
+      "mean": 22.528853754940716,
+      "std": 9.18217588216678
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "Lake": 23.211340206185568,
+          "Lake and River": 21.677464788732394,
+          "River": 23.40327868852459
+        },
+        "std": {
+          "Lake": 9.6030906080701,
+          "Lake and River": 7.975340515490745,
+          "River": 9.383735646619753
+        },
+        "count": {
+          "Lake": 97,
+          "Lake and River": 71,
+          "River": 183
+        }
+      }
+    }
+  },
+  "waterbody_vs_crime_rate": {
+    "waterbody_stats": {
+      "type": "categorical",
+      "unique_values": 4,
+      "value_distribution": {
+        "River": 183,
+        "Lake": 97,
+        "Lake and River": 71
+      }
+    },
+    "crime_rate_stats": {
+      "type": "numeric",
+      "min": 0.00632,
+      "max": 88.9762,
+      "mean": 3.613523557312254,
+      "std": 8.60154510533249
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "Lake": 3.315422164948454,
+          "Lake and River": 3.227478732394366,
+          "River": 3.1897225683060113
+        },
+        "std": {
+          "Lake": 7.221329869416544,
+          "Lake and River": 5.674620459835412,
+          "River": 8.283918161391062
+        },
+        "count": {
+          "Lake": 97,
+          "Lake and River": 71,
+          "River": 183
+        }
+      }
+    }
+  },
+  "waterbody_vs_resid_area": {
+    "waterbody_stats": {
+      "type": "categorical",
+      "unique_values": 4,
+      "value_distribution": {
+        "River": 183,
+        "Lake": 97,
+        "Lake and River": 71
+      }
+    },
+    "resid_area_stats": {
+      "type": "numeric",
+      "min": 30.46,
+      "max": 57.74,
+      "mean": 41.13677865612648,
+      "std": 6.860352940897585
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "Lake": 40.76257731958763,
+          "Lake and River": 42.012957746478875,
+          "River": 40.235573770491804
+        },
+        "std": {
+          "Lake": 7.238929518920386,
+          "Lake and River": 6.815774433383229,
+          "River": 6.649724903321768
+        },
+        "count": {
+          "Lake": 97,
+          "Lake and River": 71,
+          "River": 183
+        }
+      }
+    }
+  },
+  "waterbody_vs_air_qual": {
+    "waterbody_stats": {
+      "type": "categorical",
+      "unique_values": 4,
+      "value_distribution": {
+        "River": 183,
+        "Lake": 97,
+        "Lake and River": 71
+      }
+    },
+    "air_qual_stats": {
+      "type": "numeric",
+      "min": 0.385,
+      "max": 0.871,
+      "mean": 0.5546950592885376,
+      "std": 0.11587767566755595
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "Lake": 0.5436670103092783,
+          "Lake and River": 0.5586633802816902,
+          "River": 0.5488857923497268
+        },
+        "std": {
+          "Lake": 0.11008031511284683,
+          "Lake and River": 0.11019277684317826,
+          "River": 0.12187694260069418
+        },
+        "count": {
+          "Lake": 97,
+          "Lake and River": 71,
+          "River": 183
+        }
+      }
+    }
+  },
+  "waterbody_vs_room_num": {
+    "waterbody_stats": {
+      "type": "categorical",
+      "unique_values": 4,
+      "value_distribution": {
+        "River": 183,
+        "Lake": 97,
+        "Lake and River": 71
+      }
+    },
+    "room_num_stats": {
+      "type": "numeric",
+      "min": 3.561,
+      "max": 8.78,
+      "mean": 6.284634387351779,
+      "std": 0.7026171434153233
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "Lake": 6.27858762886598,
+          "Lake and River": 6.302971830985916,
+          "River": 6.327765027322404
+        },
+        "std": {
+          "Lake": 0.7276079924510821,
+          "Lake and River": 0.6373981705077285,
+          "River": 0.7893677637593896
+        },
+        "count": {
+          "Lake": 97,
+          "Lake and River": 71,
+          "River": 183
+        }
+      }
+    }
+  },
+  "waterbody_vs_age": {
+    "waterbody_stats": {
+      "type": "categorical",
+      "unique_values": 4,
+      "value_distribution": {
+        "River": 183,
+        "Lake": 97,
+        "Lake and River": 71
+      }
+    },
+    "age_stats": {
+      "type": "numeric",
+      "min": 2.9,
+      "max": 100.0,
+      "mean": 68.57490118577076,
+      "std": 28.148861406903617
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "Lake": 68.77422680412371,
+          "Lake and River": 68.2718309859155,
+          "River": 65.26448087431694
+        },
+        "std": {
+          "Lake": 28.111886862850227,
+          "Lake and River": 28.361660152388787,
+          "River": 29.250299061651678
+        },
+        "count": {
+          "Lake": 97,
+          "Lake and River": 71,
+          "River": 183
+        }
+      }
+    }
+  },
+  "waterbody_vs_dist1": {
+    "waterbody_stats": {
+      "type": "categorical",
+      "unique_values": 4,
+      "value_distribution": {
+        "River": 183,
+        "Lake": 97,
+        "Lake and River": 71
+      }
+    },
+    "dist1_stats": {
+      "type": "numeric",
+      "min": 1.13,
+      "max": 12.32,
+      "mean": 3.97199604743083,
+      "std": 2.1085321645858897
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "Lake": 4.124123711340206,
+          "Lake and River": 3.8508450704225354,
+          "River": 4.0580874316939894
+        },
+        "std": {
+          "Lake": 2.211011623941121,
+          "Lake and River": 1.9726760261698708,
+          "River": 2.1203400497042053
+        },
+        "count": {
+          "Lake": 97,
+          "Lake and River": 71,
+          "River": 183
+        }
+      }
+    }
+  },
+  "waterbody_vs_dist2": {
+    "waterbody_stats": {
+      "type": "categorical",
+      "unique_values": 4,
+      "value_distribution": {
+        "River": 183,
+        "Lake": 97,
+        "Lake and River": 71
+      }
+    },
+    "dist2_stats": {
+      "type": "numeric",
+      "min": 0.92,
+      "max": 11.93,
+      "mean": 3.628774703557312,
+      "std": 2.108580321193191
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "Lake": 3.797319587628866,
+          "Lake and River": 3.503098591549296,
+          "River": 3.7143169398907103
+        },
+        "std": {
+          "Lake": 2.2215645366610057,
+          "Lake and River": 1.9666829155054064,
+          "River": 2.119762698746532
+        },
+        "count": {
+          "Lake": 97,
+          "Lake and River": 71,
+          "River": 183
+        }
+      }
+    }
+  },
+  "waterbody_vs_dist3": {
+    "waterbody_stats": {
+      "type": "categorical",
+      "unique_values": 4,
+      "value_distribution": {
+        "River": 183,
+        "Lake": 97,
+        "Lake and River": 71
+      }
+    },
+    "dist3_stats": {
+      "type": "numeric",
+      "min": 1.15,
+      "max": 12.32,
+      "mean": 3.9606719367588936,
+      "std": 2.119797473766103
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "Lake": 4.10639175257732,
+          "Lake and River": 3.8395774647887326,
+          "River": 4.055300546448088
+        },
+        "std": {
+          "Lake": 2.2205593259202216,
+          "Lake and River": 1.992319134375614,
+          "River": 2.1220397072311417
+        },
+        "count": {
+          "Lake": 97,
+          "Lake and River": 71,
+          "River": 183
+        }
+      }
+    }
+  },
+  "waterbody_vs_dist4": {
+    "waterbody_stats": {
+      "type": "categorical",
+      "unique_values": 4,
+      "value_distribution": {
+        "River": 183,
+        "Lake": 97,
+        "Lake and River": 71
+      }
+    },
+    "dist4_stats": {
+      "type": "numeric",
+      "min": 0.73,
+      "max": 11.94,
+      "mean": 3.61897233201581,
+      "std": 2.0992029914310257
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "Lake": 3.755463917525773,
+          "Lake and River": 3.5428169014084507,
+          "River": 3.713224043715847
+        },
+        "std": {
+          "Lake": 2.1897655033409387,
+          "Lake and River": 1.93353058500217,
+          "River": 2.1261751731950573
+        },
+        "count": {
+          "Lake": 97,
+          "Lake and River": 71,
+          "River": 183
+        }
+      }
+    }
+  },
+  "waterbody_vs_teachers": {
+    "waterbody_stats": {
+      "type": "categorical",
+      "unique_values": 4,
+      "value_distribution": {
+        "River": 183,
+        "Lake": 97,
+        "Lake and River": 71
+      }
+    },
+    "teachers_stats": {
+      "type": "numeric",
+      "min": 18.0,
+      "max": 27.4,
+      "mean": 21.54446640316206,
+      "std": 2.1649455237144406
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "Lake": 21.760824742268042,
+          "Lake and River": 21.292957746478873,
+          "River": 21.815300546448086
+        },
+        "std": {
+          "Lake": 2.2726433169435336,
+          "Lake and River": 2.2201238024464143,
+          "River": 2.101800848030069
+        },
+        "count": {
+          "Lake": 97,
+          "Lake and River": 71,
+          "River": 183
+        }
+      }
+    }
+  },
+  "waterbody_vs_poor_prop": {
+    "waterbody_stats": {
+      "type": "categorical",
+      "unique_values": 4,
+      "value_distribution": {
+        "River": 183,
+        "Lake": 97,
+        "Lake and River": 71
+      }
+    },
+    "poor_prop_stats": {
+      "type": "numeric",
+      "min": 1.73,
+      "max": 37.97,
+      "mean": 12.653063241106722,
+      "std": 7.141061511348571
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "Lake": 12.699896907216496,
+          "Lake and River": 13.01718309859155,
+          "River": 11.619945355191255
+        },
+        "std": {
+          "Lake": 7.725465532742637,
+          "Lake and River": 6.456902880549863,
+          "River": 6.828915130906913
+        },
+        "count": {
+          "Lake": 97,
+          "Lake and River": 71,
+          "River": 183
+        }
+      }
+    }
+  },
+  "waterbody_vs_airport": {
+    "waterbody_stats": {
+      "type": "categorical",
+      "unique_values": 4,
+      "value_distribution": {
+        "River": 183,
+        "Lake": 97,
+        "Lake and River": 71
+      }
+    },
+    "airport_stats": {
+      "type": "categorical",
+      "unique_values": 2,
+      "value_distribution": {
+        "YES": 279,
+        "NO": 227
+      }
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_categorical",
+      "contingency_table": {
+        "NO": {
+          "Lake": 40,
+          "Lake and River": 38,
+          "River": 80
+        },
+        "YES": {
+          "Lake": 57,
+          "Lake and River": 33,
+          "River": 103
+        }
+      }
+    }
+  },
+  "waterbody_vs_n_hos_beds": {
+    "waterbody_stats": {
+      "type": "categorical",
+      "unique_values": 4,
+      "value_distribution": {
+        "River": 183,
+        "Lake": 97,
+        "Lake and River": 71
+      }
+    },
+    "n_hos_beds_stats": {
+      "type": "numeric",
+      "min": 5.268,
+      "max": 10.876,
+      "mean": 7.899767068273092,
+      "std": 1.476682516142425
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "Lake": 8.030872340425532,
+          "Lake and River": 8.115239436619719,
+          "River": 7.751550561797753
+        },
+        "std": {
+          "Lake": 1.4889026213241288,
+          "Lake and River": 1.5697133265553276,
+          "River": 1.489688209225641
+        },
+        "count": {
+          "Lake": 94,
+          "Lake and River": 71,
+          "River": 178
+        }
+      }
+    }
+  },
+  "waterbody_vs_n_hot_rooms": {
+    "waterbody_stats": {
+      "type": "categorical",
+      "unique_values": 4,
+      "value_distribution": {
+        "River": 183,
+        "Lake": 97,
+        "Lake and River": 71
+      }
+    },
+    "n_hot_rooms_stats": {
+      "type": "numeric",
+      "min": 10.0576,
+      "max": 101.12,
+      "mean": 13.041604743083003,
+      "std": 5.2389566328769686
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "Lake": 13.433245360824742,
+          "Lake and River": 12.962152112676057,
+          "River": 12.635313661202186
+        },
+        "std": {
+          "Lake": 7.1278993483064585,
+          "Lake and River": 1.729885762525471,
+          "River": 1.6588063160125455
+        },
+        "count": {
+          "Lake": 97,
+          "Lake and River": 71,
+          "River": 183
+        }
+      }
+    }
+  },
+  "waterbody_vs_rainfall": {
+    "waterbody_stats": {
+      "type": "categorical",
+      "unique_values": 4,
+      "value_distribution": {
+        "River": 183,
+        "Lake": 97,
+        "Lake and River": 71
+      }
+    },
+    "rainfall_stats": {
+      "type": "numeric",
+      "min": 3.0,
+      "max": 60.0,
+      "mean": 39.18181818181818,
+      "std": 12.51369726587335
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "Lake": 38.77319587628866,
+          "Lake and River": 42.563380281690144,
+          "River": 38.57377049180328
+        },
+        "std": {
+          "Lake": 12.796895094318106,
+          "Lake and River": 12.276263268561578,
+          "River": 12.255242004317953
+        },
+        "count": {
+          "Lake": 97,
+          "Lake and River": 71,
+          "River": 183
+        }
+      }
+    }
+  },
+  "waterbody_vs_bus_ter": {
+    "waterbody_stats": {
+      "type": "categorical",
+      "unique_values": 4,
+      "value_distribution": {
+        "River": 183,
+        "Lake": 97,
+        "Lake and River": 71
+      }
+    },
+    "bus_ter_stats": {
+      "type": "categorical",
+      "unique_values": 1,
+      "value_distribution": {
+        "YES": 506
+      }
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_categorical",
+      "contingency_table": {
+        "YES": {
+          "Lake": 97,
+          "Lake and River": 71,
+          "River": 183
+        }
+      }
+    }
+  },
+  "waterbody_vs_parks": {
+    "waterbody_stats": {
+      "type": "categorical",
+      "unique_values": 4,
+      "value_distribution": {
+        "River": 183,
+        "Lake": 97,
+        "Lake and River": 71
+      }
+    },
+    "parks_stats": {
+      "type": "numeric",
+      "min": 0.033291762,
+      "max": 0.086711473,
+      "mean": 0.05445395839920949,
+      "std": 0.010632484889836286
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "Lake": 0.053690752597938145,
+          "Lake and River": 0.054802707774647894,
+          "River": 0.0537644278579235
+        },
+        "std": {
+          "Lake": 0.010578401843766736,
+          "Lake and River": 0.009969690888220214,
+          "River": 0.010883349229228859
+        },
+        "count": {
+          "Lake": 97,
+          "Lake and River": 71,
+          "River": 183
+        }
+      }
+    }
+  },
+  "rainfall_vs_price": {
+    "rainfall_stats": {
+      "type": "numeric",
+      "min": 3.0,
+      "max": 60.0,
+      "mean": 39.18181818181818,
+      "std": 12.51369726587335
+    },
+    "price_stats": {
+      "type": "numeric",
+      "min": 5.0,
+      "max": 50.0,
+      "mean": 22.528853754940716,
+      "std": 9.18217588216678
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.04742623256774055
+    }
+  },
+  "rainfall_vs_crime_rate": {
+    "rainfall_stats": {
+      "type": "numeric",
+      "min": 3.0,
+      "max": 60.0,
+      "mean": 39.18181818181818,
+      "std": 12.51369726587335
+    },
+    "crime_rate_stats": {
+      "type": "numeric",
+      "min": 0.00632,
+      "max": 88.9762,
+      "mean": 3.613523557312254,
+      "std": 8.60154510533249
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.05920391874767744
+    }
+  },
+  "rainfall_vs_resid_area": {
+    "rainfall_stats": {
+      "type": "numeric",
+      "min": 3.0,
+      "max": 60.0,
+      "mean": 39.18181818181818,
+      "std": 12.51369726587335
+    },
+    "resid_area_stats": {
+      "type": "numeric",
+      "min": 30.46,
+      "max": 57.74,
+      "mean": 41.13677865612648,
+      "std": 6.860352940897585
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.05580980010400707
+    }
+  },
+  "rainfall_vs_air_qual": {
+    "rainfall_stats": {
+      "type": "numeric",
+      "min": 3.0,
+      "max": 60.0,
+      "mean": 39.18181818181818,
+      "std": 12.51369726587335
+    },
+    "air_qual_stats": {
+      "type": "numeric",
+      "min": 0.385,
+      "max": 0.871,
+      "mean": 0.5546950592885376,
+      "std": 0.11587767566755595
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.09210399412062241
+    }
+  },
+  "rainfall_vs_room_num": {
+    "rainfall_stats": {
+      "type": "numeric",
+      "min": 3.0,
+      "max": 60.0,
+      "mean": 39.18181818181818,
+      "std": 12.51369726587335
+    },
+    "room_num_stats": {
+      "type": "numeric",
+      "min": 3.561,
+      "max": 8.78,
+      "mean": 6.284634387351779,
+      "std": 0.7026171434153233
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.06469389670963027
+    }
+  },
+  "rainfall_vs_age": {
+    "rainfall_stats": {
+      "type": "numeric",
+      "min": 3.0,
+      "max": 60.0,
+      "mean": 39.18181818181818,
+      "std": 12.51369726587335
+    },
+    "age_stats": {
+      "type": "numeric",
+      "min": 2.9,
+      "max": 100.0,
+      "mean": 68.57490118577076,
+      "std": 28.148861406903617
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.07519776518835583
+    }
+  },
+  "rainfall_vs_dist1": {
+    "rainfall_stats": {
+      "type": "numeric",
+      "min": 3.0,
+      "max": 60.0,
+      "mean": 39.18181818181818,
+      "std": 12.51369726587335
+    },
+    "dist1_stats": {
+      "type": "numeric",
+      "min": 1.13,
+      "max": 12.32,
+      "mean": 3.97199604743083,
+      "std": 2.1085321645858897
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.03679436292439464
+    }
+  },
+  "rainfall_vs_dist2": {
+    "rainfall_stats": {
+      "type": "numeric",
+      "min": 3.0,
+      "max": 60.0,
+      "mean": 39.18181818181818,
+      "std": 12.51369726587335
+    },
+    "dist2_stats": {
+      "type": "numeric",
+      "min": 0.92,
+      "max": 11.93,
+      "mean": 3.628774703557312,
+      "std": 2.108580321193191
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.038005052662575145
+    }
+  },
+  "rainfall_vs_dist3": {
+    "rainfall_stats": {
+      "type": "numeric",
+      "min": 3.0,
+      "max": 60.0,
+      "mean": 39.18181818181818,
+      "std": 12.51369726587335
+    },
+    "dist3_stats": {
+      "type": "numeric",
+      "min": 1.15,
+      "max": 12.32,
+      "mean": 3.9606719367588936,
+      "std": 2.119797473766103
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.041469588697837005
+    }
+  },
+  "rainfall_vs_dist4": {
+    "rainfall_stats": {
+      "type": "numeric",
+      "min": 3.0,
+      "max": 60.0,
+      "mean": 39.18181818181818,
+      "std": 12.51369726587335
+    },
+    "dist4_stats": {
+      "type": "numeric",
+      "min": 0.73,
+      "max": 11.94,
+      "mean": 3.61897233201581,
+      "std": 2.0992029914310257
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.03254213309216057
+    }
+  },
+  "rainfall_vs_teachers": {
+    "rainfall_stats": {
+      "type": "numeric",
+      "min": 3.0,
+      "max": 60.0,
+      "mean": 39.18181818181818,
+      "std": 12.51369726587335
+    },
+    "teachers_stats": {
+      "type": "numeric",
+      "min": 18.0,
+      "max": 27.4,
+      "mean": 21.54446640316206,
+      "std": 2.1649455237144406
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.04583597879222273
+    }
+  },
+  "rainfall_vs_poor_prop": {
+    "rainfall_stats": {
+      "type": "numeric",
+      "min": 3.0,
+      "max": 60.0,
+      "mean": 39.18181818181818,
+      "std": 12.51369726587335
+    },
+    "poor_prop_stats": {
+      "type": "numeric",
+      "min": 1.73,
+      "max": 37.97,
+      "mean": 12.653063241106722,
+      "std": 7.141061511348571
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.06158102360748053
+    }
+  },
+  "rainfall_vs_airport": {
+    "rainfall_stats": {
+      "type": "numeric",
+      "min": 3.0,
+      "max": 60.0,
+      "mean": 39.18181818181818,
+      "std": 12.51369726587335
+    },
+    "airport_stats": {
+      "type": "categorical",
+      "unique_values": 2,
+      "value_distribution": {
+        "YES": 279,
+        "NO": 227
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "NO": 39.370044052863435,
+          "YES": 39.028673835125446
+        },
+        "std": {
+          "NO": 12.184226764815971,
+          "YES": 12.795256906920514
+        },
+        "count": {
+          "NO": 227,
+          "YES": 279
+        }
+      }
+    }
+  },
+  "rainfall_vs_n_hos_beds": {
+    "rainfall_stats": {
+      "type": "numeric",
+      "min": 3.0,
+      "max": 60.0,
+      "mean": 39.18181818181818,
+      "std": 12.51369726587335
+    },
+    "n_hos_beds_stats": {
+      "type": "numeric",
+      "min": 5.268,
+      "max": 10.876,
+      "mean": 7.899767068273092,
+      "std": 1.476682516142425
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.05899694049539077
+    }
+  },
+  "rainfall_vs_n_hot_rooms": {
+    "rainfall_stats": {
+      "type": "numeric",
+      "min": 3.0,
+      "max": 60.0,
+      "mean": 39.18181818181818,
+      "std": 12.51369726587335
+    },
+    "n_hot_rooms_stats": {
+      "type": "numeric",
+      "min": 10.0576,
+      "max": 101.12,
+      "mean": 13.041604743083003,
+      "std": 5.2389566328769686
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.004839813319988017
+    }
+  },
+  "rainfall_vs_waterbody": {
+    "rainfall_stats": {
+      "type": "numeric",
+      "min": 3.0,
+      "max": 60.0,
+      "mean": 39.18181818181818,
+      "std": 12.51369726587335
+    },
+    "waterbody_stats": {
+      "type": "categorical",
+      "unique_values": 4,
+      "value_distribution": {
+        "River": 183,
+        "Lake": 97,
+        "Lake and River": 71
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "Lake": 38.77319587628866,
+          "Lake and River": 42.563380281690144,
+          "River": 38.57377049180328
+        },
+        "std": {
+          "Lake": 12.796895094318106,
+          "Lake and River": 12.276263268561578,
+          "River": 12.255242004317953
+        },
+        "count": {
+          "Lake": 97,
+          "Lake and River": 71,
+          "River": 183
+        }
+      }
+    }
+  },
+  "rainfall_vs_bus_ter": {
+    "rainfall_stats": {
+      "type": "numeric",
+      "min": 3.0,
+      "max": 60.0,
+      "mean": 39.18181818181818,
+      "std": 12.51369726587335
+    },
+    "bus_ter_stats": {
+      "type": "categorical",
+      "unique_values": 1,
+      "value_distribution": {
+        "YES": 506
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "YES": 39.18181818181818
+        },
+        "std": {
+          "YES": 12.513697265873354
+        },
+        "count": {
+          "YES": 506
+        }
+      }
+    }
+  },
+  "rainfall_vs_parks": {
+    "rainfall_stats": {
+      "type": "numeric",
+      "min": 3.0,
+      "max": 60.0,
+      "mean": 39.18181818181818,
+      "std": 12.51369726587335
+    },
+    "parks_stats": {
+      "type": "numeric",
+      "min": 0.033291762,
+      "max": 0.086711473,
+      "mean": 0.05445395839920949,
+      "std": 0.010632484889836286
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.07864086926956408
+    }
+  },
+  "bus_ter_vs_price": {
+    "bus_ter_stats": {
+      "type": "categorical",
+      "unique_values": 1,
+      "value_distribution": {
+        "YES": 506
+      }
+    },
+    "price_stats": {
+      "type": "numeric",
+      "min": 5.0,
+      "max": 50.0,
+      "mean": 22.528853754940716,
+      "std": 9.18217588216678
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "YES": 22.528853754940712
+        },
+        "std": {
+          "YES": 9.182175882166778
+        },
+        "count": {
+          "YES": 506
+        }
+      }
+    }
+  },
+  "bus_ter_vs_crime_rate": {
+    "bus_ter_stats": {
+      "type": "categorical",
+      "unique_values": 1,
+      "value_distribution": {
+        "YES": 506
+      }
+    },
+    "crime_rate_stats": {
+      "type": "numeric",
+      "min": 0.00632,
+      "max": 88.9762,
+      "mean": 3.613523557312254,
+      "std": 8.60154510533249
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "YES": 3.613523557312253
+        },
+        "std": {
+          "YES": 8.601545105332491
+        },
+        "count": {
+          "YES": 506
+        }
+      }
+    }
+  },
+  "bus_ter_vs_resid_area": {
+    "bus_ter_stats": {
+      "type": "categorical",
+      "unique_values": 1,
+      "value_distribution": {
+        "YES": 506
+      }
+    },
+    "resid_area_stats": {
+      "type": "numeric",
+      "min": 30.46,
+      "max": 57.74,
+      "mean": 41.13677865612648,
+      "std": 6.860352940897585
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "YES": 41.13677865612648
+        },
+        "std": {
+          "YES": 6.860352940897582
+        },
+        "count": {
+          "YES": 506
+        }
+      }
+    }
+  },
+  "bus_ter_vs_air_qual": {
+    "bus_ter_stats": {
+      "type": "categorical",
+      "unique_values": 1,
+      "value_distribution": {
+        "YES": 506
+      }
+    },
+    "air_qual_stats": {
+      "type": "numeric",
+      "min": 0.385,
+      "max": 0.871,
+      "mean": 0.5546950592885376,
+      "std": 0.11587767566755595
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "YES": 0.5546950592885376
+        },
+        "std": {
+          "YES": 0.11587767566755584
+        },
+        "count": {
+          "YES": 506
+        }
+      }
+    }
+  },
+  "bus_ter_vs_room_num": {
+    "bus_ter_stats": {
+      "type": "categorical",
+      "unique_values": 1,
+      "value_distribution": {
+        "YES": 506
+      }
+    },
+    "room_num_stats": {
+      "type": "numeric",
+      "min": 3.561,
+      "max": 8.78,
+      "mean": 6.284634387351779,
+      "std": 0.7026171434153233
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "YES": 6.284634387351779
+        },
+        "std": {
+          "YES": 0.7026171434153232
+        },
+        "count": {
+          "YES": 506
+        }
+      }
+    }
+  },
+  "bus_ter_vs_age": {
+    "bus_ter_stats": {
+      "type": "categorical",
+      "unique_values": 1,
+      "value_distribution": {
+        "YES": 506
+      }
+    },
+    "age_stats": {
+      "type": "numeric",
+      "min": 2.9,
+      "max": 100.0,
+      "mean": 68.57490118577076,
+      "std": 28.148861406903617
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "YES": 68.57490118577076
+        },
+        "std": {
+          "YES": 28.148861406903595
+        },
+        "count": {
+          "YES": 506
+        }
+      }
+    }
+  },
+  "bus_ter_vs_dist1": {
+    "bus_ter_stats": {
+      "type": "categorical",
+      "unique_values": 1,
+      "value_distribution": {
+        "YES": 506
+      }
+    },
+    "dist1_stats": {
+      "type": "numeric",
+      "min": 1.13,
+      "max": 12.32,
+      "mean": 3.97199604743083,
+      "std": 2.1085321645858897
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "YES": 3.97199604743083
+        },
+        "std": {
+          "YES": 2.1085321645858897
+        },
+        "count": {
+          "YES": 506
+        }
+      }
+    }
+  },
+  "bus_ter_vs_dist2": {
+    "bus_ter_stats": {
+      "type": "categorical",
+      "unique_values": 1,
+      "value_distribution": {
+        "YES": 506
+      }
+    },
+    "dist2_stats": {
+      "type": "numeric",
+      "min": 0.92,
+      "max": 11.93,
+      "mean": 3.628774703557312,
+      "std": 2.108580321193191
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "YES": 3.6287747035573124
+        },
+        "std": {
+          "YES": 2.1085803211931915
+        },
+        "count": {
+          "YES": 506
+        }
+      }
+    }
+  },
+  "bus_ter_vs_dist3": {
+    "bus_ter_stats": {
+      "type": "categorical",
+      "unique_values": 1,
+      "value_distribution": {
+        "YES": 506
+      }
+    },
+    "dist3_stats": {
+      "type": "numeric",
+      "min": 1.15,
+      "max": 12.32,
+      "mean": 3.9606719367588936,
+      "std": 2.119797473766103
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "YES": 3.960671936758893
+        },
+        "std": {
+          "YES": 2.119797473766104
+        },
+        "count": {
+          "YES": 506
+        }
+      }
+    }
+  },
+  "bus_ter_vs_dist4": {
+    "bus_ter_stats": {
+      "type": "categorical",
+      "unique_values": 1,
+      "value_distribution": {
+        "YES": 506
+      }
+    },
+    "dist4_stats": {
+      "type": "numeric",
+      "min": 0.73,
+      "max": 11.94,
+      "mean": 3.61897233201581,
+      "std": 2.0992029914310257
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "YES": 3.6189723320158103
+        },
+        "std": {
+          "YES": 2.099202991431024
+        },
+        "count": {
+          "YES": 506
+        }
+      }
+    }
+  },
+  "bus_ter_vs_teachers": {
+    "bus_ter_stats": {
+      "type": "categorical",
+      "unique_values": 1,
+      "value_distribution": {
+        "YES": 506
+      }
+    },
+    "teachers_stats": {
+      "type": "numeric",
+      "min": 18.0,
+      "max": 27.4,
+      "mean": 21.54446640316206,
+      "std": 2.1649455237144406
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "YES": 21.544466403162055
+        },
+        "std": {
+          "YES": 2.1649455237144455
+        },
+        "count": {
+          "YES": 506
+        }
+      }
+    }
+  },
+  "bus_ter_vs_poor_prop": {
+    "bus_ter_stats": {
+      "type": "categorical",
+      "unique_values": 1,
+      "value_distribution": {
+        "YES": 506
+      }
+    },
+    "poor_prop_stats": {
+      "type": "numeric",
+      "min": 1.73,
+      "max": 37.97,
+      "mean": 12.653063241106722,
+      "std": 7.141061511348571
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "YES": 12.65306324110672
+        },
+        "std": {
+          "YES": 7.141061511348571
+        },
+        "count": {
+          "YES": 506
+        }
+      }
+    }
+  },
+  "bus_ter_vs_airport": {
+    "bus_ter_stats": {
+      "type": "categorical",
+      "unique_values": 1,
+      "value_distribution": {
+        "YES": 506
+      }
+    },
+    "airport_stats": {
+      "type": "categorical",
+      "unique_values": 2,
+      "value_distribution": {
+        "YES": 279,
+        "NO": 227
+      }
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_categorical",
+      "contingency_table": {
+        "NO": {
+          "YES": 227
+        },
+        "YES": {
+          "YES": 279
+        }
+      }
+    }
+  },
+  "bus_ter_vs_n_hos_beds": {
+    "bus_ter_stats": {
+      "type": "categorical",
+      "unique_values": 1,
+      "value_distribution": {
+        "YES": 506
+      }
+    },
+    "n_hos_beds_stats": {
+      "type": "numeric",
+      "min": 5.268,
+      "max": 10.876,
+      "mean": 7.899767068273092,
+      "std": 1.476682516142425
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "YES": 7.899767068273092
+        },
+        "std": {
+          "YES": 1.4766825161424244
+        },
+        "count": {
+          "YES": 498
+        }
+      }
+    }
+  },
+  "bus_ter_vs_n_hot_rooms": {
+    "bus_ter_stats": {
+      "type": "categorical",
+      "unique_values": 1,
+      "value_distribution": {
+        "YES": 506
+      }
+    },
+    "n_hot_rooms_stats": {
+      "type": "numeric",
+      "min": 10.0576,
+      "max": 101.12,
+      "mean": 13.041604743083003,
+      "std": 5.2389566328769686
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "YES": 13.041604743083003
+        },
+        "std": {
+          "YES": 5.238956632876965
+        },
+        "count": {
+          "YES": 506
+        }
+      }
+    }
+  },
+  "bus_ter_vs_waterbody": {
+    "bus_ter_stats": {
+      "type": "categorical",
+      "unique_values": 1,
+      "value_distribution": {
+        "YES": 506
+      }
+    },
+    "waterbody_stats": {
+      "type": "categorical",
+      "unique_values": 4,
+      "value_distribution": {
+        "River": 183,
+        "Lake": 97,
+        "Lake and River": 71
+      }
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_categorical",
+      "contingency_table": {
+        "Lake": {
+          "YES": 97
+        },
+        "Lake and River": {
+          "YES": 71
+        },
+        "River": {
+          "YES": 183
+        }
+      }
+    }
+  },
+  "bus_ter_vs_rainfall": {
+    "bus_ter_stats": {
+      "type": "categorical",
+      "unique_values": 1,
+      "value_distribution": {
+        "YES": 506
+      }
+    },
+    "rainfall_stats": {
+      "type": "numeric",
+      "min": 3.0,
+      "max": 60.0,
+      "mean": 39.18181818181818,
+      "std": 12.51369726587335
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "YES": 39.18181818181818
+        },
+        "std": {
+          "YES": 12.513697265873354
+        },
+        "count": {
+          "YES": 506
+        }
+      }
+    }
+  },
+  "bus_ter_vs_parks": {
+    "bus_ter_stats": {
+      "type": "categorical",
+      "unique_values": 1,
+      "value_distribution": {
+        "YES": 506
+      }
+    },
+    "parks_stats": {
+      "type": "numeric",
+      "min": 0.033291762,
+      "max": 0.086711473,
+      "mean": 0.05445395839920949,
+      "std": 0.010632484889836286
+    },
+    "cross_analysis": {
+      "type": "categorical_vs_numeric",
+      "grouped_stats": {
+        "mean": {
+          "YES": 0.05445395839920948
+        },
+        "std": {
+          "YES": 0.010632484889836279
+        },
+        "count": {
+          "YES": 506
+        }
+      }
+    }
+  },
+  "parks_vs_price": {
+    "parks_stats": {
+      "type": "numeric",
+      "min": 0.033291762,
+      "max": 0.086711473,
+      "mean": 0.05445395839920949,
+      "std": 0.010632484889836286
+    },
+    "price_stats": {
+      "type": "numeric",
+      "min": 5.0,
+      "max": 50.0,
+      "mean": 22.528853754940716,
+      "std": 9.18217588216678
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.39157406535143957
+    }
+  },
+  "parks_vs_crime_rate": {
+    "parks_stats": {
+      "type": "numeric",
+      "min": 0.033291762,
+      "max": 0.086711473,
+      "mean": 0.05445395839920949,
+      "std": 0.010632484889836286
+    },
+    "crime_rate_stats": {
+      "type": "numeric",
+      "min": 0.00632,
+      "max": 88.9762,
+      "mean": 3.613523557312254,
+      "std": 8.60154510533249
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.38323478974624237
+    }
+  },
+  "parks_vs_resid_area": {
+    "parks_stats": {
+      "type": "numeric",
+      "min": 0.033291762,
+      "max": 0.086711473,
+      "mean": 0.05445395839920949,
+      "std": 0.010632484889836286
+    },
+    "resid_area_stats": {
+      "type": "numeric",
+      "min": 30.46,
+      "max": 57.74,
+      "mean": 41.13677865612648,
+      "std": 6.860352940897585
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.7076348233031614
+    }
+  },
+  "parks_vs_air_qual": {
+    "parks_stats": {
+      "type": "numeric",
+      "min": 0.033291762,
+      "max": 0.086711473,
+      "mean": 0.05445395839920949,
+      "std": 0.010632484889836286
+    },
+    "air_qual_stats": {
+      "type": "numeric",
+      "min": 0.385,
+      "max": 0.871,
+      "mean": 0.5546950592885376,
+      "std": 0.11587767566755595
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.9155436002325548
+    }
+  },
+  "parks_vs_room_num": {
+    "parks_stats": {
+      "type": "numeric",
+      "min": 0.033291762,
+      "max": 0.086711473,
+      "mean": 0.05445395839920949,
+      "std": 0.010632484889836286
+    },
+    "room_num_stats": {
+      "type": "numeric",
+      "min": 3.561,
+      "max": 8.78,
+      "mean": 6.284634387351779,
+      "std": 0.7026171434153233
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.28281667360856916
+    }
+  },
+  "parks_vs_age": {
+    "parks_stats": {
+      "type": "numeric",
+      "min": 0.033291762,
+      "max": 0.086711473,
+      "mean": 0.05445395839920949,
+      "std": 0.010632484889836286
+    },
+    "age_stats": {
+      "type": "numeric",
+      "min": 2.9,
+      "max": 100.0,
+      "mean": 68.57490118577076,
+      "std": 28.148861406903617
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.6738503598393932
+    }
+  },
+  "parks_vs_dist1": {
+    "parks_stats": {
+      "type": "numeric",
+      "min": 0.033291762,
+      "max": 0.086711473,
+      "mean": 0.05445395839920949,
+      "std": 0.010632484889836286
+    },
+    "dist1_stats": {
+      "type": "numeric",
+      "min": 1.13,
+      "max": 12.32,
+      "mean": 3.97199604743083,
+      "std": 2.1085321645858897
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.706319332169252
+    }
+  },
+  "parks_vs_dist2": {
+    "parks_stats": {
+      "type": "numeric",
+      "min": 0.033291762,
+      "max": 0.086711473,
+      "mean": 0.05445395839920949,
+      "std": 0.010632484889836286
+    },
+    "dist2_stats": {
+      "type": "numeric",
+      "min": 0.92,
+      "max": 11.93,
+      "mean": 3.628774703557312,
+      "std": 2.108580321193191
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.7082372836320058
+    }
+  },
+  "parks_vs_dist3": {
+    "parks_stats": {
+      "type": "numeric",
+      "min": 0.033291762,
+      "max": 0.086711473,
+      "mean": 0.05445395839920949,
+      "std": 0.010632484889836286
+    },
+    "dist3_stats": {
+      "type": "numeric",
+      "min": 1.15,
+      "max": 12.32,
+      "mean": 3.9606719367588936,
+      "std": 2.119797473766103
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.709345664110098
+    }
+  },
+  "parks_vs_dist4": {
+    "parks_stats": {
+      "type": "numeric",
+      "min": 0.033291762,
+      "max": 0.086711473,
+      "mean": 0.05445395839920949,
+      "std": 0.010632484889836286
+    },
+    "dist4_stats": {
+      "type": "numeric",
+      "min": 0.73,
+      "max": 11.94,
+      "mean": 3.61897233201581,
+      "std": 2.0992029914310257
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.7035084886173544
+    }
+  },
+  "parks_vs_teachers": {
+    "parks_stats": {
+      "type": "numeric",
+      "min": 0.033291762,
+      "max": 0.086711473,
+      "mean": 0.05445395839920949,
+      "std": 0.010632484889836286
+    },
+    "teachers_stats": {
+      "type": "numeric",
+      "min": 18.0,
+      "max": 27.4,
+      "mean": 21.54446640316206,
+      "std": 2.1649455237144406
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.1870042560114279
+    }
+  },
+  "parks_vs_poor_prop": {
+    "parks_stats": {
+      "type": "numeric",
+      "min": 0.033291762,
+      "max": 0.086711473,
+      "mean": 0.05445395839920949,
+      "std": 0.010632484889836286
+    },
+    "poor_prop_stats": {
+      "type": "numeric",
+      "min": 1.73,
+      "max": 37.97,
+      "mean": 12.653063241106722,
+      "std": 7.141061511348571
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.5523100418647519
+    }
+  },
+  "parks_vs_airport": {
+    "parks_stats": {
+      "type": "numeric",
+      "min": 0.033291762,
+      "max": 0.086711473,
+      "mean": 0.05445395839920949,
+      "std": 0.010632484889836286
+    },
+    "airport_stats": {
+      "type": "categorical",
+      "unique_values": 2,
+      "value_distribution": {
+        "YES": 279,
+        "NO": 227
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "NO": 0.055072229933920705,
+          "YES": 0.053950920268817204
+        },
+        "std": {
+          "NO": 0.011257044125181524,
+          "YES": 0.010088419778250762
+        },
+        "count": {
+          "NO": 227,
+          "YES": 279
+        }
+      }
+    }
+  },
+  "parks_vs_n_hos_beds": {
+    "parks_stats": {
+      "type": "numeric",
+      "min": 0.033291762,
+      "max": 0.086711473,
+      "mean": 0.05445395839920949,
+      "std": 0.010632484889836286
+    },
+    "n_hos_beds_stats": {
+      "type": "numeric",
+      "min": 5.268,
+      "max": 10.876,
+      "mean": 7.899767068273092,
+      "std": 1.476682516142425
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": -0.07200230897866439
+    }
+  },
+  "parks_vs_n_hot_rooms": {
+    "parks_stats": {
+      "type": "numeric",
+      "min": 0.033291762,
+      "max": 0.086711473,
+      "mean": 0.05445395839920949,
+      "std": 0.010632484889836286
+    },
+    "n_hot_rooms_stats": {
+      "type": "numeric",
+      "min": 10.0576,
+      "max": 101.12,
+      "mean": 13.041604743083003,
+      "std": 5.2389566328769686
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.006262480965996294
+    }
+  },
+  "parks_vs_waterbody": {
+    "parks_stats": {
+      "type": "numeric",
+      "min": 0.033291762,
+      "max": 0.086711473,
+      "mean": 0.05445395839920949,
+      "std": 0.010632484889836286
+    },
+    "waterbody_stats": {
+      "type": "categorical",
+      "unique_values": 4,
+      "value_distribution": {
+        "River": 183,
+        "Lake": 97,
+        "Lake and River": 71
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "Lake": 0.053690752597938145,
+          "Lake and River": 0.054802707774647894,
+          "River": 0.0537644278579235
+        },
+        "std": {
+          "Lake": 0.010578401843766736,
+          "Lake and River": 0.009969690888220214,
+          "River": 0.010883349229228859
+        },
+        "count": {
+          "Lake": 97,
+          "Lake and River": 71,
+          "River": 183
+        }
+      }
+    }
+  },
+  "parks_vs_rainfall": {
+    "parks_stats": {
+      "type": "numeric",
+      "min": 0.033291762,
+      "max": 0.086711473,
+      "mean": 0.05445395839920949,
+      "std": 0.010632484889836286
+    },
+    "rainfall_stats": {
+      "type": "numeric",
+      "min": 3.0,
+      "max": 60.0,
+      "mean": 39.18181818181818,
+      "std": 12.51369726587335
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_numeric",
+      "correlation": 0.07864086926956408
+    }
+  },
+  "parks_vs_bus_ter": {
+    "parks_stats": {
+      "type": "numeric",
+      "min": 0.033291762,
+      "max": 0.086711473,
+      "mean": 0.05445395839920949,
+      "std": 0.010632484889836286
+    },
+    "bus_ter_stats": {
+      "type": "categorical",
+      "unique_values": 1,
+      "value_distribution": {
+        "YES": 506
+      }
+    },
+    "cross_analysis": {
+      "type": "numeric_vs_categorical",
+      "grouped_stats": {
+        "mean": {
+          "YES": 0.05445395839920948
+        },
+        "std": {
+          "YES": 0.010632484889836279
+        },
+        "count": {
+          "YES": 506
+        }
+      }
+    }
+  }
+}
