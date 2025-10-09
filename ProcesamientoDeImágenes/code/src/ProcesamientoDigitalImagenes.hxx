@@ -14,12 +14,23 @@ namespace lovdog {
       void showIt(const char* WindowName=nullptr, bool renameObject=false);
       void saveIt(const char* name=nullptr, const char* extension="png");
       void doxeIt();
-      void newImage(int width, int height, const int type = CV_8U);
+      void newImage(int width, int height, const int type = CV_8UC1);
       void modifyIt(std::function<void(cv::Mat& image)>modifier);
+      void changeDomain(const int Type=CV_8UC1, bool custom=false);
+      void ComputeDynamicRange(void);
+      void Negative(void);
+      void Binarization(void);
+      void Tresholding(void);
+      void MultilevelThresholding(void);
+      void DynamicRangeNormalization(void);
+      void Sum(cv::Mat& operand);
+      void Sum(lovdog::DIGIMPROC& operand);
 
     private:
       cv::Mat image;
       std::string Nombre;
+      float MinPx, MaxPx;
+      char ImageTypeGeneral(void);
   };
 
 }

@@ -4,10 +4,10 @@ ifeq ($(OS),Windows_NT)
 OCV_I1PATH=/opencv/build/install/include
 OCV_I2PATH=$(OCV_I1PATH)/opencv2
 OCV_lPATH=/opencv/build/install/x64/mingw/bin
-CXXFLAGS=-I$(OCV_I1PATH) -I$(OCV_I2PATH)
+CXXFLAGS=-I$(OCV_I1PATH) -I$(OCV_I2PATH) -lm
 CXXLINKS=$(wildcard $(OCV_lPATH)/*.dll)
 else
-CXXFLAGS = `pkg-config --cflags --libs opencv4`
+CXXFLAGS = `pkg-config --cflags --libs opencv4` -lm
 endif
 
 PROJECTROOT=code
@@ -27,7 +27,23 @@ holaMundo:
 
 negativo:
 	$(CXX) $(STESTDIR)/Negativo.cxx  $(PDICXX)  $(CXXLINKS) $(CXXFLAGS) -o $(BTESTDIR)/Negativo
+	cd $(BTESTDIR) && ./Negativo
 
 access:
 	$(CXX) $(STESTDIR)/AccesoPixel.cxx  $(PDICXX)  $(CXXLINKS) $(CXXFLAGS) -o $(BTESTDIR)/accesoPixel
 	cd $(BTESTDIR) && ./accesoPixel
+
+minmax:
+	$(CXX) $(STESTDIR)/MaxMin.cxx  $(PDICXX)  $(CXXLINKS) $(CXXFLAGS) -o $(BTESTDIR)/minmax
+	cd $(BTESTDIR) && ./minmax
+
+dynrngnrm:
+	$(CXX) $(STESTDIR)/DynRngNrm.cxx  $(PDICXX)  $(CXXLINKS) $(CXXFLAGS) -o $(BTESTDIR)/DynRngNrm
+	cd $(BTESTDIR) && ./DynRngNrm
+
+help:
+	@echo "make holaMundo"
+	@echo "make negativo"
+	@echo "make access"
+	@echo "make minmax"
+	@echo "make dynrngnrm"
