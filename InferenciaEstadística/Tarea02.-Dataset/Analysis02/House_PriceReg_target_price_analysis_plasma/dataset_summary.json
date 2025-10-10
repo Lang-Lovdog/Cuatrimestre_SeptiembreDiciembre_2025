@@ -1,0 +1,275 @@
+{
+  "dataset_info": {
+    "total_rows": 506,
+    "total_columns": 19,
+    "total_numeric_columns": 16,
+    "total_categorical_columns": 3
+  },
+  "column_details": {
+    "price": {
+      "dtype": "float64",
+      "non_null_count": 506,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "type": "numeric",
+      "min": 5.0,
+      "max": 50.0,
+      "mean": 22.528853754940716,
+      "std": 9.18217588216678,
+      "median": 21.2
+    },
+    "crime_rate": {
+      "dtype": "float64",
+      "non_null_count": 506,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "type": "numeric",
+      "min": 0.00632,
+      "max": 88.9762,
+      "mean": 3.613523557312254,
+      "std": 8.60154510533249,
+      "median": 0.25651
+    },
+    "resid_area": {
+      "dtype": "float64",
+      "non_null_count": 506,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "type": "numeric",
+      "min": 30.46,
+      "max": 57.74,
+      "mean": 41.13677865612648,
+      "std": 6.860352940897585,
+      "median": 39.69
+    },
+    "air_qual": {
+      "dtype": "float64",
+      "non_null_count": 506,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "type": "numeric",
+      "min": 0.385,
+      "max": 0.871,
+      "mean": 0.5546950592885376,
+      "std": 0.11587767566755595,
+      "median": 0.538
+    },
+    "room_num": {
+      "dtype": "float64",
+      "non_null_count": 506,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "type": "numeric",
+      "min": 3.561,
+      "max": 8.78,
+      "mean": 6.284634387351779,
+      "std": 0.7026171434153233,
+      "median": 6.2085
+    },
+    "age": {
+      "dtype": "float64",
+      "non_null_count": 506,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "type": "numeric",
+      "min": 2.9,
+      "max": 100.0,
+      "mean": 68.57490118577076,
+      "std": 28.148861406903617,
+      "median": 77.5
+    },
+    "dist1": {
+      "dtype": "float64",
+      "non_null_count": 506,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "type": "numeric",
+      "min": 1.13,
+      "max": 12.32,
+      "mean": 3.97199604743083,
+      "std": 2.1085321645858897,
+      "median": 3.385
+    },
+    "dist2": {
+      "dtype": "float64",
+      "non_null_count": 506,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "type": "numeric",
+      "min": 0.92,
+      "max": 11.93,
+      "mean": 3.628774703557312,
+      "std": 2.108580321193191,
+      "median": 3.01
+    },
+    "dist3": {
+      "dtype": "float64",
+      "non_null_count": 506,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "type": "numeric",
+      "min": 1.15,
+      "max": 12.32,
+      "mean": 3.9606719367588936,
+      "std": 2.119797473766103,
+      "median": 3.375
+    },
+    "dist4": {
+      "dtype": "float64",
+      "non_null_count": 506,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "type": "numeric",
+      "min": 0.73,
+      "max": 11.94,
+      "mean": 3.61897233201581,
+      "std": 2.0992029914310257,
+      "median": 3.07
+    },
+    "teachers": {
+      "dtype": "float64",
+      "non_null_count": 506,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "type": "numeric",
+      "min": 18.0,
+      "max": 27.4,
+      "mean": 21.54446640316206,
+      "std": 2.1649455237144406,
+      "median": 20.95
+    },
+    "poor_prop": {
+      "dtype": "float64",
+      "non_null_count": 506,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "type": "numeric",
+      "min": 1.73,
+      "max": 37.97,
+      "mean": 12.653063241106722,
+      "std": 7.141061511348571,
+      "median": 11.36
+    },
+    "airport": {
+      "dtype": "object",
+      "non_null_count": 506,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "type": "categorical",
+      "unique_values": 2
+    },
+    "n_hos_beds": {
+      "dtype": "float64",
+      "non_null_count": 498,
+      "null_count": 8,
+      "null_percentage": 1.58,
+      "type": "numeric",
+      "min": 5.268,
+      "max": 10.876,
+      "mean": 7.899767068273092,
+      "std": 1.476682516142425,
+      "median": 7.9990000000000006
+    },
+    "n_hot_rooms": {
+      "dtype": "float64",
+      "non_null_count": 506,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "type": "numeric",
+      "min": 10.0576,
+      "max": 101.12,
+      "mean": 13.041604743083003,
+      "std": 5.2389566328769686,
+      "median": 12.719999999999999
+    },
+    "waterbody": {
+      "dtype": "object",
+      "non_null_count": 351,
+      "null_count": 155,
+      "null_percentage": 30.63,
+      "type": "categorical",
+      "unique_values": 4
+    },
+    "rainfall": {
+      "dtype": "int64",
+      "non_null_count": 506,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "type": "numeric",
+      "min": 3.0,
+      "max": 60.0,
+      "mean": 39.18181818181818,
+      "std": 12.51369726587335,
+      "median": 39.0
+    },
+    "bus_ter": {
+      "dtype": "object",
+      "non_null_count": 506,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "type": "categorical",
+      "unique_values": 1
+    },
+    "parks": {
+      "dtype": "float64",
+      "non_null_count": 506,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "type": "numeric",
+      "min": 0.033291762,
+      "max": 0.086711473,
+      "mean": 0.05445395839920949,
+      "std": 0.010632484889836286,
+      "median": 0.053506539000000006
+    }
+  },
+  "categorical_variables": {
+    "airport": {
+      "original_values": [
+        "YES",
+        "NO"
+      ],
+      "value_counts": {
+        "YES": 279,
+        "NO": 227
+      },
+      "mapping_to_numeric": {
+        "YES": 0,
+        "NO": 1
+      },
+      "total_unique": 2
+    },
+    "waterbody": {
+      "original_values": [
+        "River",
+        "Lake",
+        NaN,
+        "Lake and River"
+      ],
+      "value_counts": {
+        "River": 183,
+        "Lake": 97,
+        "Lake and River": 71
+      },
+      "mapping_to_numeric": {
+        "River": 0,
+        "Lake": 1,
+        "NaN": 2,
+        "Lake and River": 3
+      },
+      "total_unique": 4
+    },
+    "bus_ter": {
+      "original_values": [
+        "YES"
+      ],
+      "value_counts": {
+        "YES": 506
+      },
+      "mapping_to_numeric": {
+        "YES": 0
+      },
+      "total_unique": 1
+    }
+  }
+}

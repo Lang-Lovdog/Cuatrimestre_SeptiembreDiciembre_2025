@@ -1,0 +1,128 @@
+{
+  "price_vs_crime_rate": {
+    "var1_type": "numeric",
+    "var2_type": "numeric",
+    "analysis_type": "numeric_vs_numeric",
+    "correlation": -0.6063
+  },
+  "price_vs_resid_area": {
+    "var1_type": "numeric",
+    "var2_type": "numeric",
+    "analysis_type": "numeric_vs_numeric",
+    "correlation": -0.586
+  },
+  "price_vs_air_qual": {
+    "var1_type": "numeric",
+    "var2_type": "numeric",
+    "analysis_type": "numeric_vs_numeric",
+    "correlation": -0.5658
+  },
+  "price_vs_room_num": {
+    "var1_type": "numeric",
+    "var2_type": "numeric",
+    "analysis_type": "numeric_vs_numeric",
+    "correlation": 0.6507
+  },
+  "price_vs_age": {
+    "var1_type": "numeric",
+    "var2_type": "numeric",
+    "analysis_type": "numeric_vs_numeric",
+    "correlation": -0.5083
+  },
+  "price_vs_dist1": {
+    "var1_type": "numeric",
+    "var2_type": "numeric",
+    "analysis_type": "numeric_vs_numeric",
+    "correlation": 0.3802
+  },
+  "price_vs_dist2": {
+    "var1_type": "numeric",
+    "var2_type": "numeric",
+    "analysis_type": "numeric_vs_numeric",
+    "correlation": 0.3783
+  },
+  "price_vs_dist3": {
+    "var1_type": "numeric",
+    "var2_type": "numeric",
+    "analysis_type": "numeric_vs_numeric",
+    "correlation": 0.3774
+  },
+  "price_vs_dist4": {
+    "var1_type": "numeric",
+    "var2_type": "numeric",
+    "analysis_type": "numeric_vs_numeric",
+    "correlation": 0.3757
+  },
+  "price_vs_teachers": {
+    "var1_type": "numeric",
+    "var2_type": "numeric",
+    "analysis_type": "numeric_vs_numeric",
+    "correlation": 0.5492
+  },
+  "price_vs_poor_prop": {
+    "var1_type": "numeric",
+    "var2_type": "numeric",
+    "analysis_type": "numeric_vs_numeric",
+    "correlation": -0.8096
+  },
+  "price_vs_n_hos_beds": {
+    "var1_type": "numeric",
+    "var2_type": "numeric",
+    "analysis_type": "numeric_vs_numeric",
+    "correlation": 0.0626
+  },
+  "price_vs_n_hot_rooms": {
+    "var1_type": "numeric",
+    "var2_type": "numeric",
+    "analysis_type": "numeric_vs_numeric",
+    "correlation": -0.0487
+  },
+  "price_vs_rainfall": {
+    "var1_type": "numeric",
+    "var2_type": "numeric",
+    "analysis_type": "numeric_vs_numeric",
+    "correlation": -0.0285
+  },
+  "price_vs_parks": {
+    "var1_type": "numeric",
+    "var2_type": "numeric",
+    "analysis_type": "numeric_vs_numeric",
+    "correlation": -0.5104
+  },
+  "price_vs_airport_NO": {
+    "var1_type": "numeric",
+    "var2_type": "numeric",
+    "analysis_type": "numeric_vs_numeric",
+    "correlation": -0.1458
+  },
+  "price_vs_airport_YES": {
+    "var1_type": "numeric",
+    "var2_type": "numeric",
+    "analysis_type": "numeric_vs_numeric",
+    "correlation": 0.1458
+  },
+  "price_vs_waterbody_Lake": {
+    "var1_type": "numeric",
+    "var2_type": "numeric",
+    "analysis_type": "numeric_vs_numeric",
+    "correlation": 0.023
+  },
+  "price_vs_waterbody_Lake and River": {
+    "var1_type": "numeric",
+    "var2_type": "numeric",
+    "analysis_type": "numeric_vs_numeric",
+    "correlation": -0.0506
+  },
+  "price_vs_waterbody_River": {
+    "var1_type": "numeric",
+    "var2_type": "numeric",
+    "analysis_type": "numeric_vs_numeric",
+    "correlation": 0.1038
+  },
+  "price_vs_bus_ter_YES": {
+    "var1_type": "numeric",
+    "var2_type": "numeric",
+    "analysis_type": "numeric_vs_numeric",
+    "correlation": NaN
+  }
+}
