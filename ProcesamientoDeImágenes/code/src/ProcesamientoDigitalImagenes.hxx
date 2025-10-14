@@ -7,6 +7,8 @@
 
 namespace lovdog {
 
+  typedef struct dummystruct dummystruct;
+
   class DIGIMPROC{
     public:
       DIGIMPROC();
@@ -16,6 +18,7 @@ namespace lovdog {
       void doxeIt();
       void newImage(int width, int height, const int type = CV_8UC1);
       void modifyIt(std::function<void(cv::Mat& image)>modifier);
+      void modifyIt(std::function<void(cv::Mat& image, const dummystruct& xtra)>modifier, const dummystruct& extra);
       void changeDomain(const int Type=CV_8UC1, bool custom=false);
       void ComputeDynamicRange(void);
       void Negative(void);

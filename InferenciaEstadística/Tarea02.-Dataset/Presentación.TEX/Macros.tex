@@ -1,0 +1,175 @@
+%! TeX program = xelatex
+%! TeX TS-program = xelatex
+%! TeX root = ProgramaciónEvolutiva.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Define AntiqueWhite color
+\definecolor{AntiqueWhite}{RGB}{250,235,215}
+\definecolor{mypurple}{RGB}{104,020,108}
+\setbeamercolor*{palette primary}{use=structure,fg=white,bg=mypurple}
+\setbeamercolor{normal text}{fg=white, bg=black}
+\setbeamercolor{tcolorbox text}{fg=white, bg=black}
+\setbeamertemplate{navigation symbols}{}                              %
+\newcommand{\colouredcircle}{%
+  \tikz{\useasboundingbox (-0.2em,-0.32em) rectangle(0.2em,0.32em);
+        \draw[ball color=PineGreen!7!Plum!90!Red,shading=ball,line width=0.03em] (0,0) circle(0.18em);}}
+\newcommand{\colouredcircledis}{%
+  \tikz{\useasboundingbox (-0.2em,-0.32em) rectangle(0.2em,0.32em);
+        \draw[ball color=PineGreen!7!Plum!20!Black,shading=ball,line width=0.03em] (0,0) circle(0.18em);}}
+\setbeamertemplate{itemize item}{\colouredcircle}
+\setbeamercolor*{bibliography entry title}{fg=Yellow!80!White, bg=Black}
+% Set beamer bibliography titles and numbers color to antique white
+\setbeamercolor*{bibliography entry author}{fg=AntiqueWhite}
+\setbeamercolor*{bibliography entry location}{fg=AntiqueWhite}
+\setbeamercolor*{bibliography entry note}{fg=AntiqueWhite}
+%% Numbering color to Pine Green
+\setbeamercolor*{bibliography item}{fg=LimeGreen!80!White}
+% Set beamer bibliography urls color to some magenta
+\setbeamercolor*{bibliography entry url}{fg=Magenta}
+% Captions color to rgba (0,255,0,1)
+\definecolor{LimeGreen}{RGB}{0,255,0}
+\setbeamercolor{caption name}{fg=LimeGreen}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{tikzpagenodes}
+\setbeamertemplate{background canvas}{%
+  \begin{tikzpicture}[inner sep=0pt,remember picture,overlay]
+    \node at (current page.center) {\includegraphics[height=\paperheight,width=\paperwidth]{fondo}};
+  \end{tikzpicture}
+}%
+\usetikzlibrary{arrows.meta, decorations.pathmorphing,positioning,trees}
+
+\lstset{
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    backgroundcolor=\color{black!98},
+    keywordstyle=\color{Magenta},
+    commentstyle=\color{AntiqueWhite},
+    stringstyle=\color{Yellow!80!white},
+    showstringspaces=false,
+    frame=single,
+    rulecolor=\color{mypurple},
+    frameround=tttt,
+    escapeinside={\%*}{*)}
+}
+
+\makeatletter
+% Set victor mono as default ttfont
+\newtcolorbox{blur}[1][]{%
+  #1,
+  enhanced,
+  remember,
+  breakable, % Already enabled (good!)
+  frame hidden,
+  interior hidden,
+  fonttitle=\bfseries\centering, 
+  fontupper=\rmfamily\selectfont,
+  coltext=white,
+  underlay={
+    \begin{tcbclipframe}
+      \begin{scope}[inner sep=0pt,remember picture,overlay]
+        \fill[white] (frame.south west) rectangle (frame.north east); % Changed to `frame` (not `current page`)
+        \node[opacity=1] at (frame.center) {\includegraphics[height=\paperheight, width=\paperwidth]{blured}};
+      \end{scope}
+    \end{tcbclipframe}
+  }
+}
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\separador}[1]{
+  \vskip-4pt
+  \begin{center}
+    \rule{0.9\linewidth}{#1}
+  \end{center}
+}
+
+\lstset{
+  basicstyle=\ttfamily,
+  showstringspaces=false,
+  breaklines=true
+}
+
+\newcommand{\transparencia}[1]{%
+  \begin{frame}
+    \begin{blur}
+      #1
+    \end{blur}
+  \end{frame}
+}
+
+% set bibliography background for text to be legible despite the background
+
+\usepackage{etoolbox}
+\newcommand{\setupblurbibliography}{%
+  \pretocmd{\frametitle}{\blurbackground}{}{}%
+  \setbeamertemplate{bibliography item}{\color{LimeGreen!80!White}\insertbiblabel}%
+  \setbeamercolor{bibliography entry author}{fg=AntiqueWhite}%
+  \setbeamercolor{bibliography entry title}{fg=Yellow!80!White}%
+  \setbeamercolor{bibliography entry location}{fg=AntiqueWhite}%
+  \setbeamercolor{bibliography entry note}{fg=AntiqueWhite}%
+  \setbeamercolor{bibliography entry url}{fg=Magenta}%
+}
+
+\newtcblisting{beamerlst}[1][]{
+    enhanced,
+    breakable,
+    listing only,
+    listing options={
+        style=beamerlisting,
+        language=Python, % Default language
+        #1
+    },
+    colback=black!85, % Matches your theme
+    colframe=mypurple, % Your purple color
+    fontupper=\ttfamily\small,
+    arc=3mm, % Rounded corners
+    boxrule=1pt,
+    % Blur effect (optional):
+    underlay={
+        \begin{tcbclipframe}
+        \fill[black!90] (frame.south west) rectangle (frame.north east);
+        \node[opacity=0.6] at (frame.center) 
+            {\includegraphics[width=\linewidth]{blured}};
+        \end{tcbclipframe}
+    }
+}
+
+% Supporting style definition
+\lstdefinestyle{beamerlisting}{
+    basicstyle=\ttfamily\footnotesize\color{white},
+    keywordstyle=\color{Magenta},
+    commentstyle=\color{AntiqueWhite},
+    stringstyle=\color{Yellow!80!white},
+    showstringspaces=false,
+    breaklines=true,
+    tabsize=2
+}
+
+\newcommand{\codebox}[2][]{%
+    \begin{tcolorbox}[
+        enhanced,
+        colback=black!85,
+        colframe=mypurple,
+        arc=3mm,
+        boxrule=1pt,
+        #1
+    ]
+    \lstinputlisting{#2}
+    \end{tcolorbox}%
+}
+
+% Smart blur background that works with frame breaks
+\newcommand{\blurbackground}{%
+  \begin{tikzpicture}[remember picture,overlay]
+    % Calculate content area with margins
+    \path ([xshift=1cm,yshift=-1cm]current page.north west) coordinate (top left);
+    \path ([xshift=-1cm,yshift=1cm]current page.south east) coordinate (bottom right);
+    
+    % Frosted glass effect
+    \fill[black!85,opacity=0.92] (top left) rectangle (bottom right);
+    \node[opacity=0.8] at (current page.center) 
+      {\includegraphics[width=\paperwidth-2cm,height=\paperheight-2cm]{blured}};
+  \end{tikzpicture}%
+}
+
+
+\bibliography{bibliografia}
+\nocite{*}

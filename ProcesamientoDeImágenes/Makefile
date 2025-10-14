@@ -4,15 +4,17 @@ ifeq ($(OS),Windows_NT)
 OCV_I1PATH=/opencv/build/install/include
 OCV_I2PATH=$(OCV_I1PATH)/opencv2
 OCV_lPATH=/opencv/build/install/x64/mingw/bin
-CXXFLAGS=-I$(OCV_I1PATH) -I$(OCV_I2PATH) -lm
+CXXFLAGS=-I$(OCV_I1PATH) -I$(OCV_I2PATH) -lm -g
 CXXLINKS=$(wildcard $(OCV_lPATH)/*.dll)
 else
-CXXFLAGS = `pkg-config --cflags --libs opencv4` -lm
+CXXFLAGS = `pkg-config --cflags --libs opencv4` -lm -g
 endif
+MY_HEADER=$(wildcard ./code/src/*.hxx)
 
 PROJECTROOT=code
 SRCDIR=$(PROJECTROOT)/src
 BUILDDIR=$(PROJECTROOT)/build
+TAREADIR=$(PROJECTROOT)/tareas
 STESTDIR=$(SRCDIR)/test
 BTESTDIR=$(BUILDDIR)/test
 BINDIR=$(BUILDDIR)/bin
@@ -40,6 +42,10 @@ minmax:
 dynrngnrm:
 	$(CXX) $(STESTDIR)/DynRngNrm.cxx  $(PDICXX)  $(CXXLINKS) $(CXXFLAGS) -o $(BTESTDIR)/DynRngNrm
 	cd $(BTESTDIR) && ./DynRngNrm
+
+tarea01:
+	$(CXX) $(TAREADIR)/tarea01/main.cxx  $(PDICXX)  $(CXXLINKS) $(CXXFLAGS) -o $(TAREADIR)/tarea01/exe
+	cd $(TAREADIR)/tarea01 && ./exe
 
 help:
 	@echo "make holaMundo"

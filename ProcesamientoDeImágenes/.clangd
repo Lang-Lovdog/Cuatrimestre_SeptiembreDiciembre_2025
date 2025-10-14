@@ -1,0 +1,9 @@
+CompileFlags:
+  # Use absolute paths (clangd will resolve ${project} to your root)
+  Add: 
+    - "-I${project}/code/src"
+    - "-I${project}/code/tareas/tarea01"
+    - "-I${project}"
+    - "-std=c++17"
+    - "-Wall"
+    - "-Wextra"

@@ -95,6 +95,10 @@ namespace lovdog {
     modifier(this->image);
   }
 
+  void DIGIMPROC::modifyIt(std::function<void(cv::Mat& image, const dummystruct& xtra)>modifier, const dummystruct& extra){
+    modifier(this->image,extra);
+  }
+
   void DIGIMPROC::changeDomain(const int Type, bool custom){
     this->image.convertTo(this->image, Type);
   }

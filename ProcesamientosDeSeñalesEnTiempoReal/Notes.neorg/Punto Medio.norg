@@ -1,0 +1,80 @@
+@document.meta
+title: Punto Medio
+description: 
+authors: 
+categories: 
+created: 2025-10-13T10:49:37-0600
+updated: 2025-10-13T11:56:17-0600
+version: 1.1.1
+@end
+
+* Resolución de punto medio de dos gaussianas
+
+
+** (!) Aclaración:
+   Estas notas son solo para términos interesantes y detalles programáticos.
+   Pero no corresponde al método de resolución del problema per se.
+
+   En el detalle de MATLAB, las notas están en papel. Las transcribiré con tiempo.
+
+
+** Método en C
+   Se puede definir una estructura de polinomio para este caso en particular.
+   @code c
+   typedef struct poly{
+     double *a; // Coeficientes del polinomio en cuestión.
+     size_t  n; // Grado del polinomio
+   }
+   @end
+   Esta estructura requiere algunas operaciones importantes:
+*** Creación e impresión en consola
+    Esta parte no la menciona como tal en la clase, pero es necesario desde mi
+    perspectiva, tener una función correcta de creación de la estructura.
+    @code c
+    char crea_poly(poly *fx, size_t grado){
+      (*fx).a = (float*)calloc(grado+1,sizeof(float));
+      (*fx).n = grado;
+    }
+    char imprimir_poly(poly fx){
+      size_t i;
+      i=fx.n; while((i--)>1) printf("%+lfx^%lu",fx.a[i],i);
+      printf("\n");
+    }
+    @end
+*** Evaluación
+    Este proceso hace uso del multiplicador-acumulador, lo cual permite una sola
+    operación en bajo nivel para la evaluación de cada nivel del polinomio.
+    @code c
+    double evaluar(poly fx, double x){
+      size_t i;
+      double r;
+      i=0; r=fx.a[n]; while(i<fx.n) r = r*x+fx.a[fx.n-(i++)+1];
+    }
+    @end
+*** Derivación
+    @code c
+    poly derivar(poly *fx){
+      poly dfx;
+      size_t i;
+      dfx.n = (*fx).n-1;
+      crea_poly(&dfx,dfx.n);
+      i=0; while((i++)<dfx.n) dfx.a[i-1] = (i) * (*fx).a[i]
+    }
+    @end
+*** Resolución (raíces del polinomio)
+**** Método de bisección
+     @code c
+     double raiz_poly_bisecccion(poly fx, double x1, double x2, double tol){
+       double fx1, fx2, xr, fxr, err;
+       fx1=evaluar(fx,x1);
+       fx2=evaluar(fx,x2);
+       if (fx1*fx2>0)  return 0;
+       while(err>tol){
+         if (fxr*fx2<0){ x1=xr; fx1=fxr; fabs((xr-x1)/xr)} else 
+         if (fx1*fxr<0){ x2=xr; fx2=fxr; fabs((xr-x2)/xr)} else
+         return xr;
+       }
+     }
+    @end
+     Durante esta práctica hubo un detalle importante. Éste método es bastante
+     sensible a los valores del rango de búsqueda.
