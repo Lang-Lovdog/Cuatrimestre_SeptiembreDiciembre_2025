@@ -46,6 +46,13 @@ namespace lovdog {
     ;
   }
 
+  void DIGIMPROC::copyTo(DIGIMPROC& destination){
+    this->image.copyTo(destination.image);
+    destination.Nombre = this->Nombre;
+    destination.MinPx = this->MinPx;
+    destination.MaxPx = this->MaxPx;
+  }
+
   void DIGIMPROC::showIt(const char* WindowName, bool renameObject){
     if(WindowName){
       if(renameObject) this->Nombre = WindowName;
@@ -164,7 +171,8 @@ namespace lovdog {
     this->MinPx = min;
   }
 
-  void DIGIMPROC::DynamicRangeNormalization(void){
+  void DIGIMPROC::DynamicRangeNormalization(const char type){
+    
   }
 
   void DIGIMPROC::Sum(cv::Mat& operand){
