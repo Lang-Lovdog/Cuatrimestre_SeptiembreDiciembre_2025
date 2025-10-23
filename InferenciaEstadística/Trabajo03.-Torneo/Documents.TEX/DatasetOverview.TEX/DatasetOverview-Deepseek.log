@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.9.3)  21 OCT 2025 00:50
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.9.3)  23 OCT 2025 01:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -176,6 +176,36 @@ Package graphics Info: Driver file: xetex.def on input line 106.
 )
 \Gin@req@height=\dimen182
 \Gin@req@width=\dimen183
+) (/opt/texlive/2025/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+ (/opt/texlive/2025/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+ (/opt/texlive/2025/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen184
+\captionmargin=\dimen185
+\caption@leftmargin=\dimen186
+\caption@rightmargin=\dimen187
+\caption@width=\dimen188
+\caption@indent=\dimen189
+\caption@parindent=\dimen190
+\caption@hangindent=\dimen191
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count305
+\c@continuedfloat=\count306
+)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count307
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count308
+) (/opt/texlive/2025/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count309
+\float@exts=\toks23
+\float@box=\box57
+\@float@everytoks=\toks24
+\@floatcapt=\box58
 )
 
 Package fontspec Info: 
@@ -238,22 +268,22 @@ Package fontspec Info:
  (./DatasetOverview-Deepseek.aux)
 \openout1 = `DatasetOverview-Deepseek.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -296,57 +326,60 @@ Package fontspec Info:
 
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 42.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 42.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 42.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 42.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 42.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 42.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 42.
-LaTeX Font Info:    Redeclaring math accent \check on input line 42.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 42.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 42.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 42.
-LaTeX Font Info:    Redeclaring math symbol \colon on input line 42.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 42.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 42.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 42.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 42.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 42.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 42.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 42.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 42.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 42.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 42.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 42.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 42.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 42.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 47.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 47.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 47.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 47.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 47.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 47.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 47.
+LaTeX Font Info:    Redeclaring math accent \check on input line 47.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 47.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 47.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 47.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 47.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 47.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 47.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 47.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 47.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 47.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 47.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 47.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 47.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 47.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 47.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 47.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 47.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 47.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 42.
+(Font)              `operators' in the math version `normal' on input line 47.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/QTBookmann(0)/m/n on input line 42.
+(Font)                  OT1/cmr/m/n --> TU/QTBookmann(0)/m/n on input line 47.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 42.
+(Font)              `operators' in the math version `bold' on input line 47.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/QTBookmann(0)/m/n on input line 42.
+(Font)                  OT1/cmr/bx/n --> TU/QTBookmann(0)/m/n on input line 47.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/QTBookmann(0)/m/n --> TU/QTBookmann(0)/m/n on input line 42.
+(Font)                  TU/QTBookmann(0)/m/n --> TU/QTBookmann(0)/m/n on input line 47.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/QTBookmann(0)/m/it on input line 42.
+(Font)                  OT1/cmr/m/it --> TU/QTBookmann(0)/m/it on input line 47.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/QTBookmann(0)/b/n on input line 42.
+(Font)                  OT1/cmr/bx/n --> TU/QTBookmann(0)/b/n on input line 47.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 42.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 47.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/VictorMonoNerdFont(0)/m/n on input line 42.
+(Font)                  OT1/cmtt/m/n --> TU/VictorMonoNerdFont(0)/m/n on input line 47.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/QTBookmann(0)/m/n --> TU/QTBookmann(0)/b/n on input line 42.
+(Font)                  TU/QTBookmann(0)/m/n --> TU/QTBookmann(0)/b/n on input line 47.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/QTBookmann(0)/b/it on input line 42.
+(Font)                  OT1/cmr/bx/it --> TU/QTBookmann(0)/b/it on input line 47.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 42.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 47.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/VictorMonoNerdFont(0)/b/n on input line 42.
+(Font)                  OT1/cmtt/m/n --> TU/VictorMonoNerdFont(0)/b/n on input line 47.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: End \AtBeginDocument code.
 
 Package fontspec Info: 
 (fontspec)             Font family 'QTBookmann(1)' created for font
@@ -367,72 +400,72 @@ Package fontspec Info:
 Missing character: There is no 📊 (U+1F4CA) in font QTBookmann-Bold/OT:script=latn;language=dflt;!
 Missing character: There is no 🎯 (U+1F3AF) in font QTBookmann-Bold/OT:script=latn;language=dflt;!
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 74.
+(Font)              <7> on input line 79.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 74.
+(Font)              <5> on input line 79.
 LaTeX Font Info:    Font shape `TU/VictorMonoNerdFont(0)/m/n' will be
-(Font)              scaled to size 8.50006pt on input line 77.
+(Font)              scaled to size 8.50006pt on input line 82.
 LaTeX Font Info:    Font shape `TU/VictorMonoNerdFont(0)/b/n' will be
-(Font)              scaled to size 8.50006pt on input line 77.
+(Font)              scaled to size 8.50006pt on input line 82.
 
-Overfull \hbox (0.9345pt too wide) in paragraph at lines 79--79
+Overfull \hbox (0.9345pt too wide) in paragraph at lines 84--84
 []|\TU/QTBookmann(0)/m/n/10 Continuous|  
  []
 
 Missing character: There is no 💰 (U+1F4B0) in font QTBookmann-Bold/OT:script=latn;language=dflt;!
 
-Overfull \hbox (6.62495pt too wide) in paragraph at lines 93--93
+Overfull \hbox (6.62495pt too wide) in paragraph at lines 98--98
 []|\TU/QTBookmann(0)/m/n/10 Continuous|  
  []
 
 
-Overfull \hbox (6.62495pt too wide) in paragraph at lines 94--94
+Overfull \hbox (6.62495pt too wide) in paragraph at lines 99--99
 []|\TU/QTBookmann(0)/m/n/10 Continuous|  
  []
 
 
-Overfull \hbox (6.62495pt too wide) in paragraph at lines 95--95
+Overfull \hbox (6.62495pt too wide) in paragraph at lines 100--100
 []|\TU/QTBookmann(0)/m/n/10 Continuous|  
  []
 
 
-Overfull \hbox (6.62495pt too wide) in paragraph at lines 97--97
+Overfull \hbox (6.62495pt too wide) in paragraph at lines 102--102
 []|\TU/QTBookmann(0)/m/n/10 Continuous|  
  []
 
 Missing character: There is no 🎬 (U+1F3AC) in font QTBookmann-Bold/OT:script=latn;language=dflt;!
-
-Overfull \hbox (6.62495pt too wide) in paragraph at lines 110--110
-[]|\TU/QTBookmann(0)/m/n/10 Continuous|  
- []
-
-
-Overfull \hbox (3.50496pt too wide) in paragraph at lines 111--111
-[]|\TU/QTBookmann(0)/m/n/10 Categorical|  
- []
-
-
-Overfull \hbox (6.62495pt too wide) in paragraph at lines 113--113
-[]|\TU/QTBookmann(0)/m/n/10 Continuous|  
- []
-
-
-Overfull \hbox (6.62495pt too wide) in paragraph at lines 114--114
-[]|\TU/QTBookmann(0)/m/n/10 Continuous|  
- []
-
 
 Overfull \hbox (6.62495pt too wide) in paragraph at lines 115--115
 []|\TU/QTBookmann(0)/m/n/10 Continuous|  
  []
 
 
-Overfull \hbox (6.62495pt too wide) in paragraph at lines 116--116
+Overfull \hbox (3.50496pt too wide) in paragraph at lines 116--116
+[]|\TU/QTBookmann(0)/m/n/10 Categorical|  
+ []
+
+
+Overfull \hbox (6.62495pt too wide) in paragraph at lines 118--118
 []|\TU/QTBookmann(0)/m/n/10 Continuous|  
  []
 
 
-Overfull \hbox (6.62495pt too wide) in paragraph at lines 117--117
+Overfull \hbox (6.62495pt too wide) in paragraph at lines 119--119
+[]|\TU/QTBookmann(0)/m/n/10 Continuous|  
+ []
+
+
+Overfull \hbox (6.62495pt too wide) in paragraph at lines 120--120
+[]|\TU/QTBookmann(0)/m/n/10 Continuous|  
+ []
+
+
+Overfull \hbox (6.62495pt too wide) in paragraph at lines 121--121
+[]|\TU/QTBookmann(0)/m/n/10 Continuous|  
+ []
+
+
+Overfull \hbox (6.62495pt too wide) in paragraph at lines 122--122
 []|\TU/QTBookmann(0)/m/n/10 Continuous|  
  []
 
@@ -443,44 +476,84 @@ Overfull \hbox (6.62495pt too wide) in paragraph at lines 117--117
 ]
 Missing character: There is no 📢 (U+1F4E2) in font QTBookmann-Bold/OT:script=latn;language=dflt;!
 
-Overfull \hbox (6.62495pt too wide) in paragraph at lines 132--132
+Overfull \hbox (6.62495pt too wide) in paragraph at lines 137--137
 []|\TU/QTBookmann(0)/m/n/10 Continuous|  
  []
 
 
-Overfull \hbox (6.62495pt too wide) in paragraph at lines 133--133
+Overfull \hbox (6.62495pt too wide) in paragraph at lines 138--138
 []|\TU/QTBookmann(0)/m/n/10 Continuous|  
  []
 
 Missing character: There is no 📈 (U+1F4C8) in font QTBookmann-Bold/OT:script=latn;language=dflt;!
-Missing character: There is no ≈ (U+2248) in font QTBookmann/OT:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no → (U+2192) in font QTBookmann/OT:script=latn;language=dflt;mapping=tex-text;!
+File: ../DatasetAnalysis/plots/Marketing_expense.eps Graphic file (type eps)
+<../DatasetAnalysis/plots/Marketing_expense.eps>
 
 
 [2]
-Missing character: There is no 🔍 (U+1F50D) in font QTBookmann-Bold/OT:script=latn;language=dflt;!
-Missing character: There is no 📈 (U+1F4C8) in font QTBookmann-Bold/OT:script=latn;language=dflt;!
-File: ../DatasetAnalysis/target_histograms.eps Graphic file (type eps)
-<../DatasetAnalysis/target_histograms.eps>
-File: ../DatasetAnalysis/collection_scatters.eps Graphic file (type eps)
-<../DatasetAnalysis/collection_scatters.eps>
+File: ../DatasetAnalysis/plots/Budget.eps Graphic file (type eps)
+<../DatasetAnalysis/plots/Budget.eps>
+File: ../DatasetAnalysis/plots/Production_expense.eps Graphic file (type eps)
+<../DatasetAnalysis/plots/Production_expense.eps>
 
 
 [3]
-File: ../DatasetAnalysis/oscar_boxplots.eps Graphic file (type eps)
-<../DatasetAnalysis/oscar_boxplots.eps>
+File: ../DatasetAnalysis/plots/Num_multiplex.eps Graphic file (type eps)
+<../DatasetAnalysis/plots/Num_multiplex.eps>
+File: ../DatasetAnalysis/plots/Multiplex_coverage.eps Graphic file (type eps)
+<../DatasetAnalysis/plots/Multiplex_coverage.eps>
 
 
 [4]
-File: ../DatasetAnalysis/genre_analysis.eps Graphic file (type eps)
-<../DatasetAnalysis/genre_analysis.eps>
-File: ../DatasetAnalysis/threed_analysis.eps Graphic file (type eps)
-<../DatasetAnalysis/threed_analysis.eps>
+File: ../DatasetAnalysis/plots/Director_rating.eps Graphic file (type eps)
+<../DatasetAnalysis/plots/Director_rating.eps>
+File: ../DatasetAnalysis/plots/Lead__Actor_Rating.eps Graphic file (type eps)
+<../DatasetAnalysis/plots/Lead__Actor_Rating.eps>
 
 
 [5]
+File: ../DatasetAnalysis/plots/Lead_Actress_rating.eps Graphic file (type eps)
+<../DatasetAnalysis/plots/Lead_Actress_rating.eps>
+File: ../DatasetAnalysis/plots/Producer_rating.eps Graphic file (type eps)
+<../DatasetAnalysis/plots/Producer_rating.eps>
 
-[6] (./DatasetOverview-Deepseek.aux)
+
+[6]
+File: ../DatasetAnalysis/plots/Critic_rating.eps Graphic file (type eps)
+<../DatasetAnalysis/plots/Critic_rating.eps>
+File: ../DatasetAnalysis/plots/Movie_length.eps Graphic file (type eps)
+<../DatasetAnalysis/plots/Movie_length.eps>
+
+
+[7]
+File: ../DatasetAnalysis/plots/Time_taken.eps Graphic file (type eps)
+<../DatasetAnalysis/plots/Time_taken.eps>
+File: ../DatasetAnalysis/plots/Trailer_views.eps Graphic file (type eps)
+<../DatasetAnalysis/plots/Trailer_views.eps>
+
+
+[8]
+File: ../DatasetAnalysis/plots/Twitter_hastags.eps Graphic file (type eps)
+<../DatasetAnalysis/plots/Twitter_hastags.eps>
+File: ../DatasetAnalysis/plots/Genre.eps Graphic file (type eps)
+<../DatasetAnalysis/plots/Genre.eps>
+
+
+[9]
+File: ../DatasetAnalysis/plots/3D_available.eps Graphic file (type eps)
+<../DatasetAnalysis/plots/3D_available.eps>
+File: ../DatasetAnalysis/plots/Avg_age_actors.eps Graphic file (type eps)
+<../DatasetAnalysis/plots/Avg_age_actors.eps>
+
+
+[10]
+Missing character: There is no 🔍 (U+1F50D) in font QTBookmann-Bold/OT:script=latn;language=dflt;!
+Missing character: There is no ≈ (U+2248) in font QTBookmann/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no → (U+2192) in font QTBookmann/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no 📋 (U+1F4CB) in font QTBookmann-Bold/OT:script=latn;language=dflt;!
+
+
+[11] (./DatasetOverview-Deepseek.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-08-13>
@@ -488,17 +561,17 @@ L3 programming layer <2025-08-13>
  )
 (\end occurred inside a group at level 3)
 
-### simple group (level 3) entered at line 124 ({)
-### simple group (level 2) entered at line 104 ({)
-### simple group (level 1) entered at line 87 ({)
+### simple group (level 3) entered at line 129 ({)
+### simple group (level 2) entered at line 109 ({)
+### simple group (level 1) entered at line 92 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 6191 strings out of 470362
- 148755 string characters out of 5489054
- 612456 words of memory out of 5000000
- 34448 multiletter control sequences out of 15000+600000
- 627097 words of font info for 74 fonts, out of 8000000 for 9000
+ 7779 strings out of 470362
+ 181017 string characters out of 5489054
+ 636973 words of memory out of 5000000
+ 36010 multiletter control sequences out of 15000+600000
+ 627105 words of font info for 75 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
- 73i,9n,112p,1213b,345s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 73i,9n,112p,1213b,401s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on DatasetOverview-Deepseek.xdv (6 pages, 54092 bytes).
+Output written on DatasetOverview-Deepseek.xdv (11 pages, 66628 bytes).

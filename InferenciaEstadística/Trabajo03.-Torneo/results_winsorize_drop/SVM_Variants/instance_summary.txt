@@ -1,0 +1,12 @@
+INSTANCE: SVM_Variants
+========================================
+Best Model: CubicSVM
+F1 Score: 0.5835
+Accuracy: 0.6053
+Precision: 0.6064
+Recall: 0.6053
+AUC Score: 0.5973
+CV Score: 0.5482
+
+Best Parameters:
+{'clf__C': 1, 'clf__gamma': 'scale'}

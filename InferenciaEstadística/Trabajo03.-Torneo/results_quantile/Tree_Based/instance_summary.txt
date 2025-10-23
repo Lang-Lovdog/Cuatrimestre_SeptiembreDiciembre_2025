@@ -1,0 +1,12 @@
+INSTANCE: Tree_Based
+========================================
+Best Model: RandomForest
+F1 Score: 0.6348
+Accuracy: 0.6382
+Precision: 0.6361
+Recall: 0.6382
+AUC Score: 0.7149
+CV Score: 0.6297
+
+Best Parameters:
+{'clf__max_depth': 10, 'clf__min_samples_split': 10, 'clf__n_estimators': 100}

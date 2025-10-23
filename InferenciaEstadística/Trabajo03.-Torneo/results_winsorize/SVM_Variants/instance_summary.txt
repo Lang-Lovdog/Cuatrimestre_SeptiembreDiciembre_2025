@@ -1,0 +1,12 @@
+INSTANCE: SVM_Variants
+========================================
+Best Model: QuadraticSVM
+F1 Score: 0.5523
+Accuracy: 0.5658
+Precision: 0.5590
+Recall: 0.5658
+AUC Score: 0.5961
+CV Score: 0.5931
+
+Best Parameters:
+{'clf__C': 1, 'clf__gamma': 'scale'}

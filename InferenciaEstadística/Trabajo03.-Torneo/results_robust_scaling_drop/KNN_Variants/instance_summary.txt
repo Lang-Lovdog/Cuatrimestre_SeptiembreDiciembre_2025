@@ -1,0 +1,12 @@
+INSTANCE: KNN_Variants
+========================================
+Best Model: KNN_Cosine
+F1 Score: 0.5908
+Accuracy: 0.5921
+Precision: 0.5903
+Recall: 0.5921
+AUC Score: 0.6379
+CV Score: 0.6046
+
+Best Parameters:
+{'clf__n_neighbors': 10, 'clf__weights': 'distance'}

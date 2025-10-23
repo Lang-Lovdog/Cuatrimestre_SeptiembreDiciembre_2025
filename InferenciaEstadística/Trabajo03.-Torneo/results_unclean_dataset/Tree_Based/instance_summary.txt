@@ -1,0 +1,12 @@
+INSTANCE: Tree_Based
+========================================
+Best Model: DecisionTree
+F1 Score: 0.6192
+Accuracy: 0.6184
+Precision: 0.6219
+Recall: 0.6184
+AUC Score: 0.6492
+CV Score: 0.6555
+
+Best Parameters:
+{'clf__criterion': 'gini', 'clf__max_depth': 10, 'clf__min_samples_split': 10}

@@ -1,0 +1,12 @@
+INSTANCE: Neural_Networks
+========================================
+Best Model: MLP_2Layer
+F1 Score: 0.5601
+Accuracy: 0.5592
+Precision: 0.5635
+Recall: 0.5592
+AUC Score: 0.5724
+CV Score: 0.5820
+
+Best Parameters:
+{'clf__alpha': 0.001, 'clf__hidden_layer_sizes': (50, 25), 'clf__learning_rate': 'constant'}

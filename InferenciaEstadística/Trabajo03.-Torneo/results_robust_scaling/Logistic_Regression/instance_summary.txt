@@ -1,0 +1,12 @@
+INSTANCE: Logistic_Regression
+========================================
+Best Model: LogisticRegression_L1
+F1 Score: 0.6053
+Accuracy: 0.6053
+Precision: 0.6156
+Recall: 0.6053
+AUC Score: 0.6745
+CV Score: 0.6358
+
+Best Parameters:
+{'clf__C': 1}

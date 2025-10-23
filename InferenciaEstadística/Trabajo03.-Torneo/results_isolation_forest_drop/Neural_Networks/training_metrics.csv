@@ -1,0 +1,4 @@
+Classifier,Accuracy,Precision,Recall,F1_Score,AUC_Score,CV_Score,Best_Params,Supports_Probability
+Perceptron,0.5986842105263158,0.6144867673444976,0.5986842105263158,0.5970322758671017,N/A,0.5620523138832998,"{'clf__alpha': 0.0001, 'clf__penalty': 'l1'}",False
+MLP_1Layer,0.5723684210526315,0.5718570322865988,0.5723684210526315,0.5720880559280977,0.6204819277108433,0.6242655935613682,"{'clf__alpha': 0.01, 'clf__hidden_layer_sizes': (50,), 'clf__learning_rate': 'constant'}",True
+MLP_2Layer,0.5921052631578947,0.5885801847428851,0.5921052631578947,0.587759793660287,0.6141959140911473,0.6213279678068411,"{'clf__alpha': 0.01, 'clf__hidden_layer_sizes': (50, 25), 'clf__learning_rate': 'adaptive'}",True

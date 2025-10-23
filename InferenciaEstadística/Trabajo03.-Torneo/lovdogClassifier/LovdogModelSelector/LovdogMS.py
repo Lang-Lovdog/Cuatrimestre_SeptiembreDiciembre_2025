@@ -41,6 +41,7 @@ from typing import Tuple                             # type: ignore
 from typing import Dict                              # type: ignore
 from typing import Union                             # type: ignore
 from typing import Any                               # type: ignore
+from typing import Callable                          # type: ignore
 ### Temps (pour random_state
 import time                                          # type: ignore
 ## Model import/export
@@ -50,8 +51,7 @@ import joblib                                        # type: ignore
 #from deap import creator                             # type: ignore
 #from deap import tools                               # type: ignore
 
-_ModelSelectionClassesNames_ = []
-_ModelSelectionClassesObjects_ = []
+_ModelSelectionInstances_: Dict[str, "ModelSelection"] = {}
 
 class ModelSelection:
 
@@ -72,17 +72,19 @@ class ModelSelection:
         plots_output_directory: str = "plots",
         # Classifier configuration - NEW APPROACH
         classifiers_dict: Optional[Dict[str, Any]] = None,
-        grid_parameters_dict: Optional[Dict[str, Any]] = None
+        grid_parameters_dict: Optional[Dict[str, Any]] = None,
+        custom_data_preprocessing: Optional[Callable] = None
     ):
         """
         Initialize a ModelSelection instance for comprehensive classifier evaluation.
         """
         
         # Validate unique name
-        if name in _ModelSelectionClassesNames_:
+        if name in _ModelSelectionInstances_.keys():
             raise ValueError(f"ModelSelection instance '{name}' already exists")
-        _ModelSelectionClassesNames_.append(name)
-        _ModelSelectionClassesObjects_.append(self)
+        _ModelSelectionInstances_[name]=self
+
+        self.user_data_preprocess = custom_data_preprocessing
         
         # Store initialization parameters
         self.name = name
@@ -268,8 +270,12 @@ class ModelSelection:
         
         self._split_data()
 
-    def _split_data(self):
-        """Split data into training and test sets"""
+    def _split_data(self, custom_data_preprocessing=None):
+        """Split data into training and test sets with categorical encoding"""
+        # Encode categorical variables before splitting
+        if self.user_data_preprocess is not None:
+            self.data = self.user_data_preprocess(self.data)
+        
         (self.training_data['x'], self.test_data['x'], 
          self.training_data['y'], self.test_data['y']) = train_test_split(
             self.data, self.target,
@@ -277,6 +283,10 @@ class ModelSelection:
             random_state=self.random_state,
             stratify=self.target
         )
+
+    def prepare_data(self):
+        """Public method to prepare data (can be called externally)"""
+        self._encode_categorical_variables()
 
     def selectModels(self):
         """Run grid search for all classifiers, including AUC calculation"""
@@ -573,3 +583,21 @@ class ModelSelection:
         os.makedirs(path, exist_ok=True)
         for tag, result in self.results.items():
             joblib.dump(result['best_estimator'], f"{path}/{tag}.joblib")
+
+    # Auxiliary methods 
+    def debug_data(self):
+        """Debug method to check data issues"""
+        print("=== DATA DEBUG INFO ===")
+        print(f"Training data shape: {self.training_data['x'].shape if self.training_data['x'] is not None else 'None'}")
+        print(f"Test data shape: {self.test_data['x'].shape if self.test_data['x'] is not None else 'None'}")
+        
+        if self.training_data['x'] is not None:
+            print("\nTraining data types:")
+            print(self.training_data['x'].dtypes)
+            
+            categorical_cols = self.training_data['x'].select_dtypes(include=['object']).columns
+            print(f"\nCategorical columns in training: {list(categorical_cols)}")
+            
+            if len(categorical_cols) > 0:
+                for col in categorical_cols:
+                    print(f"  {col}: {self.training_data['x'][col].unique()}")

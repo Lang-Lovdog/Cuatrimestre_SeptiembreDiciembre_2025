@@ -1,0 +1,12 @@
+INSTANCE: Probabilistic
+========================================
+Best Model: LDA
+F1 Score: 0.5352
+Accuracy: 0.5461
+Precision: 0.5382
+Recall: 0.5461
+AUC Score: 0.5430
+CV Score: 0.6017
+
+Best Parameters:
+{'clf__shrinkage': 0.1, 'clf__solver': 'lsqr'}

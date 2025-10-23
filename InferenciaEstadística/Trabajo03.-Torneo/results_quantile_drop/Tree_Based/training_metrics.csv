@@ -1,0 +1,4 @@
+Classifier,Accuracy,Precision,Recall,F1_Score,AUC_Score,CV_Score,Best_Params,Supports_Probability
+DecisionTree,0.47368421052631576,0.4773479152426521,0.47368421052631576,0.4747807017543859,0.4728479133927012,0.5931589537223341,"{'clf__criterion': 'gini', 'clf__max_depth': None, 'clf__min_samples_split': 2}",True
+RandomForest,0.5921052631578947,0.5931622875655492,0.5921052631578947,0.5925316339629563,0.6577614807054304,0.6129175050301812,"{'clf__max_depth': None, 'clf__min_samples_split': 5, 'clf__n_estimators': 200}",True
+ExtraTrees,0.625,0.6225543478260869,0.625,0.6215614617940199,0.6672778068796927,0.5875653923541247,"{'clf__max_depth': None, 'clf__min_samples_split': 5, 'clf__n_estimators': 200}",True

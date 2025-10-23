@@ -1,0 +1,12 @@
+INSTANCE: Tree_Based
+========================================
+Best Model: ExtraTrees
+F1 Score: 0.6093
+Accuracy: 0.6118
+Precision: 0.6094
+Recall: 0.6118
+AUC Score: 0.6684
+CV Score: 0.5792
+
+Best Parameters:
+{'clf__max_depth': 10, 'clf__min_samples_split': 10, 'clf__n_estimators': 200}

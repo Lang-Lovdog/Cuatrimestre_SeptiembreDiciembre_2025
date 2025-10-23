@@ -1,0 +1,7 @@
+,Classifier,f1_score
+Tree_Based,RandomForest,0.6215614617940199
+KNN_Variants,KNN_Medium,0.586407218436462
+Probabilistic,LDA,0.5534094756975904
+SVM_Variants,RbfSVM,0.619215043852044
+Logistic_Regression,LogisticRegression_L1,0.6498592973662225
+Neural_Networks,Perceptron,0.5535624652058445

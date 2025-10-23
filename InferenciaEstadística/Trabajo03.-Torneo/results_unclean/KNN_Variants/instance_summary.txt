@@ -1,0 +1,12 @@
+INSTANCE: KNN_Variants
+========================================
+Best Model: KNN_Medium
+F1 Score: 0.5864
+Accuracy: 0.5855
+Precision: 0.5898
+Recall: 0.5855
+AUC Score: 0.6036
+CV Score: 0.5932
+
+Best Parameters:
+{'clf__n_neighbors': 20, 'clf__weights': 'distance'}

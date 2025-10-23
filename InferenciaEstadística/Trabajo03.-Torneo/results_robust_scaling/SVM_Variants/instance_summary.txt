@@ -1,0 +1,12 @@
+INSTANCE: SVM_Variants
+========================================
+Best Model: LinearSVM
+F1 Score: 0.6191
+Accuracy: 0.6250
+Precision: 0.6226
+Recall: 0.6250
+AUC Score: 0.6993
+CV Score: 0.6077
+
+Best Parameters:
+{'clf__C': 10}

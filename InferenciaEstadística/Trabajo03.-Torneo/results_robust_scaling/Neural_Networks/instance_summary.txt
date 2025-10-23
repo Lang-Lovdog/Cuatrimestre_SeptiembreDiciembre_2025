@@ -1,0 +1,11 @@
+INSTANCE: Neural_Networks
+========================================
+Best Model: Perceptron
+F1 Score: 0.5858
+Accuracy: 0.5855
+Precision: 0.5946
+Recall: 0.5855
+CV Score: 0.6047
+
+Best Parameters:
+{'clf__alpha': 0.0001, 'clf__penalty': 'l1'}

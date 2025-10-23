@@ -12,6 +12,8 @@
 \usepackage{setspace}
 \usepackage{enumitem}
 \usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{float}
 
 % Font configuration
 \setmainfont{QTBookmann}
@@ -32,6 +34,9 @@
   {}{0em}{}
 \titleformat{\subsection}
   {\fontspec{QTBookmann}\large\bfseries\color{accent}}
+  {}{0em}{}
+\titleformat{\subsubsection}
+  {\fontspec{QTBookmann}\normalsize\bfseries\color{secondary}}
   {}{0em}{}
 
 % Compact itemize
@@ -136,7 +141,123 @@ Twitter\_hastags & Continuous & Social media engagement & 200-1,600+ & Medium \\
 
 \vspace{8pt}
 
-\subsection*{📈 Key Statistical Insights}
+\subsection*{📈 Comprehensive Feature Analysis}
+
+\subsubsection*{Financial Features Analysis}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{../DatasetAnalysis/plots/Marketing_expense.eps}
+\caption{Marketing Expense vs Targets: Strong positive correlation with Collection, moderate differentiation for Oscar wins.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{../DatasetAnalysis/plots/Budget.eps}
+\caption{Budget vs Targets: Clear linear relationship with Collection, significant budget difference for Oscar winners.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{../DatasetAnalysis/plots/Production_expense.eps}
+\caption{Production Expense vs Targets: Clustered distribution shows standardized production costs across films.}
+\end{figure}
+
+\subsubsection*{Distribution \& Release Features}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{../DatasetAnalysis/plots/Num_multiplex.eps}
+\caption{Number of Multiplexes vs Targets: Wide release strongly correlates with higher Collection.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{../DatasetAnalysis/plots/Multiplex_coverage.eps}
+\caption{Multiplex Coverage vs Targets: Distribution reach shows strong commercial impact.}
+\end{figure}
+
+\subsubsection*{Creative Team \& Quality Metrics}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{../DatasetAnalysis/plots/Director_rating.eps}
+\caption{Director Rating vs Targets: Critical factor for both commercial success and awards.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{../DatasetAnalysis/plots/Lead__Actor_Rating.eps}
+\caption{Lead Actor Rating vs Targets: Star power influences Collection, less impact on technical awards.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{../DatasetAnalysis/plots/Lead_Actress_rating.eps}
+\caption{Lead Actress Rating vs Targets: Similar pattern to actor ratings with commercial focus.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{../DatasetAnalysis/plots/Producer_rating.eps}
+\caption{Producer Rating vs Targets: Production quality important for technical award consideration.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{../DatasetAnalysis/plots/Critic_rating.eps}
+\caption{Critic Rating vs Targets: Critical acclaim correlates with both targets but stronger for awards.}
+\end{figure}
+
+\subsubsection*{Content \& Technical Features}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{../DatasetAnalysis/plots/Movie_length.eps}
+\caption{Movie Length vs Targets: Runtime shows complex relationship with both commercial and critical success.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{../DatasetAnalysis/plots/Time_taken.eps}
+\caption{Production Time vs Targets: Longer production doesn't guarantee better outcomes.}
+\end{figure}
+
+\subsubsection*{Marketing \& Audience Engagement}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{../DatasetAnalysis/plots/Trailer_views.eps}
+\caption{Trailer Views vs Targets: Pre-release hype strongly predicts box office performance.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{../DatasetAnalysis/plots/Twitter_hastags.eps}
+\caption{Twitter Hashtags vs Targets: Social media engagement shows modern marketing impact.}
+\end{figure}
+
+\subsubsection*{Categorical Features Analysis}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{../DatasetAnalysis/plots/Genre.eps}
+\caption{Genre vs Targets: Different genres show distinct success patterns for commercial vs award outcomes.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{../DatasetAnalysis/plots/3D_available.eps}
+\caption{3D Format vs Targets: 3D films show premium positioning for both revenue and awards.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{../DatasetAnalysis/plots/Avg_age_actors.eps}
+\caption{Average Actor Age vs Targets: Age demographics show interesting distribution patterns.}
+\end{figure}
+
+\subsection*{🔍 Key Insights Summary}
 
 \subsubsection*{Financial Patterns}
 \begin{itemize}
@@ -161,7 +282,7 @@ Twitter\_hastags & Continuous & Social media engagement & 200-1,600+ & Medium \\
 
 \vspace{8pt}
 
-\subsection*{🔍 Data Quality \& Readiness}
+\subsection*{📋 Data Quality \& Readiness}
 \begin{minipage}[t]{0.48\textwidth}
 \begin{itemize}
   \item \textbf{Missing Values:} <0.2\% overall
@@ -181,37 +302,5 @@ Twitter\_hastags & Continuous & Social media engagement & 200-1,600+ & Medium \\
 \vspace{8pt}
 \noindent\rule{\textwidth}{0.5pt}
 {\color{secondary}\centering\small QTBookmann • VictorMono Nerd Font • Optimized for 7" E-Reader Display}
-
-\subsection*{📈 Visual Data Analysis}
-
-\subsubsection*{Target Variable Distributions}
-\begin{center}
-\includegraphics[width=0.9\textwidth]{../DatasetAnalysis/target_histograms.eps}
-\end{center}
-The histograms show the distribution of our two target variables. \texttt{Collection} displays a right-skewed distribution typical of box office revenue, while \texttt{Start\_Tech\_Oscar} shows the class imbalance between winners and non-winners.
-
-\subsubsection*{Box Office Collection Relationships}
-\begin{center}
-\includegraphics[width=0.9\textwidth]{../DatasetAnalysis/collection_scatters.eps}
-\end{center}
-Scatter plots reveal strong positive correlations between box office collection and key features like budget, marketing expense, and trailer views. The relationship with critic ratings appears more nuanced.
-
-\subsubsection*{Technical Award Predictive Features}
-\begin{center}
-\includegraphics[width=0.9\textwidth]{../DatasetAnalysis/oscar_boxplots.eps}
-\end{center}
-Box plots comparing Oscar winners vs non-winners show significant differences in budget, critic ratings, and director ratings. Award-winning films tend to have higher production values and critical acclaim.
-
-\subsubsection*{Genre Performance Analysis}
-\begin{center}
-\includegraphics[width=0.9\textwidth]{../DatasetAnalysis/genre_analysis.eps}
-\end{center}
-Genre analysis reveals Action films lead in average box office collection, while Thriller films have the highest technical award win rate, suggesting different success patterns across genres.
-
-\subsubsection*{3D Format Impact}
-\begin{center}
-\includegraphics[width=0.9\textwidth]{../DatasetAnalysis/threed_analysis.eps}
-\end{center}
-3D films show both higher average box office returns and significantly higher technical award win rates, indicating the format's impact on both commercial and critical success.
 
 \end{document}
