@@ -1,0 +1,933 @@
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.9.3)  24 OCT 2025 02:34
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**article.tex
+(./article.tex
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-08-13>
+(/opt/texlive/2025/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(/opt/texlive/2025/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count271
+\c@section=\count272
+\c@subsection=\count273
+\c@subsubsection=\count274
+\c@paragraph=\count275
+\c@subparagraph=\count276
+\c@figure=\count277
+\c@table=\count278
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen148
+) (/opt/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec.sty (/opt/texlive/2025/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (/opt/texlive/2025/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2025-08-13 L3 programming layer (loader) 
+ (/opt/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+File: l3backend-xetex.def 2025-06-09 L3 backend support: XeTeX
+\g__graphics_track_int=\count279
+\g__pdfannot_backend_int=\count280
+\g__pdfannot_backend_link_int=\count281
+))
+Package: xparse 2024-08-16 L3 Experimental document command parser
+)
+Package: fontspec 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTeX
+ (/opt/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTeX
+\l__fontspec_script_int=\count282
+\l__fontspec_language_int=\count283
+\l__fontspec_strnum_int=\count284
+\l__fontspec_tmp_int=\count285
+\l__fontspec_tmpa_int=\count286
+\l__fontspec_tmpb_int=\count287
+\l__fontspec_tmpc_int=\count288
+\l__fontspec_em_int=\count289
+\l__fontspec_emdef_int=\count290
+\l__fontspec_strong_int=\count291
+\l__fontspec_strongdef_int=\count292
+\l__fontspec_tmpa_dim=\dimen149
+\l__fontspec_tmpb_dim=\dimen150
+\l__fontspec_tmpc_dim=\dimen151
+ (/opt/texlive/2025/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2024/12/21 v2.1c Standard LaTeX package
+) (/opt/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (/opt/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (/opt/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+) (/opt/texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (/opt/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+))
+\Gm@cnth=\count293
+\Gm@cntv=\count294
+\c@Gm@tempcnt=\count295
+\Gm@bindingoffset=\dimen152
+\Gm@wd@mp=\dimen153
+\Gm@odd@mp=\dimen154
+\Gm@even@mp=\dimen155
+\Gm@layoutwidth=\dimen156
+\Gm@layoutheight=\dimen157
+\Gm@layouthoffset=\dimen158
+\Gm@layoutvoffset=\dimen159
+\Gm@dimlist=\toks18
+) (/opt/texlive/2025/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+ (/opt/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 274.
+ (/opt/texlive/2025/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2022/09/22 v5.0n Graphics/color driver for xetex
+) (/opt/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+) (/opt/texlive/2025/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2025/01/04 v2.17 Sectioning titles
+\ttl@box=\box53
+\beforetitleunit=\skip51
+\aftertitleunit=\skip52
+\ttl@plus=\dimen160
+\ttl@minus=\dimen161
+\ttl@toksa=\toks19
+\titlewidth=\dimen162
+\titlewidthlast=\dimen163
+\titlewidthfirst=\dimen164
+) (/opt/texlive/2025/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+\f@nch@headwidth=\skip53
+\f@nch@offset@elh=\skip54
+\f@nch@offset@erh=\skip55
+\f@nch@offset@olh=\skip56
+\f@nch@offset@orh=\skip57
+\f@nch@offset@elf=\skip58
+\f@nch@offset@erf=\skip59
+\f@nch@offset@olf=\skip60
+\f@nch@offset@orf=\skip61
+\f@nch@height=\skip62
+\f@nch@footalignment=\skip63
+\f@nch@widthL=\skip64
+\f@nch@widthC=\skip65
+\f@nch@widthR=\skip66
+\@temptokenb=\toks20
+) (/opt/texlive/2025/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen165
+\lightrulewidth=\dimen166
+\cmidrulewidth=\dimen167
+\belowrulesep=\dimen168
+\belowbottomsep=\dimen169
+\aboverulesep=\dimen170
+\abovetopsep=\dimen171
+\cmidrulesep=\dimen172
+\cmidrulekern=\dimen173
+\defaultaddspace=\dimen174
+\@cmidla=\count296
+\@cmidlb=\count297
+\@aboverulesep=\dimen175
+\@belowrulesep=\dimen176
+\@thisruleclass=\count298
+\@lastruleclass=\count299
+\@thisrulewidth=\dimen177
+) (/opt/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2025/06/16 v2.17y AMS math features
+\@mathmargin=\skip67
+
+For additional information on amsmath, use the `?' option.
+(/opt/texlive/2025/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+ (/opt/texlive/2025/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks21
+\ex@=\dimen178
+)) (/opt/texlive/2025/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen179
+) (/opt/texlive/2025/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count300
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count301
+\leftroot@=\count302
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count303
+\DOTSCASE@=\count304
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box54
+\strutbox@=\box55
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen180
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count305
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count306
+\dotsspace@=\muskip17
+\c@parentequation=\count307
+\dspbrk@lvl=\count308
+\tag@help=\toks22
+\row@=\count309
+\column@=\count310
+\maxfields@=\count311
+\andhelp@=\toks23
+\eqnshift@=\dimen181
+\alignsep@=\dimen182
+\tagshift@=\dimen183
+\tagwidth@=\dimen184
+\totwidth@=\dimen185
+\lineht@=\dimen186
+\@envbody=\toks24
+\multlinegap=\skip68
+\multlinetaggap=\skip69
+\mathdisplay@stack=\toks25
+LaTeX Info: Redefining \[ on input line 2949.
+LaTeX Info: Redefining \] on input line 2950.
+) (/opt/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+ (/opt/texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+ (/opt/texlive/2025/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+) (/opt/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 106.
+)
+\Gin@req@height=\dimen187
+\Gin@req@width=\dimen188
+) (/opt/texlive/2025/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+) (/opt/texlive/2025/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2025/07/09 v3.2b Micro-typographical refinements (RS)
+ (/opt/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count312
+)
+\MT@toks=\toks26
+\MT@tempbox=\box56
+\MT@count=\count313
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1087.
+LaTeX Info: Redefining \leftprotrusion on input line 1088.
+\MT@prot@toks=\toks27
+LaTeX Info: Redefining \rightprotrusion on input line 1107.
+LaTeX Info: Redefining \textls on input line 1449.
+\MT@outer@kern=\dimen189
+LaTeX Info: Redefining \microtypecontext on input line 2053.
+LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
+\MT@listname@count=\count314
+ (/opt/texlive/2025/texmf-dist/tex/latex/microtype/microtype-xetex.def
+File: microtype-xetex.def 2025/07/09 v3.2b Definitions specific to xetex (RS)
+LaTeX Info: Redefining \lsstyle on input line 443.
+LaTeX Info: Redefining \lslig on input line 451.
+\MT@outer@space=\skip70
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+ (/opt/texlive/2025/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2025/07/09 v3.2b microtype main configuration file (RS)
+)
+LaTeX Info: Redefining \microtypesetup on input line 3065.
+) (/opt/texlive/2025/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2025/02/06 v3.11 Customized lists
+\labelindent=\skip71
+\enit@outerparindent=\dimen190
+\enit@toks=\toks28
+\enit@inbox=\box57
+\enit@count@id=\count315
+\enitdp@description=\count316
+) (/opt/texlive/2025/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+ (/opt/texlive/2025/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen191
+\captionmargin=\dimen192
+\caption@leftmargin=\dimen193
+\caption@rightmargin=\dimen194
+\caption@width=\dimen195
+\caption@indent=\dimen196
+\caption@parindent=\dimen197
+\caption@hangindent=\dimen198
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count317
+\c@continuedfloat=\count318
+) (/opt/texlive/2025/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count319
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count320
+) (/opt/texlive/2025/texmf-dist/tex/latex/siunitx/siunitx.sty
+Package: siunitx 2025-07-09 v3.4.14 A comprehensive (SI) units package
+\l__siunitx_number_uncert_offset_int=\count321
+\l__siunitx_number_exponent_fixed_int=\count322
+\l__siunitx_number_min_decimal_int=\count323
+\l__siunitx_number_min_integer_int=\count324
+\l__siunitx_number_round_precision_int=\count325
+\l__siunitx_number_lower_threshold_int=\count326
+\l__siunitx_number_upper_threshold_int=\count327
+\l__siunitx_number_group_first_int=\count328
+\l__siunitx_number_group_size_int=\count329
+\l__siunitx_number_group_minimum_int=\count330
+\l__siunitx_angle_tmp_dim=\dimen199
+\l__siunitx_angle_marker_box=\box58
+\l__siunitx_angle_unit_box=\box59
+\l__siunitx_compound_count_int=\count331
+ (/opt/texlive/2025/texmf-dist/tex/latex/translations/translations.sty
+Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages (CN)
+ (/opt/texlive/2025/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (/opt/texlive/2025/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) (/opt/texlive/2025/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+))
+\l__siunitx_table_tmp_box=\box60
+\l__siunitx_table_tmp_dim=\dimen256
+\l__siunitx_table_column_width_dim=\dimen257
+\l__siunitx_table_integer_box=\box61
+\l__siunitx_table_decimal_box=\box62
+\l__siunitx_table_uncert_box=\box63
+\l__siunitx_table_before_box=\box64
+\l__siunitx_table_after_box=\box65
+\l__siunitx_table_before_dim=\dimen258
+\l__siunitx_table_carry_dim=\dimen259
+\l__siunitx_unit_tmp_int=\count332
+\l__siunitx_unit_position_int=\count333
+\l__siunitx_unit_total_int=\count334
+ (/opt/texlive/2025/texmf-dist/tex/latex/tools/array.sty
+Package: array 2025/06/08 v2.6j Tabular extension package (FMi)
+\col@sep=\dimen260
+\ar@mcellbox=\box66
+\extrarowheight=\dimen261
+\NC@list=\toks29
+\extratabsurround=\skip72
+\backup@length=\skip73
+\ar@cellbox=\box67
+))
+
+Package fontspec Info: 
+(fontspec)             Font family 'QTBookmann(0)' created for font
+(fontspec)             'QTBookmann' with options [Ligatures=TeX].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"QTBookmann/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"QTBookmann/B/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"QTBookmann/I/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->"QTBookmann/BI/OT:script=latn;language=dflt;mapping=tex-text;"
+
+
+Package fontspec Info: 
+(fontspec)             VictorMono Nerd Font scale = 0.9.
+
+
+Package fontspec Info: 
+(fontspec)             VictorMono Nerd Font scale = 0.9.
+
+
+Package fontspec Info: 
+(fontspec)             VictorMono Nerd Font/B scale = 0.9.
+
+
+Package fontspec Info: 
+(fontspec)             VictorMono Nerd Font/I scale = 0.9.
+
+
+Package fontspec Info: 
+(fontspec)             VictorMono Nerd Font/BI scale = 0.9.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'VictorMonoNerdFont(0)' created for font
+(fontspec)             'VictorMono Nerd Font' with options
+(fontspec)             [WordSpace={1,0,0},HyphenChar=None,PunctuationSpace=WordSpace,Scale=0.9].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->s*[0.9]"VictorMono
+(fontspec)             Nerd Font/OT:script=latn;language=dflt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->s*[0.9]"VictorMono
+(fontspec)             Nerd Font/B/OT:script=latn;language=dflt;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[0.9]"VictorMono Nerd
+(fontspec)             Font/I/OT:script=latn;language=dflt;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[0.9]"VictorMono Nerd
+(fontspec)             Font/BI/OT:script=latn;language=dflt;"
+
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 59.
+ (./article.aux)
+\openout1 = `article.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+
+Package fontspec Info: 
+(fontspec)             Adjusting the maths setup (use [no-math] to avoid
+(fontspec)             this).
+
+\symlegacymaths=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 59.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 59.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 59.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 59.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 59.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 59.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 59.
+LaTeX Font Info:    Redeclaring math accent \check on input line 59.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 59.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 59.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 59.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 59.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 59.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 59.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 59.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 59.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 59.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 59.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 59.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 59.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 59.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 59.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 59.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 59.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 59.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/QTBookmann(0)/m/n on input line 59.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 59.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/QTBookmann(0)/m/n on input line 59.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/QTBookmann(0)/m/n --> TU/QTBookmann(0)/m/n on input line 59.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/QTBookmann(0)/m/it on input line 59.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/QTBookmann(0)/b/n on input line 59.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 59.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/VictorMonoNerdFont(0)/m/n on input line 59.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/QTBookmann(0)/m/n --> TU/QTBookmann(0)/b/n on input line 59.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> TU/QTBookmann(0)/b/it on input line 59.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 59.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/VictorMonoNerdFont(0)/b/n on input line 59.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includehead includefoot 
+* h-part:(L,W,R)=(36.135pt, 433.62001pt, 36.135pt)
+* v-part:(T,H,B)=(36.135pt, 578.16pt, 36.135pt)
+* \paperwidth=505.89pt
+* \paperheight=650.43pt
+* \textwidth=433.62001pt
+* \textheight=511.16pt
+* \oddsidemargin=-36.135pt
+* \evensidemargin=-36.135pt
+* \topmargin=-36.135pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=59.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Info: Redefining \microtypecontext on input line 59.
+Package microtype Info: Applying patch `item' on input line 59.
+Package microtype Info: Applying patch `toc' on input line 59.
+Package microtype Info: Applying patch `eqnum' on input line 59.
+Package microtype Info: Applying patch `footnote' on input line 59.
+Package microtype Info: Applying patch `verbatim' on input line 59.
+LaTeX Info: Redefining \microtypesetup on input line 59.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of spacing.
+Package microtype Info: No adjustment of kerning.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `QTBookmann' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\k A'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/424(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\u A'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/424(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\k a'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/424(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\u a'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/424(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'C'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/424(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v C'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/424(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'c'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/424(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v c'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/424(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v D'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/424(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v d'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/424(protrusion)'.
+
+Package microtype Info: Character `\dj ' is missing
+(microtype)             in font `\TU/QTBookmann(0)/m/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\k E'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/424(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v E'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/424(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\k e'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/424(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v e'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/424(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\u G'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/424(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\u g'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/424(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\.I'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/424(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'L'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/424(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v L'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/424(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'l'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/424(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v l'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/424(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'N'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/424(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v N'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/424(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'n'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/424(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v n'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/424(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\H O'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/424(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\H o'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/424(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'R'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/424(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v R'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/424(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'r'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/424(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v r'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/424(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'S'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/424(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\c S'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/424(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'s'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/424(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\c s'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/424(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\c T'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/424(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v T'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/424(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\c t'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/424(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v t'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/424(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\H U'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/424(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\r U'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/424(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\H u'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/424(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\r u'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/424(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'Z'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/424(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\.Z'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/424(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'z'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/424(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\.z'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/424(protrusion)'.
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+(/opt/texlive/2025/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
+File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
+)
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 59.
+
+Overfull \hbox (0.93674pt too wide) in paragraph at lines 82--84
+\TU/QTBookmann(0)/m/n/10 KNN, Probabilistic, SVM, Logistic Regression, and Neural Networks—each with
+ []
+
+
+
+[1
+
+]
+LaTeX Font Info:    Font shape `TU/VictorMonoNerdFont(0)/m/n' will be
+(Font)              scaled to size 9.85492pt on input line 98.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `VictorMonoNerdFont' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Overfull \hbox (41.5914pt too wide) in paragraph at lines 101--102
+\TU/QTBookmann(0)/b/n/10.95 Feature Set \TU/QTBookmann(0)/m/n/10.95 was created by pruning \TU/VictorMonoNerdFont(0)/m/n/10.95 Marketing_Expense\TU/QTBookmann(0)/m/n/10.95 , \TU/VictorMonoNerdFont(0)/m/n/10.95 Avg_Age_actors\TU/QTBookmann(0)/m/n/10.95 , and \TU/VictorMonoNerdFont(0)/m/n/10.95 Twitter_hastags
+ []
+
+
+
+[2]
+Overfull \hbox (28.9502pt too wide) in paragraph at lines 108--109
+[]\TU/QTBookmann(0)/b/n/10.95 Robust Scaling: \TU/QTBookmann(0)/m/n/10.95 Features were rescaled using the interquartile range via \TU/VictorMonoNerdFont(0)/m/n/10.95 RobustScaler\TU/QTBookmann(0)/m/n/10.95 . 
+ []
+
+
+Overfull \hbox (33.20724pt too wide) in paragraph at lines 111--112
+[]\TU/QTBookmann(0)/b/n/10.95 Isolation Forest: \TU/QTBookmann(0)/m/n/10.95 Outliers were detected using \TU/VictorMonoNerdFont(0)/m/n/10.95 IsolationForest \TU/QTBookmann(0)/m/n/10.95 (with \TU/VictorMonoNerdFont(0)/m/n/10.95 contamination=0.1\TU/QTBookmann(0)/m/n/10.95 )
+ []
+
+
+
+[3]
+Overfull \hbox (17.0319pt too wide) in paragraph at lines 129--130
+[]\TU/QTBookmann(0)/b/n/10.95 Linear Discriminant Analysis: \TU/VictorMonoNerdFont(0)/m/n/10.95 solver: ['svd', 'lsqr', 'eigen']\TU/QTBookmann(0)/m/n/10.95 ; \TU/VictorMonoNerdFont(0)/m/n/10.95 shrinkage: [None,
+ []
+
+
+Overfull \hbox (1.42276pt too wide) in paragraph at lines 135--136
+[]\TU/QTBookmann(0)/b/n/10.95 Hyperparameters: \TU/VictorMonoNerdFont(0)/m/n/10.95 C: [0.1, 1, 10, 100]\TU/QTBookmann(0)/m/n/10.95 ; \TU/VictorMonoNerdFont(0)/m/n/10.95 gamma: ['scale', 'auto'] \TU/QTBookmann(0)/m/n/10.95 for non-linear
+ []
+
+
+Overfull \hbox (16.43724pt too wide) in paragraph at lines 139--140
+\TU/QTBookmann(0)/m/n/10.95 Variants with L2, L1, and ElasticNet penalties. \TU/VictorMonoNerdFont(0)/m/n/10.95 C: [0.001, 0.01, 0.1, 1, 10]\TU/QTBookmann(0)/m/n/10.95 ; \TU/VictorMonoNerdFont(0)/m/n/10.95 l1_ratio:
+ []
+
+
+Overfull \hbox (25.06708pt too wide) in paragraph at lines 143--144
+[]\TU/QTBookmann(0)/b/n/10.95 Perceptron: \TU/VictorMonoNerdFont(0)/m/n/10.95 alpha: [0.0001, 0.001, 0.01]\TU/QTBookmann(0)/m/n/10.95 ; \TU/VictorMonoNerdFont(0)/m/n/10.95 penalty: [None, 'l2', 'l1', 'elasticnet'] 
+ []
+
+
+Overfull \hbox (16.40948pt too wide) in paragraph at lines 144--145
+[]\TU/QTBookmann(0)/b/n/10.95 Multi-layer Perceptron (1 & 2 Layer): \TU/VictorMonoNerdFont(0)/m/n/10.95 hidden_layer_sizes: [(50,), (100,), (200,)]
+ []
+
+
+Overfull \hbox (13.05173pt too wide) in paragraph at lines 144--145
+\TU/QTBookmann(0)/m/n/10.95 for 1-layer, \TU/VictorMonoNerdFont(0)/m/n/10.95 [(50,25), (100,50), (200,100)] \TU/QTBookmann(0)/m/n/10.95 for 2-layer; \TU/VictorMonoNerdFont(0)/m/n/10.95 alpha: [0.0001, 0.001, 0.01]\TU/QTBookmann(0)/m/n/10.95 ;
+ []
+
+(/opt/texlive/2025/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
+)
+Overfull \hbox (8.1199pt too wide) in paragraph at lines 151--152
+\TU/QTBookmann(0)/m/n/10.95 tween our best-performing models and peer researcher’s implementations. Shapiro-
+ []
+
+
+
+[4]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: ../ResultAnalysis/model_comparison_boxplots.eps Graphic file (type eps)
+<../ResultAnalysis/model_comparison_boxplots.eps>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: ../ResultAnalysis/model_comparison_distributions.eps Graphic file (type eps)
+<../ResultAnalysis/model_comparison_distributions.eps>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+[5]
+
+[6]
+
+[7]
+Overfull \hbox (0.42697pt too wide) in paragraph at lines 250--251
+\TU/QTBookmann(0)/m/n/10.95 selection, highlighting the perils of selecting models based on a single performance
+ []
+
+
+Overfull \hbox (5.05516pt too wide) in paragraph at lines 258--259
+[]\TU/QTBookmann(0)/m/n/10.95 Implementing nested cross-validation for more reliable performance estimates 
+ []
+
+
+
+[8]
+
+[9] (./article.aux)
+ ***********
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-08-13>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 13938 strings out of 470362
+ 337700 string characters out of 5489054
+ 778209 words of memory out of 5000000
+ 42147 multiletter control sequences out of 15000+600000
+ 630761 words of font info for 90 fonts, out of 8000000 for 9000
+ 62 hyphenation exceptions out of 8191
+ 73i,13n,93p,1004b,478s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on article.xdv (9 pages, 120324 bytes).

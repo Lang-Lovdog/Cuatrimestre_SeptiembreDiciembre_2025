@@ -1,0 +1,11 @@
+Model,Dataset,Preprocessing,Columns_Dropped,F1_Score
+LogisticRegression_L1,shuffle_01.csv,quantile,True,0.0
+LogisticRegression_L1,shuffle_02.csv,quantile,True,0.0
+LogisticRegression_L1,shuffle_03.csv,quantile,True,0.0
+LogisticRegression_L1,shuffle_04.csv,quantile,True,0.0
+LogisticRegression_L1,shuffle_05.csv,quantile,True,0.0
+LogisticRegression_L1,shuffle_06.csv,quantile,True,0.0
+LogisticRegression_L1,shuffle_07.csv,quantile,True,0.0
+LogisticRegression_L1,shuffle_08.csv,quantile,True,0.0
+LogisticRegression_L1,shuffle_09.csv,quantile,True,0.0
+LogisticRegression_L1,shuffle_10.csv,quantile,True,0.0

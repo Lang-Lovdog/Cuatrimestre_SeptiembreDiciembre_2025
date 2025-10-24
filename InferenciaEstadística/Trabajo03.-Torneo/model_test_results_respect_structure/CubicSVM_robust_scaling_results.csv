@@ -1,0 +1,11 @@
+Model,Dataset,Preprocessing,Columns_Dropped,F1_Score
+CubicSVM,shuffle_01.csv,robust_scaling,False,0.7749077490774908
+CubicSVM,shuffle_02.csv,robust_scaling,False,0.7749077490774908
+CubicSVM,shuffle_03.csv,robust_scaling,False,0.7749077490774908
+CubicSVM,shuffle_04.csv,robust_scaling,False,0.7749077490774908
+CubicSVM,shuffle_05.csv,robust_scaling,False,0.7749077490774908
+CubicSVM,shuffle_06.csv,robust_scaling,False,0.7749077490774908
+CubicSVM,shuffle_07.csv,robust_scaling,False,0.7749077490774908
+CubicSVM,shuffle_08.csv,robust_scaling,False,0.7749077490774908
+CubicSVM,shuffle_09.csv,robust_scaling,False,0.7749077490774908
+CubicSVM,shuffle_10.csv,robust_scaling,False,0.7749077490774908

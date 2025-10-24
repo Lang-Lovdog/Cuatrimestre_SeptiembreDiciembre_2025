@@ -1,0 +1,7 @@
+Model,Dataset,Preprocessing,Columns_Dropped,F1_Score
+KNN_Medium,shuffle_01.csv,winsorize,True,0.8825622775800712
+RandomForest,shuffle_01.csv,isolation_forest,True,0.8482512957451342
+MLP_1Layer,shuffle_01.csv,isolation_forest,True,0.7819489808704155
+CubicSVM,shuffle_01.csv,robust_scaling,False,0.7660481237400234
+LogisticRegression_ElasticNet,shuffle_01.csv,robust_scaling,False,0.6741154562383612
+LDA,shuffle_01.csv,isolation_forest,True,0.5491202472106035

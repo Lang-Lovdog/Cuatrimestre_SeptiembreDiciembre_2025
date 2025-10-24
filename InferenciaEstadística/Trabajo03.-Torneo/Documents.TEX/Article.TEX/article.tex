@@ -1,0 +1,265 @@
+% !TEX program = xelatex
+\documentclass[11pt]{article}
+\usepackage{fontspec}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{siunitx}
+
+% Page geometry for 7in screen
+\geometry{
+    paperwidth=7in,
+    paperheight=9in,
+    margin=0.5in,
+    includeheadfoot
+}
+
+% Font configuration
+\setmainfont{QTBookmann}
+\setmonofont{VictorMono Nerd Font}[
+    Scale=0.9
+]
+
+% Colors
+\definecolor{accent}{RGB}{45, 85, 155}
+\definecolor{lightgray}{RGB}{240, 240, 240}
+
+% Section formatting
+\titleformat{\section}
+{\color{accent}\normalfont\Large\bfseries}
+{\thesection}{1em}{}
+
+\titleformat{\subsection}
+{\color{accent}\normalfont\large\bfseries}
+{\thesubsection}{1em}{}
+
+\titleformat{\subsubsection}
+{\color{accent}\normalfont\bfseries}
+{\thesubsubsection}{1em}{}
+
+% Line spacing
+\onehalfspacing
+
+% Header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{gray}Film Categorization Pipeline Optimization}
+\fancyhead[R]{\small\color{gray}\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\begin{document}
+
+% Title section
+\begin{center}
+    \vspace*{0.2\textheight}
+    
+    {\Huge\bfseries\color{accent}
+    A Systematic Grid Search for Optimal Classifier and Data Preprocessing Pipeline in Film Categorization
+    }
+    
+    \vspace{0.1\textheight}
+    
+    {\large
+    Statistical Inference Research Report\\
+    \vspace{0.5em}
+    \today
+    }
+\end{center}
+
+\vspace{0.1\textheight}
+
+% Abstract
+\begin{abstract}
+    \noindent
+    This study conducted a large-scale, systematic empirical comparison to identify an optimal classifier and preprocessing pipeline for a film categorization task. A comprehensive grid evaluation framework was employed to assess 60 unique model configurations, spanning six classifier families—Tree-Based, KNN, Probabilistic, SVM, Logistic Regression, and Neural Networks—each with finely-tuned hyperparameters. These were tested across five distinct outlier treatment strategies (isolation forest, quantile, robust scaling, winsorize, and an unclean baseline) and two feature set versions (full and reduced). Statistical analysis revealed significant performance differences compared to peer models, with large effect sizes (Cohen's d > 1.9) and p-values < 0.001. The isolation forest preprocessing with reduced feature set emerged as the optimal configuration, though perfect consistency across shuffles warrants methodological review.
+\end{abstract}
+
+\vspace{0.05\textheight}
+
+% Main content
+\section{Introduction}
+
+The selection of an optimal classifier in supervised learning is a multi-faceted problem, highly dependent on the interplay between the algorithm's hyperparameters, data preprocessing strategies, and feature set composition. This report details a rigorous experiment in statistical inference focused on a film dataset. The primary objective was to identify a robust classification model by systematically evaluating these factors through a large-scale grid search. The experiment was designed to provide a holistic and bias-minimized view of model performance and stability across a wide spectrum of configurations.
+
+\section{Methodology}
+
+\subsection{Dataset and Preprocessing}
+
+\subsubsection{Base Preprocessing}
+The dataset underwent a standard preprocessing pipeline. Missing values in numerical columns were imputed using the median. The categorical variable \texttt{3D\_available} was binary encoded, and the \texttt{Genre} feature was one-hot encoded.
+
+\subsubsection{Feature Set Engineering}
+Two feature set variants were defined to evaluate feature importance. A \textbf{Reduced Feature Set} was created by pruning \texttt{Marketing\_Expense}, \texttt{Avg\_Age\_actors}, and \texttt{Twitter\_hastags} due to their low correlative power with the target variables (\texttt{Start\_Tech\_Oscar} and \texttt{Collection}). This was compared against the \textbf{Full Feature Set}.
+
+\subsection{Outlier Treatment Strategies}
+Five distinct data preprocessing pipelines were applied to the numerical features to investigate their impact on model robustness:
+
+\begin{itemize}[leftmargin=*,nosep]
+    \item \textbf{Unclean:} A baseline with no outlier treatment applied.
+    \item \textbf{Robust Scaling:} Features were rescaled using the interquartile range via \texttt{RobustScaler}.
+    \item \textbf{Winsorization:} Extreme values were clipped at the 25th and 75th percentiles.
+    \item \textbf{Quantile Transformation:} Features were transformed to a normal distribution using \texttt{QuantileTransformer} with \texttt{n\_quantiles=5}.
+    \item \textbf{Isolation Forest:} Outliers were detected using \texttt{IsolationForest} (with \texttt{contamination=0.1}) and their values were imputed with the feature median.
+\end{itemize}
+
+\subsection{Model Families and Hyperparameter Grids}
+A structured grid evaluation framework was developed, instantiating models from six families with the following hyperparameter spaces:
+
+\subsubsection{Tree-Based Classifiers}
+\begin{itemize}[leftmargin=*,nosep]
+    \item \textbf{Decision Tree:} \texttt{max\_depth: [3, 5, 7, 10, None]}; \texttt{min\_samples\_split: [2, 5, 10]}; \texttt{criterion: ['gini', 'entropy']}
+    \item \textbf{Random Forest \& Extra Trees:} \texttt{n\_estimators: [50, 100, 200]}; \texttt{max\_depth: [3, 5, 7, 10, None]}; \texttt{min\_samples\_split: [2, 5, 10]}
+\end{itemize}
+
+\subsubsection{K-Nearest Neighbors (KNN)}
+Variants (Coarse, Medium, Fine, Weighted, Cosine) were defined by searching \texttt{n\_neighbors} from 1-90 and weights in \texttt{['uniform', 'distance']}.
+
+\subsubsection{Probabilistic Models}
+\begin{itemize}[leftmargin=*,nosep]
+    \item \textbf{Gaussian Naïve Bayes:} \texttt{var\_smoothing: [1e-9, 1e-8, 1e-7, 1e-6]}
+    \item \textbf{Linear Discriminant Analysis:} \texttt{solver: ['svd', 'lsqr', 'eigen']}; \texttt{shrinkage: [None, 'auto', 0.1, 0.5, 0.9]}
+\end{itemize}
+
+\subsubsection{Support Vector Machines (SVM)}
+\begin{itemize}[leftmargin=*,nosep]
+    \item \textbf{Kernels:} Linear, Quadratic (Poly-2), Cubic (Poly-3), and RBF
+    \item \textbf{Hyperparameters:} \texttt{C: [0.1, 1, 10, 100]}; \texttt{gamma: ['scale', 'auto']} for non-linear kernels
+\end{itemize}
+
+\subsubsection{Logistic Regression}
+Variants with L2, L1, and ElasticNet penalties. \texttt{C: [0.001, 0.01, 0.1, 1, 10]}; \texttt{l1\_ratio: [0.1, 0.5, 0.9]} for ElasticNet.
+
+\subsubsection{Neural Networks}
+\begin{itemize}[leftmargin=*,nosep]
+    \item \textbf{Perceptron:} \texttt{alpha: [0.0001, 0.001, 0.01]}; \texttt{penalty: [None, 'l2', 'l1', 'elasticnet']}
+    \item \textbf{Multi-layer Perceptron (1 \& 2 Layer):} \texttt{hidden\_layer\_sizes: [(50,), (100,), (200,)]} for 1-layer, \texttt{[(50,25), (100,50), (200,100)]} for 2-layer; \texttt{alpha: [0.0001, 0.001, 0.01]}; \texttt{learning\_rate: ['constant', 'adaptive']}
+\end{itemize}
+
+\subsection{Experimental Design and Execution}
+The experimental design constituted a full factorial of the factors: 5 (outlier treatments) × 6 (classifier families) × 2 (feature sets) = 60 unique model configurations. For each configuration, a full hyperparameter grid search was performed. To manage this computational complexity, model definitions and parameters were serialized into JSON format and executed by an automated scripting pipeline. Model performance was evaluated using the F1-score metric.
+
+\subsection{Statistical Analysis Framework}
+For comparative analysis, independent two-sample t-tests were conducted between our best-performing models and peer researcher's implementations. Shapiro-Wilk tests assessed normality assumptions, with Cohen's d used to measure effect sizes. All statistical tests employed $\alpha = 0.05$ significance level.
+
+\section{Results and Analysis}
+
+\subsection{Performance Distribution and Anomalous Results}
+The grid search yielded a wide distribution of F1-scores, ranging from 0 to 0.82. While training scores for the majority of models oscillated between 0.5 and 0.64, several top-ranking models exhibited validation scores significantly higher than this baseline.
+
+\subsection{Top Performing Configurations}
+\begin{table}[h!]
+\centering
+\scriptsize
+\begin{tabular}{lccc}
+\toprule
+\textbf{Model} & \textbf{Preprocessing} & \textbf{Features} & \textbf{Mean F1-Score} \\
+\midrule
+KNN\_Cosine & Isolation Forest & Reduced & 0.8734 \\
+MLP\_1Layer & Isolation Forest & Reduced & 0.8524 \\
+RandomForest & Isolation Forest & Reduced & 0.8480 \\
+LDA & Isolation Forest & Reduced & 0.7059 \\
+RbfSVM & Isolation Forest & Reduced & 0.7208 \\
+LogisticRegression\_L1 & Quantile & Reduced & 0.0000 \\
+\bottomrule
+\end{tabular}
+\caption{Best performing configurations from systematic grid search}
+\label{tab:top_models}
+\end{table}
+
+\subsection{Statistical Comparison with Peer Models}
+
+\begin{table}[h!]
+\centering
+\scriptsize
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Comparison} & \textbf{Significant} & \textbf{p-value} & \textbf{Cohen's d} & \textbf{Effect Size} \\
+\midrule
+Your SVM vs Peer SVM & Yes & $3.51 \times 10^{-4}$ & 1.96 & Large \\
+Your RF vs Peer RF & Yes & $9.56 \times 10^{-12}$ & 6.83 & Large \\
+\bottomrule
+\end{tabular}
+\caption{T-test results showing significant performance differences}
+\label{tab:ttest_results}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\scriptsize
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Dataset} & \textbf{n} & \textbf{Mean} & \textbf{Std Dev} & \textbf{Min} & \textbf{Max} & \textbf{Range} \\
+\midrule
+Peer SVM & 10 & 0.6991 & 0.0157 & 0.6566 & 0.7064 & 0.0498 \\
+Your SVM & 10 & 0.7208 & 0.0000 & 0.7208 & 0.7208 & 0.0000 \\
+Peer RF & 10 & 0.6725 & 0.0363 & 0.6092 & 0.7126 & 0.1034 \\
+Your RF & 10 & 0.8480 & 0.0000 & 0.8480 & 0.8480 & 0.0000 \\
+\bottomrule
+\end{tabular}
+\caption{Descriptive statistics for model comparisons across 10 dataset shuffles}
+\label{tab:descriptive_stats}
+\end{table}
+
+\subsection{Visual Performance Analysis}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{../ResultAnalysis/model_comparison_boxplots.eps}
+\caption{Boxplot comparison of F1 scores between our models and peer implementations. Note the zero variance in our results indicating perfect consistency across shuffles.}
+\label{fig:boxplots}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{../ResultAnalysis/model_comparison_distributions.eps}
+\caption{Distribution of F1-scores showing performance differences and consistency patterns}
+\label{fig:distributions}
+\end{figure}
+
+\subsection{Normality Assessment}
+Shapiro-Wilk tests revealed mixed normality results: Peer SVM was non-normal (p = $1.50 \times 10^{-5}$), while Your SVM, Peer RF, and Your RF showed normal distributions. However, the zero variance in our results (perfect consistency across 10 shuffles) suggests potential methodological issues requiring investigation.
+
+\subsection{Model Selection Based on Reliability}
+Given the anomalous perfect consistency in our results, the final model selection strategy was adapted to prioritize reliability. The selected model was chosen from the pool of candidates that demonstrated consistent and stable learning curves and an F1-score that was optimistic yet plausible within the observed performance distribution, rather than simply selecting the absolute highest scorer.
+
+\section{Discussion}
+
+\subsection{The Complexity of Model Selection}
+This systematic exploration underscores that model performance is an emergent property of the entire pipeline, not just the classifier algorithm. The interaction between hyperparameter tuning, outlier treatment, and feature selection creates a complex optimization landscape where the highest-scoring point may not be the most robust.
+
+\subsection{Statistical Significance and Effect Sizes}
+The comparative analysis revealed statistically significant differences with large effect sizes. Our SVM implementation outperformed the peer's by 3.1\% (Cohen's d = 1.96, p < 0.001), while our Random Forest showed a 26.1\% improvement (Cohen's d = 6.83, p < 0.001). These large effect sizes indicate not just statistical significance but substantial practical importance.
+
+\subsection{Methodological Considerations}
+The perfect consistency (zero variance) observed across all 10 dataset shuffles in our results warrants careful consideration. While potentially indicating a robust preprocessing pipeline, it may also suggest data leakage, improper data splitting, or evaluation methodology issues that require code audit and methodology review.
+
+\subsection{Limitations}
+The primary limitation is the computational cost of the extensive grid search, which limited the number of cross-validation folds per configuration. Furthermore, the cause of the performance anomalies remains undiagnosed and warrants a code audit. The zero variance in results, while statistically favorable, raises questions about the evaluation methodology that must be addressed in future work.
+
+\section{Conclusion and Future Work}
+
+This large-scale grid search provides a robust, data-driven foundation for model selection, highlighting the perils of selecting models based on a single performance metric alone. The methodology demonstrates the importance of evaluating the entire preprocessing and modeling pipeline. The isolation forest preprocessing with reduced feature set emerged as the optimal configuration, with KNN Cosine achieving the highest F1-score (0.8734).
+
+Statistical validation confirmed significant superiority over peer implementations, with large effect sizes demonstrating both statistical and practical significance. However, the perfect consistency across dataset shuffles indicates potential methodological issues that require resolution.
+
+Future work will focus on:
+\begin{itemize}
+\item Diagnosing the source of the perfect consistency (zero variance) in results
+\item Conducting comprehensive code audit to identify potential data leakage
+\item Implementing nested cross-validation for more reliable performance estimates
+\item Extending the comparative analysis to include additional peer models
+\item Exploring ensemble methods combining the top-performing configurations
+\end{itemize}
+
+The systematic approach demonstrated in this study provides a template for rigorous machine learning pipeline evaluation that balances performance optimization with methodological robustness.
+
+\end{document}

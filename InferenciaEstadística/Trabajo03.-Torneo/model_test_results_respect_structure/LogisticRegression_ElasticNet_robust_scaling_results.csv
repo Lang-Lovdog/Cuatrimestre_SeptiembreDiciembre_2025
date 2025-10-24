@@ -1,0 +1,11 @@
+Model,Dataset,Preprocessing,Columns_Dropped,F1_Score
+LogisticRegression_ElasticNet,shuffle_01.csv,robust_scaling,False,0.6741154562383612
+LogisticRegression_ElasticNet,shuffle_02.csv,robust_scaling,False,0.6741154562383612
+LogisticRegression_ElasticNet,shuffle_03.csv,robust_scaling,False,0.6741154562383612
+LogisticRegression_ElasticNet,shuffle_04.csv,robust_scaling,False,0.6741154562383612
+LogisticRegression_ElasticNet,shuffle_05.csv,robust_scaling,False,0.6741154562383612
+LogisticRegression_ElasticNet,shuffle_06.csv,robust_scaling,False,0.6741154562383612
+LogisticRegression_ElasticNet,shuffle_07.csv,robust_scaling,False,0.6741154562383612
+LogisticRegression_ElasticNet,shuffle_08.csv,robust_scaling,False,0.6741154562383612
+LogisticRegression_ElasticNet,shuffle_09.csv,robust_scaling,False,0.6741154562383612
+LogisticRegression_ElasticNet,shuffle_10.csv,robust_scaling,False,0.6741154562383612

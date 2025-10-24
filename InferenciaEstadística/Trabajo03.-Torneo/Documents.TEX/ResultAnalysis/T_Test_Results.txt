@@ -1,0 +1,34 @@
+Loading data...
+Extracting SVM and Random Forest data...
+Peer SVM samples: 10
+Peer RF samples: 10
+Your SVM samples: 10
+Your RF samples: 10
+
+Performing statistical analyses...
+
+Exporting comprehensive report to statistical_analysis_report.xlsx...
+Generating and saving plots...
+
+============================================================
+ANALYSIS SUMMARY
+============================================================
+
+Your SVM vs Peer SVM:
+  Significant: YES
+  p-value: 0.0004
+  Effect Size (Cohen's d): 1.9648 (Large)
+
+Your Random Forest vs Peer Random Forest:
+  Significant: YES
+  p-value: 0.0000
+  Effect Size (Cohen's d): 6.8288 (Large)
+
+Files created:
+1. statistical_analysis_report.xlsx - Complete statistical analysis report
+2. model_comparison_boxplots.eps - Boxplot comparison (EPS)
+3. model_comparison_boxplots.png - Boxplot comparison (PNG)
+4. model_comparison_distributions.eps - Distribution plots (EPS)
+5. model_comparison_distributions.png - Distribution plots (PNG)
+
+Analysis complete!

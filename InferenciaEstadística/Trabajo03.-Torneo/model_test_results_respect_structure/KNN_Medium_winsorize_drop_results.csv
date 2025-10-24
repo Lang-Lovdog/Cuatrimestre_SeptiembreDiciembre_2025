@@ -1,0 +1,11 @@
+Model,Dataset,Preprocessing,Columns_Dropped,F1_Score
+KNN_Medium,shuffle_01.csv,winsorize,True,0.8825622775800712
+KNN_Medium,shuffle_02.csv,winsorize,True,0.8825622775800712
+KNN_Medium,shuffle_03.csv,winsorize,True,0.8825622775800712
+KNN_Medium,shuffle_04.csv,winsorize,True,0.8825622775800712
+KNN_Medium,shuffle_05.csv,winsorize,True,0.8825622775800712
+KNN_Medium,shuffle_06.csv,winsorize,True,0.8825622775800712
+KNN_Medium,shuffle_07.csv,winsorize,True,0.8825622775800712
+KNN_Medium,shuffle_08.csv,winsorize,True,0.8825622775800712
+KNN_Medium,shuffle_09.csv,winsorize,True,0.8825622775800712
+KNN_Medium,shuffle_10.csv,winsorize,True,0.8825622775800712

@@ -1,0 +1,10 @@
+Dataset,Cleaning Method,f1_score
+shuffle_02,results_winsorize_drop,
+shuffle_03,results_winsorize_drop,
+shuffle_04,results_winsorize_drop,
+shuffle_05,results_winsorize_drop,
+shuffle_06,results_winsorize_drop,
+shuffle_07,results_winsorize_drop,
+shuffle_08,results_winsorize_drop,
+shuffle_09,results_winsorize_drop,
+shuffle_10,results_winsorize_drop,

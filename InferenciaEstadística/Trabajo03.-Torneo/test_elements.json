@@ -1,0 +1,324 @@
+{
+  "test_datasets_path": "lovdogClassifier/res/datasets",
+  "test_datasets_names": [
+    "shuffle_01.csv",
+    "shuffle_02.csv",
+    "shuffle_03.csv",
+    "shuffle_04.csv",
+    "shuffle_05.csv",
+    "shuffle_06.csv",
+    "shuffle_07.csv",
+    "shuffle_08.csv",
+    "shuffle_09.csv",
+    "shuffle_10.csv"
+  ],
+  "models": {
+    "KNN_Variants": [
+      {
+        "preprocessing": "isolation_forest",
+        "classifier": "KNN_Cosine",
+        "drop": true
+      },
+      {
+        "preprocessing": "quantile",
+        "classifier": "KNN_Coarse",
+        "drop": false
+      },
+      {
+        "preprocessing": "quantile",
+        "classifier": "KNN_Weighted",
+        "drop": false
+      },
+      {
+        "preprocessing": "quantile",
+        "classifier": "KNN_Weighted",
+        "drop": true
+      },
+      {
+        "preprocessing": "robust_scaling",
+        "classifier": "KNN_Coarse",
+        "drop": false
+      },
+      {
+        "preprocessing": "robust_scaling",
+        "classifier": "KNN_Weighted",
+        "drop": false
+      },
+      {
+        "preprocessing": "robust_scaling",
+        "classifier": "KNN_Cosine",
+        "drop": true
+      },
+      {
+        "preprocessing": "none",
+        "classifier": "KNN_Cosine",
+        "drop": false
+      },
+      {
+        "preprocessing": "none",
+        "classifier": "KNN_Cosine",
+        "drop": true
+      },
+      {
+        "preprocessing": "winsorize",
+        "classifier": "KNN_Cosine",
+        "drop": false
+      },
+      {
+        "preprocessing": "winsorize",
+        "classifier": "KNN_Medium",
+        "drop": true
+      }
+    ],
+    "Logistic_Regression": [
+      {
+        "preprocessing": "isolation_forest",
+        "classifier": "LogisticRegression",
+        "drop": true
+      },
+      {
+        "preprocessing": "quantile",
+        "classifier": "LogisticRegression",
+        "drop": false
+      },
+      {
+        "preprocessing": "quantile",
+        "classifier": "LogisticRegression_L1",
+        "drop": true
+      },
+      {
+        "preprocessing": "robust_scaling",
+        "classifier": "LogisticRegression_ElasticNet",
+        "drop": false
+      },
+      {
+        "preprocessing": "robust_scaling",
+        "classifier": "LogisticRegression_L1",
+        "drop": false
+      },
+      {
+        "preprocessing": "robust_scaling",
+        "classifier": "LogisticRegression",
+        "drop": true
+      },
+      {
+        "preprocessing": "none",
+        "classifier": "LogisticRegression_L1",
+        "drop": false
+      },
+      {
+        "preprocessing": "none",
+        "classifier": "LogisticRegression_L1",
+        "drop": true
+      },
+      {
+        "preprocessing": "winsorize",
+        "classifier": "LogisticRegression_L1",
+        "drop": false
+      },
+      {
+        "preprocessing": "winsorize",
+        "classifier": "LogisticRegression",
+        "drop": true
+      }
+    ],
+    "Neural_Networks": [
+      {
+        "preprocessing": "isolation_forest",
+        "classifier": "MLP_1Layer",
+        "drop": true
+      },
+      {
+        "preprocessing": "quantile",
+        "classifier": "MLP_1Layer",
+        "drop": false
+      },
+      {
+        "preprocessing": "quantile",
+        "classifier": "MLP_2Layer",
+        "drop": true
+      },
+      {
+        "preprocessing": "robust_scaling",
+        "classifier": "MLP_2Layer",
+        "drop": false
+      },
+      {
+        "preprocessing": "robust_scaling",
+        "classifier": "MLP_2Layer",
+        "drop": true
+      },
+      {
+        "preprocessing": "none",
+        "classifier": "MLP_1Layer",
+        "drop": false
+      },
+      {
+        "preprocessing": "none",
+        "classifier": "MLP_1Layer",
+        "drop": true
+      },
+      {
+        "preprocessing": "winsorize",
+        "classifier": "MLP_2Layer",
+        "drop": false
+      },
+      {
+        "preprocessing": "winsorize",
+        "classifier": "MLP_2Layer",
+        "drop": true
+      }
+    ],
+    "Probabilistic": [
+      {
+        "preprocessing": "isolation_forest",
+        "classifier": "LDA",
+        "drop": true
+      },
+      {
+        "preprocessing": "quantile",
+        "classifier": "LDA",
+        "drop": false
+      },
+      {
+        "preprocessing": "quantile",
+        "classifier": "LDA",
+        "drop": true
+      },
+      {
+        "preprocessing": "robust_scaling",
+        "classifier": "LDA",
+        "drop": false
+      },
+      {
+        "preprocessing": "robust_scaling",
+        "classifier": "LDA",
+        "drop": true
+      },
+      {
+        "preprocessing": "none",
+        "classifier": "LDA",
+        "drop": false
+      },
+      {
+        "preprocessing": "none",
+        "classifier": "LDA",
+        "drop": true
+      },
+      {
+        "preprocessing": "winsorize",
+        "classifier": "LDA",
+        "drop": false
+      },
+      {
+        "preprocessing": "winsorize",
+        "classifier": "LDA",
+        "drop": true
+      }
+    ],
+    "SVM_Variants": [
+      {
+        "preprocessing": "isolation_forest",
+        "classifier": "RbfSVM",
+        "drop": true
+      },
+      {
+        "preprocessing": "quantile",
+        "classifier": "LinearSVM",
+        "drop": false
+      },
+      {
+        "preprocessing": "quantile",
+        "classifier": "LinearSVM",
+        "drop": true
+      },
+      {
+        "preprocessing": "robust_scaling",
+        "classifier": "CubicSVM",
+        "drop": false
+      },
+      {
+        "preprocessing": "robust_scaling",
+        "classifier": "LinearSVM",
+        "drop": false
+      },
+      {
+        "preprocessing": "robust_scaling",
+        "classifier": "LinearSVM",
+        "drop": true
+      },
+      {
+        "preprocessing": "none",
+        "classifier": "LinearSVM",
+        "drop": false
+      },
+      {
+        "preprocessing": "none",
+        "classifier": "CubicSVM",
+        "drop": true
+      },
+      {
+        "preprocessing": "winsorize",
+        "classifier": "QuadraticSVM",
+        "drop": false
+      },
+      {
+        "preprocessing": "winsorize",
+        "classifier": "CubicSVM",
+        "drop": true
+      }
+    ],
+    "Tree_Based": [
+      {
+        "preprocessing": "isolation_forest",
+        "classifier": "RandomForest",
+        "drop": true
+      },
+      {
+        "preprocessing": "quantile",
+        "classifier": "RandomForest",
+        "drop": false
+      },
+      {
+        "preprocessing": "quantile",
+        "classifier": "ExtraTrees",
+        "drop": true
+      },
+      {
+        "preprocessing": "robust_scaling",
+        "classifier": "RandomForest",
+        "drop": false
+      },
+      {
+        "preprocessing": "robust_scaling",
+        "classifier": "ExtraTrees",
+        "drop": true
+      },
+      {
+        "preprocessing": "none",
+        "classifier": "ExtraTrees",
+        "drop": false
+      },
+      {
+        "preprocessing": "none",
+        "classifier": "ExtraTrees",
+        "drop": true
+      },
+      {
+        "preprocessing": "none",
+        "classifier": "RandomForest",
+        "drop": true
+      },
+      {
+        "preprocessing": "winsorize",
+        "classifier": "RandomForest",
+        "drop": false
+      },
+      {
+        "preprocessing": "winsorize",
+        "classifier": "RandomForest",
+        "drop": true
+      }
+    ]
+  }
+}

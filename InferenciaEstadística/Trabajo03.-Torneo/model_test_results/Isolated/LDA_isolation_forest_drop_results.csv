@@ -1,0 +1,11 @@
+Model,Dataset,Preprocessing,Columns_Dropped,F1_Score
+LDA,shuffle_01.csv,isolation_forest,True,0.7058823529411765
+LDA,shuffle_02.csv,isolation_forest,True,0.7058823529411765
+LDA,shuffle_03.csv,isolation_forest,True,0.7058823529411765
+LDA,shuffle_04.csv,isolation_forest,True,0.7058823529411765
+LDA,shuffle_05.csv,isolation_forest,True,0.7058823529411765
+LDA,shuffle_06.csv,isolation_forest,True,0.7058823529411765
+LDA,shuffle_07.csv,isolation_forest,True,0.7058823529411765
+LDA,shuffle_08.csv,isolation_forest,True,0.7058823529411765
+LDA,shuffle_09.csv,isolation_forest,True,0.7058823529411765
+LDA,shuffle_10.csv,isolation_forest,True,0.7058823529411765

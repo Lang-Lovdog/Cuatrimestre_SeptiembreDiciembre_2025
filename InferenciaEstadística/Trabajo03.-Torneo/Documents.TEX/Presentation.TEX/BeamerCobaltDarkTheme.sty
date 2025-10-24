@@ -1,0 +1,63 @@
+\ProvidesPackage{BeamerCobaltDarkTheme}
+
+% Define the color palette
+\definecolor{cobaltBackground}{HTML}{1E212D}
+\definecolor{cobaltText}{HTML}{E0E0E0}
+\definecolor{cobaltAccent1}{HTML}{007ACC}
+\definecolor{cobaltAccent2}{HTML}{005F73}
+\definecolor{cobaltAccent3}{HTML}{003F5C}
+
+% Set the theme and colors
+\usetheme{default}
+\usecolortheme[named=cobaltBackground]{structure}
+\setbeamercolor{title}{fg=cobaltText, bg=cobaltBackground}
+\setbeamercolor{frametitle}{fg=cobaltText, bg=cobaltBackground}
+\setbeamercolor{normal text}{fg=cobaltText, bg=cobaltBackground}
+\setbeamercolor{alerted text}{fg=cobaltAccent1, bg=cobaltBackground}
+\setbeamercolor{example text}{fg=cobaltAccent2, bg=cobaltBackground}
+\setbeamercolor{structure}{fg=cobaltText, bg=cobaltBackground}
+
+% Customize the itemize and enumerate environments
+\setbeamercolor{itemize item}{fg=cobaltAccent3}
+\setbeamercolor{itemize subitem}{fg=cobaltAccent1}
+\setbeamercolor{enumerate item}{fg=cobaltAccent2}
+\setbeamercolor{enumerate subitem}{fg=cobaltAccent3}
+
+% Customize the block environments
+\setbeamercolor{block title}{fg=cobaltText, bg=cobaltAccent1}
+\setbeamercolor{block body}{fg=cobaltText, bg=cobaltBackground}
+
+% Customize the footline
+\setbeamercolor{footline}{fg=cobaltText, bg=cobaltBackground}
+\setbeamertemplate{footline}{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=2.25ex,dp=1ex,center]{footline}%
+    \usebeamerfont{footline}\insertshortauthor\hfill\insertframenumber/\inserttotalframenumber\hfill\insertshorttitle%
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+
+% Customize the headline
+\setbeamercolor{headline}{fg=cobaltText, bg=cobaltBackground}
+
+% Customize the section in the headline
+\setbeamercolor{section in headline}{fg=cobaltAccent1, bg=cobaltBackground}
+
+% Customize the subsection in the headline
+\setbeamercolor{subsection in headline}{fg=cobaltAccent2, bg=cobaltBackground}
+
+% Customize the subsection in the head/foot
+\setbeamercolor{subsection in head/foot}{fg=cobaltAccent3, bg=cobaltBackground}
+
+% Customize the author in the title page
+\setbeamercolor{author in head/foot}{fg=cobaltAccent1, bg=cobaltBackground}
+
+% Customize the institute in the title page
+\setbeamercolor{institute in head/foot}{fg=cobaltAccent2, bg=cobaltBackground}
+
+% Customize the date in the title page
+\setbeamercolor{date in head/foot}{fg=cobaltAccent3, bg=cobaltBackground}
+
+% Customize the title in the title page
+\setbeamercolor{title in head/foot}{fg=cobaltText, bg=cobaltBackground}

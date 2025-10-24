@@ -1,0 +1,19 @@
+Starting comprehensive model testing...
+Loading test datasets...
+Loaded shuffle_02.csv
+Loaded shuffle_03.csv
+Loaded shuffle_04.csv
+Loaded shuffle_05.csv
+Loaded shuffle_06.csv
+Loaded shuffle_07.csv
+Loaded shuffle_08.csv
+Loaded shuffle_09.csv
+Loaded shuffle_10.csv
+Loaded 9 test datasets
+
+Finding best models from training results...
+Warning: /home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/results_isolation_forest not found, skipping...
+No best models found! Checking for any trained models...
+Found 0 best models to test
+
+Testing completed!
