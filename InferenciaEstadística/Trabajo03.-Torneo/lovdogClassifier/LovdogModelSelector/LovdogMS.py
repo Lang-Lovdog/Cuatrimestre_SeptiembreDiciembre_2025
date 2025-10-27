@@ -252,6 +252,8 @@ class ModelSelection:
         if not isinstance(features_df, pd.DataFrame):
             raise ValueError("features_df must be a pandas DataFrame")
         
+        if self.user_data_preprocess is not None:
+            features_df = self.user_data_preprocess(features_df)
         self.data = features_df.drop(target_column, axis=1)
         self.target = features_df[target_column]
         self.features_df = features_df
@@ -264,6 +266,10 @@ class ModelSelection:
             raise ValueError("dataset_path must be a string")
         
         df = pd.read_csv(dataset_path)
+
+        if self.user_data_preprocess is not None:
+            df = self.user_data_preprocess(df)
+
         self.data = df.drop(target_column, axis=1)
         self.target = df[target_column]
         self.features_df = df
@@ -273,8 +279,6 @@ class ModelSelection:
     def _split_data(self, custom_data_preprocessing=None):
         """Split data into training and test sets with categorical encoding"""
         # Encode categorical variables before splitting
-        if self.user_data_preprocess is not None:
-            self.data = self.user_data_preprocess(self.data)
         
         (self.training_data['x'], self.test_data['x'], 
          self.training_data['y'], self.test_data['y']) = train_test_split(

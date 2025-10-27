@@ -5,78 +5,25 @@ from pathlib import Path
 from sklearn.metrics import f1_score
 import numpy as np
 import sys
+from sklearn.ensemble import IsolationForest
+from sklearn.preprocessing import RobustScaler
+from sklearn.preprocessing import QuantileTransformer
 
 # Add project root to path to access modules
 project_root = Path(__file__).parent.parent.parent.parent
 sys.path.insert(0, str(project_root))
 
-def load_test_data(datasets_path, dataset_name):
+def load_data(datasets_path, dataset_name):
     """Load test dataset with basic preprocessing"""
     file_path = Path(datasets_path) / dataset_name
     data = pd.read_csv(file_path)
     
-    # Basic preprocessing (same as training)
-    data = data.fillna(data.median(numeric_only=True))
+    #data = data.fillna(data.median(numeric_only=True))
+    data = data[ data['Time_taken'].notna() ]
     data['3D_available'] = data['3D_available'].map({'YES': 1, 'NO': 0})
     
-    if 'Genre' in data.columns:
-        genre_dummies = pd.get_dummies(data['Genre'], prefix='Genre')
-        data = pd.concat([data.drop('Genre', axis=1), genre_dummies], axis=1)
-    
-    return data
-
-def adaptive_outlier_preprocessing(data, method='none', **kwargs):
-    """Apply outlier preprocessing (same as training) - FIXED VERSION"""
-    return data
-    if method == 'none':
-        return data
-        
-    # Separate target variable to prevent scaling it
-    target_column = 'Start_Tech_Oscar'
-    y_data = None
-    if target_column in data.columns:
-        y_data = data[target_column].copy()
-        data = data.drop(target_column, axis=1)
-    
-    numerical_cols = data.select_dtypes(include=[np.number]).columns
-    print(f"  Applying {method} preprocessing...")
-    
-    if method == 'robust_scaling':
-        from sklearn.preprocessing import RobustScaler
-        scaler = RobustScaler()
-        data[numerical_cols] = scaler.fit_transform(data[numerical_cols])
-        
-    elif method == 'winsorize':
-        lower_q = kwargs.get('lower_quantile', 0.25)
-        upper_q = kwargs.get('upper_quantile', 0.75)
-        for col in numerical_cols:
-            lower_bound = data[col].quantile(lower_q)
-            upper_bound = data[col].quantile(upper_q)
-            data[col] = data[col].clip(lower=lower_bound, upper=upper_bound)
-            
-    elif method == 'quantile':
-        from sklearn.preprocessing import QuantileTransformer
-        n_quantiles = kwargs.get('n_quantiles', 5)
-        transformer = QuantileTransformer(n_quantiles=n_quantiles, random_state=42)
-        data[numerical_cols] = transformer.fit_transform(data[numerical_cols])
-        
-    elif method == 'isolation_forest':
-        from sklearn.ensemble import IsolationForest
-        contamination = kwargs.get('contamination', 0.1)
-        iso_forest = IsolationForest(contamination=contamination, random_state=42)
-        numerical_data = data[numerical_cols].copy()
-        outlier_labels = iso_forest.fit_predict(numerical_data)
-        
-        for col in numerical_cols:
-            mask = outlier_labels == -1
-            if mask.any():
-                median_val = numerical_data.loc[~mask, col].median()
-                numerical_data.loc[mask, col] = median_val
-        data[numerical_cols] = numerical_data
-    
-    # Re-add target variable if it was separated
-    if y_data is not None:
-        data[target_column] = y_data
+    genre_dummies = pd.get_dummies(data['Genre'], prefix='Genre',dtype=int).drop('Genre_Thriller',axis=1)
+    data = pd.concat([data.drop('Genre', axis=1), genre_dummies], axis=1)
     
     return data
 
@@ -173,7 +120,6 @@ def run_tests():
                     datasets_path = project_root / config['test_datasets_path']
                     test_data = load_test_data(datasets_path, dataset_name)
                     test_data = drop_columns(test_data, drop)
-                    test_data = adaptive_outlier_preprocessing(test_data, method=preprocessing)
                     
                     # Prepare features and target
                     X_test = test_data.drop('Start_Tech_Oscar', axis=1)
