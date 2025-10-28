@@ -1,43 +1,15 @@
+/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
 /home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/model_selection/_validation.py:516: FitFailedWarning: 
-21 fits failed out of a total of 75.
+20 fits failed out of a total of 75.
 The score on these train-test partitions for these parameters will be set to nan.
 If these failures are not expected, you can try to debug them by setting error_score='raise'.
 
 Below are more details about the failures:
---------------------------------------------------------------------------------
-1 fits failed with the following error:
-Traceback (most recent call last):
-  File "/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/model_selection/_validation.py", line 859, in _fit_and_score
-    estimator.fit(X_train, y_train, **fit_params)
-    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/base.py", line 1365, in wrapper
-    return fit_method(estimator, *args, **kwargs)
-  File "/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/pipeline.py", line 663, in fit
-    self._final_estimator.fit(Xt, y, **last_step_params["fit"])
-    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/base.py", line 1365, in wrapper
-    return fit_method(estimator, *args, **kwargs)
-  File "/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/discriminant_analysis.py", line 716, in fit
-    self._solve_eigen(
-    ~~~~~~~~~~~~~~~~~^
-        X,
-        ^^
-    ...<2 lines>...
-        covariance_estimator=self.covariance_estimator,
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/discriminant_analysis.py", line 549, in _solve_eigen
-    evals, evecs = linalg.eigh(Sb, Sw)
-                   ~~~~~~~~~~~^^^^^^^^
-  File "/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/scipy/_lib/_util.py", line 1233, in wrapper
-    return f(*arrays, *other_args, **kwargs)
-  File "/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/scipy/linalg/_decomp.py", line 594, in eigh
-    raise LinAlgError(f'The leading minor of order {info-n} of B is not '
-    ...<2 lines>...
-                      'or eigenvectors were computed.')
-numpy.linalg.LinAlgError: The leading minor of order 21 of B is not positive definite. The factorization of B could not be completed and no eigenvalues or eigenvectors were computed.
-
 --------------------------------------------------------------------------------
 20 fits failed with the following error:
 Traceback (most recent call last):
@@ -56,18 +28,28 @@ Traceback (most recent call last):
 NotImplementedError: shrinkage not supported with 'svd' solver.
 
   warnings.warn(some_fits_failed_message, FitFailedWarning)
-/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/model_selection/_search.py:1135: UserWarning: One or more of the test scores are non-finite: [0.64692153 0.64692153        nan        nan 0.62152918 0.62152918
-        nan 0.62716298 0.62716298        nan 0.58189135 0.58189135
-        nan 0.5310664  0.5310664 ]
+/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/model_selection/_search.py:1135: UserWarning: One or more of the test scores are non-finite: [0.63188406 0.63188406 0.63188406        nan 0.62028986 0.62028986
+        nan 0.62028986 0.62028986        nan 0.59710145 0.59710145
+        nan 0.56811594 0.56811594]
   warnings.warn(
-/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/model_selection/_search.py:1135: UserWarning: One or more of the test scores are non-finite: [0.64650081 0.64650081        nan        nan 0.6220608  0.6220608
-        nan 0.62765847 0.62765847        nan 0.57991545 0.57991545
-        nan 0.52893001 0.52893001]
+/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/model_selection/_search.py:1135: UserWarning: One or more of the test scores are non-finite: [0.63439394 0.63439394 0.63439394        nan 0.62042622 0.62042622
+        nan 0.61920561 0.61920561        nan 0.59500356 0.59500356
+        nan 0.56438173 0.56438173]
   warnings.warn(
-/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/model_selection/_search.py:1135: UserWarning: One or more of the test scores are non-finite: [0.64587862 0.64587862        nan        nan 0.61948919 0.61948919
-        nan 0.62434949 0.62434949        nan 0.57735893 0.57735893
-        nan 0.52723198 0.52723198]
+/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/model_selection/_search.py:1135: UserWarning: One or more of the test scores are non-finite: [0.63040517 0.63040517 0.63040517        nan 0.61756728 0.61756728
+        nan 0.61599    0.61599           nan 0.58444488 0.58444488
+        nan 0.55508823 0.55508823]
   warnings.warn(
+/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
 /home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
 /home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
@@ -140,6 +122,14 @@ NotImplementedError: shrinkage not supported with 'svd' solver.
   warnings.warn(
 /home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
   warnings.warn(
+/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
 /home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
 /home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
@@ -217,6 +207,64 @@ NotImplementedError: shrinkage not supported with 'svd' solver.
 /home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
   warnings.warn(
 /home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/neural_network/_multilayer_perceptron.py:781: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (1000) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/neural_network/_multilayer_perceptron.py:781: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (1000) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/neural_network/_multilayer_perceptron.py:781: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (1000) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/neural_network/_multilayer_perceptron.py:781: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (1000) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/neural_network/_multilayer_perceptron.py:781: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (1000) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/neural_network/_multilayer_perceptron.py:781: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (1000) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/neural_network/_multilayer_perceptron.py:781: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (1000) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/neural_network/_multilayer_perceptron.py:781: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (1000) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/neural_network/_multilayer_perceptron.py:781: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (1000) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/neural_network/_multilayer_perceptron.py:781: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (1000) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/neural_network/_multilayer_perceptron.py:781: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (1000) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/neural_network/_multilayer_perceptron.py:781: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (1000) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/neural_network/_multilayer_perceptron.py:781: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (1000) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/neural_network/_multilayer_perceptron.py:781: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (1000) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/neural_network/_multilayer_perceptron.py:781: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (1000) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/neural_network/_multilayer_perceptron.py:781: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (1000) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/neural_network/_multilayer_perceptron.py:781: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (1000) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/neural_network/_multilayer_perceptron.py:781: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (1000) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/neural_network/_multilayer_perceptron.py:781: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (1000) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/neural_network/_multilayer_perceptron.py:781: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (1000) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/neural_network/_multilayer_perceptron.py:781: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (1000) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/neural_network/_multilayer_perceptron.py:781: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (1000) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/neural_network/_multilayer_perceptron.py:781: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (1000) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/neural_network/_multilayer_perceptron.py:781: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (1000) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/neural_network/_multilayer_perceptron.py:781: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (1000) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/neural_network/_multilayer_perceptron.py:781: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (1000) reached and the optimization hasn't converged yet.
   warnings.warn(
 /home/lang_lovdog/Documentos/ACAD/MAESTRÍA/CUATRIMESTRE-SD2025/InferenciaEstadística/Trabajo03.-Torneo/venv/lib/python3.13/site-packages/sklearn/neural_network/_multilayer_perceptron.py:781: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (1000) reached and the optimization hasn't converged yet.
   warnings.warn(

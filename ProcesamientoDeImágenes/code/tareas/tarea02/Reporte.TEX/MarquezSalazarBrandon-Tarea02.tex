@@ -1,0 +1,227 @@
+% !TEX program = xelatex
+\documentclass[10pt]{article}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{caption}
+\usepackage{algorithm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{algpseudocode}
+\usepackage{fontspec} % Crucial for XeLaTeX to use system fonts
+\usepackage{xunicode} % For extra character support
+\usepackage{xltxtra}  % Extra fixes for XeLaTeX
+\usepackage[top=2.5cm, bottom=2.5cm, left=3cm, right=2.5cm]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{booktabs}
+
+% Set the main font (You can change these to any font on your system)
+\setmainfont{QTBookmann} % A good, free Times New Roman alternative
+\setmonofont{VictorMono Nerd Font}
+
+% Title Page Information
+\title{A Simple Report on Various Topics}
+\author{Your Name}
+\date{\today} % Automatically inserts the current date
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    frame=single
+}
+
+\lstset{style=mystyle}
+
+\title{Shrinking and Stretching of Images}
+\author{Brandon Marquez Salazar}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Objective and Approach}
+
+In the current work, the objective was to modify an existing algorithm to achieve independent shrinking and stretching of a given image along its width and height. The starting point was the in-class program 07, which uses a single scaling factor $f$. This original algorithm handles two cases: $f > 1$ for enlargement and $f < 1$ for reduction.
+
+The original algorithm is as follows:
+
+\begin{algorithm}
+\caption{Image Scaling (Escalar)}
+\begin{algorithmic}[1]
+\Procedure{Escalar}{$I_{in}$, $I_{out}$, $f$}
+    \If{$f > 1.0$} \Comment{Upscaling: nearest neighbor}
+        \State $s \gets f$, $I_{out}.\text{create}(h \cdot s, w \cdot s)$
+        \For{$u \in [0,h)$}
+            \For{$v \in [0,w)$}
+                \State $p \gets I_{in}[u,v]$
+                \For{$i \in [u \cdot s, (u+1) \cdot s)$}
+                    \For{$j \in [v \cdot s, (v+1) \cdot s)$}
+                        \State $I_{out}[i,j] \gets p$
+                    \EndFor
+                \EndFor
+            \EndFor
+        \EndFor
+        
+    \Else \Comment{Downscaling: average pooling}
+        \State $s \gets \lfloor 1/f \rfloor$
+        \If{$h \not\equiv 0 \mod s$ OR $w \not\equiv 0 \mod s$}
+            \State $I_{out} \gets I_{in}$ \Comment{Dimension error}
+        \Else
+            \State $I_{out}.\text{create}(h/s, w/s)$
+            \For{$u \in [0,h)$ step $s$}
+                \For{$v \in [0,w)$ step $s$}
+                    \State $I_{out}[u/s,v/s] \gets \frac{1}{s^2} \sum_{i=u}^{u+s-1} \sum_{j=v}^{v+s-1} I_{in}[i,j]$
+                \EndFor
+            \EndFor
+            \State \Call{AjusteDeRango}{$I_{out}$}
+        \EndIf
+    \EndIf
+    \State $I_{out}.\text{convertTo}(CV\_8UC1)$
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+
+\section{Proposed Algorithm}
+
+The proposed new algorithm expands the original logic to accommodate two independent scaling factors, $f_x$ and $f_y$, for the x-axis (width) and y-axis (height), respectively.
+
+The proposed algorithm is:
+
+\begin{algorithm}
+\caption{Asymmetric Image Resize}
+\begin{algorithmic}[1]
+\Procedure{Resize}{$f_x$, $f_y$}
+    \State $I_{in} \gets \text{this} \rightarrow \text{image}$ \Comment{Input image $I_{in}[u,v]$}
+    
+    \State $(s_x, s_y) \gets \begin{cases}
+        (f_x, f_y) & \text{if } f_x > 1, f_y > 1 \\
+        (\lfloor 1/f_x \rfloor, f_y) & \text{if } f_x < 1, f_y > 1 \\
+        (f_x, \lfloor 1/f_y \rfloor) & \text{if } f_x > 1, f_y < 1 \\
+        (\lfloor 1/f_x \rfloor, \lfloor 1/f_y \rfloor) & \text{otherwise}
+    \end{cases}$
+    
+    \State \textbf{Output dimensions:} $(h_{out}, w_{out}) \gets \begin{cases}
+        (h \cdot s_y, w \cdot s_x) & \text{if } f_x > 1, f_y > 1 \\
+        (h \cdot s_y, w / s_x) & \text{if } f_x < 1, f_y > 1 \\
+        (h / s_y, w \cdot s_x) & \text{if } f_x > 1, f_y < 1 \\
+        (h / s_y, w / s_x) & \text{otherwise}
+    \end{cases}$
+    
+    \If{$\exists$ downscaling AND $(w \not\equiv 0 \mod s_x$ OR $h \not\equiv 0 \mod s_y)$}
+        \State \Return error
+    \EndIf
+    
+    \For{$(i,j) \in [0,h_{out}) \times [0,w_{out})$}
+        \State $(u,v) \gets \Call{MapCoordinates}{i,j,s_x,s_y,f_x,f_y}$
+        \State $I_{out}[i,j] \gets \Call{ComputePixel}{I_{in},u,v,s_x,s_y,f_x,f_y}$
+    \EndFor
+    
+    \If{$f_x < 1$ AND $f_y < 1$} \Call{AjusteDeRango}{$I_{out}$} \EndIf
+    \State $\text{this} \rightarrow \text{image} \gets I_{out}$
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}
+\caption{Pixel Coordinate Mapping}
+\begin{algorithmic}[1]
+\Function{MapCoordinates}{$i$, $j$, $s_x$, $s_y$, $f_x$, $f_y$}
+    \If{$f_x > 1$ AND $f_y > 1$} \Return $(i/s_y, j/s_x)$ \EndIf
+    \If{$f_x < 1$ AND $f_y > 1$} \Return $(i/s_y, j \cdot s_x)$ \EndIf  
+    \If{$f_x > 1$ AND $f_y < 1$} \Return $(i \cdot s_y, j/s_x)$ \EndIf
+    \If{$f_x < 1$ AND $f_y < 1$} \Return $(i \cdot s_y, j \cdot s_x)$ \EndIf
+\EndFunction
+\end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}
+\caption{Pixel Computation}
+\begin{algorithmic}[1]
+\Function{ComputePixel}{$I_{in}$, $u$, $v$, $s_x$, $s_y$, $f_x$, $f_y$}
+    \If{$f_x > 1$ AND $f_y > 1$} 
+        \State \Return $I_{in}[\lfloor u \rfloor, \lfloor v \rfloor]$ \Comment{Nearest neighbor}
+    \EndIf
+    
+    \If{$f_x < 1$ AND $f_y > 1$}
+        \State $sum \gets \sum_{y=u}^{u+s_y-1} \sum_{x=v}^{v+s_x-1} I_{in}[y,x]$
+        \State \Return $sum / (s_x \cdot s_y)$ \Comment{Average pooling in x}
+    \EndIf
+    
+    \If{$f_x > 1$ AND $f_y < 1$}
+        \State $sum \gets \sum_{y=u}^{u+s_y-1} \sum_{x=v}^{v+s_x-1} I_{in}[y,x]$
+        \State \Return $sum / (s_x \cdot s_y)$ \Comment{Average pooling in y}
+    \EndIf
+    
+    \If{$f_x < 1$ AND $f_y < 1$}
+        \State $sum \gets \sum_{y=u}^{u+s_y-1} \sum_{x=v}^{v+s_x-1} I_{in}[y,x]$
+        \State \Return $sum / (s_x \cdot s_y)$ \Comment{Average pooling both}
+    \EndIf
+\EndFunction
+\end{algorithmic}
+\end{algorithm}
+
+
+This expansion from one to four primary cases (combinations of $f_x \lessgtr 1$ and $f_y \lessgtr 1$) introduced significant complexity to the original program structure. The core challenge was managing the independent scaling along each dimension.
+
+\section{Results and Implementation Issues}
+
+Unfortunately, the implemented code demonstrated several problems in its output. These artifacts are likely attributable to the construction and pixel-access logic of the new image matrix, which proved highly sensitive to the independent handling of the two scaling factors.
+
+The program output is as follows:
+\begin{lstlisting}[backgroundcolor=\color{gray!10}, basicstyle=\ttfamily\small, frame=single]
+g++ code/tareas/tarea02/main.cxx  code/src/ProcesamientoDigitalImagenes.cxx   `pkg-config --cflags --libs opencv4` -lm -g -o code/tareas/tarea02/exe
+cd code/tareas/tarea02 && ./exe
+Nombre:             ../../res/testImg/C01.bmp
+Número de filas:    480
+Número de columnas: 640
+Total de pixeles:   307200
+Número de canales:  1
+Intensidad máxima:  nan
+Intensidad mínima:  nan
+Nombre:             ../../res/testImg/C02.bmp
+Número de filas:    0
+Número de columnas: 0
+Total de pixeles:   0
+Número de canales:  1
+Intensidad máxima:  nan
+Intensidad mínima:  nan
+Nombre:             ../../res/testImg/Family.png
+Número de filas:    1200
+Número de columnas: 1600
+Total de pixeles:   1920000
+Número de canales:  4
+Intensidad máxima:  nan
+Intensidad mínima:  nan
+terminate called after throwing an instance of 'cv::Exception'
+  what():  OpenCV(4.12.0) ../modules/highgui/src/window.cpp:973: error: (-215:Assertion failed) size.width>0 && size.height>0 in function 'imshow'
+
+Aborted (core dumped)
+make: *** [Makefile:52: tarea02] Error 134
+\end{lstlisting}
+
+\section{Conclusion and Future Work}
+
+Due to a lack of time, the resolution of these errors is deferred to a future effort. The primary conclusion of this work is that the complexity of this two-factor scaling approach requires meticulous attention to the image matrix creation and pixel access patterns. Future work will focus on correcting the identified implementation flaws.
+
+\end{document}

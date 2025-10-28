@@ -3,6 +3,7 @@ import pandas as pd #type: ignore
 import numpy as np #type: ignore
 from pathlib import Path
 import sys
+import json
 
 # Add the project root to Python path
 project_root = Path(__file__).parent.parent.parent.parent
@@ -96,29 +97,30 @@ def preprocess_movie_dataset(data):
 
 def train_separate_instances():
     """Train each grid instance completely separately"""
-    
+
     DATASETS_PATH = project_root / "lovdogClassifier" / "res" / "datasets"
     RESULTS_BASE = project_root / "results"
-    
+
     # Use first dataset for training
     training_file = DATASETS_PATH / "shuffle_01.csv"
-    
-    grid_best_overview = pd.DataFrame(index=grid_instances.keys(),columns=['Classifier', 'f1_score'])
-    
+
+    grid_best_overview = pd.DataFrame(index=grid_instances.keys(), columns=['Classifier', 'f1_score'])
+    global_best_classifiers = []
+
     for instance_name, instance_config in grid_instances.items():
         print(f"\n{'='*60}")
         print(f"TRAINING INSTANCE: {instance_name}")
         print(f"{'='*60}")
-        
+
         # Create separate results directory for each instance
         instance_results_path = RESULTS_BASE / instance_name
         instance_models_path = instance_results_path / "trained_models"
         instance_plots_path = instance_results_path / "plots"
-        
+
         os.makedirs(instance_results_path, exist_ok=True)
         os.makedirs(instance_models_path, exist_ok=True)
         os.makedirs(instance_plots_path, exist_ok=True)
-        
+
         # Create ModelSelection instance for this specific grid
         ms = ModelSelection(
             name=f"instance_{instance_name}",
@@ -131,21 +133,21 @@ def train_separate_instances():
             plots_output_directory=str(instance_plots_path),
             custom_data_preprocessing=preprocess_movie_dataset
         )
-        
+
         # Train models for this instance
         ms.debug_data()
         ms.selectModels()
-        
+
         # Save instance-specific results
         instance_results = ms.getMetricsDataFrame()
         instance_results.to_csv(instance_results_path / "training_metrics.csv", index=False)
-        
+
         # Save models for this instance
         ms.saveModels(str(instance_models_path))
-        
+
         # Generate plots for this instance
         ms.generatePlots()
-        
+
         # Save instance summary
         best_model = instance_results.loc[instance_results['F1_Score'].idxmax()]
         with open(instance_results_path / "instance_summary.txt", "w") as f:
@@ -160,7 +162,7 @@ def train_separate_instances():
                 f.write(f"AUC Score: {best_model['AUC_Score']:.4f}\n")
             f.write(f"CV Score: {best_model['CV_Score']:.4f}\n")
             f.write(f"\nBest Parameters:\n{best_model['Best_Params']}\n")
-        
+
         print(f"✅ {instance_name} completed")
         print(f"   Best Model: {best_model['Classifier']}")
         print(f"   F1 Score: {best_model['F1_Score']:.4f}")
@@ -169,10 +171,22 @@ def train_separate_instances():
         grid_best_overview.loc[instance_name, 'Classifier'] = best_model['Classifier']
         grid_best_overview.loc[instance_name, 'f1_score'] = best_model['F1_Score']
 
+        # Append the best classifier information to the global list
+        global_best_classifiers.append({
+            "instance": instance_name,
+            "classifier": best_model['Classifier'],
+            "path": str(instance_models_path / f"{best_model['Classifier']}.joblib")
+        })
+
     grid_best_overview.to_csv(RESULTS_BASE / "grid_best_overview.csv")
-    
+
+    # Write the global best classifiers to a JSON file
+    with open(RESULTS_BASE / "global_best_classifiers.json", "w") as json_file:
+        json.dump(global_best_classifiers, json_file, indent=4)
+
     print(f"\n🎯 All instances trained separately!")
     print(f"📁 Each instance has its own directory in: {RESULTS_BASE}")
+    print(f"📁 Global best classifiers saved to: {RESULTS_BASE / 'global_best_classifiers.json'}")
 
 if __name__ == "__main__":
     train_separate_instances()

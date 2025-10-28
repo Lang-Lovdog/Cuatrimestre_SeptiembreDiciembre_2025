@@ -47,6 +47,10 @@ tarea01:
 	$(CXX) $(TAREADIR)/tarea01/main.cxx  $(PDICXX)  $(CXXLINKS) $(CXXFLAGS) -o $(TAREADIR)/tarea01/exe
 	cd $(TAREADIR)/tarea01 && ./exe
 
+tarea02:
+	$(CXX) $(TAREADIR)/tarea02/main.cxx  $(PDICXX)  $(CXXLINKS) $(CXXFLAGS) -o $(TAREADIR)/tarea02/exe
+	cd $(TAREADIR)/tarea02 && ./exe
+
 help:
 	@echo "make holaMundo"
 	@echo "make negativo"

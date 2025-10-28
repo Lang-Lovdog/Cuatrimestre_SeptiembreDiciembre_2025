@@ -316,7 +316,7 @@ class ModelSelection:
                     "recall": "recall_weighted", 
                     "f1": "f1_weighted"
                 },
-                refit="accuracy",
+                refit="f1",
                 cv=5,
                 n_jobs=-1,
                 verbose=1

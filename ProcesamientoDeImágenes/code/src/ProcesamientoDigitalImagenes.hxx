@@ -28,17 +28,19 @@ namespace lovdog {
       void Tresholding(void);
       void MultilevelThresholding(void);
       void DynamicRangeNormalization(const char type = 0);
+      void Resize(float factor_r=1);
+      void Resize(float factor_x=1, float factor_y=1);
       void Sum(cv::Mat& operand);
       void Sum(lovdog::DIGIMPROC& operand);
+      static void AjusteDeRango(cv::Mat &Ent);
 
     private:
       cv::Mat image;
       std::string Nombre;
       float MinPx, MaxPx;
       char ImageTypeGeneral(void);
-      static double DynRngLog()
+      static double DynRngLog();
   };
-
 }
 
 #endif /* ifndef LOVDOG_PDI_2025 */

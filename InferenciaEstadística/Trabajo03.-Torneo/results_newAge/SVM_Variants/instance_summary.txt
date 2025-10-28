@@ -1,0 +1,12 @@
+INSTANCE: SVM_Variants
+========================================
+Best Model: RbfSVM
+F1 Score: 0.6249
+Accuracy: 0.6242
+Precision: 0.6276
+Recall: 0.6242
+AUC Score: 0.6529
+CV Score: 0.5536
+
+Best Parameters:
+{'clf__C': 10, 'clf__gamma': 'scale'}

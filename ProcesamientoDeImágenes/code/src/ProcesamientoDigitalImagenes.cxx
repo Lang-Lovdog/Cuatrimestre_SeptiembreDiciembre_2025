@@ -126,6 +126,141 @@ namespace lovdog {
 
   void DIGIMPROC::MultilevelThresholding(void){}
 
+  void DIGIMPROC::Resize(float factor_r){
+    int Paso;
+    float suma;
+    unsigned char Pixel;
+    cv::Mat Ent, Sal;
+    Ent=this->image;
+    if(factor_r>1.0){
+      Paso=factor_r;
+      std::cout<<"Factor de escala usado="<<Paso<<std::endl;
+      Sal.create(Ent.rows*Paso,Ent.cols*Paso,CV_8UC1);
+      for(int u=0; u<Ent.rows; u++)
+        for(int v=0; v<Ent.cols; v++){
+          Pixel=Ent.at<unsigned char>(u,v);
+          for(int i=u*Paso; i<(u*Paso)+Paso; i++)
+            for(int j=v*Paso; j<(v*Paso)+Paso; j++)
+                Sal.at<unsigned char>(i,j)=Pixel;
+            }
+           Sal.convertTo(Sal,CV_8UC1);
+           return;
+        }
+      Paso=1/factor_r;
+    std::cout<<"Factor de escala usado="<<1.0/Paso<<std::endl;
+    if((Ent.rows%Paso)||(Ent.cols%Paso)){
+      std::cout<<"No se puede escalar la imagen debido a sus dimensiones."<<std::endl;
+      Sal=Ent;
+      return;
+    }
+    Sal.create(Ent.rows/Paso,Ent.cols/Paso,CV_32FC1);
+    for(int u=0; u<Ent.rows; u+=Paso)
+      for(int v=0; v<Ent.cols; v+=Paso){
+        suma=0;
+        for(int i=u; i<(u+Paso); i++)
+          for(int j=v; j<(v+Paso); j++)
+            suma+=Ent.at<unsigned char>(i,j);
+        Sal.at<float>(u/Paso,v/Paso)=suma/(Paso*Paso);
+      }
+    Sal.convertTo(this->image,CV_8UC1);
+  }
+
+  void DIGIMPROC::Resize(float factor_x, float factor_y){
+    int Paso_x, Paso_y;
+    float suma;
+    unsigned char Pixel;
+    cv::Mat Ent, Sal;
+    Ent=this->image;
+    if(factor_x>1.0 && factor_y>1.0){
+      Paso_x=factor_x;
+      Paso_y=factor_y;
+      std::cout<<"Factor de escala usado="<<Paso_x<<"x"<<Paso_y<<std::endl;
+      Sal.create(Ent.rows*Paso_y,Ent.cols*Paso_x,CV_8UC1);
+      for(int u=0; u<Ent.rows; u++)
+        for(int v=0; v<Ent.cols; v++){
+          Pixel=Ent.at<unsigned char>(u,v);
+          for(int i=u*Paso_y; i<(u*Paso_y)+Paso_y; i++)
+            for(int j=v*Paso_x; j<(v*Paso_x)+Paso_x; j++)
+                Sal.at<unsigned char>(i,j)=Pixel;
+          }
+           Sal.convertTo(Sal,CV_8UC1);
+    }else if(factor_x<1.0 && factor_y>1.0){
+      Paso_x=1/factor_x;
+      Paso_y=factor_y;
+      std::cout<<"Factor de escala usado="<<1.0/Paso_x<<"x"<<Paso_y<<std::endl;
+      if(Ent.cols%Paso_x){
+        std::cout<<"No se puede escalar la imagen debido a sus dimensiones."<<std::endl;
+        return;
+      }else{
+      Sal.create(Ent.rows*Paso_y,Ent.cols/Paso_x,CV_32FC1);
+      for(int u=0; u<Ent.rows; u++)
+        for(int v=0; v<Ent.cols; v+=Paso_x){
+          suma=0;
+          for(int i=u; i<(u+Paso_y); i++)
+            for(int j=v; j<(v+Paso_x); j++)
+              suma+=Ent.at<unsigned char>(i,j);
+          Sal.at<float>(u/Paso_y,v)=suma/(Paso_y*Paso_x);
+        }
+      }
+    }else if(factor_x>1 && factor_y<1.0){
+      Paso_y=1/factor_y;
+      Paso_x=factor_x;
+      std::cout<<"Factor de escala usado="<<Paso_x<<"x"<<1.0/Paso_y<<std::endl;
+      if(Ent.rows%Paso_y){
+        std::cout<<"No se puede escalar la imagen debido a sus dimensiones."<<std::endl;
+        return;
+      }else{
+        Sal.create(Ent.rows/Paso_y,Ent.cols*Paso_x,CV_32FC1);
+        for(int u=0; u<Ent.rows; u+=Paso_y)
+          for(int v=0; v<Ent.cols; v++){
+            suma=0;
+            for(int i=u; i<(u+Paso_y); i++)
+              for(int j=v; j<(v+Paso_x); j++)
+                suma+=Ent.at<unsigned char>(i,j);
+            Sal.at<float>(u,v/Paso_x)=suma/(Paso_y*Paso_x);
+          }
+      }
+    }else if(factor_x<1.0 && factor_y<1.0){
+      Paso_x=1/factor_x;
+      Paso_y=1/factor_y;
+      std::cout<<"Factor de escala usado="<<1.0/Paso_x<<"x"<<1.0/Paso_y<<std::endl;
+      if((Ent.rows%Paso_y)||(Ent.cols%Paso_x)){
+        std::cout<<"No se puede escalar la imagen debido a sus dimensiones."<<std::endl;
+        return;
+      }else{
+        Sal.create(Ent.rows/Paso_y,Ent.cols/Paso_x,CV_32FC1);
+        for(int u=0; u<Ent.rows; u+=Paso_y)
+          for(int v=0; v<Ent.cols; v+=Paso_x){ {
+            suma=0;
+             for(int i=u; i<(u+Paso_y); i++)
+               for(int j=v; j<(v+Paso_x); j++)
+                 suma+=Ent.at<unsigned char>(i,j);
+            Sal.at<float>(u/Paso_y,v/Paso_x)=suma/(Paso_y*Paso_x);
+          }
+        AjusteDeRango(Sal);    
+        Sal.convertTo(Sal,CV_8UC1);
+     }
+    }
+  }
+  Sal.convertTo(this->image,CV_8UC1);
+}
+
+  void DIGIMPROC::AjusteDeRango(cv::Mat &Ent){
+    float Min,Max,Pixel,rango;
+    Min=Ent.at<float>(0,0);
+    Max=Min;
+    for(int i=0; i<Ent.rows; i++)
+      for(int j=0; j<Ent.cols; j++){
+        Pixel=Ent.at<float>(i,j);
+        if(Pixel<Min) Min=Pixel;
+        if(Pixel>Max) Max=Pixel;
+      }
+    rango=Max-Min;
+    for(int i=0; i<Ent.rows; i++)
+      for(int j=0; j<Ent.cols; j++)
+        Ent.at<float>(i,j)=255*((Ent.at<float>(i,j)-Min)/rango);   
+  }
+
   void DIGIMPROC::ComputeDynamicRange(void){
     int i,j;
     uchar min, max, px;
@@ -172,7 +307,6 @@ namespace lovdog {
   }
 
   void DIGIMPROC::DynamicRangeNormalization(const char type){
-    
   }
 
   void DIGIMPROC::Sum(cv::Mat& operand){

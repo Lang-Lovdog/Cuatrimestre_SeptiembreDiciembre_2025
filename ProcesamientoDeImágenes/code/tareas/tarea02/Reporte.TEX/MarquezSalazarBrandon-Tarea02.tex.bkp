@@ -1,0 +1,271 @@
+% !TEX program = xelatex
+\documentclass[10pt]{article}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{caption}
+\usepackage{algorithm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{algpseudocode}
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage[top=2.5cm, bottom=2.5cm, left=3cm, right=2.5cm]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{booktabs}
+
+% Font configuration
+\setmainfont{QTBookmann}
+\setmonofont{VictorMono Nerd Font}
+
+% Title information
+\title{Independent Image Scaling in X and Y Dimensions}
+\author{Brandon Marquez Salazar}
+\date{\today}
+
+% Code listing style
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    frame=single
+}
+
+\lstset{style=mystyle}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction and Objectives}
+
+This work extends a classical image scaling algorithm to support independent scaling factors along the horizontal ($f_x$) and vertical ($f_y$) dimensions. The original algorithm (Program 07 from class) operates with a single scaling factor $f$, handling two cases:
+\begin{itemize}
+    \item $f > 1$: Upscaling using nearest-neighbor interpolation
+    \item $f < 1$: Downscaling using average pooling
+\end{itemize}
+
+The main objective is to generalize this approach to handle four distinct scaling scenarios based on the relationship of $f_x$ and $f_y$ to 1, enabling asymmetric image transformations.
+
+\section{Theoretical Background}
+
+\subsection{Original Scaling Algorithm}
+
+The original algorithm processes images using a uniform scaling factor $f$, where the same transformation applies to both dimensions simultaneously. This approach is efficient but limited to isotropic scaling operations.
+
+\begin{algorithm}[H]
+\caption{Original Image Scaling (Escalar)}
+\begin{algorithmic}[1]
+\Procedure{Escalar}{$I_{in}$, $I_{out}$, $f$}
+    \If{$f > 1.0$} \Comment{Upscaling: nearest neighbor interpolation}
+        \State $s \gets f$
+        \State $I_{out}.\text{create}(h \cdot s, w \cdot s)$
+        \For{$u \in [0, h)$}
+            \For{$v \in [0, w)$}
+                \State $p \gets I_{in}[u,v]$
+                \For{$i \in [u \cdot s, (u+1) \cdot s)$}
+                    \For{$j \in [v \cdot s, (v+1) \cdot s)$}
+                        \State $I_{out}[i,j] \gets p$
+                    \EndFor
+                \EndFor
+            \EndFor
+        \EndFor
+    \Else \Comment{Downscaling: average pooling}
+        \State $s \gets \lfloor 1/f \rfloor$
+        \If{$h \not\equiv 0 \mod s$ OR $w \not\equiv 0 \mod s$}
+            \State $I_{out} \gets I_{in}$ \Comment{Dimension compatibility error}
+        \Else
+            \State $I_{out}.\text{create}(h/s, w/s)$
+            \For{$u \in [0, h)$ step $s$}
+                \For{$v \in [0, w)$ step $s$}
+                    \State $I_{out}[u/s,v/s] \gets \frac{1}{s^2} \sum_{i=u}^{u+s-1} \sum_{j=v}^{v+s-1} I_{in}[i,j]$
+                \EndFor
+            \EndFor
+            \State \Call{AjusteDeRango}{$I_{out}$}
+        \EndIf
+    \EndIf
+    \State $I_{out}.\text{convertTo}(CV\_8UC1)$
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+
+\section{Proposed Method: Asymmetric Scaling}
+
+The proposed algorithm extends the original approach by introducing independent scaling factors $f_x$ and $f_y$, resulting in four distinct operational modes:
+
+\begin{enumerate}
+    \item \textbf{Case 1: } $f_x > 1$ and $f_y > 1$ (Upscaling both dimensions)
+    \item \textbf{Case 2: } $f_x < 1$ and $f_y > 1$ (Downscaling X, upscaling Y)
+    \item \textbf{Case 3: } $f_x > 1$ and $f_y < 1$ (Upscaling X, downscaling Y) 
+    \item \textbf{Case 4: } $f_x < 1$ and $f_y < 1$ (Downscaling both dimensions)
+\end{enumerate}
+
+\subsection{Algorithm Design}
+
+The core challenge lies in properly mapping coordinates between input and output images while applying the appropriate interpolation method for each dimension combination.
+
+\begin{algorithm}[H]
+\caption{Asymmetric Image Resize}
+\begin{algorithmic}[1]
+\Procedure{Resize}{$f_x$, $f_y$}
+    \State $I_{in} \gets \text{this} \rightarrow \text{image}$
+    \State $(h, w) \gets \text{dimensions}(I_{in})$
+    
+    \State $(s_x, s_y) \gets \begin{cases}
+        (f_x, f_y) & \text{if } f_x > 1, f_y > 1 \\
+        (\lfloor 1/f_x \rfloor, f_y) & \text{if } f_x < 1, f_y > 1 \\
+        (f_x, \lfloor 1/f_y \rfloor) & \text{if } f_x > 1, f_y < 1 \\
+        (\lfloor 1/f_x \rfloor, \lfloor 1/f_y \rfloor) & \text{otherwise}
+    \end{cases}$
+    
+    \State $(h_{out}, w_{out}) \gets \begin{cases}
+        (h \cdot s_y, w \cdot s_x) & \text{if } f_x > 1, f_y > 1 \\
+        (h \cdot s_y, w / s_x) & \text{if } f_x < 1, f_y > 1 \\
+        (h / s_y, w \cdot s_x) & \text{if } f_x > 1, f_y < 1 \\
+        (h / s_y, w / s_x) & \text{otherwise}
+    \end{cases}$
+    
+    \If{$\exists$ downscaling AND $(w \not\equiv 0 \mod s_x$ OR $h \not\equiv 0 \mod s_y)$}
+        \State \Return error: \text{"Dimensions not compatible with scaling factors"}
+    \EndIf
+    
+    \State $I_{out}.\text{create}(h_{out}, w_{out})$
+    
+    \For{$i = 0$ to $h_{out}-1$}
+        \For{$j = 0$ to $w_{out}-1$}
+            \State $(u, v) \gets \Call{MapCoordinates}{i, j, s_x, s_y, f_x, f_y}$
+            \State $I_{out}[i,j] \gets \Call{ComputePixel}{I_{in}, u, v, s_x, s_y, f_x, f_y}$
+        \EndFor
+    \EndFor
+    
+    \If{$f_x < 1$ OR $f_y < 1$} 
+        \State \Call{AjusteDeRango}{$I_{out}$}
+    \EndIf
+    \State $\text{this} \rightarrow \text{image} \gets I_{out}$
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}[H]
+\caption{Coordinate Mapping Function}
+\begin{algorithmic}[1]
+\Function{MapCoordinates}{$i$, $j$, $s_x$, $s_y$, $f_x$, $f_y$}
+    \If{$f_x > 1$ AND $f_y > 1$} 
+        \Return $(i/s_y, j/s_x)$
+    \ElsIf{$f_x < 1$ AND $f_y > 1$} 
+        \Return $(i/s_y, j \cdot s_x)$
+    \ElsIf{$f_x > 1$ AND $f_y < 1$} 
+        \Return $(i \cdot s_y, j/s_x)$
+    \Else 
+        \Return $(i \cdot s_y, j \cdot s_x)$
+    \EndIf
+\EndFunction
+\end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}[H]
+\caption{Pixel Computation Strategy}
+\begin{algorithmic}[1]
+\Function{ComputePixel}{$I_{in}$, $u$, $v$, $s_x$, $s_y$, $f_x$, $f_y$}
+    \If{$f_x > 1$ AND $f_y > 1$} 
+        \State \Return $I_{in}[\lfloor u \rfloor, \lfloor v \rfloor]$ \Comment{Nearest neighbor for both}
+    \ElsIf{$f_x < 1$ AND $f_y > 1$}
+        \State $sum \gets \sum_{y=\lfloor u \rfloor}^{\lfloor u \rfloor+s_y-1} \sum_{x=\lfloor v \rfloor}^{\lfloor v \rfloor+s_x-1} I_{in}[y,x]$
+        \State \Return $sum / (s_x \cdot s_y)$ \Comment{Pooling in X, interpolation in Y}
+    \ElsIf{$f_x > 1$ AND $f_y < 1$}
+        \State $sum \gets \sum_{y=\lfloor u \rfloor}^{\lfloor u \rfloor+s_y-1} \sum_{x=\lfloor v \rfloor}^{\lfloor v \rfloor+s_x-1} I_{in}[y,x]$
+        \State \Return $sum / (s_x \cdot s_y)$ \Comment{Pooling in Y, interpolation in X}
+    \Else
+        \State $sum \gets \sum_{y=\lfloor u \rfloor}^{\lfloor u \rfloor+s_y-1} \sum_{x=\lfloor v \rfloor}^{\lfloor v \rfloor+s_x-1} I_{in}[y,x]$
+        \State \Return $sum / (s_x \cdot s_y)$ \Comment{Pooling in both dimensions}
+    \EndIf
+\EndFunction
+\end{algorithmic}
+\end{algorithm}
+
+\section{Implementation Challenges and Results}
+
+The implementation revealed several critical issues that prevented successful execution:
+
+\subsection{Identified Problems}
+
+\begin{enumerate}
+    \item \textbf{Dimension Calculation Errors}: The output image dimensions are incorrectly computed, resulting in zero-sized images as shown in the output for image C02.
+    \item \textbf{Coordinate Mapping}: The mapping between input and output coordinates contains off-by-one errors and incorrect boundary handling.
+    \item \textbf{Memory Access Violations}: The algorithm attempts to access pixels outside the valid range of the input image.
+    \item \textbf{OpenCV Integration}: Issues with image format conversion and display functions.
+\end{enumerate}
+
+\subsection{Execution Output}
+
+The program output demonstrates the critical failure during execution:
+
+\begin{lstlisting}[backgroundcolor=\color{gray!10}, basicstyle=\ttfamily\small, frame=single]
+Nombre:             ../../res/testImg/C01.bmp
+Número de filas:    480
+Número de columnas: 640
+Total de pixeles:   307200
+Número de canales:  1
+Intensidad máxima:  nan
+Intensidad mínima:  nan
+Nombre:             ../../res/testImg/C02.bmp
+Número de filas:    0
+Número de columnas: 0
+Total de pixeles:   0
+Número de canales:  1
+Intensidad máxima:  nan
+Intensidad mínima:  nan
+Nombre:             ../../res/testImg/Family.png
+Número de filas:    1200
+Número de columnas: 1600
+Total de pixeles:   1920000
+Número de canales:  4
+Intensidad máxima:  nan
+Intensidad mínima:  nan
+terminate called after throwing an instance of 'cv::Exception'
+  what():  OpenCV(4.12.0) ../modules/highgui/src/window.cpp:973: error: (-215:Assertion failed) size.width>0 && size.height>0 in function 'imshow'
+Aborted (core dumped)
+\end{lstlisting}
+
+The error clearly indicates that the algorithm produced an image with zero dimensions, causing the OpenCV display function to fail.
+
+\section{Conclusion and Future Work}
+
+The theoretical extension from single-factor to dual-factor scaling introduces significant complexity in coordinate mapping and pixel computation. While the algorithmic design addresses the four operational modes, the implementation suffers from fundamental issues in dimension calculation and memory access.
+
+\subsection{Immediate Corrections Needed}
+
+\begin{enumerate}
+    \item \textbf{Dimension Verification}: Implement robust dimension calculation with proper integer rounding and boundary checks.
+    \item \textbf{Coordinate Validation}: Add bounds checking in the coordinate mapping functions to prevent out-of-range accesses.
+    \item \textbf{Debugging Infrastructure}: Incorporate intermediate result visualization to identify where the dimension calculation fails.
+    \item \textbf{Unit Testing}: Develop test cases for each of the four scaling scenarios with known input-output pairs.
+\end{enumerate}
+
+\subsection{Future Directions}
+
+Future work will focus on implementing the corrections mentioned above and extending the algorithm to support more sophisticated interpolation methods (bilinear, bicubic) for the upscaling cases, which would improve image quality in asymmetric scaling scenarios.
+
+The complexity of handling independent scaling factors underscores the importance of careful coordinate system design and thorough validation of dimension calculations in image processing algorithms.
+
+\end{document}
