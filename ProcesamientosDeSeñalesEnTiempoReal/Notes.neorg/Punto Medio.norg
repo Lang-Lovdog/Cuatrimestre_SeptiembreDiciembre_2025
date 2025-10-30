@@ -6,7 +6,7 @@ header-includes: |
 pdf-engine: xelatex
 categories: Procesamiento de señales en tiempo real
 created: 2025-10-13T10:49:37-0600
-updated: 2025-10-27T12:00:30-0600
+updated: 2025-10-30T11:51:35-0600
 version: 1.1.1
 @end
 
@@ -26,7 +26,7 @@ version: 1.1.1
    typedef struct poly{
      double *a; // Coeficientes del polinomio en cuestión.
      size_t  n; // Grado del polinomio
-   }
+   } poly;
    @end
    Esta estructura requiere algunas operaciones importantes:
 *** Creación e impresión en consola
@@ -97,14 +97,14 @@ version: 1.1.1
    Después de aplicar algunos artificios matemáticos, podremos obtener una combinación
    lineal de la forma $|Ax=b|$ con ecuaciones de dimensión $|n|$ (de orden $|n-1|$).
 
-  @math
-  \begin{bmatrix}
-  n                & \sum x_i   & \cdots & \sum x_i^}(n-1)}  \\ 
-  \sum x_i         & \sum x_i^2 & \cdots & \sum x_i^{n}      \\
-  \vdots           & \vdots     & \ddots & \vdots            \\
-  \sum x_i^{(n-1)} & \sum x_i^3 & \cdots & \sum x_i^{2(n-1)}
-  \end{bmatrix}
-  @end
+   @math
+   \begin{bmatrix}
+   n                & \sum x_i   & \cdots & \sum x_i^}(n-1)}  \\ 
+   \sum x_i         & \sum x_i^2 & \cdots & \sum x_i^{n}      \\
+   \vdots           & \vdots     & \ddots & \vdots            \\
+   \sum x_i^{(n-1)} & \sum x_i^3 & \cdots & \sum x_i^{2(n-1)}
+   \end{bmatrix}
+   @end
 
 ** ( ) Solución por Gauss--Jordan
    Supongamos una matriz que representa la combinación lineal de la forma $|Ax=b|$
