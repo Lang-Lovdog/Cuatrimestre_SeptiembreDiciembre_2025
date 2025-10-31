@@ -1,0 +1,76 @@
+\ProvidesPackage{BeamerLaserTheme}
+
+% Define the color palette
+\definecolor{laserBlack}{HTML}{626262}
+\definecolor{laserRed}{HTML}{ff8373}
+\definecolor{laserGreen}{HTML}{b4fb73}
+\definecolor{laserYellow}{HTML}{09b4bd}
+\definecolor{laserBlue}{HTML}{fed300}
+\definecolor{laserPurple}{HTML}{ff90fe}
+\definecolor{laserCyan}{HTML}{d1d1fe}
+\definecolor{laserWhite}{HTML}{f1f1f1}
+\definecolor{laserBrightBlack}{HTML}{8f8f8f}
+\definecolor{laserBrightRed}{HTML}{ffc4be}
+\definecolor{laserBrightGreen}{HTML}{d6fcba}
+\definecolor{laserBrightYellow}{HTML}{fffed5}
+\definecolor{laserBrightBlue}{HTML}{f92883}
+\definecolor{laserBrightPurple}{HTML}{ffb2fe}
+\definecolor{laserBrightCyan}{HTML}{e6e7fe}
+\definecolor{laserBrightWhite}{HTML}{ffffff}
+\definecolor{laserBackground}{HTML}{030d18}
+\definecolor{laserForeground}{HTML}{f106e3}
+
+% Set the theme and colors
+\usetheme{default}
+\usecolortheme[named=laserBackground]{structure}
+\setbeamercolor{title}{fg=laserForeground, bg=laserBackground}
+\setbeamercolor{frametitle}{fg=laserForeground, bg=laserBackground}
+\setbeamercolor{normal text}{fg=laserWhite, bg=laserBackground}
+\setbeamercolor{alerted text}{fg=laserRed, bg=laserBackground}
+\setbeamercolor{example text}{fg=laserGreen, bg=laserBackground}
+\setbeamercolor{structure}{fg=laserWhite, bg=laserBackground}
+
+% Customize the itemize and enumerate environments
+\setbeamercolor{itemize item}{fg=laserPurple}
+\setbeamercolor{itemize subitem}{fg=laserCyan}
+\setbeamercolor{enumerate item}{fg=laserBlue}
+\setbeamercolor{enumerate subitem}{fg=laserYellow}
+
+% Customize the block environments
+\setbeamercolor{block title}{fg=laserWhite, bg=laserPurple}
+\setbeamercolor{block body}{fg=laserWhite, bg=laserBackground}
+
+% Customize the footline
+\setbeamercolor{footline}{fg=laserWhite, bg=laserBackground}
+\setbeamertemplate{footline}{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=2.25ex,dp=1ex,center]{footline}%
+    \usebeamerfont{footline}\insertshortauthor\hfill\insertframenumber/\inserttotalframenumber\hfill\insertshorttitle%
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+
+% Customize the headline
+\setbeamercolor{headline}{fg=laserWhite, bg=laserBackground}
+
+% Customize the section in the headline
+\setbeamercolor{section in headline}{fg=laserBrightRed, bg=laserBackground}
+
+% Customize the subsection in the headline
+\setbeamercolor{subsection in headline}{fg=laserBrightGreen, bg=laserBackground}
+
+% Customize the subsection in the head/foot
+\setbeamercolor{subsection in head/foot}{fg=laserBrightYellow, bg=laserBackground}
+
+% Customize the author in the title page
+\setbeamercolor{author in head/foot}{fg=laserBrightRed, bg=laserBackground}
+
+% Customize the institute in the title page
+\setbeamercolor{institute in head/foot}{fg=laserBrightGreen, bg=laserBackground}
+
+% Customize the date in the title page
+\setbeamercolor{date in head/foot}{fg=laserBrightYellow, bg=laserBackground}
+
+% Customize the title in the title page
+\setbeamercolor{title in head/foot}{fg=laserBrightWhite, bg=laserBackground}

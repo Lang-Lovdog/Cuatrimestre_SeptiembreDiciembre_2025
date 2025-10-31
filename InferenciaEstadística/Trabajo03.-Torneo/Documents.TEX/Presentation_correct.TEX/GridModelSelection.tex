@@ -1,0 +1,187 @@
+%! TeX root = presentation.tex
+
+% Slide 1: Tree-Based & KNN Families
+\begin{frame}{Grid Search Configuration - Tree-Based \& KNN Models}
+\centering
+\small
+\begin{adjustbox}{height=0.45\textheight}
+\begin{tabular}{p{2cm} p{3cm} p{5.5cm}}
+\toprule
+\textbf{Family} & \textbf{Variant} & \textbf{Hyperparameter Ranges} \\
+\midrule
+
+\multicolumn{3}{l}{\textbf{Tree-Based Classifiers}} \\
+\cmidrule{1-3}
+& DecisionTree & 
+\begin{minipage}{5.5cm}
+\texttt{max\_depth}: [3,5,7,10,20] \\
+\texttt{min\_samples\_split}: [2,5,10] \\
+\texttt{criterion}: [gini, entropy]
+\end{minipage} \\
+\cmidrule{2-3}
+& RandomForest & 
+\begin{minipage}{5.5cm}
+\texttt{n\_estimators}: [50,100,200] \\
+\texttt{max\_depth}: [3,5,7,10] \\
+\texttt{min\_samples\_split}: [2,5,10]
+\end{minipage} \\
+\cmidrule{2-3}
+& ExtraTrees & 
+\begin{minipage}{5.5cm}
+\texttt{n\_estimators}: [50,100,200] \\
+\texttt{max\_depth}: [3,5,7,10,20] \\
+\texttt{min\_samples\_split}: [2,5,10]
+\end{minipage} \\
+\midrule
+
+\multicolumn{3}{l}{\textbf{K-Nearest Neighbors}} \\
+\cmidrule{1-3}
+& KNN\_Coarse & 
+\begin{minipage}{5.5cm}
+\texttt{n\_neighbors}: [10,30,50,70,90] \\
+\texttt{weights}: [uniform, distance]
+\end{minipage} \\
+\cmidrule{2-3}
+& KNN\_Medium & 
+\begin{minipage}{5.5cm}
+\texttt{n\_neighbors}: [10,15,20,25] \\
+\texttt{weights}: [uniform, distance]
+\end{minipage} \\
+\cmidrule{2-3}
+& KNN\_Fine & 
+\begin{minipage}{5.5cm}
+\texttt{n\_neighbors}: [1,2,3] \\
+\texttt{weights}: [uniform, distance]
+\end{minipage} \\
+\cmidrule{2-3}
+& KNN\_Weighted & 
+\begin{minipage}{5.5cm}
+\texttt{n\_neighbors}: [5,10,15] \\
+\texttt{weights}: [distance]
+\end{minipage} \\
+\cmidrule{2-3}
+& KNN\_Cosine & 
+\begin{minipage}{5.5cm}
+\texttt{n\_neighbors}: [5,10,15] \\
+\texttt{weights}: [uniform, distance] \\
+\texttt{metric}: [cosine]
+\end{minipage} \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{frame}
+
+% Slide 2: Probabilistic & SVM Families
+\begin{frame}{Grid Search Configuration - Probabilistic \& SVM Models}
+\centering
+\small
+\begin{adjustbox}{max height=0.85\textheight, max width=\textwidth}
+\begin{tabular}{p{2cm} p{3cm} p{5.5cm}}
+\toprule
+\textbf{Family} & \textbf{Variant} & \textbf{Hyperparameter Ranges} \\
+\midrule
+
+\multicolumn{3}{l}{\textbf{Probabilistic Models}} \\
+\cmidrule{1-3}
+& GaussianNB & 
+\begin{minipage}{5.5cm}
+\texttt{var\_smoothing}: [1e-9, 1e-8, 1e-7, 1e-6]
+\end{minipage} \\
+\cmidrule{2-3}
+& LDA & 
+\begin{minipage}{5.5cm}
+\texttt{solver}: [svd, lsqr, eigen] \\
+\texttt{shrinkage}: [None, auto, 0.1, 0.5, 0.9]
+\end{minipage} \\
+\midrule
+
+\multicolumn{3}{l}{\textbf{Support Vector Machines}} \\
+\cmidrule{1-3}
+& LinearSVM & 
+\begin{minipage}{5.5cm}
+\texttt{C}: [0.1, 1, 10, 100] \\
+\texttt{kernel}: [linear]
+\end{minipage} \\
+\cmidrule{2-3}
+& QuadraticSVM & 
+\begin{minipage}{5.5cm}
+\texttt{C}: [0.1, 1, 10] \\
+\texttt{gamma}: [scale, auto] \\
+\texttt{kernel}: [poly], \texttt{degree}: [2]
+\end{minipage} \\
+\cmidrule{2-3}
+& CubicSVM & 
+\begin{minipage}{5.5cm}
+\texttt{C}: [0.1, 1, 10] \\
+\texttt{gamma}: [scale, auto] \\
+\texttt{kernel}: [poly], \texttt{degree}: [3]
+\end{minipage} \\
+\cmidrule{2-3}
+& RbfSVM & 
+\begin{minipage}{5.5cm}
+\texttt{C}: [0.1, 1, 10, 100] \\
+\texttt{gamma}: [scale, auto] \\
+\texttt{kernel}: [rbf]
+\end{minipage} \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{frame}
+
+% Slide 3: Logistic Regression & Neural Networks
+\begin{frame}{Grid Search Configuration - Logistic Regression \& Neural Networks}
+\centering
+\small
+\begin{adjustbox}{height=0.38\textheight}
+\begin{tabular}{p{2cm} p{3cm} p{5.5cm}}
+\toprule
+\textbf{Family} & \textbf{Variant} & \textbf{Hyperparameter Ranges} \\
+\midrule
+
+\multicolumn{3}{l}{\textbf{Logistic Regression}} \\
+\cmidrule{1-3}
+& LogisticRegression & 
+\begin{minipage}{5.5cm}
+\texttt{C}: [0.001, 0.01, 0.1, 1, 10] \\
+\texttt{penalty}: [l2]
+\end{minipage} \\
+\cmidrule{2-3}
+& Logistic\_L1 & 
+\begin{minipage}{5.5cm}
+\texttt{C}: [0.001, 0.01, 0.1, 1, 10] \\
+\texttt{penalty}: [l1], \texttt{solver}: [saga]
+\end{minipage} \\
+\cmidrule{2-3}
+& Logistic\_EN & 
+\begin{minipage}{5.5cm}
+\texttt{C}: [0.001, 0.01, 0.1, 1, 10] \\
+\texttt{penalty}: [elasticnet] \\
+\texttt{l1\_ratio}: [0.1, 0.5, 0.9], \texttt{solver}: [saga]
+\end{minipage} \\
+\midrule
+
+\multicolumn{3}{l}{\textbf{Neural Networks}} \\
+\cmidrule{1-3}
+& Perceptron & 
+\begin{minipage}{5.5cm}
+\texttt{alpha}: [0.0001, 0.001, 0.01] \\
+\texttt{penalty}: [None, l2, l1, elasticnet]
+\end{minipage} \\
+\cmidrule{2-3}
+& MLP\_1Layer & 
+\begin{minipage}{5.5cm}
+\texttt{hidden\_layer\_sizes}: [(50,), (100,), (200,)] \\
+\texttt{alpha}: [0.0001, 0.001, 0.01] \\
+\texttt{learning\_rate}: [constant, adaptive]
+\end{minipage} \\
+\cmidrule{2-3}
+& MLP\_2Layer & 
+\begin{minipage}{5.5cm}
+\texttt{hidden\_layer\_sizes}: [(50,25), (100,50), (200,100)] \\
+\texttt{alpha}: [0.0001, 0.001, 0.01] \\
+\texttt{learning\_rate}: [constant, adaptive]
+\end{minipage} \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{frame}

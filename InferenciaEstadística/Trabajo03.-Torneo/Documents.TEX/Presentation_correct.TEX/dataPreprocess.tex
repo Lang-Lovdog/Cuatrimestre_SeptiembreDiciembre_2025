@@ -1,0 +1,60 @@
+%! TeX root = presentation.tex
+
+\begin{frame}{Data Preprocessing Pipeline}
+\footnotesize
+\begin{algorithmic}[1]
+\Function{load\_data}{datasets\_path, dataset\_name}
+\State $file\_path \gets \text{Path}(datasets\_path) / dataset\_name$
+\State $data \gets \text{pd.read\_csv}(file\_path)$
+\State $data \gets data[data['Time\_taken'].notna()]$ \Comment{Remove missing}
+\State $d3\_dummies \gets \text{pd.get\_dummies}(data['3D\_available'], prefix='3D\_available', dtype=int)$
+\State $d3\_dummies \gets d3\_dummies.drop('3D\_available\_NO', axis=1)$
+\State $data \gets \text{pd.concat}([data.drop('3D\_available', axis=1), d3\_dummies], axis=1)$
+\State $genre\_dummies \gets \text{pd.get\_dummies}(data['Genre'], prefix='Genre', dtype=int)$
+\State $genre\_dummies \gets genre\_dummies.drop('Genre\_Thriller', axis=1)$
+\State $data \gets \text{pd.concat}([data.drop('Genre', axis=1), genre\_dummies], axis=1)$
+\State \Return $data, file\_path.stem$
+\EndFunction
+\end{algorithmic}
+
+\end{frame}
+\begin{frame}
+
+\vspace{0.3cm}
+\begin{columns}[T]
+\begin{column}{0.32\textwidth}
+\begin{block}{Input}
+\begin{itemize}
+\footnotesize
+\item Raw CSV
+\item Categorical vars
+\item Missing values
+\end{itemize}
+\end{block}
+\end{column}
+
+\begin{column}{0.32\textwidth}
+\footnotesize
+\begin{block}{Processing}
+\begin{itemize}
+\footnotesize
+\item Filter missing
+\item One-hot encode
+\item Drop ref cats
+\end{itemize}
+\end{block}
+\end{column}
+
+\begin{column}{0.32\textwidth}
+\footnotesize
+\begin{block}{Output}
+\begin{itemize}
+\footnotesize
+\item Clean data
+\item Encoded features
+\item Filename stem
+\end{itemize}
+\end{block}
+\end{column}
+\end{columns}
+\end{frame}

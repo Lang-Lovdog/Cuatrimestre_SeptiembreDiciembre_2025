@@ -1,0 +1,64 @@
+%! TeX program = xelatex
+\documentclass[10pt]{beamer}
+\usepackage{adjustbox}
+\usepackage{graphicx}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{amsmath}
+\usepackage{subcaption}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{siunitx}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{array}
+\usepackage[dvipsnames,table]{xcolor}
+\usepackage{fontspec}
+\usepackage{BeamerCobaltDarkTheme}
+
+% Custom colors
+\definecolor{primary}{RGB}{0, 164, 254}
+
+\title{A Systematic Evaluation of Classifiers and Preprocessing for Film Categorization\\
+The Tournament}
+\author{Brandon Marquez Salazar}
+\institute{Curso de Estadística Inferencial}
+\date{}
+
+\begin{document}
+
+% Title page with custom background
+{
+\setbeamertemplate{background}{%
+\includegraphics[width=\paperwidth, height=\paperheight]{fondo.png}
+}
+
+\begin{frame}
+\titlepage
+\end{frame}
+}
+
+{
+   \setbeamertemplate{background}{%
+   \includegraphics[width=\paperwidth, height=\paperheight]{blured.png}
+   }
+   \input{GridModelSelection.tex}
+   \input{dataPreprocess.tex}
+   \input{results.tex}
+   \input{sapirowilk.tex}
+   \input{alphagrid.tex}
+   \begin{frame}
+      \begin{center}
+         \huge
+         \begin{equation*}
+            \begin{aligned}
+               \alpha           &= 0.45   \\
+               t                &= 1.285  \\
+               p_{\text{value}} &= 0.2157 \\
+            \end{aligned}
+         \end{equation*}
+      \end{center}
+   \end{frame}
+}
+
+\end{document}

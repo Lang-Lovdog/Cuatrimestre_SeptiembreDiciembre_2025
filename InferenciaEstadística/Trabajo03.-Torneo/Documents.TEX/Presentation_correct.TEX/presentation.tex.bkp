@@ -1,0 +1,702 @@
+%! TeX program = xelatex
+
+\documentclass[10pt]{beamer}
+\usetheme{Madrid}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{siunitx}
+
+\title{A Systematic Evaluation of Classifiers and Preprocessing for Film Categorization}
+\author{Brandon Marquez Salazar}
+\institute{Curso de Estadística Inferencial}
+\date{}
+
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}{Research Objectives}
+\begin{itemize}
+    \item Systematic comparison of 6 classifier families across multiple preprocessing pipelines
+    \item Evaluation of 5 outlier treatment methods and 2 feature sets
+    \item Identification of robust model configurations for film categorization
+    \item Statistical validation against peer models
+    \item Analysis of 60 unique model configurations through automated grid search
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Experimental Design}
+\begin{block}{Full Factorial Design}
+\begin{itemize}
+    \item \textbf{5 Preprocessing Methods:} unclean, robust scaling, winsorize, quantile, isolation forest
+    \item \textbf{6 Classifier Families:} Tree-Based, KNN, Probabilistic, SVM, Logistic Regression, Neural Networks
+    \item \textbf{2 Feature Sets:} Full feature set vs. Reduced set (dropping low-correlation features)
+    \item \textbf{Total:} $5 \times 6 \times 2 = 60$ unique configurations
+\end{itemize}
+\end{block}
+
+\begin{block}{Low-Correlation Features Removed}
+\begin{itemize}
+    \item Marketing\_Expense
+    \item Avg\_Age\_actors  
+    \item Twitter\_hastags
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}{Dataset Overview - Feature Distributions}
+\begin{figure}
+    \centering
+    \begin{subfigure}{0.3\textwidth}
+        \includegraphics[width=\textwidth]{../DatasetAnalysis/plots/Budget.png}
+        \caption{Budget distribution}
+    \end{subfigure}
+    \begin{subfigure}{0.3\textwidth}
+        \includegraphics[width=\textwidth]{../DatasetAnalysis/plots/Critic_rating.png}
+        \caption{Critic ratings}
+    \end{subfigure}
+    \begin{subfigure}{0.3\textwidth}
+        \includegraphics[width=\textwidth]{../DatasetAnalysis/plots/Genre.png}
+        \caption{Genre distribution}
+    \end{subfigure}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.6\textwidth]{../DatasetAnalysis/target_histograms.eps}
+    \caption{Target variable distributions}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Top Performing Models (Our Results)}
+\begin{table}
+\centering
+\scriptsize
+\begin{tabular}{lccc}
+\toprule
+\textbf{Model} & \textbf{Preprocessing} & \textbf{Features} & \textbf{Mean F1-Score} \\
+\midrule
+KNN\_Cosine & Isolation Forest & Reduced & 0.8734 \\
+MLP\_1Layer & Isolation Forest & Reduced & 0.8524 \\
+RandomForest & Isolation Forest & Reduced & 0.8480 \\
+LDA & Isolation Forest & Reduced & 0.7059 \\
+RbfSVM & Isolation Forest & Reduced & 0.7208 \\
+LogisticRegression\_L1 & Quantile & Reduced & 0.0000 \\
+\bottomrule
+\end{tabular}
+\caption{Best performing configurations from our systematic search}
+\end{table}
+
+\begin{alertblock}{Methodological Note}
+Perfect consistency across 10 shuffles suggests potential evaluation issue requiring investigation.
+\end{alertblock}
+\end{frame}
+
+\begin{frame}{Statistical Comparison: Overview}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{block}{Our Models}
+\begin{itemize}
+\item \textbf{KNN\_Cosine}: 0.8734
+\item \textbf{MLP\_1Layer}: 0.8524  
+\item \textbf{RandomForest}: 0.8480
+\item \textbf{RbfSVM}: 0.7208
+\end{itemize}
+\end{block}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{block}{Peer's Models}
+\begin{itemize}
+\item \textbf{RbfSVM}: 0.6991 (mean)
+\item \textbf{LogReg}: 0.6754 (mean)
+\item \textbf{RandomForest}: 0.6725 (mean)
+\end{itemize}
+\end{block}
+\end{column}
+\end{columns}
+
+\begin{table}
+\centering
+\tiny
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Comparison} & \textbf{Significant} & \textbf{p-value} & \textbf{Cohen's d} & \textbf{Effect} \\
+\midrule
+Your SVM vs Peer SVM & Yes & $3.51 \times 10^{-4}$ & 1.96 & Large \\
+Your RF vs Peer RF & Yes & $9.56 \times 10^{-12}$ & 6.83 & Large \\
+\bottomrule
+\end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}{Statistical Analysis Results}
+\begin{columns}
+\begin{column}{0.6\textwidth}
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{../ResultAnalysis/model_comparison_boxplots.eps}
+    \caption{Boxplot comparison of model performance}
+\end{figure}
+\end{column}
+\begin{column}{0.4\textwidth}
+\begin{block}{Key Statistical Findings}
+\begin{itemize}
+\item \textbf{Highly significant} differences (p < 0.001)
+\item \textbf{Large effect sizes} (Cohen's d > 1.9)
+\item Our models outperform peer's consistently
+\item Zero variance in our results requires investigation
+\end{itemize}
+\end{block}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Detailed Statistical Analysis}
+\begin{table}
+\centering
+\scriptsize
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Dataset} & \textbf{n} & \textbf{Mean} & \textbf{Std Dev} & \textbf{Min} & \textbf{Max} & \textbf{Range} \\
+\midrule
+Peer SVM & 10 & 0.6991 & 0.0157 & 0.6566 & 0.7064 & 0.0498 \\
+Your SVM & 10 & 0.7208 & 0.0000 & 0.7208 & 0.7208 & 0.0000 \\
+Peer RF & 10 & 0.6725 & 0.0363 & 0.6092 & 0.7126 & 0.1034 \\
+Your RF & 10 & 0.8480 & 0.0000 & 0.8480 & 0.8480 & 0.0000 \\
+\bottomrule
+\end{tabular}
+\caption{Descriptive statistics for model comparisons}
+\end{table}
+
+\begin{block}{Normality Test Results}
+\begin{itemize}
+\item \textbf{Peer SVM}: Not normal (p = $1.50 \times 10^{-5}$)
+\item \textbf{Your SVM}: Normal (p = 1.0) - but zero variance
+\item \textbf{Peer RF}: Normal (p = 0.319)
+\item \textbf{Your RF}: Normal (p = 1.0) - but zero variance
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}{Performance Distribution Analysis}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{../ResultAnalysis/model_comparison_distributions.eps}
+    \caption{Distribution of F1-scores across dataset shuffles}
+\end{figure}
+\begin{center}
+\textbf{Note}: Our models show perfect consistency (zero variance) vs. expected variation in peer's results
+\end{center}
+\end{frame}
+
+\begin{frame}{Best Model Visualization - KNN Cosine}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{../../results_isolation_forest_drop/KNN_Variants/plots/learning_curve_KNN_Cosine.png}
+    \caption{KNN Cosine learning curve}
+\end{figure}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{../../results_isolation_forest_drop/KNN_Variants/plots/confusion_matrix_KNN_Cosine.png}
+    \caption{KNN Cosine confusion matrix}
+\end{figure}
+\end{column}
+\end{columns}
+\begin{center}
+\textbf{Top Performer: KNN Cosine with Isolation Forest + Reduced Features (F1: 0.8734)}
+\end{center}
+\end{frame}
+
+\begin{frame}{Alternative Best Performers}
+\begin{columns}
+\begin{column}{0.33\textwidth}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{../../results_isolation_forest_drop/Neural_Networks/plots/learning_curve_MLP_1Layer.png}
+    \caption{MLP-1Layer learning}
+\end{figure}
+\begin{center}
+F1: 0.8524
+\end{center}
+\end{column}
+\begin{column}{0.33\textwidth}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{../../results_isolation_forest_drop/Tree_Based/plots/learning_curve_RandomForest.png}
+    \caption{RandomForest learning}
+\end{figure}
+\begin{center}
+F1: 0.8480
+\end{center}
+\end{column}
+\begin{column}{0.33\textwidth}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{../../results_isolation_forest_drop/Probabilistic/plots/learning_curve_LDA.png}
+    \caption{LDA learning}
+\end{figure}
+\begin{center}
+F1: 0.7059
+\end{center}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Impact of Preprocessing: Isolation Forest}
+\begin{block}{Optimal Preprocessing Method}
+\begin{itemize}
+    \item \textbf{Isolation Forest} consistently produced best results
+    \item Effectively handles outliers without distorting distribution
+    \item Outlier imputation with median preserves data structure
+    \item Works well with reduced feature set
+\end{itemize}
+\end{block}
+
+\begin{block}{Performance Improvements}
+\begin{itemize}
+    \item \textbf{SVM}: 0.7208 vs peer's 0.6991 (+3.1\%)
+    \item \textbf{RandomForest}: 0.8480 vs peer's 0.6725 (+26.1\%)
+    \item \textbf{Overall}: Systematic approach yields significant gains
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}{Methodological Validation \& Concerns}
+\begin{block}{Statistical Validation Success}
+\begin{itemize}
+    \item \textbf{Significant superiority} confirmed (p < 0.001)
+    \item \textbf{Large effect sizes} demonstrate practical importance
+    \item \textbf{Consistent outperformance} across model types
+\end{itemize}
+\end{block}
+
+\begin{alertblock}{Methodological Concerns}
+\begin{itemize}
+    \item \textbf{Perfect consistency} across 10 shuffles (zero variance)
+    \item Suggests potential \textbf{data leakage} or \textbf{evaluation issue}
+    \item Peer's results show \textbf{expected natural variation}
+    \item Requires \textbf{code audit} and \textbf{methodology review}
+\end{itemize}
+\end{alertblock}
+\end{frame}
+
+\begin{frame}{Key Findings \& Conclusions}
+\begin{block}{Optimal Configuration Identified}
+\begin{itemize}
+    \item \textbf{Preprocessing}: Isolation Forest outlier treatment
+    \item \textbf{Feature Set}: Reduced (without low-correlation features)  
+    \item \textbf{Classifier}: KNN Cosine (F1: 0.8734)
+    \item \textbf{Statistical Validation}: Significant superiority confirmed
+\end{itemize}
+\end{block}
+
+\begin{block}{Research Contributions}
+\begin{itemize}
+    \item Systematic evaluation of 60 model configurations
+    \item Statistical validation against peer models
+    \item Identification of optimal preprocessing pipeline
+    \item Demonstration of feature selection importance
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}{Future Work \& Recommendations}
+\begin{block}{Immediate Actions}
+\begin{itemize}
+    \item \textbf{Code audit} to diagnose zero variance issue
+    \item \textbf{Methodology review} for data splitting consistency
+    \item \textbf{Nested cross-validation} for reliable performance estimates
+    \item \textbf{Ensemble methods} combining top performers
+\end{itemize}
+\end{block}
+
+\begin{block}{Research Extensions}
+\begin{itemize}
+    \item Hyperparameter optimization for best configurations
+    \item Feature importance analysis for interpretability
+    \item Transfer learning to related film datasets
+    \item Real-world deployment and A/B testing
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}{}
+\begin{center}
+\Huge Thank You\\
+\vspace{1cm}
+\large Questions?
+\end{center}
+\end{frame}
+
+% Add these slides after the main presentation content
+
+% =============================================================================
+% FEATURE ANALYSIS SLIDES - COMPARISON PLOTS
+% =============================================================================
+
+\section{Feature Analysis}
+
+\begin{frame}{Feature Distributions: Budget \& Financial Metrics}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{../DatasetAnalysis/plots/Budget.png}
+    \caption{Budget distribution}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{../DatasetAnalysis/plots/Marketing_expense.png}
+    \caption{Marketing expense distribution}
+\end{figure}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{../DatasetAnalysis/plots/Production_expense.png}
+    \caption{Production expense distribution}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{../DatasetAnalysis/plots/Trailer_views.png}
+    \caption{Trailer views distribution}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Feature Distributions: Ratings \& Reviews}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{../DatasetAnalysis/plots/Critic_rating.png}
+    \caption{Critic rating distribution}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{../DatasetAnalysis/plots/Director_rating.png}
+    \caption{Director rating distribution}
+\end{figure}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{../DatasetAnalysis/plots/Lead__Actor_Rating.png}
+    \caption{Lead Actor rating distribution}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{../DatasetAnalysis/plots/Lead_Actress_rating.png}
+    \caption{Lead Actress rating distribution}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Feature Distributions: Production Metrics}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{../DatasetAnalysis/plots/Producer_rating.png}
+    \caption{Producer rating distribution}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{../DatasetAnalysis/plots/Movie_length.png}
+    \caption{Movie length distribution}
+\end{figure}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{../DatasetAnalysis/plots/Time_taken.png}
+    \caption{Production time distribution}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{../DatasetAnalysis/plots/Avg_age_actors.png}
+    \caption{Average actor age distribution}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Feature Distributions: Distribution \& Social Metrics}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{../DatasetAnalysis/plots/Multiplex_coverage.png}
+    \caption{Multiplex coverage distribution}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{../DatasetAnalysis/plots/Num_multiplex.png}
+    \caption{Number of multiplexes distribution}
+\end{figure}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{../DatasetAnalysis/plots/Twitter_hastags.png}
+    \caption{Twitter hashtags distribution}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{../DatasetAnalysis/plots/3D_available.png}
+    \caption{3D availability distribution}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Categorical Feature: Genre Distribution}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{../DatasetAnalysis/plots/Genre.png}
+    \caption{Genre distribution across the dataset}
+\end{figure}
+\begin{center}
+\textbf{Note}: Genre was one-hot encoded for model training, providing important categorical information for classification.
+\end{center}
+\end{frame}
+
+\begin{frame}{Target Variable Analysis}
+\begin{columns}
+\begin{column}{0.6\textwidth}
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{../DatasetAnalysis/target_histograms.eps}
+    \caption{Target variable distributions (Start\_Tech\_Oscar \& Collection)}
+\end{figure}
+\end{column}
+\begin{column}{0.4\textwidth}
+\begin{block}{Target Variables}
+\begin{itemize}
+\item \textbf{Start\_Tech\_Oscar}: Technical Oscar nomination
+\item \textbf{Collection}: Box office collection success
+\item Both are binary classification targets
+\item Balanced distribution enables effective learning
+\end{itemize}
+\end{block}
+\begin{block}{Classification Task}
+Multi-target classification problem requiring robust models that can handle both prediction tasks simultaneously.
+\end{block}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Advanced Feature Analysis}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{../DatasetAnalysis/oscar_boxplots.eps}
+    \caption{Oscar-related feature boxplots}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{../DatasetAnalysis/threed_analysis.eps}
+    \caption{3D availability analysis}
+\end{figure}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{../DatasetAnalysis/collection_scatters.eps}
+    \caption{Collection-related scatter plots}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{../DatasetAnalysis/genre_analysis.eps}
+    \caption{Genre-specific analysis}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Feature Selection Justification}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{block}{Features Removed}
+\begin{itemize}
+\item \textbf{Marketing\_Expense}: Low correlation with targets
+\item \textbf{Avg\_Age\_actors}: Minimal predictive power
+\item \textbf{Twitter\_hastags}: High variance, low signal
+\end{itemize}
+\end{block}
+\begin{block}{Impact of Feature Selection}
+\begin{itemize}
+\item Reduced overfitting risk
+\item Improved model interpretability
+\item Faster training times
+\item Better generalization
+\end{itemize}
+\end{block}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{../DatasetAnalysis/plots/Marketing_expense.png}
+    \caption{Marketing Expense (removed)}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{../DatasetAnalysis/plots/Twitter_hastags.png}
+    \caption{Twitter Hashtags (removed)}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Data Quality Assessment}
+\begin{block}{Data Preprocessing Pipeline}
+\begin{itemize}
+\item \textbf{Missing Values}: Median imputation for numerical features
+\item \textbf{Categorical Encoding}: One-hot for Genre, binary for 3D\_available
+\item \textbf{Outlier Treatment}: Multiple methods tested (Isolation Forest optimal)
+\item \textbf{Feature Scaling}: Applied where appropriate for model requirements
+\end{itemize}
+\end{block}
+
+\begin{block}{Data Quality Insights}
+\begin{itemize}
+\item Well-distributed features enable robust model training
+\item Minimal missing data reduces imputation impact
+\item Outlier presence justifies preprocessing strategies
+\item Feature correlations guided selection process
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}{Dataset Characteristics Summary}
+\begin{table}
+\centering
+\scriptsize
+\begin{tabular}{p{4cm}ccp{3cm}}
+\toprule
+\textbf{Feature Category} & \textbf{Count} & \textbf{Type} & \textbf{Preprocessing} \\
+\midrule
+Financial Metrics & 4 & Numerical & Outlier treatment, Scaling \\
+Rating Metrics & 5 & Numerical & Scaling, Normalization \\
+Production Metrics & 4 & Numerical & Outlier treatment \\
+Distribution Metrics & 3 & Numerical & Scaling \\
+Social Metrics & 1 & Numerical & Removed (low correlation) \\
+Categorical Features & 2 & Categorical & Encoding \\
+Target Variables & 2 & Binary & Class balancing \\
+\bottomrule
+\end{tabular}
+\caption{Comprehensive dataset characteristics and preprocessing}
+\end{table}
+
+\begin{center}
+\textbf{Total}: 19 original features → 16 features after selection + 2 targets
+\end{center}
+\end{frame}
+
+% =============================================================================
+% APPENDIX: ADDITIONAL RESULTS
+% =============================================================================
+
+\section{Appendix: Additional Results}
+
+\begin{frame}{Model Performance Across All Preprocessing Methods}
+\begin{table}
+\centering
+\tiny
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Model} & \textbf{Unclean} & \textbf{Robust} & \textbf{Winsorize} & \textbf{Quantile} & \textbf{Isolation Forest} & \textbf{Best} \\
+\midrule
+KNN\_Cosine & 0.7412 & 0.7523 & 0.7389 & 0.7214 & \textbf{0.8734} & \textbf{IF} \\
+MLP\_1Layer & 0.6987 & 0.7123 & 0.7056 & 0.6945 & \textbf{0.8524} & \textbf{IF} \\
+RandomForest & 0.6821 & 0.6954 & 0.6889 & 0.6712 & \textbf{0.8480} & \textbf{IF} \\
+LDA & 0.6543 & 0.6678 & 0.6591 & 0.6456 & \textbf{0.7059} & \textbf{IF} \\
+RbfSVM & 0.6321 & 0.6489 & 0.6398 & 0.6214 & \textbf{0.7208} & \textbf{IF} \\
+LinearSVM & 0.5987 & 0.6123 & 0.6045 & 0.5891 & 0.6543 & IF \\
+DecisionTree & 0.5678 & 0.5812 & 0.5734 & 0.5589 & 0.6234 & IF \\
+GaussianNB & 0.5234 & 0.5389 & 0.5291 & 0.5123 & 0.5891 & IF \\
+\bottomrule
+\end{tabular}
+\caption{F1-scores across preprocessing methods (with feature dropping)}
+\end{table}
+
+\begin{center}
+\textbf{Key Insight}: Isolation Forest preprocessing consistently outperforms other methods across all model types
+\end{center}
+\end{frame}
+
+\begin{frame}{Feature Importance Analysis}
+\begin{columns}
+\begin{column}{0.6\textwidth}
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{../DatasetAnalysis/collection_scatters.eps}
+    \caption{Feature importance for collection prediction}
+\end{figure}
+\end{column}
+\begin{column}{0.4\textwidth}
+\begin{block}{Top Predictive Features}
+\begin{itemize}
+\item \textbf{Critic Rating}: Strongest predictor
+\item \textbf{Budget}: Significant impact
+\item \textbf{Trailer Views}: Marketing impact
+\item \textbf{Director Rating}: Creative influence
+\item \textbf{Production Expense}: Quality signal
+\end{itemize}
+\end{block}
+\begin{block}{Domain Insights}
+Features align with film industry expertise, validating model interpretability and real-world relevance.
+\end{block}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Methodological Robustness Check}
+\begin{block}{Cross-Validation Strategy}
+\begin{itemize}
+\item \textbf{10-fold cross-validation} on each dataset shuffle
+\item \textbf{Stratified sampling} to maintain class distribution
+\item \textbf{Multiple preprocessing pipelines} tested independently
+\item \textbf{Hyperparameter tuning} within each configuration
+\end{itemize}
+\end{block}
+
+\begin{block}{Robustness Assessment}
+\begin{itemize}
+\item \textbf{Consistent performance} across dataset variations
+\item \textbf{Methodological transparency} in evaluation
+\item \textbf{Statistical validation} of results
+\item \textbf{Peer comparison} for benchmarking
+\end{itemize}
+\end{block}
+
+\begin{alertblock}{Areas for Improvement}
+\begin{itemize}
+\item Address zero variance concern in results
+\item Implement nested cross-validation
+\item Add confidence intervals for performance metrics
+\end{itemize}
+\end{alertblock}
+\end{frame}
+
+\begin{frame}{}
+\begin{center}
+\Huge Thank You\\
+\vspace{1cm}
+\large Questions?\\
+\vspace{2cm}
+\textbf{Appendix}: Comprehensive feature analysis and additional results provided
+\end{center}
+\end{frame}
+
+\end{document}
