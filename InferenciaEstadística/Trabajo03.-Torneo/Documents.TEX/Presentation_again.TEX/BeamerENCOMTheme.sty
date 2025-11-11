@@ -1,0 +1,76 @@
+\ProvidesPackage{BeamerENCOMTheme}
+
+% Define the color palette
+\definecolor{encomBlack}{HTML}{000000}
+\definecolor{encomRed}{HTML}{9f0000}
+\definecolor{encomGreen}{HTML}{008b00}
+\definecolor{encomYellow}{HTML}{ffd000}
+\definecolor{encomBlue}{HTML}{0081ff}
+\definecolor{encomPurple}{HTML}{bc00ca}
+\definecolor{encomCyan}{HTML}{008b8b}
+\definecolor{encomWhite}{HTML}{bbbbbb}
+\definecolor{encomBrightBlack}{HTML}{555555}
+\definecolor{encomBrightRed}{HTML}{ff0000}
+\definecolor{encomBrightGreen}{HTML}{00ee00}
+\definecolor{encomBrightYellow}{HTML}{ffff00}
+\definecolor{encomBrightBlue}{HTML}{0000ff}
+\definecolor{encomBrightPurple}{HTML}{ff00ff}
+\definecolor{encomBrightCyan}{HTML}{00cdcd}
+\definecolor{encomBrightWhite}{HTML}{ffffff}
+\definecolor{encomBackground}{HTML}{000000}
+\definecolor{encomForeground}{HTML}{00a595}
+
+% Set the theme and colors
+\usetheme{default}
+\usecolortheme[named=encomBackground]{structure}
+\setbeamercolor{title}{fg=encomForeground, bg=encomBackground}
+\setbeamercolor{frametitle}{fg=encomForeground, bg=encomBackground}
+\setbeamercolor{normal text}{fg=encomWhite, bg=encomBackground}
+\setbeamercolor{alerted text}{fg=encomRed, bg=encomBackground}
+\setbeamercolor{example text}{fg=encomGreen, bg=encomBackground}
+\setbeamercolor{structure}{fg=encomWhite, bg=encomBackground}
+
+% Customize the itemize and enumerate environments
+\setbeamercolor{itemize item}{fg=encomPurple}
+\setbeamercolor{itemize subitem}{fg=encomCyan}
+\setbeamercolor{enumerate item}{fg=encomBlue}
+\setbeamercolor{enumerate subitem}{fg=encomYellow}
+
+% Customize the block environments
+\setbeamercolor{block title}{fg=encomWhite, bg=encomPurple}
+\setbeamercolor{block body}{fg=encomWhite, bg=encomBackground}
+
+% Customize the footline
+\setbeamercolor{footline}{fg=encomWhite, bg=encomBackground}
+\setbeamertemplate{footline}{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=2.25ex,dp=1ex,center]{footline}%
+    \usebeamerfont{footline}\insertshortauthor\hfill\insertframenumber/\inserttotalframenumber\hfill\insertshorttitle%
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+
+% Customize the headline
+\setbeamercolor{headline}{fg=encomWhite, bg=encomBackground}
+
+% Customize the section in the headline
+\setbeamercolor{section in headline}{fg=encomBrightRed, bg=encomBackground}
+
+% Customize the subsection in the headline
+\setbeamercolor{subsection in headline}{fg=encomBrightGreen, bg=encomBackground}
+
+% Customize the subsection in the head/foot
+\setbeamercolor{subsection in head/foot}{fg=encomBrightYellow, bg=encomBackground}
+
+% Customize the author in the title page
+\setbeamercolor{author in head/foot}{fg=encomBrightRed, bg=encomBackground}
+
+% Customize the institute in the title page
+\setbeamercolor{institute in head/foot}{fg=encomBrightGreen, bg=encomBackground}
+
+% Customize the date in the title page
+\setbeamercolor{date in head/foot}{fg=encomBrightYellow, bg=encomBackground}
+
+% Customize the title in the title page
+\setbeamercolor{title in head/foot}{fg=encomBrightWhite, bg=encomBackground}

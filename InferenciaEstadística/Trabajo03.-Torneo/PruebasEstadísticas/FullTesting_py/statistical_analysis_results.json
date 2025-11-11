@@ -1,0 +1,46 @@
+{
+  "normality_test": {
+    "Dataset de Brandon": {
+      "statistic": 0.996799684063655,
+      "p_value": 0.9555333651904122,
+      "method": "Shapiro-Wilk",
+      "normal": "True"
+    },
+    "Dataset de Cindy": {
+      "statistic": 0.9837052316341879,
+      "p_value": 0.020486548781392215,
+      "method": "Shapiro-Wilk",
+      "normal": "False"
+    }
+  },
+  "overview": {
+    "Dataset de Brandon": {
+      "samples": 200,
+      "mean": 0.6541547171459875,
+      "median": 0.6536828086047431,
+      "std": 0.012535428281269512,
+      "min": 0.6151558243291585,
+      "max": 0.6914129213282594
+    },
+    "Dataset de Cindy": {
+      "samples": 200,
+      "mean": 0.66732836,
+      "median": 0.667888,
+      "std": 0.03623937577111946,
+      "min": 0.556569,
+      "max": 0.757423
+    }
+  },
+  "variance_test": {
+    "statistic": 167.48572324066186,
+    "p_value": 3.2227650847883425e-32,
+    "method": "Levene",
+    "equal": "False"
+  },
+  "difference_test": {
+    "statistic": 14466.0,
+    "p_value": 1.6999150971275405e-06,
+    "method": "Wilcoxon",
+    "equal": "False"
+  }
+}

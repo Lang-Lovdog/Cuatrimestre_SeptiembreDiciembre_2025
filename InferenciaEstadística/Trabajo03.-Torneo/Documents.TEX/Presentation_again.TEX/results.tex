@@ -1,0 +1,156 @@
+%! TeX root = presentation.tex
+
+\begin{frame}{My Experiment's Results - Part 1/3}
+\centering
+\scriptsize % Reduce font size for better fit
+\begin{tabular}{l l S[table-format=1.6]}
+\toprule
+\textbf{Model} & \textbf{Dataset} & \textbf{F1 Score} \\
+\midrule
+\multirow{10}{*}{RandomForest} & shuffle\_01 & 0.602564 \\
+                               & shuffle\_02 & 0.645963 \\
+                               & shuffle\_03 & 0.681081 \\
+                               & shuffle\_04 & 0.654545 \\
+                               & shuffle\_05 & 0.691358 \\
+                               & shuffle\_06 & 0.666667 \\
+                               & shuffle\_07 & 0.651163 \\
+                               & shuffle\_08 & 0.666667 \\
+                               & shuffle\_09 & 0.603774 \\
+                               & shuffle\_10 & 0.670732 \\
+\midrule
+\multirow{10}{*}{KNN\_Medium} & shuffle\_01 & 0.589744 \\
+                              & shuffle\_02 & 0.612245 \\
+                              & shuffle\_03 & 0.633540 \\
+                              & shuffle\_04 & 0.513158 \\
+                              & shuffle\_05 & 0.637500 \\
+                              & shuffle\_06 & 0.584416 \\
+                              & shuffle\_07 & 0.629630 \\
+                              & shuffle\_08 & 0.589744 \\
+                              & shuffle\_09 & 0.513889 \\
+                              & shuffle\_10 & 0.543046 \\
+\bottomrule
+\end{tabular}
+\captionof{table}{My Experiment's Results - RandomForest and KNN\_Medium Models}
+\end{frame}
+
+\begin{frame}{My Experiment's Results - Part 2/3}
+\centering
+\scriptsize
+\begin{tabular}{l l S[table-format=1.6]}
+\toprule
+\textbf{Model} & \textbf{Dataset} & \textbf{F1 Score} \\
+\midrule
+\multirow{10}{*}{LDA} & shuffle\_01 & 0.641509 \\
+                       & shuffle\_02 & 0.566038 \\
+                       & shuffle\_03 & 0.658537 \\
+                       & shuffle\_04 & 0.696203 \\
+                       & shuffle\_05 & 0.619355 \\
+                       & shuffle\_06 & 0.632911 \\
+                       & shuffle\_07 & 0.658065 \\
+                       & shuffle\_08 & 0.616352 \\
+                       & shuffle\_09 & 0.620253 \\
+                       & shuffle\_10 & 0.666667 \\
+\midrule
+\multirow{10}{*}{LinearSVM} & shuffle\_01 & 0.634146 \\
+                            & shuffle\_02 & 0.606452 \\
+                            & shuffle\_03 & 0.693642 \\
+                            & shuffle\_04 & 0.645161 \\
+                            & shuffle\_05 & 0.591195 \\
+                            & shuffle\_06 & 0.632258 \\
+                            & shuffle\_07 & 0.675159 \\
+                            & shuffle\_08 & 0.609756 \\
+                            & shuffle\_09 & 0.578616 \\
+                            & shuffle\_10 & 0.685714 \\
+\bottomrule
+\end{tabular}
+\captionof{table}{My Experiment's Results - LDA and LinearSVM Models}
+\end{frame}
+
+\begin{frame}{My Experiment's Results - Part 3/3}
+\centering
+\scriptsize
+\begin{tabular}{l l S[table-format=1.6]}
+\toprule
+\textbf{Model} & \textbf{Dataset} & \textbf{F1 Score} \\
+\midrule
+\multirow{10}{*}{LogisticRegression} & shuffle\_01 & 0.600000 \\
+                                     & shuffle\_02 & 0.612500 \\
+                                     & shuffle\_03 & 0.682353 \\
+                                     & shuffle\_04 & 0.700000 \\
+                                     & shuffle\_05 & 0.592105 \\
+                                     & shuffle\_06 & 0.627451 \\
+                                     & shuffle\_07 & 0.675159 \\
+                                     & shuffle\_08 & 0.625000 \\
+                                     & shuffle\_09 & 0.629630 \\
+                                     & shuffle\_10 & 0.678363 \\
+\midrule
+\multirow{10}{*}{MLP\_2Layer} & shuffle\_01 & 0.587500 \\
+                              & shuffle\_02 & 0.584416 \\
+                              & shuffle\_03 & 0.593023 \\
+                              & shuffle\_04 & 0.670807 \\
+                              & shuffle\_05 & 0.602410 \\
+                              & shuffle\_06 & 0.583851 \\
+                              & shuffle\_07 & 0.638037 \\
+                              & shuffle\_08 & 0.603774 \\
+                              & shuffle\_09 & 0.632258 \\
+                              & shuffle\_10 & 0.578313 \\
+\bottomrule
+\end{tabular}
+\captionof{table}{My Experiment's Results - LogisticRegression and MLP\_2Layer Models}
+\end{frame}
+
+\begin{frame}{Peer Experiment's Results - Part 1/2}
+\centering
+\scriptsize
+\begin{tabular}{l l S[table-format=1.6]}
+\toprule
+\textbf{Model} & \textbf{Dataset} & \textbf{F1 Score} \\
+\midrule
+\multirow{10}{*}{RbfSVM} & shuffle\_01 & 0.706383 \\
+                         & shuffle\_02 & 0.656566 \\
+                         & shuffle\_03 & 0.693694 \\
+                         & shuffle\_04 & 0.706383 \\
+                         & shuffle\_05 & 0.706383 \\
+                         & shuffle\_06 & 0.706383 \\
+                         & shuffle\_07 & 0.705645 \\
+                         & shuffle\_08 & 0.696833 \\
+                         & shuffle\_09 & 0.706383 \\
+                         & shuffle\_10 & 0.706383 \\
+\midrule
+\multirow{5}{*}{Logreg} & shuffle\_01 & 0.654320 \\
+                         & shuffle\_02 & 0.677966 \\
+                         & shuffle\_03 & 0.686047 \\
+                         & shuffle\_04 & 0.709677 \\
+                         & shuffle\_05 & 0.658960 \\
+\bottomrule
+\end{tabular}
+\captionof{table}{Peer Experiment's Results - RbfSVM and Logreg (Part 1)}
+\end{frame}
+
+\begin{frame}{Peer Experiment's Results - Part 2/2}
+\centering
+\scriptsize
+\begin{tabular}{l l S[table-format=1.6]}
+\toprule
+\textbf{Model} & \textbf{Dataset} & \textbf{F1 Score} \\
+\midrule
+Logreg & shuffle\_06 & 0.707182 \\
+       & shuffle\_07 & 0.630952 \\
+       & shuffle\_08 & 0.688525 \\
+       & shuffle\_09 & 0.658537 \\
+       & shuffle\_10 & 0.681564 \\
+\midrule
+\multirow{10}{*}{Rf} & shuffle\_01 & 0.649682 \\
+                      & shuffle\_02 & 0.681564 \\
+                      & shuffle\_03 & 0.609195 \\
+                      & shuffle\_04 & 0.622754 \\
+                      & shuffle\_05 & 0.711864 \\
+                      & shuffle\_06 & 0.666667 \\
+                      & shuffle\_07 & 0.710059 \\
+                      & shuffle\_08 & 0.712644 \\
+                      & shuffle\_09 & 0.674556 \\
+                      & shuffle\_10 & 0.686391 \\
+\bottomrule
+\end{tabular}
+\captionof{table}{Peer Experiment's Results - Logreg (Part 2) and Rf Models}
+\end{frame}

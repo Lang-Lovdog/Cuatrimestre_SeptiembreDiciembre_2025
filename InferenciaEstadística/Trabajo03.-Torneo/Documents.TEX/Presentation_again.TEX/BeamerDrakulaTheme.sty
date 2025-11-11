@@ -1,0 +1,69 @@
+\ProvidesPackage{BeamerDrakulaTheme}
+
+% Define the color palette
+\definecolor{draculaBackground}{HTML}{282A36}
+\definecolor{draculaCurrentLine}{HTML}{44475A}
+\definecolor{draculaForeground}{HTML}{F8F8F2}
+\definecolor{draculaComment}{HTML}{6272A4}
+\definecolor{draculaCyan}{HTML}{8BE9FD}
+\definecolor{draculaGreen}{HTML}{50FA7B}
+\definecolor{draculaOrange}{HTML}{FFB86C}
+\definecolor{draculaPink}{HTML}{FF79C6}
+\definecolor{draculaPurple}{HTML}{BD93F9}
+\definecolor{draculaRed}{HTML}{FF5555}
+\definecolor{draculaYellow}{HTML}{F1FA8C}
+
+% Set the theme and colors
+\usetheme{default}
+\usecolortheme[named=draculaBackground]{structure}
+\setbeamercolor{title}{fg=draculaForeground, bg=draculaBackground}
+\setbeamercolor{frametitle}{fg=draculaForeground, bg=draculaBackground}
+\setbeamercolor{normal text}{fg=draculaForeground, bg=draculaBackground}
+\setbeamercolor{alerted text}{fg=draculaRed, bg=draculaBackground}
+\setbeamercolor{example text}{fg=draculaGreen, bg=draculaBackground}
+\setbeamercolor{structure}{fg=draculaForeground, bg=draculaBackground}
+
+% Customize the itemize and enumerate environments
+\setbeamercolor{itemize item}{fg=draculaPurple}
+\setbeamercolor{itemize subitem}{fg=draculaCyan}
+\setbeamercolor{enumerate item}{fg=draculaOrange}
+\setbeamercolor{enumerate subitem}{fg=draculaPink}
+
+% Customize the block environments
+\setbeamercolor{block title}{fg=draculaForeground, bg=draculaPurple}
+\setbeamercolor{block body}{fg=draculaForeground, bg=draculaBackground}
+
+% Customize the footline
+\setbeamercolor{footline}{fg=draculaForeground, bg=draculaBackground}
+\setbeamertemplate{footline}{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=2.25ex,dp=1ex,center]{footline}%
+    \usebeamerfont{footline}\insertshortauthor\hfill\insertframenumber/\inserttotalframenumber\hfill\insertshorttitle%
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+
+% Customize the headline
+\setbeamercolor{headline}{fg=draculaForeground, bg=draculaBackground}
+
+% Customize the section in the headline
+\setbeamercolor{section in headline}{fg=draculaYellow, bg=draculaBackground}
+
+% Customize the subsection in the headline
+\setbeamercolor{subsection in headline}{fg=draculaCyan, bg=draculaBackground}
+
+% Customize the subsection in the head/foot
+\setbeamercolor{subsection in head/foot}{fg=draculaCyan, bg=draculaBackground}
+
+% Customize the author in the title page
+\setbeamercolor{author in head/foot}{fg=draculaYellow, bg=draculaBackground}
+
+% Customize the institute in the title page
+\setbeamercolor{institute in head/foot}{fg=draculaCyan, bg=draculaBackground}
+
+% Customize the date in the title page
+\setbeamercolor{date in head/foot}{fg=draculaOrange, bg=draculaBackground}
+
+% Customize the title in the title page
+\setbeamercolor{title in head/foot}{fg=draculaPink, bg=draculaBackground}

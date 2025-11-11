@@ -2,31 +2,31 @@
     {
         "instance": "Tree_Based",
         "classifier": "RandomForest",
-        "path": "/home/lang_lovdog/Documentos/ACAD/MAESTR\u00cdA/CUATRIMESTRE-SD2025/InferenciaEstad\u00edstica/Trabajo03.-Torneo/results/Tree_Based/trained_models/RandomForest.joblib"
+        "path": "/home/lang_lovdog/Documentos/ACAD/MAESTR\u00cdA/Cuatrimestre_SeptiembreDiciembre_2025/InferenciaEstad\u00edstica/Trabajo03.-Torneo/results/Tree_Based/trained_models/RandomForest.joblib"
     },
     {
         "instance": "KNN_Variants",
         "classifier": "KNN_Medium",
-        "path": "/home/lang_lovdog/Documentos/ACAD/MAESTR\u00cdA/CUATRIMESTRE-SD2025/InferenciaEstad\u00edstica/Trabajo03.-Torneo/results/KNN_Variants/trained_models/KNN_Medium.joblib"
+        "path": "/home/lang_lovdog/Documentos/ACAD/MAESTR\u00cdA/Cuatrimestre_SeptiembreDiciembre_2025/InferenciaEstad\u00edstica/Trabajo03.-Torneo/results/KNN_Variants/trained_models/KNN_Medium.joblib"
     },
     {
         "instance": "Probabilistic",
         "classifier": "LDA",
-        "path": "/home/lang_lovdog/Documentos/ACAD/MAESTR\u00cdA/CUATRIMESTRE-SD2025/InferenciaEstad\u00edstica/Trabajo03.-Torneo/results/Probabilistic/trained_models/LDA.joblib"
+        "path": "/home/lang_lovdog/Documentos/ACAD/MAESTR\u00cdA/Cuatrimestre_SeptiembreDiciembre_2025/InferenciaEstad\u00edstica/Trabajo03.-Torneo/results/Probabilistic/trained_models/LDA.joblib"
     },
     {
         "instance": "SVM_Variants",
         "classifier": "LinearSVM",
-        "path": "/home/lang_lovdog/Documentos/ACAD/MAESTR\u00cdA/CUATRIMESTRE-SD2025/InferenciaEstad\u00edstica/Trabajo03.-Torneo/results/SVM_Variants/trained_models/LinearSVM.joblib"
+        "path": "/home/lang_lovdog/Documentos/ACAD/MAESTR\u00cdA/Cuatrimestre_SeptiembreDiciembre_2025/InferenciaEstad\u00edstica/Trabajo03.-Torneo/results/SVM_Variants/trained_models/LinearSVM.joblib"
     },
     {
         "instance": "Logistic_Regression",
         "classifier": "LogisticRegression",
-        "path": "/home/lang_lovdog/Documentos/ACAD/MAESTR\u00cdA/CUATRIMESTRE-SD2025/InferenciaEstad\u00edstica/Trabajo03.-Torneo/results/Logistic_Regression/trained_models/LogisticRegression.joblib"
+        "path": "/home/lang_lovdog/Documentos/ACAD/MAESTR\u00cdA/Cuatrimestre_SeptiembreDiciembre_2025/InferenciaEstad\u00edstica/Trabajo03.-Torneo/results/Logistic_Regression/trained_models/LogisticRegression.joblib"
     },
     {
         "instance": "Neural_Networks",
         "classifier": "MLP_2Layer",
-        "path": "/home/lang_lovdog/Documentos/ACAD/MAESTR\u00cdA/CUATRIMESTRE-SD2025/InferenciaEstad\u00edstica/Trabajo03.-Torneo/results/Neural_Networks/trained_models/MLP_2Layer.joblib"
+        "path": "/home/lang_lovdog/Documentos/ACAD/MAESTR\u00cdA/Cuatrimestre_SeptiembreDiciembre_2025/InferenciaEstad\u00edstica/Trabajo03.-Torneo/results/Neural_Networks/trained_models/MLP_2Layer.joblib"
     }
 ]

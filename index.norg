@@ -1,0 +1,23 @@
+@document.meta
+title: index
+description: 
+authors: lang_lovdog
+categories: 
+created: 2025-11-10T19:55:09-0600
+updated: 2025-11-10T19:55:09-0600
+version: 1.1.1
+@end
+
+* InferenciaEstadística
+  {:$/Cuatrimestre_SeptiembreDiciembre_2025/InferenciaEstadística/Notes:}[Notes]
+** Tarea-01.Planteamiento
+
+** Tarea02.-Dataset
+
+** Trabajo03.-Torneo
+
+* ProcesamientoDeImágenes
+
+* ProcesamientosDeSeñalesEnTiempoReal
+
+* SistemasDinámicosLineales

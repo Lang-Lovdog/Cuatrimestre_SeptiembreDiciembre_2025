@@ -6,6 +6,8 @@ from sklearn.metrics import f1_score
 from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
 from sklearn.base import clone
+import random as rnd
+from sklearn.model_selection import KFold
 import numpy as np
 import sys
 
@@ -69,7 +71,10 @@ def retrain_model(joblib_path, dataframe, dataset_name=""):
 
     # Split data 70/30
     X_train, X_test, y_train, y_test = train_test_split(
-        X, y_true, test_size=0.3, random_state=42, stratify=y_true
+        X, y_true, test_size=0.3,
+        random_state=rnd.randint(20, 1000),
+        metric=f1_score,
+        stratify=y_true
     )
 
     # Use sklearn's clone to properly duplicate the estimator (works for both models and pipelines)
@@ -91,14 +96,15 @@ def retrain_model(joblib_path, dataframe, dataset_name=""):
 
     return result
 
-def evaluate_model(joblib_path, dataframe, dataset_name=""):
+def evaluate_model(joblib_path, dataframe, dataset_name="", n_splits=5):
     """
-    Evaluates a model loaded from a joblib file on a given DataFrame and returns a dictionary
-    with the model name, dataset name, and F1 score.
+    Evaluates a model loaded from a joblib file on a given DataFrame using K-Fold cross-validation
+    and returns a dictionary with the model name, dataset name, and average F1 score.
     
     :param joblib_path: Path to the joblib file containing the model.
     :param dataframe: Pandas DataFrame containing the dataset.
     :param dataset_name: Name of the dataset (default is an empty string).
+    :param n_splits: Number of folds for cross-validation (default is 5).
     :return: Dictionary with "model", "dataset", and "f1_score" keys.
     """
     # Load the model from the joblib file
@@ -111,17 +117,35 @@ def evaluate_model(joblib_path, dataframe, dataset_name=""):
     X = dataframe.drop(columns=["Start_Tech_Oscar"])
     y_true = dataframe["Start_Tech_Oscar"]
 
-    # Predict using the model
-    y_pred = model.predict(X)
+    # Initialize K-Fold
+    kf = KFold(n_splits=n_splits, shuffle=True, random_state=rnd.randint(20, 1000))
+    
+    f1_scores = []
+    
+    # Perform K-Fold cross-validation
+    for train_index, test_index in kf.split(X):
+        X_train, X_test = X.iloc[train_index], X.iloc[test_index]
+        y_train, y_test = y_true.iloc[train_index], y_true.iloc[test_index]
+        
+        # Clone the model for this fold to ensure we start fresh each time
+        fold_model = clone(model)
+        
+        # Train on training fold
+        fold_model.fit(X_train, y_train)
 
-    # Calculate the F1 score
-    f1 = f1_score(y_true, y_pred)
+        # Evaluate on test fold
+        y_pred = fold_model.predict(X_test)
+        f1 = f1_score(y_test, y_pred)
+        f1_scores.append(f1)
+
+    # Calculate average F1 score across all folds
+    avg_f1 = sum(f1_scores) / len(f1_scores)
 
     # Create the result dictionary
     result = {
         "model": model_name,
         "dataset": dataset_name,
-        "f1_score": f1
+        "f1_score": avg_f1
     }
 
     return result
@@ -142,13 +166,14 @@ def run_tests(json_file):
 
     for classifier in classifiers:
         for dataset in datasets:
-            print(f"  Testing {classifier} on {dataset}")
-            joblib_path = classifiers[classifier]
-            data, dataset_name = load_data(datasets_path, dataset)
-            #result = evaluate_model(joblib_path, data, dataset_name)
-            result = retrain_model(joblib_path, data, dataset_name)
-            print(f"    {result}")
-            results_list.append(result)
+            for a in range(20):
+                print(f"  Testing {classifier} on {dataset} iteration {a}")
+                joblib_path = classifiers[classifier]
+                data, dataset_name = load_data(datasets_path, dataset)
+                result = evaluate_model(joblib_path, data, dataset_name)
+                #result = retrain_model(joblib_path, data, dataset_name)
+                print(f"    {result}")
+                results_list.append(result)
 
     results_dir = project_root / Path(conf['models_json']).parent / "test_results.csv"
     pd.DataFrame(results_list).to_csv(results_dir, index=False)
