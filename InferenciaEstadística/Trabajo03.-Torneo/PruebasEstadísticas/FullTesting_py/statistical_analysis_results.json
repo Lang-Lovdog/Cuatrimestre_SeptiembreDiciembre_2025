@@ -1,45 +1,45 @@
 {
   "normality_test": {
     "Dataset de Brandon": {
-      "statistic": 0.996799684063655,
-      "p_value": 0.9555333651904122,
+      "statistic": 0.9928329760484039,
+      "p_value": 0.017197477047792918,
       "method": "Shapiro-Wilk",
-      "normal": "True"
+      "normal": "False"
     },
     "Dataset de Cindy": {
-      "statistic": 0.9837052316341879,
-      "p_value": 0.020486548781392215,
+      "statistic": 0.9917236355694192,
+      "p_value": 0.006920654127693787,
       "method": "Shapiro-Wilk",
       "normal": "False"
     }
   },
   "overview": {
     "Dataset de Brandon": {
-      "samples": 200,
-      "mean": 0.6541547171459875,
-      "median": 0.6536828086047431,
-      "std": 0.012535428281269512,
-      "min": 0.6151558243291585,
-      "max": 0.6914129213282594
+      "samples": 500,
+      "mean": 0.655726790845664,
+      "median": 0.6567169280308343,
+      "std": 0.015120661006239688,
+      "min": 0.6047984647580986,
+      "max": 0.6996869232000937
     },
     "Dataset de Cindy": {
-      "samples": 200,
-      "mean": 0.66732836,
-      "median": 0.667888,
-      "std": 0.03623937577111946,
-      "min": 0.556569,
-      "max": 0.757423
+      "samples": 500,
+      "mean": 0.665482551742,
+      "median": 0.666666667,
+      "std": 0.03536558982093917,
+      "min": 0.552631579,
+      "max": 0.75739645
     }
   },
   "variance_test": {
-    "statistic": 167.48572324066186,
-    "p_value": 3.2227650847883425e-32,
+    "statistic": 244.02681559197254,
+    "p_value": 2.23171733041859e-49,
     "method": "Levene",
     "equal": "False"
   },
   "difference_test": {
-    "statistic": 14466.0,
-    "p_value": 1.6999150971275405e-06,
+    "statistic": 96081.0,
+    "p_value": 2.410459292690978e-10,
     "method": "Wilcoxon",
     "equal": "False"
   }

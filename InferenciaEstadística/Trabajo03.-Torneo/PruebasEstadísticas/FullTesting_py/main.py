@@ -4,7 +4,8 @@ import pandas as pd
 
 df=pd.read_csv("../test_results.csv")
 ds01 = df["f1_score"].to_numpy()
-df=pd.read_excel("../F1_Score_cindy.xlsx")
+#df=pd.read_excel("../F1_Score_cindy.xlsx")
+df=pd.read_csv("../F1_score.csv")
 ds02 = df["F1_Score"].to_numpy()
 
 opts = {
@@ -13,7 +14,7 @@ opts = {
     "ds_02": ds02,
     "ds_02_name": "Dataset de Cindy",
     "alpha": {
-        "values": [0.01, np.arange(0.05, 1, 0.05)],
+        "values": [0.01, np.arange(0.02, 1, 0.01)],
         "P": 0.5,
         "k": 1,
         "sample_size": 10,
