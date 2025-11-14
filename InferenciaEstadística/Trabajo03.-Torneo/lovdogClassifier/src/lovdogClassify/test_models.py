@@ -166,7 +166,7 @@ def run_tests(json_file):
 
     for classifier in classifiers:
         for dataset in datasets:
-            for a in range(20):
+            for a in range(50):
                 print(f"  Testing {classifier} on {dataset} iteration {a}")
                 joblib_path = classifiers[classifier]
                 data, dataset_name = load_data(datasets_path, dataset)
