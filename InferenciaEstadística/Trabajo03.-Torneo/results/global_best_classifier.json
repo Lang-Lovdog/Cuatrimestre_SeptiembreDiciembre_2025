@@ -1,0 +1,7 @@
+[
+    {
+        "instance": "Tree_Based",
+        "classifier": "RandomForest",
+        "path": "/home/lang_lovdog/Documentos/ACAD/MAESTR\u00cdA/Cuatrimestre_SeptiembreDiciembre_2025/InferenciaEstad\u00edstica/Trabajo03.-Torneo/results/Tree_Based/trained_models/RandomForest.joblib"
+    }
+]

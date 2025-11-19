@@ -1,10 +1,10 @@
 # Fdb version 4
-["xdvipdfmx"] 1763101222.97162 "presentation.xdv" "presentation.pdf" "presentation" 1763101228.12575 0
-  "presentation.xdv" 1763101222.77586 173304 b581b093f332128d058203429b5899b7 "xelatex"
+["xdvipdfmx"] 1763101377.77868 "presentation.xdv" "presentation.pdf" "presentation" 1763101382.7359 0
+  "presentation.xdv" 1763101377.5794 173200 178520b979ecb4be827309e2623727f6 "xelatex"
   (generated)
   "presentation.pdf"
   (rewritten before read)
-["xelatex"] 1763101220.28979 "presentation.tex" "presentation.xdv" "presentation" 1763101228.11881 0
+["xelatex"] 1763101375.07063 "presentation.tex" "presentation.xdv" "presentation" 1763101382.72969 0
   "/opt/texlive/2025/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/opt/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/opt/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -202,10 +202,10 @@
   "fondo.png" 1763099955.40445 918662 86a18a48426b437e51c2301031ba9962 ""
   "normality_plots_Dataset de Brandon.png" 1763100411.72619 32467 393477bd91d5e23a6e15c4598d229159 ""
   "normality_plots_Dataset de Cindy.png" 1763100412.15619 32617 9066482e9ca5716ad10e17287bf7ca81 ""
-  "presentation.aux" 1763101222.77386 2238 a65c9e2ff0e801fb6943549f2b080b46 "xelatex"
-  "presentation.nav" 1763101222.77486 1202 a971439ba5eedf62b158aa4c3f07763d "xelatex"
-  "presentation.out" 1763101221.85985 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
-  "presentation.tex" 1763101218.68484 8758 2431801952bb28ab447a6c9d0efc8ff9 ""
+  "presentation.aux" 1763101377.5784 2238 a65c9e2ff0e801fb6943549f2b080b46 "xelatex"
+  "presentation.nav" 1763101377.5794 1202 a971439ba5eedf62b158aa4c3f07763d "xelatex"
+  "presentation.out" 1763101376.61839 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
+  "presentation.tex" 1763101374.17138 8757 c7b458127869eb8e797de6034446505e ""
   (generated)
   "presentation.aux"
   "presentation.log"

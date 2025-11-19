@@ -1,0 +1,16 @@
+{
+  "datasets_path": "lovdogClassifier/res/datasets",
+  "datasets_names": [
+    "shuffle_01.csv",
+    "shuffle_02.csv",
+    "shuffle_03.csv",
+    "shuffle_04.csv",
+    "shuffle_05.csv",
+    "shuffle_06.csv",
+    "shuffle_07.csv",
+    "shuffle_08.csv",
+    "shuffle_09.csv",
+    "shuffle_10.csv"
+  ],
+  "models_json": "results/global_best_classifiers.json"
+}

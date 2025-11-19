@@ -1,46 +1,21 @@
 {
   "normality_test": {
     "Dataset de Brandon": {
-      "statistic": 0.9928329760484039,
-      "p_value": 0.017197477047792918,
+      "statistic": null,
+      "p_value": null,
       "method": "Shapiro-Wilk",
-      "normal": "False"
-    },
-    "Dataset de Cindy": {
-      "statistic": 0.9917236355694192,
-      "p_value": 0.006920654127693787,
-      "method": "Shapiro-Wilk",
-      "normal": "False"
+      "normal": null,
+      "error": "'Figure' object has no attribute 'close'"
     }
   },
   "overview": {
     "Dataset de Brandon": {
-      "samples": 500,
-      "mean": 0.655726790845664,
-      "median": 0.6567169280308343,
-      "std": 0.015120661006239688,
-      "min": 0.6047984647580986,
-      "max": 0.6996869232000937
-    },
-    "Dataset de Cindy": {
-      "samples": 500,
-      "mean": 0.665482551742,
-      "median": 0.666666667,
-      "std": 0.03536558982093917,
-      "min": 0.552631579,
-      "max": 0.75739645
+      "samples": 50,
+      "mean": 0.6552064709807844,
+      "median": 0.6538173709958888,
+      "std": 0.014673794083492479,
+      "min": 0.6239684387961053,
+      "max": 0.6890057629972115
     }
-  },
-  "variance_test": {
-    "statistic": 244.02681559197254,
-    "p_value": 2.23171733041859e-49,
-    "method": "Levene",
-    "equal": "False"
-  },
-  "difference_test": {
-    "statistic": 96081.0,
-    "p_value": 2.410459292690978e-10,
-    "method": "Wilcoxon",
-    "equal": "False"
   }
 }

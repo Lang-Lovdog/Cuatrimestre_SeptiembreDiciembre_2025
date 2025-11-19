@@ -166,14 +166,13 @@ def run_tests(json_file):
 
     for classifier in classifiers:
         for dataset in datasets:
-            for a in range(50):
-                print(f"  Testing {classifier} on {dataset} iteration {a}")
-                joblib_path = classifiers[classifier]
-                data, dataset_name = load_data(datasets_path, dataset)
-                result = evaluate_model(joblib_path, data, dataset_name)
-                #result = retrain_model(joblib_path, data, dataset_name)
-                print(f"    {result}")
-                results_list.append(result)
+            print(f"  Testing {classifier} on {dataset}")
+            joblib_path = classifiers[classifier]
+            data, dataset_name = load_data(datasets_path, dataset)
+            result = evaluate_model(joblib_path, data, dataset_name)
+            #result = retrain_model(joblib_path, data, dataset_name)
+            print(f"    {result}")
+            results_list.append(result)
 
     results_dir = project_root / Path(conf['models_json']).parent / "test_results.csv"
     pd.DataFrame(results_list).to_csv(results_dir, index=False)

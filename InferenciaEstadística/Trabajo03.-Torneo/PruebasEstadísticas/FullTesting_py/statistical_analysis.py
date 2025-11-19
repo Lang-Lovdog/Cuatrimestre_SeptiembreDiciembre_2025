@@ -1,10 +1,8 @@
 import numpy as np
 from scipy import stats
 import matplotlib.pyplot as plt
+import seaborn as sns
 import json
-
-# Set default style to avoid custom style issues
-plt.style.use('default')
 
 def statistical_analysis(opts):
     """
@@ -27,6 +25,61 @@ def statistical_analysis(opts):
     save_results(res)
     return res
 
+def plot_normality(ds, ds_name, figext='eps'):
+    # Use a built-in style that works
+    plt.style.use('default')  # or 'seaborn-v0_8', 'seaborn', etc.
+    
+    # Preparar los datos
+    data = ds['columna']
+
+    # Crear la figura
+    fig, axes = plt.subplots(1, 3, figsize=(20, 6))
+
+    # Use plasma colormap
+    plasma_cmap = plt.cm.plasma
+    colors = [plasma_cmap(0.3), plasma_cmap(0.5), plasma_cmap(0.7)]
+
+    # QQ Plot
+    stats.probplot(data, dist="norm", plot=axes[0])
+    # Style the QQ plot with plasma colors
+    for line in axes[0].get_lines():
+        line.set_markerfacecolor(colors[0])
+        line.set_markeredgecolor(colors[0])
+        line.set_markersize(4)
+    # Style the theoretical line
+    axes[0].get_lines()[1].set_color(colors[2])  # Theoretical line
+    axes[0].set_title('QQ Plot')
+
+    # Boxplot with plasma color
+    box_plot = sns.boxplot(data, ax=axes[1], color=colors[1])
+    axes[1].set_title('Boxplot')
+
+    # Histograma with plasma color
+    hist_plot = sns.histplot(data, ax=axes[2], kde=True, color=colors[0])
+    # Style KDE line with a different plasma color
+    if hist_plot.lines:  # If KDE line exists
+        hist_plot.lines[0].set_color(colors[2])
+    axes[2].set_title('Histograma')
+
+    # Optional: Set figure background to dark for plasma style
+    fig.patch.set_facecolor('#0f0f23')
+    for ax in axes:
+        ax.set_facecolor('#0f0f23')
+        ax.tick_params(colors='white')
+        ax.title.set_color('white')
+        ax.xaxis.label.set_color('white')
+        ax.yaxis.label.set_color('white')
+        # Set spine colors
+        for spine in ax.spines.values():
+            spine.set_color('white')
+
+    # Configurar el layout
+    fig.tight_layout()
+
+    # Guardar la figura
+    fig.savefig(f'normality_plots_{ds_name}.{figext}', format=figext.lower(), dpi=150, bbox_inches='tight', facecolor=fig.get_facecolor())
+
+    return fig, axes
 def normality_test(ds, ds_name=""):
     """
     Test de normalidad Shapiro-Wilk con gráficos
@@ -36,21 +89,8 @@ def normality_test(ds, ds_name=""):
         stat, p_value = stats.shapiro(ds)
         
         # Crear gráficos con estilo simple
-        plt.figure(figsize=(12, 4))
-        
-        # QQ-plot
-        plt.subplot(1, 2, 1)
-        stats.probplot(ds, dist="norm", plot=plt)
-        plt.title("QQ-Plot")
-        
-        # Boxplot
-        plt.subplot(1, 2, 2)
-        plt.boxplot(ds)
-        plt.title("Boxplot")
-        
-        plt.tight_layout()
-        plt.savefig(f"normality_plots_{ds_name}.png", dpi=100, bbox_inches='tight')
-        plt.close()
+        fig, axes = plot_normality({'columna': ds}, ds_name, "png")
+        fig.close()
         
         return {
             "statistic": float(stat),
