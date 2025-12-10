@@ -1,0 +1,83 @@
+\documentclass[%
+tikz,
+convert={outfile=\jobname.png},
+preview=true,
+multi=false,
+varwidth=true,
+border=8px,
+]
+{standalone}
+
+\usepackage{amsmath}
+\usepackage{circuitikz}
+\usetikzlibrary{arrows, calc}
+
+
+\begin{document}
+\begin{figure}
+    \begin{center}
+        \begin{circuitikz}[scale=0.5, transform shape]
+            \draw                 (00.00,05.00)
+            to[R=$R_r$,   n=Rr]   (04.00,05.00)
+            to[L=$L_r$,   n=Lr]   (07.00,05.00)
+            to[short]             (12.00,05.00)
+            to[L,         n=L1]   (12.00,00.00)
+            to[short]             (00.00,00.00);
+            \draw                 (08.00,01.00)
+            to[R=$R_M$,   n=RM]   (08.00,04.00)
+            to[short]             (10.00,04.00)
+            to[L=$L_M$,   n=LM]   (10.00,01.00)
+            to[short]             (08.00,01.00);
+            \draw                 (09.00,05.00)
+            to[short]             (09.00,04.00);
+            \draw                 (09.00,01.00)
+            to[short]             (09.00,00.00);
+
+            \draw                 (13.00,05.00)
+            to[R=$R_s$,   n=Rs]   (17.00,05.00)
+            to[L=$L_s$,   n=Ls]   (20.00,05.00)
+            to[short]             (21.00,05.00)
+            to[Telmech, n=M]      (21.00,00.00)
+            to[short]             (13.00,00.00)
+            to[L]                 (13.00,05.00);
+
+            \draw[->, >=stealth, thick] (03.50,02.50) arc (180:-45:0.5) 
+            node[midway, above] {$I_1$};
+
+            \draw[->, >=stealth, thick] (16.50,02.50) arc (180:-45:0.5) 
+            node[midway, above] {$I_2$};
+
+            \node    at           (00.00,02.50) {$\begin{matrix}
+                                                      +    \\
+                                                      V_{in}\\
+                                                      -
+                                                  \end{matrix}$};
+
+            \node    at           (09.00,02.50) {$\begin{matrix}
+                                                      +    \\
+                                                      V_{L_r}\\
+                                                      -
+                                                  \end{matrix}$};
+
+            \node    at           (11.50,02.50) {$\begin{matrix}
+                                                      +    \\
+                                                      V_{M}\\
+                                                      -
+                                                  \end{matrix}$};
+
+            \node    at           (13.50,02.50) {$\begin{matrix}
+                                                      +    \\
+                                                      V_{2}\\
+                                                      -
+                                                  \end{matrix}$};
+
+            \node    at           (20.20,02.50) {$\begin{matrix}
+                                                      \omega   \\
+                                                               \\
+                                                      \theta_m
+                                                 \end{matrix}$};
+
+        \end{circuitikz}
+    \end{center}
+\end{figure}
+\end{document}
