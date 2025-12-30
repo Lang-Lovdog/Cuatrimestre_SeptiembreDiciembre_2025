@@ -1,0 +1,130 @@
+%! TEX TS-program = xelatex
+% MarquezSalazarBrandon-Interpolaciones.tex - MAIN FILE
+
+\documentclass[12pt, a4paper]{article}
+
+% ==================== CONFIGURACIÓN BÁSICA ====================
+\usepackage{geometry}
+\geometry{
+    margin=2.5cm,
+    headheight=14.5pt,
+    includeheadfoot
+}
+
+\usepackage{polyglossia}
+\setmainlanguage{spanish}
+
+% ==================== FUENTES ====================
+\usepackage{fontspec}
+\setmainfont{QTBookmann}
+\setmonofont{VictorMono Nerd Font}
+
+% ==================== PAQUETES ESENCIALES ====================
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{shapes, arrows, positioning, matrix, calc}
+
+% ==================== FORMATO DEL DOCUMENTO ====================
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\textsc{Brandon Márquez Salazar}}
+\lhead{\textsc{Interpolación Polinomial Bayer}}
+\cfoot{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\usepackage{titlesec}
+\titleformat{\section}{\normalfont\Large\bfseries\scshape}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries\itshape}{\thesubsubsection}{1em}{}
+
+% ==================== LISTADOS Y CÓDIGO ====================
+\usepackage{listings}
+\usepackage{lstautogobble}
+
+% Configuración para incrustar archivos de código
+\lstset{
+    basicstyle=\ttfamily\small,
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    frame=single,
+    breaklines=true,
+    captionpos=b,
+    autogobble=true,
+    showstringspaces=false,
+    tabsize=2
+}
+
+% Colores para los listados
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2
+}
+\lstset{style=mystyle}
+
+% ==================== HIPERVÍNCULOS (ÚLTIMO) ====================
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+    pdftitle={Interpolación Polinomial Bayer - Brandon Márquez Salazar},
+    pdfauthor={Brandon Márquez Salazar}
+}
+\usepackage{float}
+
+\begin{document}
+
+% ==================== PORTADA ====================
+\input{portada.tex}
+
+% ==================== CONTENIDO PRINCIPAL ====================
+\input{introduccion.tex}
+\input{metodos.tex}
+\input{resultados.tex}
+\input{discusion.tex}
+\input{conclusion.tex}
+
+% ==================== APÉNDICE: CÓDIGO ====================
+\appendix
+\section{Códigos Fuente}
+
+Esta sección contiene los archivos de código implementados para este proyecto. 
+Cada archivo puede descargarse haciendo clic en el enlace correspondiente.
+
+\begin{itemize}
+    \item \href{run:code/bicuadrada.m}{\texttt{bicuadrada.m}} - Implementación de interpolación bicuadrada
+    \item \href{run:code/bicubica.m}{\texttt{bicubica.m}} - Implementación de interpolación bicúbica
+    \item \href{run:code/comparacion.m}{\texttt{comparacion.m}} - Script de comparación de métodos
+    \item \href{run:code/visualizacion.m}{\texttt{visualizacion.m}} - Visualización de resultados
+\end{itemize}
+
+\subsection{Implementación en MATLAB}
+
+\lstinputlisting[language=Matlab, caption=Interpolación Bicuadrada (bicuadrada.m)]{./code/bicua_interp.m}
+
+\lstinputlisting[language=Matlab, caption=Interpolación Bicúbica (bicubica.m)]{./code/bicub_interp.m}
+
+\end{document}

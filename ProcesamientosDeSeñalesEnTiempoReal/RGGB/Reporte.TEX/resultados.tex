@@ -1,0 +1,47 @@
+% resultados.tex
+\section{Resultados}\label{sec:resultados}
+
+\subsection{Implementación Práctica}
+
+Los algoritmos fueron implementados en MATLAB y probados con imágenes sintéticas y reales. 
+Las implementaciones están disponibles en el apéndice de este documento.
+
+\subsection{Complejidad Computacional}
+
+\begin{table}[h]
+\centering
+\caption{Comparación de complejidad de métodos}
+\begin{tabular}{lccc}
+\hline
+\textbf{Método} & \textbf{Operaciones por pixel} & \textbf{Memoria} & \textbf{Tiempo relativo} \\
+\hline
+Lineal & 2-4 & Baja & 1.0× \\
+Bicuadrada & 8-12 & Media & 2.5× \\
+Bicúbica & 16-24 & Alta & 4.0× \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Calidad de Interpolación}
+
+La evaluación de calidad mostró que la interpolación bicúbica proporciona los mejores resultados visuales, seguida por la bicuadrada y finalmente la lineal. La interpolación bicúbica preserva mejor los bordes y detalles finos, mientras que la lineal tiende a producir artefactos de aliasing en regiones de alto contraste. La bicuadrada ofrece un compromiso aceptable entre calidad y complejidad computacional.
+
+\subsection{Problemas en Bordes}
+
+La interpolación en los bordes de la imagen presenta desafíos particulares, ya que no existen suficientes vecinos para aplicar los métodos estándar. Se requieren técnicas especiales como extrapolación o espejado para manejar estas regiones correctamente. Todos los métodos evaluados requieren tratamiento especial en los bordes, siendo más crítico en los métodos de mayor orden que utilizan vecindarios más grandes.
+
+\subsection{Vecindarios Utilizados}
+
+\begin{table}[h]
+\centering
+\caption{Configuraciones de vecindario para interpolación}
+\begin{tabular}{lp{3cm}p{3cm}p{3cm}}
+\hline
+\textbf{Método} & \textbf{Patrón 1D} & \textbf{Tamaño} & \textbf{Puntos utilizados} \\
+\hline
+Lineal & [P₁ ? P₂] & 3×1 & 2 \\
+Bicuadrada & [P₁ P₂ ? P₃ P₄] & 5×1 & 3 \\
+Bicúbica & [P₁ P₂ P₃ ? P₄ P₅ P₆] & 7×1 & 4 \\
+\hline
+\end{tabular}
+\end{table}

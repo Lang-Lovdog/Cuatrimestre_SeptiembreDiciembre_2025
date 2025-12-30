@@ -1,0 +1,36 @@
+% introduccion.tex
+\section{Introducción}
+
+\subsection{Contexto del Problema}
+Los sensores de imagen en cámaras digitales utilizan filtros de color para capturar información cromática. 
+El patrón Bayer, desarrollado por Bryce Bayer en 1976, es el arreglo más común, donde cada fotosito del sensor 
+captura únicamente un canal de color (rojo, verde o azul).
+
+\subsection{Problema de Interpolación}
+Dada una matriz 2×2 del patrón Bayer:
+
+\[
+\begin{bmatrix}
+R & G \\
+G & B
+\end{bmatrix}
+\]
+
+Es necesario estimar los valores faltantes en cada posición para reconstruir tres canales completos (RGB) 
+con la misma resolución espacial. Este proceso se denomina \textbf{demosaicing} o interpolación de Bayer.
+
+\subsection{Objetivos del Estudio}
+\begin{enumerate}
+    \item Implementar algoritmos de interpolación bicuadrada para el patrón Bayer RGGB
+    \item Implementar algoritmos de interpolación bicúbica para el patrón Bayer RGGB
+    \item Comparar los resultados con métodos de interpolación lineal tradicional
+    \item Analizar la complejidad computacional de cada método
+    \item Visualizar los procesos mediante diagramas y gráficos explicativos
+    \item Proporcionar implementaciones prácticas en MATLAB para uso educativo
+\end{enumerate}
+
+\subsection{Organización del Documento}
+Este documento se estructura de la siguiente manera: la Sección \ref{sec:metodos} describe los métodos 
+matemáticos utilizados; la Sección \ref{sec:resultados} presenta los resultados obtenidos; la Sección 
+\ref{sec:discusion} analiza los hallazgos; y finalmente, la Sección \ref{sec:conclusion} ofrece conclusiones 
+y trabajo futuro. Los archivos de código fuente se encuentran en el Apéndice.

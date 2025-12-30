@@ -1,0 +1,49 @@
+% discusion.tex
+\section{Discusión}\label{sec:discusion}
+
+\subsection{Comparación de Métodos}
+
+Los tres métodos de interpolación presentan diferentes compromisos entre calidad y complejidad:
+
+\subsubsection{Interpolación Lineal}
+\begin{itemize}
+    \item \textbf{Ventajas:} Simplicidad computacional, baja latencia, implementación trivial
+    \item \textbf{Desventajas:} Artefactos de aliasing en bordes, pérdida de detalle fino
+    \item \textbf{Aplicaciones:} Sistemas en tiempo real con recursos limitados
+\end{itemize}
+
+\subsubsection{Interpolación Bicuadrada}
+\begin{itemize}
+    \item \textbf{Ventajas:} Mejor calidad que lineal, suavizado moderado, complejidad aceptable
+    \item \textbf{Desventajas:} Puede suavizar en exceso, requiere vecindario de 5 puntos
+    \item \textbf{Aplicaciones:} Fotografía de consumo, video de calidad media
+\end{itemize}
+
+\subsubsection{Interpolación Bicúbica}
+\begin{itemize}
+    \item \textbf{Ventajas:} Alta calidad, preservación de bordes, resultados visualmente superiores
+    \item \textbf{Desventajas:} Alta complejidad computacional, mayor latencia
+    \item \textbf{Aplicaciones:} Fotografía profesional, procesamiento offline, aplicaciones médicas
+\end{itemize}
+
+\subsection{Consideraciones Prácticas}
+
+La selección del método de interpolación debe considerar tanto los requisitos de calidad como las limitaciones computacionales del sistema. Para aplicaciones en tiempo real con recursos limitados, la interpolación lineal puede ser suficiente. En sistemas donde la calidad visual es prioritaria, los métodos bicuadrados o bicúbicos son preferibles, aunque requieren mayor capacidad de procesamiento.
+
+\subsection{Limitaciones y Mejoras}
+
+\subsubsection{Limitaciones Identificadas}
+\begin{enumerate}
+    \item \textbf{Artefactos de color:} Aparecen en regiones de alto contraste
+    \item \textbf{Pérdida de resolución:} La interpolación nunca recupera información perdida
+    \item \textbf{Dependencia del patrón:} Los resultados varían con diferentes patrones Bayer
+    \item \textbf{Complejidad en bordes:} Requieren tratamiento especial
+\end{enumerate}
+
+\subsubsection{Mejoras Posibles}
+\begin{itemize}
+    \item \textbf{Adaptabilidad:} Usar diferentes métodos según el contenido local
+    \item \textbf{Corrección de color:} Post-procesamiento para reducir artefactos
+    \item \textbf{Interpolación direccional:} Considerar la orientación de bordes
+    \item \textbf{Fusión de múltiples métodos:} Combinar ventajas de diferentes enfoques
+\end{itemize}

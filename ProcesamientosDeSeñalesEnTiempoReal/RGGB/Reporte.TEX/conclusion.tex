@@ -1,0 +1,68 @@
+% conclusion.tex
+\section{Conclusión}\label{sec:conclusion}
+
+\subsection{Conclusiones Principales}
+
+Este estudio implementó y comparó tres métodos de interpolación para el patrón Bayer RGGB:
+
+1. **Interpolación lineal:** El método más simple y rápido, adecuado para sistemas con recursos limitados.
+2. **Interpolación bicuadrada:** Ofrece un buen equilibrio entre calidad y complejidad computacional.
+3. **Interpolación bicúbica:** Proporciona la mejor calidad visual a costa de mayor complejidad computacional.
+
+Los resultados muestran que cada método tiene su ámbito de aplicación ideal, dependiendo de los requisitos de calidad y las restricciones computacionales del sistema.
+
+\subsection{Contribuciones del Trabajo}
+
+\begin{enumerate}
+    \item \textbf{Implementación educativa:} Código MATLAB documentado y modular
+    \item \textbf{Análisis comparativo:} Evaluación sistemática de métodos polinomiales
+    \item \textbf{Visualización didáctica:} Diagramas explicativos del proceso matemático
+    \item \textbf{Documentación completa:} Explicación paso a paso de algoritmos
+\end{enumerate}
+
+\subsection{Recomendaciones de Uso}
+
+\begin{table}[h]
+\centering
+\caption{Guía de selección de método de interpolación}
+\begin{tabular}{p{4cm}p{6cm}}
+\hline
+\textbf{Escenario de aplicación} & \textbf{Método recomendado} \\
+\hline
+Sistemas embebidos en tiempo real & Lineal \\
+Fotografía de consumo & Bicuadrada \\
+Video de alta calidad & Bicuadrada adaptativa \\
+Fotografía profesional & Bicúbica \\
+Procesamiento médico/científico & Bicúbica con post-procesamiento \\
+Prototipado rápido & Lineal o Bicuadrada \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Trabajo Futuro}
+
+\begin{itemize}
+    \item \textbf{Interpolación adaptativa:} Métodos que ajustan parámetros según contenido local
+    \item \textbf{Aprendizaje automático:} Redes neuronales para demosaicing
+    \item \textbf{Optimización hardware:} Implementación en FPGA/GPU
+    \item \textbf{Patrones alternativos:} Extensiones a X-Trans y otros patrones
+    \item \textbf{Corrección de artefactos:} Post-procesamiento para reducir aliasing
+    \item \textbf{Benchmarking extensivo:} Comparación con métodos comerciales
+\end{itemize}
+
+\subsection{Consideraciones Finales}
+
+La selección del método de interpolación debe basarse en un análisis cuidadoso de los requisitos 
+de la aplicación específica, considerando:
+
+\begin{itemize}
+    \item Restricciones computacionales y de tiempo
+    \item Calidad visual requerida
+    \item Características del contenido de la imagen
+    \item Recursos hardware disponibles
+    \item Costo de implementación y mantenimiento
+\end{itemize}
+
+Los métodos presentados en este trabajo proporcionan una base sólida para la implementación 
+de sistemas de procesamiento de imágenes que requieren interpolación de patrón Bayer, con 
+diferentes niveles de compromiso entre calidad y complejidad.

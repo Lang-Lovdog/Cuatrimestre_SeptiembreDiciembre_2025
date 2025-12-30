@@ -1,0 +1,122 @@
+% metodos.tex
+\section{Métodos}\label{sec:metodos}
+
+\subsection{Patrón Bayer RGGB}
+
+El patrón Bayer RGGB organiza los filtros de color en una matriz donde:
+\begin{itemize}
+    \item Las filas pares comienzan con rojo (R) y verde (G) alternados
+    \item Las filas impares comienzan con verde (G) y azul (B) alternados
+\end{itemize}
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[scale=0.8]
+    % Cuadrícula 4x4
+    \draw[gray!30, very thin] (0,0) grid (4,4);
+    \draw[black, thick] (0,0) rectangle (4,4);
+    
+    % Fila 1: R G R G
+    \fill[red] (0,3) rectangle (1,4);
+    \fill[green!70!black] (1,3) rectangle (2,4);
+    \fill[red] (2,3) rectangle (3,4);
+    \fill[green!70!black] (3,3) rectangle (4,4);
+    
+    % Fila 2: G B G B
+    \fill[green!50!black] (0,2) rectangle (1,3);
+    \fill[blue] (1,2) rectangle (2,3);
+    \fill[green!50!black] (2,2) rectangle (3,3);
+    \fill[blue] (3,2) rectangle (4,3);
+    
+    % Fila 3: R G R G
+    \fill[red] (0,1) rectangle (1,2);
+    \fill[green!70!black] (1,1) rectangle (2,2);
+    \fill[red] (2,1) rectangle (3,2);
+    \fill[green!70!black] (3,1) rectangle (4,2);
+    
+    % Fila 4: G B G B
+    \fill[green!50!black] (0,0) rectangle (1,1);
+    \fill[blue] (1,0) rectangle (2,1);
+    \fill[green!50!black] (2,0) rectangle (3,1);
+    \fill[blue] (3,0) rectangle (4,1);
+    
+    % Etiquetas
+    \node[white] at (0.5,3.5) {R};
+    \node[white] at (1.5,3.5) {G};
+    \node[white] at (2.5,3.5) {R};
+    \node[white] at (3.5,3.5) {G};
+    
+    \node[white] at (0.5,2.5) {G};
+    \node[white] at (1.5,2.5) {B};
+    \node[white] at (2.5,2.5) {G};
+    \node[white] at (3.5,2.5) {B};
+    
+    \node[white] at (0.5,1.5) {R};
+    \node[white] at (1.5,1.5) {G};
+    \node[white] at (2.5,1.5) {R};
+    \node[white] at (3.5,1.5) {G};
+    
+    \node[white] at (0.5,0.5) {G};
+    \node[white] at (1.5,0.5) {B};
+    \node[white] at (2.5,0.5) {G};
+    \node[white] at (3.5,0.5) {B};
+    
+    \node[below] at (2,-0.3) {Patrón Bayer RGGB 4×4};
+\end{tikzpicture}
+\caption{Distribución de canales en patrón Bayer RGGB}
+\end{figure}
+
+\subsection{Interpolación Lineal}
+La interpolación lineal es el método más simple, usando el promedio de vecinos inmediatos:
+
+\[
+P_{\text{interp}} = \frac{\sum^{K}_{k=1} P_k}{K}
+\]
+
+\input{imagenes/demosaicado_lineal_tikz}
+
+\subsection{Interpolación Bicuadrada}
+Utiliza tres puntos para ajustar una parábola:
+
+\[
+P(x) = ax^2 + bx + c
+\]
+
+Para puntos equidistantes en $x \in \{-2, 0, 2\}$ (separados por 2 unidades, como en el patrón Bayer), la fórmula de interpolación para el punto intermedio en $x=1$ es:
+
+\[
+P(1) = \frac{3}{8}P(-2) + \frac{3}{4}P(0) - \frac{1}{8}P(2)
+\]
+
+En coordenadas de imagen, para el canal rojo en posición $(2k,j)$:
+
+\[
+R_{2k,j} = \frac{3}{8}R_{2k-2,j} + \frac{3}{4}R_{2k,j} - \frac{1}{8}R_{2k+2,j}
+\]
+
+\input{imagenes/demosaicado_bicuadrado_separacion_tikz}
+\input{imagenes/demosaicado_bicuadrado_tikz}
+
+\subsection{Interpolación Bicúbica}
+Utiliza cuatro puntos para ajustar un polinomio cúbico:
+
+\[
+P(x) = ax^3 + bx^2 + cx + d
+\]
+
+Con puntos en $x \in \{-2, 0, 2, 4\}$, usando el kernel cúbico de Catmull-Rom:
+
+\[
+P(1) = -\frac{1}{16}P(-2) + \frac{9}{16}P(0) + \frac{9}{16}P(2) - \frac{1}{16}P(4)
+\]
+
+Para el canal verde en posición $(2k+1,2\ell)$:
+
+\[
+G_{2k+1,2\ell} = -\frac{1}{16}G_{2k-3,2\ell} + \frac{9}{16}G_{2k-1,2\ell} + \frac{9}{16}G_{2k+3,2\ell} - \frac{1}{16}G_{2k+5,2\ell}
+\]
+
+\input{imagenes/demosaicado_bicubico_tikz}
+
+\subsection{Proceso Bidimensional}
+La interpolación 2D se realiza en dos pasos independientes: primero se interpola verticalmente y luego horizontalmente (o viceversa). Este enfoque separable reduce la complejidad computacional respecto a una interpolación 2D directa.
