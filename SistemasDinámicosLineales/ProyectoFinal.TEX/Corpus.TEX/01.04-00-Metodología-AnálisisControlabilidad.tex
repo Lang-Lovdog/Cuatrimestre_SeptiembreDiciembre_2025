@@ -1,0 +1,197 @@
+%!TeX root = ../main.tex
+
+\subsection{Análisis de controlabilidad del sistema}
+La matriz de controlabilidad se define de la forma
+\begin{equation}
+  \mathcal{C} = \begin{bmatrix}
+    \mathbf{B} & \mathbf{A}\mathbf{B} & \cdots & \mathbf{A}^{n-1}\mathbf{B}
+  \end{bmatrix} 
+\end{equation}
+
+Nuestro sistema corresponde a un orden 3, por lo tanto, su matriz de controlabilidad
+está dada por la expresión \eqref{eq:DefiniciónMatrizControlabilidadMotor}
+
+\begin{equation}
+  \mathcal{C} = \begin{bmatrix}
+    \mathbf{B} & \mathbf{A}\mathbf{B} & \mathbf{A}^{2}\mathbf{B}
+  \end{bmatrix} 
+  \label{eq:DefiniciónMatrizControlabilidadMotor}
+\end{equation}
+
+\begin{equation*}
+  \begin{aligned}
+    \mathbf{AB} &= 
+    \begin{bmatrix}
+      -\frac{R}{L}  & 0 & -\frac{K_e}{L} \\
+      0             & 0 &  1             \\
+      \frac{K_t}{J} & 0 & -\frac{B}{J}   \\
+    \end{bmatrix}
+    \begin{bmatrix}
+      \frac{1}{L} \\
+      0           \\
+      0           \\
+    \end{bmatrix} \\
+     &= 
+    \begin{bmatrix}
+      -\frac{R}{L^2}  \\
+      0               \\
+      \frac{K_t}{JL}  \\
+    \end{bmatrix}
+  \end{aligned}
+\end{equation*}
+
+\begin{equation*}
+  \begin{aligned}
+    &\mathbf{A^2B} =\\
+    &\begin{bmatrix}
+       \tfrac{R^2}{L^2} - \tfrac{K_e K_t}{JL}                 & 0 & \tfrac{K_e}{L}\left(\tfrac{B}{J} + \tfrac{R}{L}\right) \\
+       \tfrac{K_t}{J}                                         & 0 & -\tfrac{B}{J}                                          \\
+      -\tfrac{K_t}{J}\left(\tfrac{R}{L} + \tfrac{B}{J}\right) & 0 & \tfrac{B^2}{J^2} - \tfrac{K_e K_t}{JL}
+    \end{bmatrix}
+    \begin{bmatrix}
+      \frac{1}{L} \\
+      0\\
+      0\\
+    \end{bmatrix} \\
+    &\mathbf{A^2B} =\\
+    &\begin{bmatrix}
+       \tfrac{R^2}{L^2} - \tfrac{K_e K_t}{JL}                 \\
+       \tfrac{K_t}{J}                                         \\
+      -\tfrac{K_t}{J}\left(\tfrac{R}{L} + \tfrac{B}{J}\right) \\
+    \end{bmatrix}
+  \end{aligned}
+\end{equation*}
+
+\begin{equation}
+  \mathcal{C} = 
+  \begin{bmatrix}
+    \tfrac{1}{L}     & -\tfrac{R}{L^2}  & \tfrac{R^2}{L^3} - \tfrac{K_e K_t}{JL^2}                  \\
+    0                & 0                & \tfrac{K_t}{JL}                                           \\
+    0                & \tfrac{K_t}{JL}  & -\tfrac{K_t}{JL}\left( \tfrac{R}{L} + \tfrac{B}{J} \right)
+  \end{bmatrix}
+  \label{eq:MatrizControlabilidadMotor}
+\end{equation}
+
+\subsubsection{Reducción de la matriz de controlabilidad}
+
+\begin{equation*}
+  \mathcal{C} = 
+  \begin{bmatrix}
+      \frac{1}{L} &  -\frac{R}{L^2}   &  \frac{R^2}{L^3}-\frac{K_e K_t}{JL^2}  \\
+      0           &   0               &  \frac{K_t}{JL}                        \\
+      0           &   \frac{K_t}{JL}  &  -\frac{K_t}{JL}\left(\frac{R}{L}+\frac{B}{J}\right) \\
+  \end{bmatrix}
+\end{equation*}
+
+\begin{equation*}
+  \begin{aligned}
+    &R_1\leftarrow L R_1\\
+    &\mathcal{C} = 
+    \begin{bmatrix}
+      1           &  -\frac{R}{L}     &  \frac{R^2}{L^2}-\frac{K_e K_t}{JL}    \\
+      0           &   0               &  \frac{K_t}{JL}                        \\
+      0           &   \frac{K_t}{JL}  &  -\frac{K_t}{JL}\left(\frac{R}{L}+\frac{B}{J}\right) \\
+    \end{bmatrix}
+  \end{aligned}
+\end{equation*}
+
+\begin{equation*}
+  \begin{aligned}
+    &R_2 \leftrightarrow R_3 \quad \text{(intercambio de filas)}\\
+    &\mathcal{C} = 
+    \begin{bmatrix}
+      1           &  -\frac{R}{L}     &  \frac{R^2}{L^2}-\frac{K_e K_t}{JL}    \\
+      0           &   \frac{K_t}{JL}  &  -\frac{K_t}{JL}\left(\frac{R}{L}+\frac{B}{J}\right) \\
+      0           &   0               &  \frac{K_t}{JL}                        \\
+    \end{bmatrix}
+  \end{aligned}
+\end{equation*}
+
+\begin{equation*}
+  \begin{aligned}
+    &R_2 \leftarrow \tfrac{JL}{K_t} R_2\\
+    &\mathcal{C} = 
+    \begin{bmatrix}
+      1           &  -\frac{R}{L}     &  \frac{R^2}{L^2}-\frac{K_e K_t}{JL}    \\
+      0           &   1               &  -\left(\frac{R}{L}+\frac{B}{J}\right) \\
+      0           &   0               &  \frac{K_t}{JL}                        \\
+    \end{bmatrix}
+  \end{aligned}
+\end{equation*}
+
+\begin{equation*}
+  \begin{aligned}
+    &R_3 \leftarrow \tfrac{JL}{K_t} R_3\\
+    &\mathcal{C} = 
+    \begin{bmatrix}
+      1           &  -\frac{R}{L}     &  \frac{R^2}{L^2}-\frac{K_e K_t}{JL}    \\
+      0           &   1               &  -\left(\frac{R}{L}+\frac{B}{J}\right) \\
+      0           &   0               &  1                                     \\
+    \end{bmatrix}
+  \end{aligned}
+\end{equation*}
+
+\begin{equation*}
+  \begin{aligned}
+    &R_2 \leftarrow R_2 + \left(\frac{R}{L}+\frac{B}{J}\right) R_3\\
+    &\mathcal{C} = 
+    \begin{bmatrix}
+      1           &  -\frac{R}{L}     &  \frac{R^2}{L^2}-\frac{K_e K_t}{JL}    \\
+      0           &   1               &  0                                     \\
+      0           &   0               &  1                                     \\
+    \end{bmatrix}
+  \end{aligned}
+\end{equation*}
+
+\begin{equation*}
+  \begin{aligned}
+    &R_1 \leftarrow R_1 + \tfrac{R}{L} R_2\\
+    &\mathcal{C} = 
+    \begin{bmatrix}
+      1           &   0               &  \frac{R^2}{L^2}-\frac{K_e K_t}{JL}    \\
+      0           &   1               &  0                                     \\
+      0           &   0               &  1                                     \\
+    \end{bmatrix}
+  \end{aligned}
+\end{equation*}
+
+\begin{equation*}
+  \begin{aligned}
+    &R_1 \leftarrow R_1 + \left(\tfrac{K_t K_e}{JL}-\tfrac{R^2}{L^2}\right) R_3\\
+    &\mathcal{C} = 
+    \begin{bmatrix}
+      1           &   0               &  0                                     \\
+      0           &   1               &  0                                     \\
+      0           &   0               &  1                                     \\
+    \end{bmatrix}
+  \end{aligned}
+\end{equation*}
+
+Debido a que el rango de la matriz $\mathcal{C}$ es completo, se puede afirmar que el sistema es controlable.
+
+\subsubsection{Matriz de controlabilidad con valores experimentales}
+
+Con los parámetros experimentales: $R = 2.1\,\Omega$, $L = 0.005\,\text{H}$,
+$K_t = 0.12\,\text{N·m/A}$, $K_e = 0.12\,\text{V/(rad/s)}$, $J = 0.0001\,\text{kg·m}^2$
+y $B = 1\times10^{-5}\,\text{N·m·s/rad}$, la matriz de controlabilidad numérica es:
+
+\begin{equation*}
+  \begin{aligned}
+    &\mathcal{C}_{\text{num}} = \\
+    &\begin{bmatrix}
+      \tfrac{1}{5\mathrm{e}{-3}} & -\tfrac{2.1}{(5\mathrm{e}{-3})^2} & \tfrac{(2.1)^2}{(5\mathrm{e}{-3})^3} - \tfrac{(0.12)^2}{1\mathrm{e}{-4} \cdot (5\mathrm{e}{-3})^2} \\[2pt]
+      0 & 0 & \tfrac{0.12}{1\mathrm{e}{-4} \cdot 5\mathrm{e}{-3}} \\[2pt]
+      0 & \tfrac{0.12}{1\mathrm{e}{-4} \cdot 5\mathrm{e}{-3}} & -\tfrac{0.12}{1\mathrm{e}{-4} \cdot 5\mathrm{e}{-3}}\left( \tfrac{2.1}{5\mathrm{e}{-3}} + \tfrac{1\mathrm{e}{-5}}{1\mathrm{e}{-4}} \right)
+    \end{bmatrix}
+  \end{aligned}
+\end{equation*}
+
+\begin{equation}
+\mathcal{C}_{\text{num}} = 
+\begin{bmatrix}
+    2.0\mathrm{e}^{2} & -8.4\mathrm{e}^{4} & 2.95\mathrm{e}^{7} \\[2pt]
+    0 & 0 & 2.4\mathrm{e}^{5} \\[2pt]
+    0 & 2.4\mathrm{e}^{5} & -1.01\mathrm{e}^{8}
+\end{bmatrix}
+\label{eq:MatrizControlabilidadMotorValoresExperimentales}
+\end{equation}

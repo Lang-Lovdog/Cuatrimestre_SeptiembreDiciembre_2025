@@ -1,0 +1,206 @@
+%! TeX root = ../main.tex
+
+\subsection{Análisis de observabilidad del sistema}
+La matriz de observabilidad de un sistema se define de la forma
+
+\begin{equation}
+  \mathcal{O} = \begin{bmatrix}
+    \mathbf{C} \\ \mathbf{C}\mathbf{A} \\ \vdots \\ \mathbf{C}\mathbf{A}^{n-1}
+  \end{bmatrix} 
+\end{equation}
+
+Debido a que el sistema corresponde al orden 3, su matriz de observabilidad
+está dada por la expresión \eqref{eq:MatrizObservabilidad}
+
+\begin{equation}
+  \mathcal{O} = \begin{bmatrix}
+    \mathbf{C} \\ \mathbf{C}\mathbf{A} \\ \mathbf{C}\mathbf{A}^{2}
+  \end{bmatrix} 
+  \label{eq:MatrizObservabilidad}
+\end{equation}
+
+\begin{equation*}
+  \begin{aligned}
+    \mathbf{CA} &= 
+    \begin{bmatrix}
+      0 &
+      0 &
+      1 \\
+    \end{bmatrix}
+    \begin{bmatrix}
+      -\frac{R}{L}  & 0 & -\frac{K_e}{L} \\
+      0             & 0 &  1             \\
+      \frac{K_t}{J} & 0 & -\frac{B}{J}   \\
+    \end{bmatrix} \\
+     &= 
+    \begin{bmatrix}
+      \frac{K_t}{J} & 0 & -\frac{B}{J}   \\
+    \end{bmatrix}
+  \end{aligned}
+\end{equation*}
+
+\begin{equation*}
+  \begin{aligned}
+    \mathbf{CA^2} &=
+    \begin{bmatrix}
+      0 & 0 & 1
+    \end{bmatrix}
+    \begin{bmatrix}
+       \tfrac{R^2}{L^2} - \tfrac{K_e K_t}{J L}  & 0 &  \tfrac{K_e}{L}\left( \tfrac{R}{L} + \tfrac{B}{J} \right) \\[4pt]
+       \tfrac{K_t}{J}                           & 0 & -\tfrac{B}{J}                                             \\[4pt]
+       -\tfrac{K_t}{J}\left( \tfrac{R}{L} + \tfrac{B}{J} \right) & 0 & \tfrac{B^2}{J^2} - \tfrac{K_e K_t}{J L}
+    \end{bmatrix} \\
+     &=
+    \begin{bmatrix}
+       -\tfrac{K_t}{J}\left( \tfrac{R}{L} + \tfrac{B}{J} \right) & 0 & \tfrac{B^2}{J^2} - \tfrac{K_e K_t}{J L}
+    \end{bmatrix}
+  \end{aligned}
+\end{equation*}
+
+\begin{equation}
+  \mathcal{O} = 
+  \begin{bmatrix}
+    0 & 0 & 1 \\[4pt]
+    \tfrac{K_t}{J} & 0 & -\tfrac{B}{J} \\[4pt]
+    -\tfrac{K_t}{J}\left( \tfrac{R}{L} + \tfrac{B}{J} \right) & 0 & \tfrac{B^2}{J^2} - \tfrac{K_e K_t}{J L}
+  \end{bmatrix}
+  \label{eq:MatrizObservabilidadMotor}
+\end{equation}
+
+\subsubsection{Reducción de la matriz de observabilidad}
+
+\begin{equation*}
+  \mathcal{O} = 
+    \begin{bmatrix}
+    0                    & 0 & 1 \\
+    \tfrac{K_t}{J}       & 0 & -\tfrac{B}{J} \\
+    -\tfrac{K_t}{J}\left( \tfrac{R}{L} + \tfrac{B}{J} \right) & 0 & \tfrac{B^2}{J^2} - \tfrac{K_e K_t}{JL} \\
+    \end{bmatrix}
+\end{equation*}
+
+\begin{equation*}
+  \begin{aligned}
+    &R_1 \rightleftarrows R_3\\
+    &\mathcal{O} = 
+    \begin{bmatrix}
+    -\tfrac{K_t}{J}\left( \tfrac{R}{L} + \tfrac{B}{J} \right) & 0 & \tfrac{B^2}{J^2} - \tfrac{K_e K_t}{JL} \\
+    \tfrac{K_t}{J}       & 0 & -\tfrac{B}{J} \\
+    0                    & 0 & 1 \\
+    \end{bmatrix}
+  \end{aligned}
+\end{equation*}
+
+\begin{equation*}
+  \begin{aligned}
+    &C_2 \rightleftarrows C_3\\
+    &\mathcal{O} = 
+    \begin{bmatrix}
+    -\tfrac{K_t}{J}\left( \tfrac{R}{L} + \tfrac{B}{J} \right) & \tfrac{B^2}{J^2} - \tfrac{K_e K_t}{JL} & 0 \\
+    \tfrac{K_t}{J}       & -\tfrac{B}{J} & 0 \\
+    0                    & 1 & 0 \\
+    \end{bmatrix}
+  \end{aligned}
+\end{equation*}
+
+\begin{equation*}
+  \begin{aligned}
+    &R_2\leftarrow J R_2\\
+    &\mathcal{O} = 
+    \begin{bmatrix}
+    -\tfrac{K_t}{J}\left( \tfrac{R}{L} + \tfrac{B}{J} \right) & \tfrac{B^2}{J^2} - \tfrac{K_e K_t}{JL} & 0 \\
+    K_t                  & -B                     & 0 \\
+    0                    &  1                     & 0 \\
+    \end{bmatrix}
+  \end{aligned}
+\end{equation*}
+
+\begin{equation*}
+  \begin{aligned}
+    &R_1\leftarrow JL R_1\\
+    &\mathcal{O} = 
+    \begin{bmatrix}
+    -K_t\left(R + \tfrac{LB}{J}\right) & \tfrac{LB^2}{J} - K_e K_t & 0 \\
+    K_t                  & -B                     & 0 \\
+    0                    &  1                     & 0 \\
+    \end{bmatrix}
+  \end{aligned}
+\end{equation*}
+
+\begin{equation*}
+  \begin{aligned}
+    &R_2\leftarrow \tfrac{1}{K_t} R_2\\
+    &\mathcal{O} = 
+    \begin{bmatrix}
+    -K_t\left(R + \tfrac{LB}{J}\right) & \tfrac{LB^2}{J} - K_e K_t & 0 \\
+    1                    & -\tfrac{B}{K_t}         & 0 \\
+    0                    &  1                     & 0 \\
+    \end{bmatrix}
+  \end{aligned}
+\end{equation*}
+
+\begin{equation*}
+  \begin{aligned}
+    &R_1\leftarrow \tfrac{1}{K_t} R_1\\
+    &\mathcal{O} = 
+    \begin{bmatrix}
+      -\left(R + \tfrac{LB}{J}\right) & \tfrac{LB^2}{JK_t} - K_e  & 0 \\
+    1                    & -\tfrac{B}{K_t}         & 0 \\
+    0                    &  1                     & 0 \\
+    \end{bmatrix}
+  \end{aligned}
+\end{equation*}
+
+\begin{equation*}
+  \begin{aligned}
+    &R_1\leftarrow R_1 - \left(\tfrac{LB^2}{JK_t} - K_e\right) R_3\\
+    &R_2\leftarrow R_2 + \tfrac{B}{K_t} R_3\\
+    &\mathcal{O} = 
+    \begin{bmatrix}
+      -\left(R + \tfrac{LB}{J}\right) & 0                     & 0 \\
+    1                    &  0                     & 0 \\
+    0                    &  1                     & 0 \\
+    \end{bmatrix}
+  \end{aligned}
+\end{equation*}
+
+\begin{equation*}
+  \begin{aligned}
+    &R_1\leftarrow -\tfrac{1}{R + \tfrac{LB}{J}} R_1\\
+    &\mathcal{O} = 
+    \begin{bmatrix}
+    1                    &  0                     & 0 \\
+    1                    &  0                     & 0 \\
+    0                    &  1                     & 0 \\
+    \end{bmatrix}
+  \end{aligned}
+\end{equation*}
+
+En este sistema, es posible observar que la matriz \eqref{eq:MatrizObservabilidadMotor}
+no es de rango completo. Una explicación plausible se halla en la consideración de la
+posición angular como variable de estado, la cual, al no estar relacionada, en este
+modelo con las demás variables, no es observable.
+
+\subsubsection{Matriz de observabilidad con valores experimentales}
+
+Utilizando los mismos valores experimentales: $R = 2.1\ \Omega$, $L = 0.005\ \text{H}$, $K_t = 0.12\ \text{N·m/A}$, $K_e = 0.12\ \text{V/(rad/s)}$, $J = 0.0001\ \text{kg·m}^2$ y $B = 1\times10^{-5}\ \text{N·m·s/rad}$, la matriz de observabilidad numérica es:
+
+\begin{equation*}
+  \begin{aligned}
+    &\mathcal{O}_{\text{num}} = \\
+    &\begin{bmatrix}
+      0 & 0 & 1 \\[2pt]
+      \tfrac{0.12}{1\mathrm{e}{-4}} & 0 & -\tfrac{1\mathrm{e}{-5}}{1\mathrm{e}{-4}} \\[2pt]
+      -\tfrac{0.12}{1\mathrm{e}{-4}}\left( \tfrac{2.1}{5\mathrm{e}{-3}} + \tfrac{1\mathrm{e}{-5}}{1\mathrm{e}{-4}} \right) & 0 & \tfrac{(1\mathrm{e}{-5})^2}{(1\mathrm{e}{-4})^2} - \tfrac{(0.12)^2}{1\mathrm{e}{-4} \cdot 5\mathrm{e}{-3}}
+    \end{bmatrix}
+  \end{aligned}
+\end{equation*}
+
+\begin{equation}
+\mathcal{O}_{\text{num}} = 
+\begin{bmatrix}
+    0 & 0 & 1 \\[2pt]
+    1.2\mathrm{e}^{3} & 0 & -1.0\mathrm{e}^{-1} \\[2pt]
+    -5.04\mathrm{e}^{5} & 0 & -2.88\mathrm{e}^{4}
+\end{bmatrix}
+\label{eq:MatrizObservabilidadMotorValoresExperimentales}
+\end{equation}

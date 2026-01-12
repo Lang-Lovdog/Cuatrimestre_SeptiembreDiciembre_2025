@@ -1,0 +1,517 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{apa/apasortcite//global/global/global}
+    \entry{StringTheoryAndMTheory}{book}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=3aabae218a792d13e471d57d8417deb7}{%
+           family={Becker},
+           familyi={B\bibinitperiod},
+           given={Katrin},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f75c2262353bee26e837262427809c26}{%
+           family={Becker},
+           familyi={B\bibinitperiod},
+           given={Melanie},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a21ee9458cd511176c2a40339112f381}{%
+           family={Schwarz},
+           familyi={S\bibinitperiod},
+           given={John\bibnamedelima H},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Cambridge, England}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{7218e268ee896dd1adc4d218b4962c24}
+      \strng{fullhash}{69792e37132899b90681314a3aef69d7}
+      \strng{fullhashraw}{69792e37132899b90681314a3aef69d7}
+      \strng{bibnamehash}{69792e37132899b90681314a3aef69d7}
+      \strng{authorbibnamehash}{69792e37132899b90681314a3aef69d7}
+      \strng{authornamehash}{7218e268ee896dd1adc4d218b4962c24}
+      \strng{authorfullhash}{69792e37132899b90681314a3aef69d7}
+      \strng{authorfullhashraw}{69792e37132899b90681314a3aef69d7}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{String theory and M-theory}
+      \field{year}{2006}
+    \endentry
+    \entry{Damian2022}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=5bcc50dbe015eb3962ca10513f9502b0}{%
+           family={Damian},
+           familyi={D\bibinitperiod},
+           given={Cesar},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0b668ceafd82e54e4897c8a9369694e8}{%
+           family={Loaiza-Brito},
+           familyi={L\bibinithyphendelim B\bibinitperiod},
+           given={Oscar},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{e7ae1a28f538843915d17a89da94bb18}
+      \strng{fullhash}{e7ae1a28f538843915d17a89da94bb18}
+      \strng{fullhashraw}{e7ae1a28f538843915d17a89da94bb18}
+      \strng{bibnamehash}{e7ae1a28f538843915d17a89da94bb18}
+      \strng{authorbibnamehash}{e7ae1a28f538843915d17a89da94bb18}
+      \strng{authornamehash}{e7ae1a28f538843915d17a89da94bb18}
+      \strng{authorfullhash}{e7ae1a28f538843915d17a89da94bb18}
+      \strng{authorfullhashraw}{e7ae1a28f538843915d17a89da94bb18}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1434-6052}
+      \field{journaltitle}{The European Physical Journal C}
+      \field{number}{12}
+      \field{title}{Metastable vacua from torsion and machine learning}
+      \field{volume}{82}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.1140/epjc/s10052-022-11118-x
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1140/epjc/s10052-022-11118-x
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1140/epjc/s10052-022-11118-x
+      \endverb
+    \endentry
+    \entry{Edelstein2016-vh}{book}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=b6d46af3b900b25037e63251ab200bc3}{%
+           family={Edelstein},
+           familyi={E\bibinitperiod},
+           given={José},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=01e6d7b74f74dae1672981d7296070e0}{%
+           family={Giribet},
+           familyi={G\bibinitperiod},
+           given={Gastón},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {es}%
+      }
+      \strng{namehash}{b5e95b5f4217623fbb1cde1772d340b9}
+      \strng{fullhash}{b5e95b5f4217623fbb1cde1772d340b9}
+      \strng{fullhashraw}{b5e95b5f4217623fbb1cde1772d340b9}
+      \strng{bibnamehash}{b5e95b5f4217623fbb1cde1772d340b9}
+      \strng{authorbibnamehash}{b5e95b5f4217623fbb1cde1772d340b9}
+      \strng{authornamehash}{b5e95b5f4217623fbb1cde1772d340b9}
+      \strng{authorfullhash}{b5e95b5f4217623fbb1cde1772d340b9}
+      \strng{authorfullhashraw}{b5e95b5f4217623fbb1cde1772d340b9}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Cuerdas y supercuerdas: la naturaleza microscópica de las partículas y del espacio-tiempo}
+      \field{year}{2016}
+      \true{nocite}
+    \endentry
+    \entry{Greene2010-mz}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=abc5498e7b8c14f8fa47f1c9e1c55d93}{%
+           family={Greene},
+           familyi={G\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York, NY}%
+      }
+      \list{publisher}{1}{%
+        {WW Norton}%
+      }
+      \strng{namehash}{abc5498e7b8c14f8fa47f1c9e1c55d93}
+      \strng{fullhash}{abc5498e7b8c14f8fa47f1c9e1c55d93}
+      \strng{fullhashraw}{abc5498e7b8c14f8fa47f1c9e1c55d93}
+      \strng{bibnamehash}{abc5498e7b8c14f8fa47f1c9e1c55d93}
+      \strng{authorbibnamehash}{abc5498e7b8c14f8fa47f1c9e1c55d93}
+      \strng{authornamehash}{abc5498e7b8c14f8fa47f1c9e1c55d93}
+      \strng{authorfullhash}{abc5498e7b8c14f8fa47f1c9e1c55d93}
+      \strng{authorfullhashraw}{abc5498e7b8c14f8fa47f1c9e1c55d93}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The elegant universe}
+      \field{year}{2010}
+      \true{nocite}
+    \endentry
+    \entry{Gubser2010-ee}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5b14c1c09c757e446a23c262de9d95c0}{%
+           family={Gubser},
+           familyi={G\bibinitperiod},
+           given={Steven\bibnamedelima S},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{location}{1}{%
+        {Princeton, NJ}%
+      }
+      \list{publisher}{1}{%
+        {Princeton University Press}%
+      }
+      \strng{namehash}{5b14c1c09c757e446a23c262de9d95c0}
+      \strng{fullhash}{5b14c1c09c757e446a23c262de9d95c0}
+      \strng{fullhashraw}{5b14c1c09c757e446a23c262de9d95c0}
+      \strng{bibnamehash}{5b14c1c09c757e446a23c262de9d95c0}
+      \strng{authorbibnamehash}{5b14c1c09c757e446a23c262de9d95c0}
+      \strng{authornamehash}{5b14c1c09c757e446a23c262de9d95c0}
+      \strng{authorfullhash}{5b14c1c09c757e446a23c262de9d95c0}
+      \strng{authorfullhashraw}{5b14c1c09c757e446a23c262de9d95c0}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{Science Essentials}
+      \field{title}{The little book of string theory}
+      \field{year}{2010}
+      \true{nocite}
+    \endentry
+    \entry{Jones2022-zj}{book}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=7ab44a0074d0daaca8f0710f9b0de611}{%
+           family={Jones},
+           familyi={J\bibinitperiod},
+           given={Andrew\bibnamedelima Zimmerman},
+           giveni={A\bibinitperiod\bibinitdelim Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8956465923d2a173ad7d0fe8d28c886a}{%
+           family={Sfondrini},
+           familyi={S\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {For Dummies}%
+      }
+      \strng{namehash}{88a2668058a7165e473beaf530246634}
+      \strng{fullhash}{88a2668058a7165e473beaf530246634}
+      \strng{fullhashraw}{88a2668058a7165e473beaf530246634}
+      \strng{bibnamehash}{88a2668058a7165e473beaf530246634}
+      \strng{authorbibnamehash}{88a2668058a7165e473beaf530246634}
+      \strng{authornamehash}{88a2668058a7165e473beaf530246634}
+      \strng{authorfullhash}{88a2668058a7165e473beaf530246634}
+      \strng{authorfullhashraw}{88a2668058a7165e473beaf530246634}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{title}{String theory for dummies}
+      \field{year}{2022}
+      \true{nocite}
+    \endentry
+  \enddatalist
+  \datalist[entry]{apa/global//global/global/global}
+    \entry{StringTheoryAndMTheory}{book}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=3aabae218a792d13e471d57d8417deb7}{%
+           family={Becker},
+           familyi={B\bibinitperiod},
+           given={Katrin},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f75c2262353bee26e837262427809c26}{%
+           family={Becker},
+           familyi={B\bibinitperiod},
+           given={Melanie},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a21ee9458cd511176c2a40339112f381}{%
+           family={Schwarz},
+           familyi={S\bibinitperiod},
+           given={John\bibnamedelima H},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Cambridge, England}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{7218e268ee896dd1adc4d218b4962c24}
+      \strng{fullhash}{69792e37132899b90681314a3aef69d7}
+      \strng{fullhashraw}{69792e37132899b90681314a3aef69d7}
+      \strng{bibnamehash}{69792e37132899b90681314a3aef69d7}
+      \strng{authorbibnamehash}{69792e37132899b90681314a3aef69d7}
+      \strng{authornamehash}{7218e268ee896dd1adc4d218b4962c24}
+      \strng{authorfullhash}{69792e37132899b90681314a3aef69d7}
+      \strng{authorfullhashraw}{69792e37132899b90681314a3aef69d7}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{String theory and M-theory}
+      \field{year}{2006}
+    \endentry
+    \entry{Damian2022}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=5bcc50dbe015eb3962ca10513f9502b0}{%
+           family={Damian},
+           familyi={D\bibinitperiod},
+           given={Cesar},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0b668ceafd82e54e4897c8a9369694e8}{%
+           family={Loaiza-Brito},
+           familyi={L\bibinithyphendelim B\bibinitperiod},
+           given={Oscar},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{e7ae1a28f538843915d17a89da94bb18}
+      \strng{fullhash}{e7ae1a28f538843915d17a89da94bb18}
+      \strng{fullhashraw}{e7ae1a28f538843915d17a89da94bb18}
+      \strng{bibnamehash}{e7ae1a28f538843915d17a89da94bb18}
+      \strng{authorbibnamehash}{e7ae1a28f538843915d17a89da94bb18}
+      \strng{authornamehash}{e7ae1a28f538843915d17a89da94bb18}
+      \strng{authorfullhash}{e7ae1a28f538843915d17a89da94bb18}
+      \strng{authorfullhashraw}{e7ae1a28f538843915d17a89da94bb18}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1434-6052}
+      \field{journaltitle}{The European Physical Journal C}
+      \field{number}{12}
+      \field{title}{Metastable vacua from torsion and machine learning}
+      \field{volume}{82}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.1140/epjc/s10052-022-11118-x
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1140/epjc/s10052-022-11118-x
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1140/epjc/s10052-022-11118-x
+      \endverb
+    \endentry
+    \entry{Edelstein2016-vh}{book}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=b6d46af3b900b25037e63251ab200bc3}{%
+           family={Edelstein},
+           familyi={E\bibinitperiod},
+           given={José},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=01e6d7b74f74dae1672981d7296070e0}{%
+           family={Giribet},
+           familyi={G\bibinitperiod},
+           given={Gastón},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {es}%
+      }
+      \strng{namehash}{b5e95b5f4217623fbb1cde1772d340b9}
+      \strng{fullhash}{b5e95b5f4217623fbb1cde1772d340b9}
+      \strng{fullhashraw}{b5e95b5f4217623fbb1cde1772d340b9}
+      \strng{bibnamehash}{b5e95b5f4217623fbb1cde1772d340b9}
+      \strng{authorbibnamehash}{b5e95b5f4217623fbb1cde1772d340b9}
+      \strng{authornamehash}{b5e95b5f4217623fbb1cde1772d340b9}
+      \strng{authorfullhash}{b5e95b5f4217623fbb1cde1772d340b9}
+      \strng{authorfullhashraw}{b5e95b5f4217623fbb1cde1772d340b9}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Cuerdas y supercuerdas: la naturaleza microscópica de las partículas y del espacio-tiempo}
+      \field{year}{2016}
+      \true{nocite}
+    \endentry
+    \entry{Greene2010-mz}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=abc5498e7b8c14f8fa47f1c9e1c55d93}{%
+           family={Greene},
+           familyi={G\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York, NY}%
+      }
+      \list{publisher}{1}{%
+        {WW Norton}%
+      }
+      \strng{namehash}{abc5498e7b8c14f8fa47f1c9e1c55d93}
+      \strng{fullhash}{abc5498e7b8c14f8fa47f1c9e1c55d93}
+      \strng{fullhashraw}{abc5498e7b8c14f8fa47f1c9e1c55d93}
+      \strng{bibnamehash}{abc5498e7b8c14f8fa47f1c9e1c55d93}
+      \strng{authorbibnamehash}{abc5498e7b8c14f8fa47f1c9e1c55d93}
+      \strng{authornamehash}{abc5498e7b8c14f8fa47f1c9e1c55d93}
+      \strng{authorfullhash}{abc5498e7b8c14f8fa47f1c9e1c55d93}
+      \strng{authorfullhashraw}{abc5498e7b8c14f8fa47f1c9e1c55d93}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The elegant universe}
+      \field{year}{2010}
+      \true{nocite}
+    \endentry
+    \entry{Gubser2010-ee}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5b14c1c09c757e446a23c262de9d95c0}{%
+           family={Gubser},
+           familyi={G\bibinitperiod},
+           given={Steven\bibnamedelima S},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{location}{1}{%
+        {Princeton, NJ}%
+      }
+      \list{publisher}{1}{%
+        {Princeton University Press}%
+      }
+      \strng{namehash}{5b14c1c09c757e446a23c262de9d95c0}
+      \strng{fullhash}{5b14c1c09c757e446a23c262de9d95c0}
+      \strng{fullhashraw}{5b14c1c09c757e446a23c262de9d95c0}
+      \strng{bibnamehash}{5b14c1c09c757e446a23c262de9d95c0}
+      \strng{authorbibnamehash}{5b14c1c09c757e446a23c262de9d95c0}
+      \strng{authornamehash}{5b14c1c09c757e446a23c262de9d95c0}
+      \strng{authorfullhash}{5b14c1c09c757e446a23c262de9d95c0}
+      \strng{authorfullhashraw}{5b14c1c09c757e446a23c262de9d95c0}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{Science Essentials}
+      \field{title}{The little book of string theory}
+      \field{year}{2010}
+      \true{nocite}
+    \endentry
+    \entry{Jones2022-zj}{book}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=7ab44a0074d0daaca8f0710f9b0de611}{%
+           family={Jones},
+           familyi={J\bibinitperiod},
+           given={Andrew\bibnamedelima Zimmerman},
+           giveni={A\bibinitperiod\bibinitdelim Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8956465923d2a173ad7d0fe8d28c886a}{%
+           family={Sfondrini},
+           familyi={S\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {For Dummies}%
+      }
+      \strng{namehash}{88a2668058a7165e473beaf530246634}
+      \strng{fullhash}{88a2668058a7165e473beaf530246634}
+      \strng{fullhashraw}{88a2668058a7165e473beaf530246634}
+      \strng{bibnamehash}{88a2668058a7165e473beaf530246634}
+      \strng{authorbibnamehash}{88a2668058a7165e473beaf530246634}
+      \strng{authornamehash}{88a2668058a7165e473beaf530246634}
+      \strng{authorfullhash}{88a2668058a7165e473beaf530246634}
+      \strng{authorfullhashraw}{88a2668058a7165e473beaf530246634}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{title}{String theory for dummies}
+      \field{year}{2022}
+      \true{nocite}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

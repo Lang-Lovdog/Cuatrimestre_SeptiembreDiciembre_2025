@@ -1,0 +1,31 @@
+\usepackage{csquotes}
+\usepackage[backend=biber, 
+    style=apa,             % Closest match
+    citestyle=numeric,     % Closest match
+    giveninits=true,       % Initials for first names
+    doi=false,             % No DOI
+    date=year,             % Closest match
+    maxbibnames=99,        % All authors
+]{biblatex}
+% Avoid month, day, endmonth and endday
+\DeclareSourcemap{
+  \maps[datatype=bibtex]{
+    \map[overwrite]{
+      \step[fieldsource=month, final]
+      \step[fieldset=month, null]
+      \step[fieldset=day, null]
+      \step[fieldset=endmonth, null]
+      \step[fieldset=endday, null]
+    }
+  }
+}
+% Custom formatting
+\DeclareFieldFormat{labelnumberwidth}{#1.}
+\DeclareFieldFormat{title}{``#1''}  % Quotes around titles
+\defbibenvironment{bibliography}
+  {\begin{enumerate}}
+  {\end{enumerate}}
+  {\item}
+
+
+

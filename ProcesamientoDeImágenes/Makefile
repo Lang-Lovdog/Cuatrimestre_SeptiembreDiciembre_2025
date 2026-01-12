@@ -20,6 +20,8 @@ BTESTDIR=$(BUILDDIR)/test
 BINDIR=$(BUILDDIR)/bin
 PDICXX=$(SRCDIR)/ProcesamientoDigitalImagenes.cxx
 
+defa: help
+
 all:
 	$(CXX) $(SRCDIR)/ProcesamientoDigitalImagenes.cxx $(SRCDIR)/ProcesamientoDigitalImagenes.hxx  $(CXXLINKS) $(CXXFLAGS) -o $(BINDIR)/exe
 
@@ -39,6 +41,14 @@ minmax:
 	$(CXX) $(STESTDIR)/MaxMin.cxx  $(PDICXX)  $(CXXLINKS) $(CXXFLAGS) -o $(BTESTDIR)/minmax
 	cd $(BTESTDIR) && ./minmax
 
+thresholding:
+	$(CXX) $(STESTDIR)/Thresholding.cxx  $(PDICXX)  $(CXXLINKS) $(CXXFLAGS) -o $(BTESTDIR)/thres
+	cd $(BTESTDIR) && ./thres
+
+mthresholding:
+	$(CXX) $(STESTDIR)/mThresholding.cxx  $(PDICXX)  $(CXXLINKS) $(CXXFLAGS) -o $(BTESTDIR)/mthres
+	cd $(BTESTDIR) && ./mthres
+
 dynrngnrm:
 	$(CXX) $(STESTDIR)/DynRngNrm.cxx  $(PDICXX)  $(CXXLINKS) $(CXXFLAGS) -o $(BTESTDIR)/DynRngNrm
 	cd $(BTESTDIR) && ./DynRngNrm
@@ -51,9 +61,16 @@ tarea02:
 	$(CXX) $(TAREADIR)/tarea02/main.cxx  $(PDICXX)  $(CXXLINKS) $(CXXFLAGS) -o $(TAREADIR)/tarea02/exe
 	cd $(TAREADIR)/tarea02 && ./exe
 
+tarea03:
+	$(CXX) $(TAREADIR)/tarea03/main.cxx  $(PDICXX)  $(CXXLINKS) $(CXXFLAGS) -o $(TAREADIR)/tarea03/exe
+	cd $(TAREADIR)/tarea03 && valgrind ./exe
+
 help:
 	@echo "make holaMundo"
 	@echo "make negativo"
 	@echo "make access"
 	@echo "make minmax"
 	@echo "make dynrngnrm"
+	@echo "make tarea01"
+	@echo "make tarea02"
+	@echo "make tarea03"

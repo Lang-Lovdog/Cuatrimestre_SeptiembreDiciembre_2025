@@ -1,0 +1,240 @@
+%!TeX root = ../main.tex
+
+\subsection{Análisis de estabilidad del sistema a través de la matriz dinámica}
+Para este análisis se realizará un determinante y la
+obtención de los autovalores con el fin de conocer los puntos de estabilidad
+del sistema.
+
+\subsubsection{Determinante de $\mathbf{A}$}
+
+\begin{align*}
+  det\left(\mathbf{A}\right) &=
+  det\begin{bmatrix}
+  -\frac{R}{L}          & 0        & -\frac{K_e}{L}   \\
+  0                     & 0        &  1               \\
+  \frac{K_t}{J}         & 0        & -\frac{B}{J}     \\
+  \end{bmatrix} \\
+\end{align*}
+\begin{align*}
+  %%% det(A)
+  &det\left(\mathbf{A}\right) =\\
+%  \left(-\tfrac{R}{L} \right)
+%  \begin{vmatrix}
+%    0              &  1           \\
+%    0              & -\frac{B}{J} \\
+%  \end{vmatrix}
+%  -\left(0\right)
+%  \begin{vmatrix}
+%    0              &  1           \\
+%    \frac{K_t}{J}  & -\frac{B}{J} \\
+%  \end{vmatrix}
+%  +\left(-\tfrac{K_e}{L}\right)
+%  \begin{vmatrix}
+%    0              & 0            \\
+%    \frac{K_t}{J}  & 0            \\
+%  \end{vmatrix}\\
+  &\begin{bmatrix}
+    -\tfrac{R}{L} 
+    -0
+    +-\tfrac{K_e}{L}
+  \end{bmatrix}
+  \begin{bmatrix}
+    \begin{vmatrix}
+      0              &  1           \\
+      0              & -\frac{B}{J} \\
+    \end{vmatrix}\\
+    \begin{vmatrix}
+      0              &  1           \\
+      \frac{K_t}{J}  & -\frac{B}{J} \\
+    \end{vmatrix}\\
+    \begin{vmatrix}
+      0              & 0            \\
+      \frac{K_t}{J}  & 0            \\
+    \end{vmatrix}
+  \end{bmatrix}\\
+  %%% det(A)
+  %%% det(A)
+  &det\left(\mathbf{A}\right) = 0
+\end{align*}
+
+Dicho determinante implica que el sistema tiene infinitos puntos
+de estabilidad.
+
+\subsubsection{Autovalores de $\mathbf{A}$}
+Los autovalores son aquellos valores $\lambda$ que cumplen con
+la ecuación \eqref{eq:DefinicionAutovalores}.
+\begin{equation}
+  det\left(\mathbf{A-\lambda I}\right)=0
+  \label{eq:DefinicionAutovalores}
+\end{equation}
+
+Por lo tanto se necesita obtener la matriz \eqref{eq:Matriz A - lambda I}.
+
+\begin{equation}
+  \mathbf{A-\lambda I} =
+  \begin{bmatrix}
+  -\frac{R}{L}          & 0        & -\frac{K_e}{L}   \\
+  0                     & 0        &  1               \\
+  \frac{K_t}{J}         & 0        & -\frac{B}{J}     \\
+  \end{bmatrix}
+  \label{eq:Matriz A - lambda I}
+\end{equation}
+
+luego, se obtiene el determinante de \eqref{eq:Matriz A - lambda I}
+que resulta ser un polinomio de tercer grado \eqref{eq:detA - lI}
+
+\begin{align*}
+  det\left(\mathbf{A-\lambda I}\right) &=
+  det\begin{bmatrix}
+  -\frac{R}{L}-\lambda  & 0        & -\frac{K_e}{L}         \\
+  0                     & -\lambda &  1                     \\
+  \frac{K_t}{J}         & 0        & -\frac{B}{J} - \lambda \\
+  \end{bmatrix} \\
+  %%% det(A)
+  det\left(\mathbf{A-\lambda I}\right) &=
+  \left(-\tfrac{R}{L} - \lambda\right)
+  \begin{vmatrix}
+    -\lambda       &  1                     \\
+    0              & -\frac{B}{J} - \lambda \\
+  \end{vmatrix}\\
+  &-\left(0\right)
+  \begin{vmatrix}
+    0              &  1                     \\
+    \frac{K_t}{J}  & -\frac{B}{J} - \lambda \\
+  \end{vmatrix}\\
+  &+\left(-\tfrac{K_e}{L}\right)
+  \begin{vmatrix}
+    0              & -\lambda               \\
+    \frac{K_t}{J}  & 0                      \\
+  \end{vmatrix}
+\end{align*}
+
+\begin{equation}
+  \begin{aligned}
+    %%% det(A)
+    &det\left(\mathbf{A-\lambda I}\right) = \\
+    &\left(-\tfrac{R}{L}-\lambda\right)\left(\tfrac{B}{J}\lambda+\lambda^2\right)
+    -\left(\tfrac{K_e K_t}{JL}\lambda\right)
+    \label{eq:detA  - lI}
+  \end{aligned}
+\end{equation}
+
+Luego de obtener \eqref{eq:detA  - lI}, a fin de rescatar los autovalores se procede
+a resolver la expresión \eqref{eq:DefinicionAutovalores} para la matriz \eqref{eq:Matriz A - lambda I}
+
+\begin{equation*}
+  \begin{aligned}
+    det\left(\mathbf{A-\lambda I}\right) &=0  \\
+    \left(-\tfrac{R}{L}-\lambda\right)\left(\tfrac{B}{J}\lambda+\lambda^2\right)
+    -\left(\tfrac{K_e K_t}{JL}\lambda\right)
+                                         &=0  \\
+    \lambda\left[
+    \left(-\tfrac{R}{L}-\lambda\right)\left(\tfrac{B}{J}+\lambda\right)
+    -\tfrac{K_e K_t}{JL}
+    \right]
+                                         &=0  \\
+    -\lambda\left[
+    \left(\tfrac{R}{L}+\lambda\right)\left(\tfrac{B}{J}+\lambda\right)
+    +\tfrac{K_e K_t}{JL}
+    \right]
+                                         &=0  \\
+  \end{aligned}
+\end{equation*}
+
+La primera solución se puede encontrar de la forma mostrada en \eqref{eq:SolucionAutovalores 1}
+
+Definiendo $p= \left(\tfrac{R}{L}+\lambda\right)\left(\tfrac{B}{J}+\lambda\right)
+    +\tfrac{K_e K_t}{JL} $
+\begin{equation}
+  \begin{aligned}
+    \frac1{-p}\left(-\lambda p\right)
+     &=\frac1{-p}0\\
+    \lambda_1 &=0\\
+     \label{eq:SolucionAutovalores 1}
+  \end{aligned}
+\end{equation}
+
+De manera análoga es posible encontrar los segundo y tercer autovalores
+obteniendo la igualdad respecto a $p$ y resolviendo la ecuación
+de segundo grado \eqref{eq:SolucionAutovalores 2} que se obtiene,
+resultando en la expresión \eqref{eq:SolucionAutovalores 3}.
+
+\begin{equation*}
+  \begin{aligned}
+    \frac1{-\lambda}\left(-\lambda p\right)
+     &=\frac1{-\lambda}0\\
+    p &=0\\
+  \end{aligned}
+\end{equation*}
+
+\begin{equation}
+  \begin{aligned}
+    \left(\tfrac{R}{L}+\lambda\right)\left(\tfrac{B}{J}+\lambda\right)
+    +\tfrac{K_e K_t}{JL} &=0
+     \label{eq:SolucionAutovalores 2}
+  \end{aligned}
+\end{equation}
+
+\begin{equation*}
+      \lambda^2 + \left(\tfrac{B}{J} + \tfrac{R}{L}\right)\lambda
+    +\tfrac{BR+K_e K_t}{JL} =0
+\end{equation*}
+\begin{equation}
+  \begin{aligned}
+    &\lambda_{2,3} = \\
+    &\frac{
+      - \left( \tfrac{B}{J} + \tfrac{R}{L} \right)
+      \pm \sqrt{
+        \left( \tfrac{B}{J} + \tfrac{R}{L} \right)^2
+        - 4 \tfrac{BR+K_e K_t}{JL}
+      }
+    }
+    {2}
+  \end{aligned}
+     \label{eq:SolucionAutovalores 3}
+\end{equation}
+
+\subsubsection{Análisis de autovalores con valores experimentales}
+
+A partir de valores experimentales indicados en \cite{Ugurlu2025} para un motor de DC, se obtienen autovalores numéricos que ilustran la dinámica del sistema. Los parámetros utilizados como ejemplo son: resistencia $R = 2.1\ \Omega$, inductancia $L = 5\times10^{-3}\ \text{H}$, constante de par $K_t = 0.12\ \text{N·m/A}$, constante de fuerza contraelectromotriz $K_e = 0.12\ \text{V/(rad/s)}$, momento de inercia $J = 1\times10^{-4}\ \text{kg·m}^2$ y coeficiente de fricción viscosa $B = 1\times10^{-5}\ \text{N·m·s/rad}$.
+
+Sustituyendo estos valores en la expresión general para $\lambda_{2,3}$ de \eqref{eq:SolucionAutovalores 3}, y definiendo  
+\[
+\delta = \left(\tfrac{B}{J} + \tfrac{R}{L}\right)^2 - 4 \tfrac{BR+K_e K_t}{JL},
+\]  
+se calcula:
+
+\begin{equation*}
+\begin{aligned}
+\tfrac{B}{J} + \tfrac{R}{L} &= \tfrac{1\mathrm{e}{-5}}{1\mathrm{e}{-4}} + \tfrac{2.1}{5\mathrm{e}{-3}} \\
+&= 1\mathrm{e}{-1} + 4.2\mathrm{e}{2} = 4.201\mathrm{e}{2} \\[2pt]
+\left(\tfrac{B}{J} + \tfrac{R}{L}\right)^2 &= (4.201\mathrm{e}{2})^{2} = 1.76484\mathrm{e}{5} \\[2pt]
+4 \tfrac{BR+K_e K_t}{JL} &= 4 \cdot \tfrac{(2.1\mathrm{e}{0})(1\mathrm{e}{-5}) + (1.2\mathrm{e}{-1})(1.2\mathrm{e}{-1})}{(1\mathrm{e}{-4})(5\mathrm{e}{-3})} \\
+&= 4 \cdot \tfrac{2.1\mathrm{e}{-5} + 1.44\mathrm{e}{-2}}{5\mathrm{e}{-7}} \\
+&= 4 \cdot \tfrac{1.4421\mathrm{e}{-2}}{5\mathrm{e}{-7}} \\
+&= 4 \cdot 2.8842\mathrm{e}{4} = 1.15368\mathrm{e}{5} \\[2pt]
+\delta &= 1.76484\mathrm{e}{5} - 1.15368\mathrm{e}{5}\\
+       &= 6.1116\mathrm{e}{4} \\[2pt]
+\sqrt{\delta} &\approx 2.4722\mathrm{e}{2}
+\end{aligned}
+\end{equation*}
+Luego, los autovalores no nulos resultan:
+
+\begin{equation*}
+\begin{aligned}
+\lambda_{2,3} &= \frac{ - \left( \tfrac{B}{J} + \tfrac{R}{L} \right) \pm \sqrt{\delta}}{2} \\[2pt]
+\lambda_2 &\approx \frac{-4.201\mathrm{e}{2} + 2.4722\mathrm{e}{2}}{2} \approx  86.44 \\[2pt]
+\lambda_3 &\approx \frac{-4.201\mathrm{e}{2} - 2.4722\mathrm{e}{2}}{2} \approx -333.66
+\end{aligned}
+\end{equation*}
+
+De este modo, el conjunto completo de autovalores para este caso de ejemplo es:
+\begin{equation}
+    \lambda_1 = 0,\quad \lambda_2 \approx -86.44,\quad \lambda_3 \approx -333.66
+    \label{eq:ResultadoAutovaloresExperimental}
+\end{equation}
+
+\subsubsection{Conclusión del análisis de estabilidad por medio de la matriz dinámica}
+
+Debido a que la matriz dinámica tiene un autovalor $\lambda={0}$, se puede
+concluir que el sistema es marginalmente estable.

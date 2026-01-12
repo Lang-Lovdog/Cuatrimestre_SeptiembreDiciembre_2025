@@ -1,0 +1,24 @@
+%! TeX root = ../main.tex
+
+\section{Conclusiones}
+
+En este proyecto se realizó el análisis de un motor de DC a fin de obtener
+información sobre su estabilidad, controlabilidad y observabilidad. El modelado
+fue la parte más interesante, puesto que la consideración de la velocidad angular
+jugaba un papel bastante importante en la forma en que el sistema en espacio 
+de estados tendería a comportase en el análisis, cambiando sus características
+de estabilidad.
+
+Otro punto importante a resaltar es la complejidad que puede surgir de un sistema
+tan simple como un motor de DC al momento de realizar los análisis, lo que permite
+vislumbrar un panorama importante al momento de considerar sistemas con procesos
+más complejos como un avión, procesos poblacionales de animales, o incluso este
+mismo motor, pero con carga.
+
+El análisis mostró que este sistema es marginalmente estable debido a la posición
+angular, la cual no afecta a nuestra salida de interés (la velocidad angular) y que
+se mantiene creciente en el tiempo sin llegar a un punto estable. Cuestión corroborada
+con los autovalores de la matriz dinámica y el análisis de Lyapunov.
+
+El análisis numérico indica que el sistema es controlable. Sin embargo, debido a esta variable de posición angular,
+el sistema es no observable.

@@ -1,0 +1,64 @@
+@document.meta
+title: Algoritmo
+description: Algoritmo de umbralización multinivel automático
+authors: Brandon Marquez Salazar y Lang Lovdog Inu Oókami
+categories: Tareas
+created: 2025-11-25T22:19:54-0600
+updated: 2025-11-25T22:55:31-0600
+version: 1.1.1
+@end
+
+* Este archivo muestra los algoritmos propuestos para la solución de la tarea 3
+
+  La tarea 3 pide que se realice un umbralizado multinivel automático, este umbralizado
+  requiere de 4 pasos importantes:
+
+  ~ Creación del histograma de la imagen
+  ~ Reconocimiento de máximos del histograma
+  ~ Basado en los máximos, 'calcular' los umbrales
+  ~ Umbralización multinivel basado en los umbrales calculados
+
+** Algoritmo de histograma
+
+   Este algoritmo supone el caso más simple, en el que una imagen está en escala de grises y,
+   por lo tanto es de un solo canal, con valores entre 0 y 255.
+  
+   Supóngase una matriz $|A \in \mathbb{Z}_{\leq 255}^{m\times n}|$ que representa la imagen a
+   procesar.
+
+   Ahora, defínase una vector $|H \in \mathbb{Z}_{\leq 255}^{256}|$, siendo el histograma de $|A|$ 
+   definido como:
+
+   @math
+   H = \left[\sum_{j=0}^{n-1} \sum_{i=0}^{m-1} \phi(A_{ij})\right]_{l=0}^{255}
+   @end
+
+   , donde
+
+   @math
+   \phi = \begin{cases}
+     1 & \text{ si } l = A_{ij} \\
+     0 & \text{ si } l \neq A_{ij}
+   \end{cases}
+   @end
+
+   y $|l \in \mathbb{Z}_{\leq 255}|$, corresponde al índice de los elementos del vector.
+
+** Algoritmo de máximos
+
+   Para el reconocimiento de máximos, se puede usar un método sencillo de búsqueda
+
+   @code python
+   def max_values(H):
+      return [i for i in range(len(H)) if H[i] == max(H)]
+   @end
+
+   @code c
+   void max_values(uint *H, uint n, uint *maxvals, uint mn){
+      if(!maxvals) maxvals = 
+      uint l, i, j;
+      l=0; while(l < mn){
+         maxvals[l] = 0;
+      }
+   }
+   @end

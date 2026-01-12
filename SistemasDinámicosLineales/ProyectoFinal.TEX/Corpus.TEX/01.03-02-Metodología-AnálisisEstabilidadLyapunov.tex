@@ -1,0 +1,132 @@
+%!TeX root = ../main.tex
+
+\subsection{Análisis de estabilidad del sistema a través del criterio de Lyapunov}
+
+El criterio de Lyapunov implica la existencia de una función $\mathbf{V}(x)$ considerada
+función candidata, dicha función definida en \eqref{eq:DefiniciónLyapunovV} requiere de
+una matriz $P$ que sea positiva definida.
+Dicha función $\mathbf{V}(x)$ deberá ser definida positiva y su derivada temporal
+$\mathbf{\dot{V}}(x)$ deberá definida negativa o semidefinida negativa.
+
+\begin{equation}
+  \begin{aligned}
+    \mathbf{V}(x)       &= \mathbf{x}^TP\mathbf{x},\qquad P=P^T > 0  \\
+    \mathbf{\dot{V}}(x) &= \mathbf{x}^T \left(\mathbf{A} P + P \mathbf{A} \right)\mathbf{x}
+    \label{eq:DefiniciónLyapunovV}
+  \end{aligned}
+\end{equation}
+
+\subsubsection{Función candidata de Lyapunov}
+
+Para simplificar el análisis, se considera una matriz $P$ diagonal con elementos
+positivos \eqref{eq:PDiagonal}.
+
+\begin{equation}
+    P = \begin{bmatrix}
+        \alpha & 0 & 0 \\
+        0 & \beta & 0 \\
+        0 & 0 & \gamma
+    \end{bmatrix}, \quad \alpha, \beta, \gamma > 0
+    \label{eq:PDiagonal}
+\end{equation}
+
+\subsubsection{Desarrollo de la función candidata}
+Sustituyendo la matriz diagonal $P$ de \eqref{eq:PDiagonal} y el vector de estado $\mathbf{x} = [i, \theta, \omega]^T$ en la definición general \eqref{eq:DefiniciónLyapunovV}, se obtiene la función candidata concreta.
+\begin{equation*}
+    \begin{aligned}
+        \mathbf{V}(\mathbf{x}) &= \mathbf{x}^T P \mathbf{x}\\
+        \mathbf{V}(\mathbf{x}) &=
+        \begin{bmatrix}
+            i & \theta & \omega
+        \end{bmatrix}
+        \begin{bmatrix}
+            \alpha & 0 & 0 \\
+            0 & \beta & 0 \\
+            0 & 0 & \gamma
+        \end{bmatrix}
+        \begin{bmatrix}
+            i \\ \theta \\ \omega
+        \end{bmatrix}
+    \end{aligned}
+\end{equation*}
+\begin{equation}
+        \mathbf{V}(\mathbf{x}) =
+        \alpha i^2 + \beta \theta^2 + \gamma \omega^2
+        \label{eq:LyapunovCandidata}
+\end{equation}
+
+Sustituyendo la matriz $\mathbf{A}$ y la matriz $P$ diagonal en la expresión $\mathbf{A}^T P + P \mathbf{A}$ se obtiene la expresión \eqref{eq:ATPPA}.
+
+\begin{equation}
+    \mathbf{A}^T P + P \mathbf{A} = 
+    \begin{bmatrix} 
+        -2\frac{R}{L}\alpha & 0 & \frac{K_t}{J}\gamma - \frac{K_e}{L}\alpha \\
+        0 & 0 & \beta \\
+        \frac{K_t}{J}\gamma - \frac{K_e}{L}\alpha & \beta & -2\frac{B}{J}\gamma
+    \end{bmatrix}
+    \label{eq:ATPPA}
+\end{equation}
+
+\subsubsection{Condición para simplificar la matriz}
+
+Para eliminar los términos cruzados (1,3) y (3,1) se impone la condición
+\eqref{eq:CondicionCruzados}.
+
+\begin{equation}
+    \frac{K_t}{J}\gamma - \frac{K_e}{L}\alpha = 0
+    \label{eq:CondicionCruzados}
+\end{equation}
+
+Asumiendo que $K_e = K_t$ en unidades consistentes\footnote{Esto se puede considerar
+porque en un motor DC ideal, sin pérdidas, la potencia eléctrica que entra es igual
+a la potencia mecánica que sale. Es decir, el voltaje contraelectromotriz por la
+corriente es igual al par por la velocidad.}, se obtiene la relación
+\eqref{eq:GammaAlpha}.
+
+\begin{equation}
+    \gamma = \frac{J}{L} \alpha
+    \label{eq:GammaAlpha}
+\end{equation}
+
+Sustituyendo \eqref{eq:GammaAlpha} en \eqref{eq:ATPPA}, la matriz se simplifica
+a \eqref{eq:ATPPASimplificada}.
+
+\begin{equation}
+    \mathbf{A}^T P + P \mathbf{A} = 
+    \begin{bmatrix} 
+        -2\frac{R}{L}\alpha & 0 & 0 \\
+        0 & 0 & \beta \\
+        0 & \beta & -2\frac{B}{L}\alpha
+    \end{bmatrix}
+    \label{eq:ATPPASimplificada}
+\end{equation}
+
+\subsubsection{Derivada de la función de Lyapunov}
+
+La derivada temporal de la función de Lyapunov resulta en la expresión
+\eqref{eq:DotVFinal}.
+
+\begin{equation}
+    \mathbf{\dot{V}}(\mathbf{x}) = -2\alpha\left( \frac{R}{L} i^2 + \frac{B}{L} \omega^2 \right) + 2\beta \theta \omega
+    \label{eq:DotVFinal}
+\end{equation}
+
+\subsubsection{Verificación de las condiciones de Lyapunov}
+
+La función $\mathbf{V}(\mathbf{x}) = \alpha i^2 + \beta \theta^2 + \gamma \omega^2$ es
+definida positiva para $\alpha, \beta, \gamma > 0$. Sin embargo, la derivada
+$\mathbf{\dot{V}}(\mathbf{x})$ no es definida negativa para todos los estados debido al
+término $2\beta \theta \omega$. Si se considera $\beta = 0$, la derivada se
+reduce a \eqref{eq:DotVSimplificada}.
+
+\begin{equation}
+    \mathbf{\dot{V}}(\mathbf{x}) = -2\alpha\left( \frac{R}{L} i^2 + \frac{B}{L} \omega^2 \right) \leq 0
+    \label{eq:DotVSimplificada}
+\end{equation}
+
+La función candidata de Lyapunov en \eqref{eq:LyapunovCandidata} es definida positiva
+y su derivada en \eqref{eq:DotVSimplificada} es semidefinida negativa, lo que
+satisface las condiciones para estabilidad en el sentido de Lyapunov. Esta
+estabilidad no es asintótica, pues $\mathbf{\dot{V}}(\mathbf{x})$ se anula para
+$i=0$, $\omega=0$ y cualquier valor de $\theta$, lo cual refleja directamente
+el autovalor en cero de la matriz dinámica $\mathbf{A}$.

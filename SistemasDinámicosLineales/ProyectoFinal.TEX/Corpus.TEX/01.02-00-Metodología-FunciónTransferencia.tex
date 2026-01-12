@@ -1,0 +1,230 @@
+%! TeX root = ../main.tex
+
+\subsection{Función de transferencia del sistema}
+La función de transferencia $G(s)$ del sistema en el espacio de estados
+se define de la forma
+
+\begin{equation}
+  G(s) = C(sI-A)^{-1}B + D
+\end{equation}
+ 
+\subsubsection{Desglose de $(sI-A)^{-1}$}
+
+\begin{equation}
+  \begin{aligned}
+    sI-A &= \begin{bmatrix}
+      s & 0 & 0 \\
+      0 & s & 0 \\
+      0 & 0 & s \\
+    \end{bmatrix}
+    - \begin{bmatrix}
+      -\frac{R}{L}  & 0 &  -\frac{K_e}{L} \\
+      0             & 0 &   1             \\
+      \frac{K_t}{J} & 0 &  -\frac{B}{J}   \\
+    \end{bmatrix}\\
+    &= \begin{bmatrix}
+      s+\frac{R}{L}    & 0-0 & 0+\frac{K_e}{L} \\
+      0-0              & s-0 & 0-1             \\
+      0-\frac{K_t}{J}  & 0-0 & s+\frac{B}{J}   \\
+    \end{bmatrix}\\
+    &= \begin{bmatrix}
+      s+\frac{R}{L}  & 0 &  \frac{K_e}{L} \\
+      0              & s & -1             \\
+     -\frac{K_t}{J}  & 0 &  s+\frac{B}{J} \\
+    \end{bmatrix}
+  \end{aligned}
+\end{equation}
+
+Sabemos que la inversa de una matriz se define como en la ecuación \eqref{eq:InversaMatriz}
+
+\begin{equation}
+  Q^{-1} = \frac{1}{adj(Q)} Q^T
+  \label{eq:InversaMatriz}
+\end{equation}
+
+Por lo tanto $(sI-A)^{-1} = \frac{1}{det(sI-A)}(sI-A)^T$ 
+
+\begin{equation*}
+  \begin{aligned}
+    det(sI-A) &=
+    \left(s+\frac{R}{L}\right)
+    \begin{vmatrix}
+      s & -1             \\
+      0 &  s+\frac{B}{J} \\
+    \end{vmatrix}\\
+              &-
+    0
+    \begin{vmatrix}
+      0             & -1             \\
+      \frac{K_t}{J} &  s+\frac{B}{J} \\
+    \end{vmatrix}
+              +
+    \frac{K_e}{L}
+    \begin{vmatrix}
+      0              & s  \\
+     -\frac{K_t}{J}  & 0  \\
+    \end{vmatrix}\\
+    det(sI-A) &=
+    \left(s+\frac{R}{L}\right)\left(s^2+\frac{B}{J}s\right) + 0 \\
+    &+\frac{K_e}{L} \left(\frac{K_t}{J}s\right)\\
+    det(sI-A) &=
+    s^3 + \frac{B}{J}s^2 + \frac{R}{L}s^2 +\\ &+\frac{RB}{JL}s + \frac{K_t K_e}{JL}s\\
+  \end{aligned}
+\end{equation*}
+
+\begin{equation}
+  \begin{aligned}
+    &det(sI-A) =\\
+    &s^3 + \left(\frac{B}{J} + \frac{R}{L}\right)s^2 
+    + \left(\frac{RB + K_t K_e}{JL}\right)s\\
+  \end{aligned}
+\end{equation}
+
+\begin{equation*}
+  \begin{aligned}
+    &cof(sI-A) =\\ &\begin{bmatrix}
+%%%%%%%%%TOP
+      (-1)^{1+1}
+      \begin{vmatrix}
+        s             & -1              \\
+        0             &  s+\frac{B}{J}  \\
+      \end{vmatrix}&
+      (-1)^{1+2}
+      \begin{vmatrix}
+        0             & -1              \\
+       -\frac{K_t}{J} &  s+\frac{B}{J}  \\
+      \end{vmatrix}&
+      (-1)^{1+3}
+      \begin{vmatrix}
+        0             & s               \\
+       -\frac{K_t}{J} & 0               \\
+      \end{vmatrix}\\
+%%%%%%%%MID
+      (-1)^{2+1}
+      \begin{vmatrix}
+        0             &  \frac{K_e}{L} \\
+        0             &  s+\frac{B}{J} \\
+      \end{vmatrix}&
+      (-1)^{2+2}
+      \begin{vmatrix}
+        s+\frac{R}{L} &  \frac{K_e}{L} \\
+       -\frac{K_t}{J} &  s+\frac{B}{J} \\
+      \end{vmatrix}&
+      (-1)^{2+3}
+      \begin{vmatrix}
+        s+\frac{R}{L} & 0              \\
+       -\frac{K_t}{J} & 0              \\
+      \end{vmatrix}\\
+%%%%%%%%BTM
+      (-1)^{3+1}
+      \begin{vmatrix}
+        0 &  \frac{K_e}{L}             \\
+        s & -1                         \\
+      \end{vmatrix}&
+      (-1)^{3+2}
+      \begin{vmatrix}
+        s+\frac{R}{L} &  \frac{K_e}{L} \\
+        0             & -1             \\
+      \end{vmatrix}&
+      (-1)^{3+3}
+      \begin{vmatrix}
+        s+\frac{R}{L} & 0              \\
+        0             & s              \\
+      \end{vmatrix}\\
+    \end{bmatrix}\\
+  \end{aligned}
+\end{equation*}
+
+\begin{equation}
+  \begin{aligned}
+    &cof(sI-A) =\\
+    &\begin{bmatrix}
+      s^2 + \frac{B}{J}s  &  \frac{K_t}{J}                                                  &  \frac{K_t}Js   \\
+      0                   &  s^2 + \left(\frac{R}L + \frac{B}J\right)s + \frac{K_e K_t}{JL} &  0              \\
+      -\frac{K_e}L s      &  s +\frac{R}L                                                   &  s^2+\frac{R}Ls \\
+    \end{bmatrix}
+  \end{aligned}
+\end{equation}
+
+\begin{equation}
+  \begin{aligned}
+    &adj(sI-A) =\\
+    &\begin{bmatrix}
+      s^2 + \frac{B}{J}s                                             &   
+      0                                                              &   
+     -\frac{K_e}L s                                                  \\  
+      \frac{K_t}{J}                                                  & 
+      s^2 + \left(\frac{R}L + \frac{B}J\right)s + \frac{K_e K_t}{JL} & 
+      s +\frac{R}L                                                   \\
+      \frac{K_t}Js                                                   &
+      0                                                              &
+      s^2+\frac{R}Ls                                                   \\
+    \end{bmatrix}
+  \end{aligned}
+\end{equation}
+
+\subsubsection{Función de transferencia del sistema}
+
+\begin{equation*}
+  q(s) = s^2 + \left(\frac{R}L + \frac{B}J\right)s + \frac{K_e K_t}{JL}
+\end{equation*}
+
+\begin{multline*}
+  G(s) =
+    \frac{1}{s^3 + \left(\frac{B}{J} + \frac{R}{L}\right)s^2 + \left(\frac{RB + K_t K_e}{JL}\right)s}\\
+    \begin{bmatrix}
+      0 & 0 & 1 \\
+    \end{bmatrix}
+    \begin{bmatrix}
+      s^2 + \frac{B}{J}s  &   
+      0                   &   
+     -\frac{K_e}L s       \\  
+      \frac{K_t}{J}       & 
+      q(s)                & 
+      s +\frac{R}L        \\
+      \frac{K_t}Js        &
+      0                   &
+      s^2+\frac{R}Ls      \\
+    \end{bmatrix}
+    \begin{bmatrix}
+      \frac1L \\ 0 \\ 0 \\
+    \end{bmatrix}
+\end{multline*}
+
+\begin{multline*}
+  G(s) =
+    \frac{1}{s^3 + \left(\frac{B}{J} + \frac{R}{L}\right)s^2 + \left(\frac{RB + K_t K_e}{JL}\right)s}\\
+    \frac1L
+    \begin{bmatrix}
+      0 & 0 & 1 \\
+    \end{bmatrix}
+    \begin{bmatrix}
+      s^2 + \frac{B}{J}s  \\
+      \frac{K_t}{J}       \\
+      \frac{K_t}Js        \\
+    \end{bmatrix}
+\end{multline*}
+
+\begin{equation}
+  G(s) =
+    \frac{\frac{K_t}{JL}s}{s^3 + \left(\frac{B}{J} + \frac{R}{L}\right)s^2 + \left(\frac{RB + K_t K_e}{JL}\right)s}
+\end{equation}
+
+
+\subsubsection{Función de transferencia con valores experimentales}
+
+A partir de los mismos valores experimentales: $R = 2.1\ \Omega$, $L = 5\times10^{-3}\ \text{H}$, $K_t = 0.12\ \text{N·m/A}$, $K_e = 0.12\ \text{V/(rad/s)}$, $J = 1\times10^{-4}\ \text{kg·m}^2$ y $B = 1\times10^{-5}\ \text{N·m·s/rad}$, la función de transferencia numérica resulta:
+
+\begin{equation*}
+  \begin{aligned}
+    &G(s) =\\
+    &\frac{\tfrac{0.12}{1\mathrm{e}{-4} \cdot 5\mathrm{e}{-3}}s}{s^{3} + \left(\tfrac{1\mathrm{e}{-5}}{1\mathrm{e}{-4}} + \tfrac{2.1}{5\mathrm{e}{-3}}\right)s^{2} + \left(\tfrac{2.1\cdot1\mathrm{e}{-5} + 0.12\cdot0.12}{1\mathrm{e}{-4} \cdot 5\mathrm{e}{-3}}\right)s}\\
+    &G(s) =
+    \frac{2.4\mathrm{e}^{5}\,s}{s^{3} + 4.201\mathrm{e}^{2}\,s^{2} + 2.8842\mathrm{e}^{4}\,s} 
+  \end{aligned}
+\end{equation*}
+
+\begin{equation}
+G(s) = \frac{2.4\mathrm{e}^{5}}{s^{2} + 4.201\mathrm{e}^{2}\,s + 2.8842\mathrm{e}^{4}}
+\label{eq:TransferFunctionNumeric}
+\end{equation}
