@@ -4,7 +4,6 @@ import pandas as pd
 
 df=pd.read_csv("../test_results.csv")
 ds01 = df["f1_score"].to_numpy()
-#df=pd.read_excel("../F1_Score_cindy.xlsx")
 df=pd.read_csv("../F1_score.csv")
 ds02 = df["F1_Score"].to_numpy()
 
@@ -22,6 +21,9 @@ opts = {
     }
 }
 
-resultados = statistical_analysis.statistical_analysis(opts)
-statistical_analysis.save_results(resultados)
-print("Análisis completado. Resultados guardados en statistical_analysis_results.json")
+print(ds01)
+print(ds02)
+
+#resultados = statistical_analysis.statistical_analysis(opts)
+#statistical_analysis.save_results(resultados)
+#print("Análisis completado. Resultados guardados en statistical_analysis_results.json")

@@ -3,9 +3,17 @@ STATDIR=PruebasEstadísticas/FullTesting_py
 TEST_SCRIPT=test_models.py
 TRAIN_SCRIPT=train_models.py
 STATSCRIPTM=mine.py
-STATSCRIPT=mine.py
+STATSCRIPT=main.py
 PY_INTERPRETER=python3
 VENV=venv
+
+help:
+	@echo "Makefile for lovdogClassifier"
+	@echo "Usage:"
+	@echo "make train"
+	@echo "make test"
+	@echo "make stat_test"
+	@echo "make stat_mtest"
 
 train:
 	. $(VENV)/bin/activate &&\
